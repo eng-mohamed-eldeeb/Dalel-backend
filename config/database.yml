@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  url: https://db-postgresql-nyc3-56138-do-user-15129243-0.c.db.ondigitalocean.com/
+  url: db-postgresql-nyc3-56138-do-user-15129243-0.c.db.ondigitalocean.com
   database: defaultdb
   username: doadmin
   password: AVNS_oQAy_-thESzwxmfzP8Z
