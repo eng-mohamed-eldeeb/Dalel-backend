@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: dalel_backend_production
-  username: dalel_backend
-  password: <%= ENV["DALEL_BACKEND_DATABASE_PASSWORD"] %>
+  url: https://db-postgresql-nyc3-56138-do-user-15129243-0.c.db.ondigitalocean.com/
+  database: defaultdb
+  username: doadmin
+  password: AVNS_oQAy_-thESzwxmfzP8Z
