@@ -10,7 +10,14 @@ module DalelBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :user_name            => Rails.application.credentials.google_mail,
+      :password             => Rails.application.credentials.google_password,
+      :authentication       => "plain",
+      :enable_starttls_auto => true
+    }
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
