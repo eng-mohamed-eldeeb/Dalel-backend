@@ -1,0 +1,36 @@
+<!-- app/views/user_mailer/confirmation_mail.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Confirmation Email</h1>
+  <p>Hello</p>
+  <p>Thank you for signing up! Please click the link below to confirm your email:</p>
+  <%= link_to 'Confirm Email', confirmation_url(@resource, confirmation_token: @token) %>
+
+  <p>If you did not sign up for our service, please ignore this email.</p>
+</body>
+</html>
