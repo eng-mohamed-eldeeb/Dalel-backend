@@ -113,7 +113,7 @@ paths:
                 error: "User not found"
 
 servers:
-  - url: https://{defaultHost}
+  - url: https://lobster-app-yw6nq.ondigitalocean.app/
     variables:
       defaultHost:
         default: www.example.com
