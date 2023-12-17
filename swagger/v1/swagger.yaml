@@ -1,0 +1,119 @@
+openapi: 3.0.1
+info:
+  title: Daliel
+  version: v1
+paths:
+  paths:
+  /users:
+    post:
+      summary: Create the user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      format: email
+                    password:
+                      type: string
+                      minLength: 8
+        examples:
+          example-1:
+            value:
+              user:
+                email: "mo@mo.mo"
+                password: "12345678"
+      responses:
+        '200':
+          description: User created
+          content:
+            application/json:
+              example:
+                message: User created successfully
+  paths:
+  /users/sign_in:
+    post:
+      summary: Sign in user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      format: email
+                    password:
+                      type: string
+                      minLength: 8
+        examples:
+          example-1:
+            value:
+              user:
+                email: "mo@mo.mo"
+                password: "12345678"
+      responses:
+        '200':
+          description: Successful sign-in
+          content:
+            application/json:
+              example:
+                message: Sign-in successful
+                token: "your_access_token_here"
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              example:
+                error: "Invalid credentials"
+  paths:
+  /users/password:
+    post:
+      summary: Reset user password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                      format: email
+        examples:
+          example-1:
+            value:
+              user:
+                email: "mo@mo.mo"
+      responses:
+        '200':
+          description: Password reset email sent
+          content:
+            application/json:
+              example:
+                message: Password reset email sent successfully
+        '404':
+          description: User not found
+          content:
+            application/json:
+              example:
+                error: "User not found"
+
+servers:
+  - url: https://{defaultHost}
+    variables:
+      defaultHost:
+        default: www.example.com
