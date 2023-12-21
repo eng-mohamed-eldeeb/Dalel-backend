@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     confirmations: 'users/confirmations',
     passwords: 'users/passwords'  # Specify the custom controller for passwords
   }
+
+  get '/auth/:provider/callback', to: 'sessions#oniauth'
     # Defines the root path route ("/")
   # root "articles#index"
 end
