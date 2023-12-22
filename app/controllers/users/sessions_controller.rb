@@ -10,7 +10,7 @@ class Users::SessionsController < Devise::SessionsController
       session[:user_id] = user.id
       render json: { success: 'Logged in' }, status: :ok
     else
-      render json: { error: 'Invalid credentials' }, status: :unauthorized
+      render json: { ErrorMessage: 'Invalid credentials' }, status: :unauthorized
     end
   end
 
@@ -18,7 +18,7 @@ class Users::SessionsController < Devise::SessionsController
   def check_confirmation
     user = User.find_by(email: params[:user][:email])
     if user && !user.confirmed?
-      render json: { error: 'Unconfirmed' }, status: :unauthorized
+      render json: { ErrorMessage: 'Unconfirmed' }, status: :unauthorized
     end
   end
 end
