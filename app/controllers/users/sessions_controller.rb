@@ -12,6 +12,7 @@ class Users::SessionsController < Devise::SessionsController
     else
       render json: { error: 'Invalid credentials' }, status: :unauthorized
     end
+  end
 
   private
   def check_confirmation
