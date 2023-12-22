@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root to: 'application#confirmed'
   devise_for :users, controllers: {
     confirmations: 'users/confirmations',
+    registrations: 'users/registrations', # Specify the custom controller for registrations
+    sessions: 'users/sessions', # Specify the custom controller for sessions
     passwords: 'users/passwords'  # Specify the custom controller for passwords
   }
 
