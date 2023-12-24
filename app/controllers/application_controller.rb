@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
   protect_from_forgery
   include ActionController::MimeResponds
-  respond_to :json
+  # respond_to :json
 
   before_action :update_allowed_parameters, if: :devise_controller?
 

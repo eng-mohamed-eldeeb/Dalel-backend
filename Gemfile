@@ -10,7 +10,9 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
 
-
+#  active admin
+gem 'activeadmin'
+gem 'sassc-rails'
 # sign in with google
 gem 'dotenv-rails'
 
