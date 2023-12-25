@@ -1,6 +1,6 @@
 en:
   registeation:
-    unprocessable_entity: "wrong email or password"
+    unprocessable_entity: "email already exist"
     Account_deleted_successfully: "Account deleted successfully"
     confirmation_instructions: "the confirmation mail is send"
   session:

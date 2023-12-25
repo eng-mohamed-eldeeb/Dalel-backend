@@ -1,6 +1,6 @@
 ar:
   registeation:
-    unprocessable_entity: "خطاء في البريد او الرقم السري"
+    unprocessable_entity: "البريد موجود"
     Account_deleted_successfully: "تم حذف الحساب بنجاح"
     confirmation_instructions: "تم ارسال بريد للتاكيد"
   session:
