@@ -8,3 +8,5 @@ ar:
     ErrorMessage: "خطاء في البريد او الرقم السري"
     check_confirmation:
       ErrorMessage: "لم يتم تاكيد البريد الالكتروني"
+  password_reset:
+    success: "تم ارسال تعليمات تعديل كلمه المرور"

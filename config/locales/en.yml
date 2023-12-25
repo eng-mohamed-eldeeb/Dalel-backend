@@ -8,3 +8,5 @@ en:
     ErrorMessage: "Invalid email or password"
     check_confirmation:
       ErrorMessage: "Unconfirmed"
+  password_reset:
+    success: "Password reset instructions sent"
