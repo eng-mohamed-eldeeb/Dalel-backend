@@ -3,7 +3,40 @@ info:
   title: Daliel
   version: v1
 paths:
-  paths:
+  /sub_eras:
+    get:
+      summary: Gets the sub era
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                era_id:
+                  type: integer
+            examples:
+              example-1:
+                value:
+                  era_id: 1
+      responses:
+        '200':
+          description: User created
+          content:
+            application/json:
+              example:
+                en:
+                  name: "mamlok"
+                  info: "asd sdgbvasdlk a kllf egjlb nsxlkf jk jk d stdfg asdfv asdfv"
+                  sections:
+                    title: "beginning"
+                    content: "ifjdkv erj;k fij blkfv ljsdf nlja fcjf lfd jnlfd nelja fdnevjlfd n"
+                ar:
+                  name: "مملوك"
+                  info: "هشتين برىبتني ىؤة مىرةىتلب رؤةىتبي ىرؤةىتنب يىؤة"
+                  sections:
+                    title: "البداية"
+                    content: "شابر ؤتا رلاا مترءؤةثهشمبت ينىرىتبينمس ىؤةىبهتين رىؤةقىثتبين رىؤةقىتبين ىرؤتبسي مىىبي تمرؤىةىتبيسن م"
   /users:
     post:
       summary: Create the user
@@ -111,6 +144,7 @@ paths:
             application/json:
               example:
                 error: "User not found"
+  
 
 servers:
   - url: https://lobster-app-yw6nq.ondigitalocean.app/
