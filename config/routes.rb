@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   }
 
   get '/auth/:provider/callback', to: 'sessions#oniauth'
+
+  # historical library routes
+  resources :sub_eras, only: [:index]
     # Defines the root path route ("/")
   # root "articles#index"
 end
