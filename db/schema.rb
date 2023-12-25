@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_25_125929) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_25_180607) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -46,6 +46,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_25_125929) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "sections", force: :cascade do |t|
+    t.text "arabic_content"
+    t.text "english_content"
+    t.string "arabic_title"
+    t.string "english_title"
+    t.bigint "sub_era_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["sub_era_id"], name: "index_sections_on_sub_era_id"
+  end
+
   create_table "sub_eras", force: :cascade do |t|
     t.string "arabic_name"
     t.string "english_name"
@@ -79,5 +90,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_25_125929) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "sections", "sub_eras"
   add_foreign_key "sub_eras", "eras"
 end
