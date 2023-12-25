@@ -13,6 +13,10 @@ gem 'omniauth-rails_csrf_protection'
 #  active admin
 gem 'activeadmin'
 gem 'sassc-rails'
+
+# multi language
+gem 'rails-i18n'
+
 # sign in with google
 gem 'dotenv-rails'
 

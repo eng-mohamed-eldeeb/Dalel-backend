@@ -1,0 +1,10 @@
+ar:
+  registeation:
+    unprocessable_entity: "خطاء في البريد او الرقم السري"
+    Account_deleted_successfully: "تم حذف الحساب بنجاح"
+    confirmation_instructions: "تم ارسال بريد للتاكيد"
+  session:
+    success: "تم تسجيل الدخول"
+    ErrorMessage: "خطاء في البريد او الرقم السري"
+    check_confirmation:
+      ErrorMessage: "لم يتم تاكيد البريد الالكتروني"

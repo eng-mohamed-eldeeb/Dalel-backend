@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   include ActionController::MimeResponds
   # respond_to :json
+  before_action :set_locale
 
   before_action :update_allowed_parameters, if: :devise_controller?
 
@@ -11,6 +12,13 @@ class ApplicationController < ActionController::Base
   end
 
   protected
+  def set_locale
+    I18n.locale = extract_locale_from_accept_language_header
+  end
+
+  def extract_locale_from_accept_language_header
+    request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+  end
 
   def update_allowed_parameters
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:name, :email, :password)}

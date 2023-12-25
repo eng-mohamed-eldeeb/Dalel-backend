@@ -8,17 +8,18 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if request.method == "POST" && resource.persisted?
       render json: {
         status: 200,
-        user: resource
+        user: resource,
+        success: "#{t 'registeation.confirmation_instructions'}"
       }, status: :ok
     elsif request.method == "DELETE"
       render json: {
         status: 200,
-        message: "Account deleted successfully."
+        success: "#{t 'registeation.Account_deleted_successfully'}"
       }, status: :ok
     else
       render json: {
         status: 422,
-        ErrorMessage: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}"
+        ErrorMessage: "#{t 'registeation.unprocessable_entity'}"
       }, status: :unprocessable_entity
     end
   end
