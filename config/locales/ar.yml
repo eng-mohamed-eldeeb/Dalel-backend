@@ -10,3 +10,5 @@ ar:
       ErrorMessage: "لم يتم تاكيد البريد الالكتروني"
   password_reset:
     success: "تم ارسال تعليمات تعديل كلمه المرور"
+    email_not_found: "لم يتم العثور على البريد"
+    email_cant_be_empty: "لا يمكن ترك البريد"

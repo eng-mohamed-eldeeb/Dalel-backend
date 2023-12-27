@@ -10,3 +10,5 @@ en:
       ErrorMessage: "Unconfirmed"
   password_reset:
     success: "Password reset instructions sent"
+    email_not_found: "email not found"
+    email_cant_be_empty: "email can't be empty"
