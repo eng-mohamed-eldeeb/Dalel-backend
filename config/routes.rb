@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   # historical library routes
   resources :sub_eras, only: [:index]
+  resources :characters, only: [:index, :show]
     # Defines the root path route ("/")
   # root "articles#index"
 end

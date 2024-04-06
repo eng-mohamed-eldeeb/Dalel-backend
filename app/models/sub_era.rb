@@ -1,6 +1,7 @@
 class SubEra < ApplicationRecord
 
   has_many :sections
+  has_many :characters
   
   belongs_to :era
 
