@@ -1,7 +1,7 @@
 ActiveAdmin.register SubEra do
   permit_params :arabic_name, :english_name, :era_id, :arabic_info, :english_info, sections_attributes: %i[id arabic_title english_title arabic_content english_content _destroy]
   menu priority: 3
-  filter :name
+  filter :id
   
 index do
   selectable_column

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_04_03_214433) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_09_001927) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -98,6 +98,33 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_03_214433) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "event_sections", force: :cascade do |t|
+    t.text "arabic_content"
+    t.text "english_content"
+    t.string "arabic_title"
+    t.string "english_title"
+    t.bigint "event_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_event_sections_on_event_id"
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "type"
+    t.string "arabic_title"
+    t.string "english_title"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.text "arabic_info"
+    t.text "english_info"
+    t.bigint "sub_era_id"
+    t.bigint "character_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_events_on_character_id"
+    t.index ["sub_era_id"], name: "index_events_on_sub_era_id"
+  end
+
   create_table "sections", force: :cascade do |t|
     t.text "arabic_content"
     t.text "english_content"
@@ -146,6 +173,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_03_214433) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "character_sections", "characters"
   add_foreign_key "characters", "sub_eras"
+  add_foreign_key "event_sections", "events"
+  add_foreign_key "events", "characters"
+  add_foreign_key "events", "sub_eras"
   add_foreign_key "sections", "sub_eras"
   add_foreign_key "sub_eras", "eras"
 end

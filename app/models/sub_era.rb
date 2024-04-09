@@ -1,7 +1,11 @@
 class SubEra < ApplicationRecord
+  def self.ransackable_associations(auth_object = nil)
+    ["characters", "era", "sections"]
+  end
 
   has_many :sections
   has_many :characters
+  has_many :events
   
   belongs_to :era
 
