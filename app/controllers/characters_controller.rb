@@ -3,7 +3,7 @@ class CharactersController < ApplicationController
 
     def index
         characters = Character.get_random_characters(get_sub_era)
-        characters = characters.map do |character|
+        characters = characters.compact.map do |character|
             {
                 id: character.id,
                 name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
