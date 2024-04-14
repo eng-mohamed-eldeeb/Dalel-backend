@@ -122,6 +122,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_001927) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["character_id"], name: "index_events_on_character_id"
+    t.index ["start_date"], name: "index_events_on_start_date"
     t.index ["sub_era_id"], name: "index_events_on_sub_era_id"
   end
 

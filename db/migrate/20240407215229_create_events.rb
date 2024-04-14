@@ -13,5 +13,7 @@ class CreateEvents < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
+
+    add_index :events, :start_date
   end
 end
