@@ -21,12 +21,12 @@ class SubEra < ApplicationRecord
   require 'date'
 
   def get_characters
-    self.characters.limit(8)
+    self.characters
   end
 
   # get eight events from the database
   def get_events
-    self.events.limit(4)
+    self.events
   end
 
   # get_events_happed_on_this_day
