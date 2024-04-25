@@ -1,13 +1,16 @@
 class EventsController < ApplicationController
     # soon will be lemited based on the user data
     def index
-        happend_on_this_day = Event.get_today_events
+        p params
+        era = Era.find(params[:era_id])
+        happend_on_this_day = era.get_events_happed_on_this_day
+        era_events = era.get_4_random_events
         if happend_on_this_day && happend_on_this_day.length == 0
             events = Event.includes(:event_sections).order("RANDOM()").all.limit(3)
             events = events.map do |event|
                 {
                     id: event.id,
-                    title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
+                            title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
                     cover_image: url_for(event.cover_image)
                 }
             end
@@ -45,6 +48,7 @@ class EventsController < ApplicationController
 
     def show
         event = Event.includes(:event_sections).find(params[:id])
+
         event = {
             id: event.id,
             title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,

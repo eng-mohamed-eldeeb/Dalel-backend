@@ -15,9 +15,10 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#oniauth'
 
   # historical library routes
-  resources :sub_eras, only: [:index]
+  resources :sub_eras, only: [:index, :show]
   resources :characters, only: [:index, :show]
   resources :events, only: [:index, :show]
+  get 'characters/:id/events', to: 'characters#events'
     # Defines the root path route ("/")
   # root "articles#index"
 end
