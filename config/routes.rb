@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   root to: 'application#confirmed'
   devise_for :users, controllers: {
     confirmations: 'users/confirmations',
@@ -19,6 +18,16 @@ Rails.application.routes.draw do
   resources :characters, only: [:index, :show]
   resources :events, only: [:index, :show]
   get 'characters/:id/events', to: 'characters#events'
-    # Defines the root path route ("/")
-  # root "articles#index"
+  # bazar routes
+  get 'products/best_sales', to: 'products#get_top_selling'
+  resources :products, only: [:index, :show] do
+    resources :reviews, only: [:create]
+    get 'reviews', to: 'reviews#get_reviews_by_product'
+  end
+  get 'products/catigory/:catigory', to: 'products#get_product_by_catigory'
+
+  # recomendation routes
+  # <<< setting the data
+  # <<< getting the data
+
 end

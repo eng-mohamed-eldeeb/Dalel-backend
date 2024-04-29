@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_04_09_001927) do
+ActiveRecord::Schema[7.0].define(version: 2024_04_26_165934) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -126,6 +126,38 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_001927) do
     t.index ["sub_era_id"], name: "index_events_on_sub_era_id"
   end
 
+  create_table "products", force: :cascade do |t|
+    t.integer "catigory", default: 4
+    t.decimal "price"
+    t.string "arabic_title"
+    t.string "english_title"
+    t.text "english_description"
+    t.text "arabic_description"
+    t.integer "tier", default: 2
+    t.integer "number_of_sales", default: 0
+    t.bigint "era_id", null: false
+    t.bigint "sub_era_id"
+    t.bigint "character_id"
+    t.bigint "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_products_on_character_id"
+    t.index ["era_id"], name: "index_products_on_era_id"
+    t.index ["event_id"], name: "index_products_on_event_id"
+    t.index ["sub_era_id"], name: "index_products_on_sub_era_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.text "comment"
+    t.integer "stars"
+    t.bigint "user_id", null: false
+    t.bigint "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_reviews_on_product_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
+
   create_table "sections", force: :cascade do |t|
     t.text "arabic_content"
     t.text "english_content"
@@ -177,6 +209,12 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_09_001927) do
   add_foreign_key "event_sections", "events"
   add_foreign_key "events", "characters"
   add_foreign_key "events", "sub_eras"
+  add_foreign_key "products", "characters"
+  add_foreign_key "products", "eras"
+  add_foreign_key "products", "events"
+  add_foreign_key "products", "sub_eras"
+  add_foreign_key "reviews", "products"
+  add_foreign_key "reviews", "users"
   add_foreign_key "sections", "sub_eras"
   add_foreign_key "sub_eras", "eras"
 end

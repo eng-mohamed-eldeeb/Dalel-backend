@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  price: 9.99
+  title: MyString
+  era: one
+  sub_era: one
+  character: one
+  event: one
+
+two:
+  type: 
+  price: 9.99
+  title: MyString
+  era: two
+  sub_era: two
+  character: two
+  event: two
