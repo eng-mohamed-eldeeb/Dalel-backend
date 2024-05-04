@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_04_26_165934) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -169,6 +169,23 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_26_165934) do
     t.index ["sub_era_id"], name: "index_sections_on_sub_era_id"
   end
 
+  create_table "shopping_cart_items", force: :cascade do |t|
+    t.bigint "shopping_cart_id", null: false
+    t.bigint "product_id", null: false
+    t.integer "quantity", default: 1
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_shopping_cart_items_on_product_id"
+    t.index ["shopping_cart_id"], name: "index_shopping_cart_items_on_shopping_cart_id"
+  end
+
+  create_table "shopping_carts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_shopping_carts_on_user_id"
+  end
+
   create_table "sub_eras", force: :cascade do |t|
     t.string "arabic_name"
     t.string "english_name"
@@ -216,5 +233,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_04_26_165934) do
   add_foreign_key "reviews", "products"
   add_foreign_key "reviews", "users"
   add_foreign_key "sections", "sub_eras"
+  add_foreign_key "shopping_cart_items", "products"
+  add_foreign_key "shopping_cart_items", "shopping_carts"
+  add_foreign_key "shopping_carts", "users"
   add_foreign_key "sub_eras", "eras"
 end

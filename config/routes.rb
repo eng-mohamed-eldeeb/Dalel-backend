@@ -26,6 +26,10 @@ Rails.application.routes.draw do
   end
   get 'products/catigory/:catigory', to: 'products#get_product_by_catigory'
 
+  post 'cart', to: 'carts#create'
+  post '/cart/products/add', to: 'cart#add_product'
+  post 'cart/update', to: 'carts#update'
+
   # recomendation routes
   # <<< setting the data
   # <<< getting the data
