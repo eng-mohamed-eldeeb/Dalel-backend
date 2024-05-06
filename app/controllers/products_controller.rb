@@ -19,7 +19,7 @@ class ProductsController < ApplicationController
     end
 
     # top 3 sales
-    top_sales = products.sort_by { |product| product[:number_of_sales] }.reverse.first(3)
+    top_sales = products.sort_by { |product| product[:number_of_sales] }.reverse.first(5)
 
     # products with antiques catigory
     products_antiques = products.select { |product| product[:catigory] == 'antiques' }
@@ -99,7 +99,6 @@ class ProductsController < ApplicationController
   private
 
   def get_reviews(product)
-    p product.reviews.last.user.name
     reviews = product.reviews.all
     reviews.map do |review|
       {
