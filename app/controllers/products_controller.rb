@@ -18,8 +18,11 @@ class ProductsController < ApplicationController
       }
     end
 
-    # top 3 sales
+    # top 5 sales
     top_sales = products.sort_by { |product| product[:number_of_sales] }.reverse.first(5)
+
+    # add => top rated
+    # add => five random catigories products
 
     # products with antiques catigory
     products_antiques = products.select { |product| product[:catigory] == 'antiques' }
@@ -95,6 +98,8 @@ class ProductsController < ApplicationController
       render json: {error: e.message}, status: :unprocessable_entity
     end
   end
+
+  # get all top selling
 
   private
 

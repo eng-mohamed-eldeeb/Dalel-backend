@@ -2,7 +2,10 @@ class SubErasController < ApplicationController
   def index
     era = Era.find(params[:era_id])
     sub_eras = era.sub_eras
-    render json: serialize_sub_eras(sub_eras)
+    render json: {
+      name: I18n.locale.to_s == 'ar' ? sub_era.arabic_name : sub_era.english_name,
+      info: I18n.locale.to_s == 'ar' ? sub_era.arabic_info : sub_era.english_info
+    }
   end
 
   def show

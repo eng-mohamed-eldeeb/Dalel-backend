@@ -27,7 +27,10 @@ Rails.application.routes.draw do
   get 'products/catigory/:catigory', to: 'products#get_product_by_catigory'
 
   post 'cart', to: 'carts#create'
-  post '/cart/products/add', to: 'cart#add_product'
+  post '/cart/products/add', to: 'carts#add_product'
+  get '/cart/details', to: 'carts#get_cart_details'
+  put '/cart/increment_and_decrement', to: 'carts#increment_and_decrement'
+  delete '/cart/remove_product', to: 'carts#remove_product'
   put 'cart/update_quantity', to: 'carts#update_quantity'
   get 'cart', to: 'carts#cart_details'
   delete 'cart/products/remove', to: 'cart#remove_product'

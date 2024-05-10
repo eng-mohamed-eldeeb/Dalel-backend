@@ -72,6 +72,5 @@ event = Event.create(type: "War", arabic_title: "معركه ابو بكر", engl
 
 user = User.create(email: "mo@mo.mo", password: "momomo", name: "mohamed Eldeeb")
 
-# product = Product.create(price: 100, arabic_title: "حياه ابو بكر", english_title: "The Life of Abu Bakr", arabic_description: "The Life of Abu Bakr", english_description: "The Life of Abu Bakr", era: era)
 
 # product = Product.create(type: 1, price: 100, arabic_title: "حياه ابو بكر", english_title: "The Life of Abu Bakr", arabic_description: "The Life of Abu Bakr", english_description: "The Life of Abu Bakr", era: era, sub_era_id: sub_era.id, character: character, event: event)
