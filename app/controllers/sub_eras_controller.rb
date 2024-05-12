@@ -2,12 +2,14 @@ class SubErasController < ApplicationController
   def index
     era = Era.find(params[:era_id])
     sub_eras = era.sub_eras
-    render json: {
-      name: I18n.locale.to_s == 'ar' ? sub_era.arabic_name : sub_era.english_name,
-      info: I18n.locale.to_s == 'ar' ? sub_era.arabic_info : sub_era.english_info
-    }
+    sub_eras = sub_eras.each do |sub_era|
+      {
+        id: sub_era.id,
+        name: I18n.locale.to_s == 'ar' ? sub_era.arabic_name : sub_era.english_name,
+      }
+    end
+    render json: {sub_eras: sub_eras}
   end
-
   def show
     sub_era = SubEra.find(params[:id])
     eight_characters = sub_era.get_characters
@@ -63,8 +65,8 @@ class SubErasController < ApplicationController
   def serialize_sections(sections, language)
     sections.map do |section|
       {
-        title: section.send("#{language}_title"),
-        content: section.send("#{language}_content")
+        title: I18n.locale.to_s == 'ar' ? section.arabic_title : section.english_title,
+        content: I18n.locale.to_s == 'ar' ? section.arabic_content : section.english_content
       }
     end
   end
