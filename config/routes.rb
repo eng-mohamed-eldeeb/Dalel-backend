@@ -11,8 +11,16 @@ Rails.application.routes.draw do
     passwords: 'users/passwords'  # Specify the custom controller for passwords
   }
 
+  post 'era/:id/points', to: 'eras#add_points'
+  post 'sub_era/:id/points', to: 'sub_eras#add_points'
+
   get '/auth/:provider/callback', to: 'sessions#oniauth'
 
+
+  # user saved routes
+  post '/users/:user_id/saveds', to: 'saved#create'
+  get '/users/:user_id/saveds', to: 'saved#index'
+  delete '/users/:user_id/saveds', to: 'saved#remove'
   # historical library routes
   resources :sub_eras, only: [:index, :show]
   resources :characters, only: [:index, :show]

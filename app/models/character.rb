@@ -2,6 +2,7 @@ class Character < ApplicationRecord
     belongs_to :sub_era
     has_many :character_sections, dependent: :destroy
     has_many :events
+    has_many :saveds
 
     has_one_attached :thumb_image
     has_one_attached :cover_image
