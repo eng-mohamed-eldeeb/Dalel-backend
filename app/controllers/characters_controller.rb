@@ -65,8 +65,20 @@ class CharactersController < ApplicationController
         render json: characters
       end
 
-
-
+      def see_all
+        era = Era.find(params[:era_id])
+        characters = era.sub_eras.map(&:characters).flatten
+        characters = characters.map do |character|
+            {
+                id: character.id,
+                name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
+                date_of_birth: character.date_of_birth,
+                date_of_death: character.date_of_death,
+                thumb_image: url_for(character.thumb_image),
+            }
+        end
+        render json: characters
+    end
 
       private
 

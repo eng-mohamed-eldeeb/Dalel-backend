@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'characters/search', to: 'characters#search'
   get 'events/search', to: 'events#search'
   get 'sub_eras/search', to: 'sub_eras#search'
+  get 'characters/see_all', to: 'characters#see_all'
+  get 'events/see_all', to: 'events#see_all'
   get '/auth/:provider/callback', to: 'sessions#oniauth'
 
 
