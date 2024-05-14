@@ -7,7 +7,7 @@ class CreateSubEras < ActiveRecord::Migration[7.0]
       t.text :english_info
       t.references :era, null: false, foreign_key: true
       t.integer :tier
-      t.point :point, default: 0.0
+      t.integer :point, default: 0.0
 
       t.timestamps
     end

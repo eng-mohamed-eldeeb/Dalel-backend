@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_13_172510) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -108,6 +108,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_13_172510) do
   create_table "eras", force: :cascade do |t|
     t.string "name"
     t.integer "tier"
+    t.float "point", default: 0.0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -209,6 +210,19 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_13_172510) do
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
+  create_table "saveds", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "product_id"
+    t.bigint "character_id"
+    t.bigint "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_saveds_on_character_id"
+    t.index ["event_id"], name: "index_saveds_on_event_id"
+    t.index ["product_id"], name: "index_saveds_on_product_id"
+    t.index ["user_id"], name: "index_saveds_on_user_id"
+  end
+
   create_table "sections", force: :cascade do |t|
     t.text "arabic_content"
     t.text "english_content"
@@ -244,6 +258,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_13_172510) do
     t.text "english_info"
     t.bigint "era_id", null: false
     t.integer "tier"
+    t.integer "point", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["era_id"], name: "index_sub_eras_on_era_id"
@@ -293,6 +308,10 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_13_172510) do
   add_foreign_key "recomendations", "users"
   add_foreign_key "reviews", "products"
   add_foreign_key "reviews", "users"
+  add_foreign_key "saveds", "characters"
+  add_foreign_key "saveds", "events"
+  add_foreign_key "saveds", "products"
+  add_foreign_key "saveds", "users"
   add_foreign_key "sections", "sub_eras"
   add_foreign_key "shopping_cart_items", "products"
   add_foreign_key "shopping_cart_items", "shopping_carts"

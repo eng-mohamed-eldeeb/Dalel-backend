@@ -29,7 +29,7 @@ class Era < ApplicationRecord
     def set_tier
         eras = Era.all.order(:point)
         eras.each_with_index do |era, index|
-            era.update(tier: index)
+            era.update_column(:tier, index)
         end
     end
 

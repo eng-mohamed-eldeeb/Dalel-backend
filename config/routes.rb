@@ -16,6 +16,11 @@ Rails.application.routes.draw do
 
   get '/auth/:provider/callback', to: 'sessions#oniauth'
 
+
+  # user saved routes
+  post '/users/:user_id/saveds', to: 'saved#create'
+  get '/users/:user_id/saveds', to: 'saved#index'
+  delete '/users/:user_id/saveds', to: 'saved#remove'
   # historical library routes
   resources :sub_eras, only: [:index, :show]
   resources :characters, only: [:index, :show]
