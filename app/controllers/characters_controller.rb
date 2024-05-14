@@ -46,7 +46,29 @@ class CharactersController < ApplicationController
         }
         render json: character
     end
-    private
+
+    def search
+        search_params = params.require(:search).permit(:arabic_name, :english_name)
+
+        characters = Character.where('arabic_name LIKE :search OR english_name LIKE :search', search: "%#{search_params.values.first}%")
+
+        characters = characters.map do |character|
+          {
+            id: character.id,
+            sub_era: I18n.locale.to_s == 'ar' ? character.sub_era.arabic_name : character.sub_era.english_name,
+            name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
+            date_of_birth: character.date_of_birth,
+            date_of_death: character.date_of_death,
+            thumb_image: url_for(character.thumb_image),
+          }
+        end
+        render json: characters
+      end
+
+
+
+
+      private
 
     def get_sub_era
         SubEra.find(params[:sub_era_id])

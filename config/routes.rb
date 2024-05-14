@@ -13,7 +13,9 @@ Rails.application.routes.draw do
 
   post 'era/:id/points', to: 'eras#add_points'
   post 'sub_era/:id/points', to: 'sub_eras#add_points'
-
+  get 'characters/search', to: 'characters#search'
+  get 'events/search', to: 'events#search'
+  get 'sub_eras/search', to: 'sub_eras#search'
   get '/auth/:provider/callback', to: 'sessions#oniauth'
 
 

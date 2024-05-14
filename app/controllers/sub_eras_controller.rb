@@ -50,6 +50,20 @@ class SubErasController < ApplicationController
     render json: { message: 'point added' }, status: :ok
   end
 
+  def search
+    search_term = params[:search][:english_name]
+
+    sub_eras = SubEra.where("english_name ILIKE ?", "%#{search_term}%")
+    sub_eras = sub_eras.map do |sub_era|
+      {
+        id: sub_era.id,
+        name: I18n.locale.to_s == 'ar' ? sub_era.arabic_name : sub_era.english_name,
+        era_id: sub_era.era.name
+      }
+    end
+    render json: { sub_eras: sub_eras }
+  end
+
   private
 
   def serialize_sub_eras(sub_eras)
