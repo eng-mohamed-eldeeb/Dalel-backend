@@ -8,6 +8,7 @@ class CreateCharacters < ActiveRecord::Migration[7.0]
       t.text :arabic_info
       t.text :english_info
       t.references :sub_era, null: false, foreign_key: true
+      t.integer :tier
 
       t.timestamps
     end

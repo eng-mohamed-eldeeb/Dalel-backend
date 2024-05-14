@@ -43,6 +43,13 @@ class SubErasController < ApplicationController
     }
   end
 
+  def add_points
+    sub_era = SubEra.find(params[:id])
+    sub_era.points += 1
+    sub_era.save
+    render json: { message: 'point added' }, status: :ok
+  end
+
   private
 
   def serialize_sub_eras(sub_eras)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_13_172510) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -68,6 +68,18 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "character_recommendations", force: :cascade do |t|
+    t.integer "level"
+    t.integer "belong_to_tier"
+    t.bigint "event_id", null: false
+    t.boolean "seen"
+    t.bigint "character_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_character_recommendations_on_character_id"
+    t.index ["event_id"], name: "index_character_recommendations_on_event_id"
+  end
+
   create_table "character_sections", force: :cascade do |t|
     t.text "arabic_content"
     t.text "english_content"
@@ -87,6 +99,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
     t.text "arabic_info"
     t.text "english_info"
     t.bigint "sub_era_id", null: false
+    t.integer "tier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["sub_era_id"], name: "index_characters_on_sub_era_id"
@@ -94,8 +107,21 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
 
   create_table "eras", force: :cascade do |t|
     t.string "name"
+    t.integer "tier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "event_recommendations", force: :cascade do |t|
+    t.integer "level"
+    t.integer "belong_to_tier"
+    t.bigint "character_id", null: false
+    t.boolean "seen"
+    t.bigint "event_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_event_recommendations_on_character_id"
+    t.index ["event_id"], name: "index_event_recommendations_on_event_id"
   end
 
   create_table "event_sections", force: :cascade do |t|
@@ -119,11 +145,23 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
     t.text "english_info"
     t.bigint "sub_era_id"
     t.bigint "character_id"
+    t.integer "tier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["character_id"], name: "index_events_on_character_id"
     t.index ["start_date"], name: "index_events_on_start_date"
     t.index ["sub_era_id"], name: "index_events_on_sub_era_id"
+  end
+
+  create_table "product_recommendations", force: :cascade do |t|
+    t.float "rate"
+    t.integer "level"
+    t.integer "belong_to_tier"
+    t.boolean "seen"
+    t.bigint "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_product_recommendations_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -145,6 +183,19 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
     t.index ["era_id"], name: "index_products_on_era_id"
     t.index ["event_id"], name: "index_products_on_event_id"
     t.index ["sub_era_id"], name: "index_products_on_sub_era_id"
+  end
+
+  create_table "recomendations", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "product_recommendations_id"
+    t.bigint "character_recommendations_id"
+    t.bigint "event_recommendations_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_recommendations_id"], name: "index_recomendations_on_character_recommendations_id"
+    t.index ["event_recommendations_id"], name: "index_recomendations_on_event_recommendations_id"
+    t.index ["product_recommendations_id"], name: "index_recomendations_on_product_recommendations_id"
+    t.index ["user_id"], name: "index_recomendations_on_user_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -192,6 +243,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
     t.text "arabic_info"
     t.text "english_info"
     t.bigint "era_id", null: false
+    t.integer "tier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["era_id"], name: "index_sub_eras_on_era_id"
@@ -221,15 +273,24 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_03_192721) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "character_recommendations", "characters"
+  add_foreign_key "character_recommendations", "events"
   add_foreign_key "character_sections", "characters"
   add_foreign_key "characters", "sub_eras"
+  add_foreign_key "event_recommendations", "characters"
+  add_foreign_key "event_recommendations", "events"
   add_foreign_key "event_sections", "events"
   add_foreign_key "events", "characters"
   add_foreign_key "events", "sub_eras"
+  add_foreign_key "product_recommendations", "products"
   add_foreign_key "products", "characters"
   add_foreign_key "products", "eras"
   add_foreign_key "products", "events"
   add_foreign_key "products", "sub_eras"
+  add_foreign_key "recomendations", "character_recommendations", column: "character_recommendations_id"
+  add_foreign_key "recomendations", "event_recommendations", column: "event_recommendations_id"
+  add_foreign_key "recomendations", "product_recommendations", column: "product_recommendations_id"
+  add_foreign_key "recomendations", "users"
   add_foreign_key "reviews", "products"
   add_foreign_key "reviews", "users"
   add_foreign_key "sections", "sub_eras"

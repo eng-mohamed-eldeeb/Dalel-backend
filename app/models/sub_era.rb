@@ -8,6 +8,10 @@ class SubEra < ApplicationRecord
   has_many :events
 
   belongs_to :era
+  enum tier: { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5}
+  after_save :set_tier
+
+
 
   validates :arabic_name, presence: true
   validates :english_name, presence: true
@@ -37,5 +41,20 @@ class SubEra < ApplicationRecord
 
   def self.ransackable_attributes(auth_object = nil)
     ["arabic_info", "created_at", "english_info", "era_id", "id", "name", "updated_at"]
+  end
+
+  def set_tier
+    sub_eras = SubEra.all.order(:point)
+    return if sub_eras.empty?
+
+    max_point = sub_eras.last.point
+    return if max_point < 6
+
+    pagination = max_point / 6.0
+    sub_eras.each_with_index do |sub_era, index|
+      sub_era.update(tier: (index / pagination).floor)
+    end
+
+    sub_eras
   end
 end
