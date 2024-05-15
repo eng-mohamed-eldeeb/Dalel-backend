@@ -1,7 +1,6 @@
 class EventsController < ApplicationController
     # soon will be lemited based on the user data
     def index
-        p params
         era = Era.find(params[:era_id])
         happend_on_this_day = era.get_events_happed_on_this_day
         era_events = era.get_4_random_events
@@ -65,4 +64,35 @@ class EventsController < ApplicationController
         }
         render json: event
     end
+
+    def see_all
+        era = Era.find(params[:era_id])
+        events = era.sub_eras.map(&:events).flatten
+        events = events.map do |event|
+            {
+                id: event.id,
+                sub_era: I18n.locale.to_s == 'ar' ? event.sub_era.arabic_name : event.sub_era.english_name,
+                title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
+                cover_image: url_for(event.cover_image),
+            }
+        end
+        render json: events
+    end
+
+    def search
+        search_params = params.require(:search).permit(:arabic_title, :english_title)
+
+        events = Event.where('arabic_title LIKE :search OR english_title LIKE :search', search: "%#{search_params.values.first}%")
+        events = events.map do |event|
+          {
+            id: event.id,
+            sub_era: I18n.locale.to_s == 'ar' ? event.sub_era.arabic_name : event.sub_era.english_name,
+            name: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
+            cover_image: url_for(event.cover_image),
+          }
+        end
+        render json: events
+      end
+
+
 end
