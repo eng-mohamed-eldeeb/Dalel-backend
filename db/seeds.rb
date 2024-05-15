@@ -299,6 +299,45 @@ require 'open-uri'
         The original entrance to the pyramid is located on the northern side. Inside the pyramid there are three rooms: at the top is the king\'s burial chamber (the King\'s Chamber), in the middle is the statue chamber (erroneously called the Queen\'s Chamber), and below the foundation is an unfinished underground chamber (the Underworld Chamber). While the burial chamber is identified by the massive granite sarcophagus, the use of the \'Queen\'s Chamber\' remains disputed – it may have been the serdab of Khufu\'s statue. The subterranean chamber remains mysterious because it was left unfinished. The narrow corridor running south at the western end of the chamber and the unfinished shaft in the middle may indicate that the subterranean chamber was the oldest of the three chambers and that the original building plan contained a simple chamber complex with several rooms and corridors. But for unknown reasons, the work was stopped and two other rooms were built inside the pyramid. Remarkable is the so-called Great Gallery leading to the King\'s Chamber: it has a vaulted arched ceiling and is 28.7 feet high and 151.3 feet long. The gallery has an important still image function; The weight of the stone block above the king\'s chamber shifts the pyramid\'s surrounding core."',
         sub_era: sub_era_2,
     )
+    Section.create(
+            arabic_title:"خفرع وأبو الهول ومنقرع",
+            english_title:"Khafre and the Sphinx and Menkaure",
+            arabic_content:"بعد وفاة خوفو، خلفه أحد أفراد أسرته خارج الخط الشرعي المسمى دجيدف رع (2566-2558 قبل الميلاد) ويعتبر أهم جانب في عهد دجيدف رع ليس هرمه أو الادعاء بأنه بنى تمثال أبو الهول، ولكن ارتباطه بمنصب الملك بعبادة إله الشمس رع. كان أول ملوك مصر يطلق لقب 'ابن رع' على نفسه، مما يشير إلى أن الملكية تابعة لإله الشمس. في الأسرة الثانية، ربط الملك رانب اسمه بالآلهة، وبالتالي جعل الملك ممثل الآلهة على الأرض، والتجسيد الحي للآلهة. بعد إصلاحات دجيدف رع، كان لا يزال يُنظر إلى الملك على أنه ممثل إلهي ولكن الآن في موقع أكثر تبعية كأبناء الله. يعتبر دجيدف رع من قبل بعض العلماء هو منشئ تمثال أبو الهول بالجيزة، بينما ينسب آخرون هذا النصب إلى أخيه وخليفته خفرع (2558-2532 قبل الميلاد). تمثال أبو الهول هو أكبر تمثال مترابط في العالم يصور جسد أسد مستلق برأس ووجه ملك. يُقبل وجه هذا الملك تقليديًا على أنه وجه خفرع، لكن دوبريف وآخرين يزعمون أنه قد يكون في الواقع وجه خوفو. يبدو من المحتمل أنه تم إنشاؤه بواسطة خفرع لأنه يتماشى تمامًا مع مجمع الهرم الخاص به ويبدو أن وجه أبو الهول يشبه وجه خفرع أكثر من وجه خوفو.
+
+            هرم خفرع هو ثاني أكبر هرم في الجيزة ومجمعه يكاد يكون مثل أبيه. لا يُعرف سوى القليل عن عهده. ارتبط خفرع بالاله حورس (كما فعل الملوك السابقون)، واعتبر أبو الهول صورة للملك على أنه الإله حرماخت 'حورس في الأفق'. على عكس ملوك عصر الأسرات المبكرة، أشار خفرع وأولئك الذين جاءوا بعده إلى نفسه على أنه 'ابن حورس'، مرتبطًا بالإله ولكن ليس الإله الحي نفسه. نمت قوة تفسير إرادة الآلهة، على الرغم من أنها لا تزال ضمن دائرة نفوذ الملك، بشكل متزايد من أصل الكهنة الذين خدموا تلك الآلهة.
+            
+            بعد وفاة خفرع، انقطعت الخلافة مرة أخرى لفترة وجيزة عندما تولى باكا، ابن دجيدف رع، العرش. لم يحكم حتى عام واحد، قبل أن يصبح منقرع (2532-2503 قبل الميلاد)، ابن خفرع ملكًا. بدأ منقرع في بناء مجمع الهرم والمعبد في الجيزة. على الرغم من أن هضبة الجيزة اليوم هي موقع قديم مليء بالرمال في ضواحي القاهرة، إلا أنها كانت في زمن منقرع مدينة الموتى التي يسكنها الأحياء الذين يعتنون بها. كانت منازل الكهنة والمعابد ومساكن العمال والمتاجر والمصانع ومصانع الجعة وجميع جوانب المدينة الصغيرة موجودة في الجيزة.
+            
+            على عكس الاعتقاد السائد بأن أهرامات الجيزة قد تم بناؤها على يد عمال العبيد (وتحديداً عمل العبيد العبريين)، فقد تم بناؤها بالفعل من قبل المصريين، وكثير منهم كانوا من العمال ذوي المهارات العالية الذين حصلوا على أجر مقابل وقتهم. يُعتقد أن الأهرامات تمثل التل البدائي، بن بن، الذي ارتفع لأول مرة من مياه الفوضى في بداية الخلق. لم يتم اكتشاف أي مكان للعبيد في الجيزة ولا توجد سجلات مصرية تتحدث عن أي حدث مثل ذلك المنصوص عليه في كتاب الخروج التوراتي. تم العثور على مساكن العمال ومنازل المشرفين ومنازل المشرفين وتوضيح أن العمل المنجز في هضبة الجيزة في المملكة القديمة كان يؤديه مصريون يعملون مقابل تعويض.
+            
+            هرم منقرع ومعقده أصغر من الاثنين الآخرين وهذا يدل على تطور مهم في تاريخ المملكة القديمة وأحد أسباب انهيارها. لم تعد الموارد اللازمة لبناء الهرم الأكبر متاحة في زمن منقرع، لكنه لا يزال يعتمد على ما في وسعه لإنشاء منزل أبدي على قدم المساواة مع والده وجده. توفي ابن منقرع أثناء بناء الهرم، الأمر الذي أزعج خلافة الأسرة الحاكمة، وتوفي منقرع نفسه قبل اكتمال مجمع الهرم. على الرغم من أنه حكم لمدة ثلاثين عامًا، إلا أنه لم يكن قادرًا على إكمال ما فعله أسلافه، وبالنسبة للعديد من العلماء فإن هذا يدل على تضاؤل الموارد تحت إمرته.
+            
+            كان الملوك، كما لوحظ سابقًا، يحولون موارد هائلة إلى آثارهم ومجمعاتهم الجنائزية، لكن هذه المعابد والأضرحة لم تعد بشكل متزايد تحت سيطرة الملك بل تحت سيطرة الكهنة الذين أداروها. بعد فترة حكم شبسسكاف القصيرة، انتهت الأسرة الرابعة وبدأت الأسرة الخامسة بوعد أقل بكثير مما كانت عليه عندما خلف سنفرو حوني.
+            
+            بصرف النظر عن المفهوم الهائل للأهرامات نفسها، فإن مجمعات المعابد المرتبطة بها تظهر إتقانًا كبيرًا للأشكال المعمارية. تم تزيين معبد خوفو أو جسر الاقتراب بنقوش مثيرة للإعجاب، تم دمج أجزاء منها في هرم الأسرة الثانية عشر لأمنمحات الأول في اللشت. أشهر المنحوتات المصرية، تمثال أبو الهول لخفرع في الجيزة وتمثاله الجالس الاستثنائي، يعود تاريخه إلى الأسرة الرابعة.
+            
+            تشكل أهرامات الجيزة مجموعة من الآثار المكتملة بشكل أو بآخر محاطة بالعديد من مقابر العائلة المالكة والنخبة، مرتبة حسب التسلسل الهرمي ومصممة بأنماط أنيقة. يتناقض هذا الترتيب مع ما كان عليه في عهد سنفرو، حيث تم بناء مقابر مهمة في ميدوم وسقارة، بينما ربما دُفن الملك في دهشور. من بين مقابر الجيزة، تم تزيين كبار المسؤولين فقط ؛ باستثناء الحاشية المباشرة للملوك، تم تقييد حرية التعبير للمسؤولين بشكل كبير. كان معظم كبار المسؤولين أعضاء في العائلة المالكة الكبيرة، لذلك تركزت القوة على أساس القرابة وكذلك بوسائل أخرى. لم يمنع هذا الصراع بين الفصائل: فقد تم تدمير مجمع دجيدف رع عمداً وبشكل كامل، ربما بتحريض من خليفته خفرع.
+            
+            يسجل حجر باليرمو حملة إلى النوبة السفلى في عهد سنفرو والتي قد تكون مرتبطة بالكتابات على الجدران في المنطقة نفسها. أسس المصريون مستوطنة في بوهين، على الطرف الشمالي للشلال الثاني (شمال السودان حاليا)، والتي استمرت لمدة 200 عام. قد يكون البعض الآخر قد تم تأسيسه بين هناك وإلفنتين. ربما كانت أغراض هذا الاختراق هي إقامة تجارة في أقصى الجنوب وإنشاء منطقة عازلة. لم يتم العثور على آثار أثرية لسكان مستقرين في النوبة السفلى لفترة المملكة القديمة. يبدو أن الوجود القمعي لمصر قد سلب من سكانها مواردهم، حيث تم استغلال المقاطعات لصالح الملك والنخبة.",
+            english_content:"After Khufu's death, he was succeeded by a member of his family outside the legitimate line called Djedefre (2566-2558 BC). The most important aspect of Djedefre's reign is not his pyramid or the claim that he built the Sphinx, but his connection to the position of king with the worship of the sun god Ra. He was the first king of Egypt to call himself 'Son of Ra', indicating that kingship belonged to the sun god. In the Second Dynasty, King Raneb linked his name to the gods, thus making the king the representative of the gods on Earth, and the living embodiment of the gods. After Djedefre's reforms, the king was still seen as a divine representative but now in a more subordinate position as children of God. Djedefre is considered by some scholars to be the creator of the Great Sphinx in Giza, while others attribute this monument to his brother and successor Khafre (2558-2532 BC). The Great Sphinx is the largest monolithic statue in the world depicting the reclining body of a lion with the head and face of a king. The face of this king is traditionally accepted as that of Khafre, but Dobrev and others claim that it may in fact be that of Khufu. It seems likely that it was created by Khafre as it is perfectly in line with his pyramid complex and the face of the Sphinx appears to resemble Khafre's face more than Khufu's.
+
+            The Pyramid of Khafre is the second largest pyramid in Giza and its complex is almost like its father. Little is known about his reign. Khafre was associated with the god Horus (as did previous kings), and the Sphinx was considered an image of the king as the god Haremakht 'Horus on the horizon'. Unlike the kings of the Early Dynastic Period, Khafre and those who came after him referred to himself as the 'son of Horus', associated with the god but not the living god himself. The power to interpret the will of the gods, though still within the king's sphere of influence, grew increasingly out of the priests who served those gods.
+            
+            After Khafre's death, the succession was again briefly interrupted when Baka, Djedefre's son, assumed the throne. He did not rule for even a year, before Menkaure (2532-2503 BC), Khafre's son, became king. Menkaure began construction of the pyramid and temple complex at Giza. Although today the Giza Plateau is an ancient, sand-filled site on the outskirts of Cairo, in Menkaure's time it was a city of the dead inhabited by the living who cared for it. Priests' houses, temples, workers' residences, shops, factories, breweries, and all aspects of a small city were present in Giza.
+            
+            Contrary to popular belief that the Pyramids of Giza were built by slave labor (specifically the labor of Hebrew slaves), they were actually built by Egyptians, many of whom were highly skilled workers who were paid for their time. The pyramids are believed to represent the primordial hill, Ben Ben, which first rose from the waters of chaos at the beginning of creation. No slave quarters have been discovered at Giza and no Egyptian records speak of any event like that described in the biblical Book of Exodus. Workers' dwellings, supervisors' homes, and supervisors' homes have been found and show that the work done on the Giza Plateau in the Old Kingdom was performed by Egyptians working for compensation.
+            
+            Menkaure's pyramid and its complex are smaller than the other two, and this indicates an important development in the history of the Old Kingdom and one of the reasons for its collapse. The resources needed to build the Great Pyramid were no longer available in Menkaure's time, but he still relied on what he could to create an eternal home on par with his father and grandfather. Menkaure's son died during the construction of the pyramid, which upset the dynastic succession, and Menkaure himself died before the pyramid complex was completed. Although he ruled for thirty years, he was unable to complete what his predecessors had done, and to many scholars this demonstrates the dwindling resources under his command.
+            
+            Kings, as previously noted, were diverting enormous resources to their monuments and funerary complexes, but increasingly these temples and shrines came no longer under the control of the king but rather under the control of the priests who administered them. After Shepseskaf's short reign, the Fourth Dynasty ended and the Fifth Dynasty began with much less promise than when Sneferu succeeded Huni.
+            
+            Aside from the monumental concept of the pyramids themselves, the associated temple complexes display great mastery of architectural forms. The Temple of Khufu or the approach bridge is decorated with impressive reliefs, parts of which were incorporated into the Twelfth Dynasty pyramid of Amenemhet I at Lisht. The most famous Egyptian sculptures, the Sphinx of Khafre at Giza and his extraordinary seated statue, date to the Fourth Dynasty.
+            
+            The Pyramids of Giza form a group of more or less complete monuments surrounded by numerous tombs of the royal family and the elite, arranged hierarchically and designed in elegant patterns. This arrangement contrasts with what it was during the reign of Sneferu, where important tombs were built at Meidum and Saqqara, while the king was probably buried at Dahshur. Among the tombs of Giza, only high-ranking officials were decorated; Except for the immediate entourage of kings, the freedom of expression of officials was severely restricted. Most senior officials were members of the large royal family, so power was concentrated based on kinship as well as by other means. This did not prevent factional conflict: Djedefre's complex was deliberately and completely destroyed, perhaps at the instigation of his successor Khafre.
+            
+            The Palermo Stone records an expedition to Lower Nubia during the reign of Sneferu which may be linked to graffiti in the same area. The Egyptians established a settlement at Buhin, on the northern end of the Second Cataract (present-day northern Sudan), which lasted for 200 years. Others may have been established between there and Elephantine. The purposes of this breakthrough were probably to establish trade farther south and create a buffer zone. No archaeological traces of a settled population have been found in Lower Nubia for the Old Kingdom period. Egypt's oppressive presence appears to have robbed its population of its resources, as the provinces were exploited for the benefit of the king and the elite.",
+            sub_era: sub_era_2,
+    )
     # sub_era_3
     # Section.create(
         #     arabic_title:"",
@@ -311,7 +350,7 @@ require 'open-uri'
 
 #! Create Characters
     character_1 = Character.create(
-        arabic_name: "(مينا)نارمر أو نعرمر",
+        arabic_name: "(مينا) نارمر أو نعرمر",
         english_name: "Narmer or Narmer (Mena)",
         arabic_info: "نارمر أو نعرمر هو الملك الأول لمصر القديمة، وهو مؤسس الأسرة الأولى، ويعتبر العديد من المؤرخين أنه هو الفرعون الذي قام بتوحيد مصر العليا والسفلى، وقد تم توثيق هذا الحدث بواسطة النقوش الحجرية على النارمر باليت، والتي تعتبر أقدم توثيق لتوحيد مصر.",
         english_info: "Narmer or Narmer is the first king of ancient Egypt, the founder of the first dynasty, and many historians consider him to be the pharaoh who unified Upper and Lower Egypt, and this event has been documented by the stone inscriptions on the Narmer Palette, which is considered the oldest documentation of the unification of Egypt.",
@@ -867,6 +906,298 @@ require 'open-uri'
             english_content:"Coins were not struck in Egypt throughout the Pharaonic era except during the Thirty Dynasty, as the Egyptian civilization remained committed to its ancient traditions of following the barter system with grains, eggs, livestock, handicrafts, etc., but under the pressure of political circumstances, the currency was minted in the name of the Egyptian king or pharaoh 'Teos' specifically in 350 BC, and this currency was called 'Nub Nefer' and means good or pure gold. It is considered one of the very rare currencies, as there are only about twenty pieces of it worldwide. It is the only currency that has been discovered so far and bears ancient Egyptian inscriptions, as King Teos had brought a number of mercenaries from Greece to fight the Persians who came to occupy Egypt, which prompted the Egyptian government to mint coins to pay the salaries of these soldiers without dealing with them at the popular level. In the era of Alexander the Great, the Egyptians used coins in their daily transactions for the first time in history, and the currency at that time bore the image of Alexander after his deification.",
             character_id: character_10.id,
     )
+    character_11 = Character.create(
+        arabic_name: "سانخت",
+        english_name: "Sanakht",
+        arabic_info: "سانخت أو حور سا ناختي هو الفرعون الثالث من أسرة مصرية ثالثة خلال المملكة المصرية القديمة. فترة حكمة الزمنية غير مؤكدة للغاية، ومن غير الواضح أيضا تحت أي تسمية إغريقية قد وثقه بها المؤرخ مانيتون. والكثير من علماء المصريات يصلون سا ناختي بالفرعون نيبكا ويعتقدون أنه هو نيبكا ولكن يبقى الأمر متنازع فيه لعدم وجود أي لقب ملكي لهذا الملك.",
+        english_info: "Sankhet or Hor-sa-nakhti was the third pharaoh of the Third Egyptian Dynasty during the Old Kingdom of Egypt. The period of his wisdom is highly uncertain, and it is also unclear under what Greek name Manetho documented him. Many Egyptologists link Sa Nakhty to the Pharaoh Nibka and believe that he is Nibka, but the matter remains disputed because there is no royal title for this king.",
+        date_of_birth: "2780 ق م",
+        date_of_death: "2715 ق م",
+        sub_era_id: sub_era_2.id,
+    )
+    character_11.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/e/eb/ReliefFragmentOfPharaohSanakht-BritishMuseum-August21-08.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_11.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/e/eb/ReliefFragmentOfPharaohSanakht-BritishMuseum-August21-08.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"هويته",
+            english_title:"His identity",
+            arabic_content:"هوية سا ناختي وموضعة في الاسرة الثلاثة غير واضح بالكامل ويبقى الموضوع في مناقشات. ويدعم قضية وجودة مصطبة زوسر وبعض الخربشات على الجدران والجرافيتي. ومكانته كمؤسس للأسرة المصرية الثالثة كما صنفه المؤرخ مانيتون وبردية تورين قد قوضت بشدة من قبل الاكتشافات الأثرية الأخيرة في أبيدوس وهذه الاكتشافات أثبتت انه من المرجح ان يكون زوسر هو المؤسس للأسرة المصرية الثالثة وانه هو الذي قام بدفن الفرعون خع سخموي من الأسرة المصرية الثانية",
+            english_content:"The identity of Sa Nakhti and his position in the Three Dynasties is not entirely clear and the matter remains debated. The issue and quality of Djoser's mastaba and some scribbles on the walls and graffiti are supported. His position as the founder of the Third Dynasty, as classified by the historian Manetho and the Turin Papyrus, has been severely undermined by the recent archaeological discoveries in Abydos. These discoveries prove that it is likely that Djoser was the founder of the Third Dynasty and that he was the one who buried the Pharaoh Khasekhemwy of the Second Dynasty.",
+            character_id: character_11.id,
+    )
+    character_12 = Character.create(
+        arabic_name: "زوسر",
+        english_name: "Zoser",
+        arabic_info: "صاحب هرم سقارة المدرج الذي صممه إمحوتب",
+        english_info: "Owner of the Step Pyramid of Saqqara, designed by Imhotep",
+        date_of_birth: "2700 ق.م",
+        date_of_death: "2670 ق.م",
+        sub_era_id: sub_era_2.id,
+    )
+    character_12.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/4/43/Djoser_statue.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_12.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9e/Saqqarah_Djeser_10.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"تعريفه",
+            english_title:"Definition",
+            arabic_content:"زوسر (ويعرف أيضا باسم نيت جيريخت، توسورثروس، سيسورثوس) كان فرعونًا مصريًا قديمًا من الأسرة الثالثة خلال المملكة القديمة ومؤسس هذه الأسرة. كان ابن الملك خع سخموي والملكة نيماعت حاب، ولكن ما زال من غير الواضح ما إذا كان الوريث المباشر للعرش. أغلب قوائم الملك رمسيس الثاني تضع اسم الملك نبكا قبله في الترتيب الزمني، ولكن نظرًا لأنه لا تزال هناك صعوبات في ربط اسم نبكا بأسماء حورس المعاصرة، فإن بعض علماء المصريات لا زالوا يشككون في التسلسل الزمني لملوك الأسرة الثالثة.
+
+            ذكر اسمه في بردية تورين باللون الأحمر تمييزا له عن باقي ملوك الدولة القديمة. ويعدّ الهرم المدرج الذي أمر زوسر المهندس إمحتب ببنائه أول بناء حجري ضخم عرفه التاريخ.",
+            english_content:"Djoser (also known as Neit-Gerichte, Tosorthros, Sisorthus) was an ancient Egyptian pharaoh of the Third Dynasty during the Old Kingdom and the founder of this dynasty. He was the son of King Khasekhemwy and Queen Nimaethap, but it is still unclear whether he was the direct heir to the throne. Most lists of King Ramesses II place the name of King Nabka before him in chronological order, but since there are still difficulties in linking the name Nabka to the contemporary names of Horus, some Egyptologists still question the chronology of the kings of the Third Dynasty.
+
+            His name is mentioned in the Turin Papyrus in red, to distinguish him from the rest of the kings of the Old Kingdom. The Step Pyramid, which Djoser ordered the engineer Imhotep to build, is the first huge stone building known to history.",
+            character_id: character_12.id,
+    )
+    CharacterSection.create(
+            arabic_title:"عهده",
+            english_title:"His era",
+            arabic_content:"ذكر المؤرخ الفرعوني مانيتون أن زوسر حكم لمدة 29 سنة (2640ق.م - 2611ق.م)، بينما تذكر بردية تورين أن فترة حكمه امتدت فقط 19 عام (2630 ق.م - 2611 ق.م). إلا أن الكثير من المؤرخين الحاليين يرجحون أن فترة حكمة امتدت لمدة 29 عام بسبب ضخامة أعماله الإنشائية التي قام بها. وعليه فإن فارق السنوات بين الرقمين قد يعني أن زوسر هو نفسه الفرعون الأول في الأسرة الثالثة.
+
+            و له نقش في أحد جزر أسوان، يسرد أحداث المجاعة التي حدثت في عهده بسبب نقص فيضان النيل، حيث قدم زوسر القرابين لخنوم معبود الشلال. وذكر فيه التالي:
+            
+               زوسر	قلبي كان في ضيق مؤلم، لأن النيل لم يفض لسبع سنوات. الحبوب لم تكن وفيرة، البذور جفت، كل شيء كان يملكه الفرد ليأكله كان بكميات مثيرة للشفقة، كل شخص حرم حصاده. لا يمكن لأي شخص أن يمشي أكثر؛ قلوب كبار السنّ كانت حزينة وسيقانهم إنحنت متى جلسوا على الأرض، وأيديهم أخفت بعيدا. حتى خدم المعابد كانوا يذهبون، المعابد أغلقت والملاجئ غطّيت بالغبار. باختصار، كلّ شيء في الوجود أصيب	   زوسر
+            و يأتي الرد من خنوم حسب النقش:
+            
+               زوسر	أنا سأجعل النيل يرتفع لك. لن يكون هناك سنوات أكثر عندما يخفق الغمر في تغطية أي منطقة من الأرض. الزهور ستورق، وتنحني جذوعها تحت وزن غبار الطلع	   زوسر
+            يعدّ الملك زوسر من أقوي الملوك الذين حكموا مصر ولقب المهندس المعماري إمحتب الذي شيد له الهرم بعدة القاب منها: ناظر القصر وتيتي خرن سو، وكان أول طبيب كبير يعرفه المصريون واعتبروه اله الطب والشفاء نظرا لقوة معرفته في الطب.
+            
+            اتخذ زوسر منف عاصمة له
+            قام باستخراج النحاس والتركواز من سيناء مما أمن له ثروة ضخمة مكنته من القيام بأعمال إنشائية ضخمة.
+            وسع دولته جنوبا بعد أن بسط نفوذه على النوبيين ومد حدود البلاد إلى ما بعد الشلال الأول.",
+            english_content:"The Pharaonic historian Manetho mentioned that Djoser ruled for 29 years (2640 BC - 2611 BC), while the Turin Papyrus states that his reign lasted only 19 years (2630 BC - 2611 BC). However, many current historians believe that his period of wisdom lasted for 29 years due to the magnitude of the construction work that he carried out. Therefore, the difference in years between the two numbers may mean that Djoser is the first pharaoh in the Third Dynasty.
+
+            He has an inscription on one of the Aswan islands, recounting the events of the famine that occurred during his reign due to the lack of Nile flooding, where Djoser made sacrifices to Khnum, the god of the waterfall. He stated the following:
+            
+                Djoser My heart was in painful distress, because the Nile had not flowed for seven years. Grains were not plentiful, seeds dried up, everything one had to eat was in pathetic quantities, everyone was deprived of their harvest. No one can walk further; The hearts of the elderly were sad, their legs bent when they sat on the ground, and their hands were hidden away. Even the temple servants were gone, the temples were closed and the shelters were covered with dust. In short, everything in existence was infected by Djoser
+            The response comes from Khnum according to the inscription:
+            
+                Djoser I will make the Nile rise for you. There will be no more years when the inundation fails to cover any area of land. The flowers will leaf out, and their stems will bend under the weight of Djoser's pollen
+            King Djoser is considered one of the most powerful kings who ruled Egypt, and the architect Imhotep, who built the pyramid, was given several titles, including: Palace Superintendent and Titi Khron-Su. He was the first great physician known to the Egyptians and they considered him the god of medicine and healing due to the strength of his knowledge in medicine.
+            
+            Djoser made Memphis his capital
+            He extracted copper and turquoise from Sinai, which secured him a huge fortune that enabled him to carry out huge construction works.
+            He expanded his state southward after extending his influence over the Nubians and extending the country's borders beyond the First Cataract.",
+            character_id: character_12.id,
+    )
+    CharacterSection.create(
+            arabic_title:"حملاته",
+            english_title:"His campaigns",
+            arabic_content:"كان زوسر أول فرعون يرسل حملات إلى وادي المغارة في سيناء لاستخراج النحاس والفيروز. وتوجد لوحة منقوشة لزوسر في هذا الوادي تبينه يضرب أحد الأعداء في الصورة المعروفة للملك مينا والتي داوم عليها قدماء المصريين ورسموها لكل ملك على المعابد على مر العصور. في لوحة زوسر تظهر إلهة وخلفها يظهر شخص يميزه كتابة هيروغليفية بأنه «عنخ إن - إيتي»، أي «مدير الصحراء» ورئيس البعثة. 
+
+            ومع أن التاريخ يذكر بعثات مصرية قديمة ونشاطات إلى سيناء من عصر ما قبل الأسرات، إلا أنه يبدو أنه في عصر الأسرتين الثانية والثالثة أصبحت هناك إدارة خاصة لتلك المناطق في البلاط الملكي. .",
+            english_content:"Djoser was the first pharaoh to send expeditions to Wadi al-Maghara in Sinai to extract copper and turquoise. There is an engraved painting of Djoser in this valley showing him striking an enemy in the well-known image of King Menes, which the ancient Egyptians continued and painted for every king on temples throughout the ages. In Djoser's painting, a goddess appears, and behind her appears a person identified by hieroglyphs as 'Ankh-en-iti', meaning 'manager of the desert' and head of the expedition.
+
+            Although history mentions ancient Egyptian missions and activities to Sinai from the pre-dynastic era, it seems that in the era of the Second and Third Dynasties there became a special administration for those areas in the royal court.",
+            character_id: character_12.id,
+    )
+    CharacterSection.create(
+            arabic_title:"بدء اللقب الذهبي",
+            english_title:"Starting golden title",
+            arabic_content:"خلال حكم الفرعون زوسر حظيت عبادة الشمس باهتمام كبير تماشت مع المنزلة العالية المقترنة بالفرعون. فمنذ عهد الأسرة الأولى على الأقل ظهر وصف فرعون بأنه حورس الحي «تحت الشمس»، مقترنا بتعبير «نبو» أي الذهب. ولكن في عهد الفرعون زوسر أصبح اللقب الملكي «حورس الحي على الأرض»، أي جعل الملك في مرتبة الشمس. 
+
+            تظهر تلك المقارنة أيضا في بناء الأهرامات التي كبرت أحجامها في عهد زوسر. ويبين بناء هرم زوسر المدرج الفلسفة الجديدة، وهي تصميم جديد كبير يبقى أزليًا ويرفع الملك إلى منزلة أبدية مثل الشمس. وقام زوسر بإنشاء مقبرته داخل الهرم مستغنيًا بذلك عن مقبرته التي كان من المفروض بنائها في أبيدوس (في جنوب مصر) مثل أسلافه، وأصبحت مقبرته في سقارة. 
+            
+            يدعم ذلك أيضا انتشار عبادة الشمس وبدء بناء بهو المقبرة بأعمدة من الحجر بدلا من بنائها من الخشب والمعدن. فقد اتخذت مقبرة الملك مساحة هائلة تضم الهرم والعديد من بهوات الأعمدة والسراديب وإحاطتها بسور حجري. ويقرن العديد من علماء الآثار، مثل«يوخيم كال» و«ستيفن كرك» و«ولف جانج هيلك» إلى اقتران ذلك بإدخال اللقب الذهبي من زوسر الذي يرفعه إلى منزلة إلهية تساويه بإله الشمس.
+            
+            ويعتقد كل من «كال» و«كيرك» أن اتخاذ لقب حورس الذهبي غير من الفكر الديني أيام زوسر وطوره عبر العصور التالية، مما جعل جميع الفراعنة الذين أتوا بعد زوسر يتخذوا لقب حورس الذهبي من بعده.",
+            english_content:"During the rule of Pharaoh Djoser, sun worship received great attention, in keeping with the high status associated with the pharaoh. Since at least the era of the First Dynasty, the description of Pharaoh as a living Horus “under the sun” has appeared, coupled with the expression “Nabo,” meaning gold. But during the reign of Pharaoh Djoser, the royal title became 'Living Horus on Earth', meaning the king was placed in the rank of the sun.
+
+            This comparison also appears in the construction of the pyramids, which increased in size during the reign of Djoser. The construction of the Step Pyramid of Djoser demonstrates the new philosophy, which is a new, grand design that remains eternal and raises the king to an eternal status like the sun. Djoser created his tomb inside the pyramid, dispensing with his tomb that was supposed to be built in Abydos (in southern Egypt) like his predecessors, and his tomb became in Saqqara.
+            
+            This also supports the spread of sun worship and the beginning of building the tomb’s foyer with stone columns instead of wood and metal. The king's tomb took up a huge area, including the pyramid, many column halls and basements, and was surrounded by a stone wall. Many archaeologists, such as Jochem Kahl, Stephen Kirk, and Wolfgang Helk, associate this with the introduction of the golden title from Djoser, which raises him to a divine status equal to the sun god.
+            
+            Both 'Kale' and 'Kirk' believe that adopting the title of Golden Horus changed religious thought in the days of Djoser and developed it throughout the following eras, which made all the pharaohs who came after Djoser take the title of Golden Horus after him.",
+            character_id: character_12.id,
+    )
+    CharacterSection.create(
+            arabic_title:"مقبرته",
+            english_title:"His tomb",
+            arabic_content:"بنى زوسر هرم سقارة المدرج على مسافة ميل من جرف سقارة ليبتعد عن باقي المقابر، وأشرف على البناء وزيره امحتب، يتكون الهرم من ست مصاطب غير متساوية وبارتفاع يبلغ 63 متر ومكسو بحجر جيري أبيض. أما من الداخل فيتكون من شبكة ممرات ودهاليز. أما غرفة دفن الملك فبنيت من الجرانيت والرخام.",
+            english_content:"Djoser built the Saqqara Step Pyramid at a distance of a mile from the Saqqara cliff, to distance itself from the rest of the tombs. His minister, Imhotep, supervised the construction. The pyramid consists of six unequal terraces, 63 meters high, and is covered with white limestone. The interior consists of a network of corridors and corridors. As for the king's burial chamber, it was built of granite and marble.",
+            character_id: character_12.id,
+    )
+    CharacterSection.create(
+            arabic_title:"تمثاله",
+            english_title:"His statue",
+            arabic_content:"هذا التمثال الكامل لزوسر عثر عليه في حجرة ضيقة والتي تعرف باسم السرداب، وتقع شمال الهرم المدرج للملك زوسر بسقارة. وهذا التمثال أقدم ما عرف من التماثيل بالحجم الطبيعي في مصر، وهو يمثل الملك زوسر جالسا على العرش، وقد غطى جسده رداء احتفالي وكان التمثال بأسره مكسوا بطبقة من ملاط أبيض ثم لون. أما العينان الغائرتان فكانتا يومًا ما مرصعتين. ويتخذ الملك شعرا مستعارا أسودا يعلوه لباس الرأس الملكي المعروف باسم «النمس»، فضلًا عن اللحية المستعارة الشعائرية. وقد نقش السطح الأمامي من القاعدة بنص هيروغليفي دقيق ينطق عن أسماء وألقاب ملك مصر العليا والسفلى نيثر خت.",
+            english_content:"This complete statue of Djoser was found in a narrow room known as the basement, located north of the Step Pyramid of King Djoser in Saqqara. This statue is the oldest known life-sized statue in Egypt. It represents King Djoser sitting on the throne. His body was covered in a ceremonial robe, and the entire statue was covered with a layer of white mortar and then color. The sunken eyes, Vkanta someday Mrsotain. The king wears a black wig topped with a royal headdress known as the 'mongoose', in addition to a ritual false beard. The front surface of the base was engraved with precise hieroglyphic text declaring the names and titles of the king of Upper and Lower Egypt, Netherkhet.",
+            character_id: character_12.id,
+    )
+    CharacterSection.create(
+            arabic_title:"زوسر وإمحتب",
+            english_title:"Djoser and Imhotep",
+            arabic_content:"أحد أهم الشخصيات التي عاصرت عهد الفرعون زوسر كان الطبيب المهندس إمحتب. عمل إمحتب وزيرًا ومستشارًا للملك زوسر، فكان «رئيسًا للبلاط الملكي» و«مدير أعمال منشآت الملك». كان إمحتب ناظرا على أعمال منشآت زوسر وكذلك منشآت الملك سخم خت. وربما كان معنيا في «بردية وستكار» تحت رواية «خوفو» والساحر. ولكن مقدمة البردية وجدت في حالة سيئة فلم يستطع العثور على اسم إمحتب.
+
+            وتذكر وجدت في بردية في معبد تبتونس ترجع إلى القرن الثاني قبل الميلاد، تقص قصة مكتوبة الخط بالديموطي عن زوسر وإمحتب. وكان إمحتب في عصر زوسر من الشخصيات الهامة حتى أنه كان يذكر على تماثيل الفرعون زوسر التي كانت تقام في سقارة.
+            
+            و وصل تقدير المصريين القدماء لشخص المهندس «إيموحتب» أن تم تقديسه في عصور لاحقة حتى وصل إلى مرتبة الآلهة وهو ما يظهر واضحا في نقوش معبد الإله سوبك في مدينة كوم إمبو بالقرب من أسوان، حيث تمت عبادته كإله للطب كما هو مسجل خلف قدس أقداس معبد كوم أمبو.",
+            english_content:"One of the most important figures who lived during the reign of Pharaoh Djoser was the physician and engineer Imhotep. Imhotep worked as a minister and advisor to King Djoser. He was 'head of the royal court' and 'director of the king's facilities'. Imhotep was the supervisor of the work of Djoser's facilities, as well as those of King Sekhemkhet. It may have been mentioned in the 'Westkar Papyrus' under the novel 'Khufu and the Magician'. But the introduction to the papyrus was found in poor condition, so he could not find the name Imhotep.
+
+            Remember, a papyrus found in a temple in Teptunia dating back to the second century BC tells a story written in Demotic script about Djoser and Imhotep. In the era of Djoser, Imhotep was an important figure and was even mentioned on the statues of Pharaoh Djoser that were erected in Saqqara.
+            
+            The appreciation of the ancient Egyptians for the person of the engineer 'Imhotep' reached the point that he was sanctified in later eras until he reached the rank of gods, which appears clearly in the inscriptions of the temple of the god Sobek in the city of Kom Ombo near Aswan, where he was worshiped as a god of medicine, as recorded behind the Holy of Holies Temple. Kom Ombo.",
+            character_id: character_12.id,
+    )
+    character_13 = Character.create(
+        arabic_name: "خع با",
+        english_name: "Khaba,",
+        arabic_info: "خع با، (بالإنجليزية: Khaba), كان فرعون في مصر القديمة. ويعتقد أنه حكم قرب نهاية الأسرة المصرية الثالثة وخلف سخم خت. حكم لفترة قصيرة نسبية قدرها 4 أعوام بين 2603 ق.م. إلى 2599 ق.م. إلا أن تلك التواريخ مستنتجة، وتعتمد على القليل من الأدلة التي بقيت عن هذا الملك المبكر.",
+        english_info: "Khaba, (English: Khaba), was a pharaoh in ancient Egypt. He is believed to have ruled near the end of the Third Dynasty and succeeded Sekhemkhet. He ruled for a relatively short period of 4 years between 2603 BC. To 2599 BC. However, these dates are inferred and depend on the little evidence that remains about this early king.",
+        date_of_birth: "2603",
+        date_of_death: "2599",
+        sub_era_id: sub_era_2.id,
+    )
+    character_13.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f1/Khaba-DolomiteBowlBearingHisName.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_13.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f1/Khaba-DolomiteBowlBearingHisName.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"الهرم المدرج",
+            english_title:"Step Pyramid",
+            arabic_content:"ويقترن في الأغلب بالهرم المدرج, في زاوية العريان, على بعد نحو كم جنوب الجيزة. وهو هرم غير مكتمل وبناؤه مطابق لأسلوب الأبنية الحجرية في الأسرة الثالثة وكان سيرتفع في الأصل إلى نحو 42-45 م (إلا أن ارتفاعه الآن هو نحو 20 م). وبالرغم من عدم وجود نقوش تربط الهرم مباشرة بهذا الملك, إلا أن عدداً من الأواني المصنوعة من الألباستر المنقوش عليها اسم الملك عـُثر عليها بالقرب من الهرم في مقبرة تحمل الرمز: Z-500 الواقعة إلى الشمال مباشرة من الهرم.
+
+            الملك خع با مذكور في بوصف «مشطوب», الأمر الذي قد يشي بمشاكل في الخلافة أثناء حكمه, أو أن الكاتب الذي كان يحرر هذه القائمة لم يتمكن من فك رموز الاسم في السجلات الأقدم التي كان ينقل عنها. وقد اُقتـُرح أن خع با قد يكون اسم حورس لآخر ملك في الأسرة الثالثة, حوني, وأن الملكين هما في الواقع نفس الشخص.",
+            english_content:"It is most likely associated with the Step Pyramid, in Zawyet El-Erian, about a km south of Giza. It is an incomplete pyramid and its construction is identical to the style of stone buildings in the Third Dynasty. It was originally going to rise to about 42-45 m (however, its height is now about 20 m). Although there are no inscriptions linking the pyramid directly to this king, a number of alabaster vessels engraved with the king's name were found near the pyramid in a tomb bearing the symbol: Z-500, located directly north of the pyramid.
+
+            King Khaba is mentioned as 'crossed out', which may indicate problems in the succession during his rule, or that the writer who was compiling this list was unable to decipher the name in the older records from which he was quoting. It has been suggested that Khaba may be the Horus name of the last king of the Third Dynasty, Huni, and that the two kings are in fact the same person.",
+            character_id: character_13.id,
+    )
+    CharacterSection.create(
+            arabic_title:"معنى الأسم",
+            english_title:"Name meaning",
+            arabic_content:"اسم خع با، الذي يظهر عادة داخل سرخ بدلاً من صيغة الخرطوش التي أصبحت أكثر اعتياداً مع نهاية تلك الأسرة, كـُـتـِب باستعمال رمز الشمس المشرقة ذات القيمة الصوتية خا, و اللقلق معقوف المنقار ذات القيمة الصوتية با.",
+            english_content:"The name Khaba, which usually appears inside a cartouche instead of the more common serekh form that became more common at the end of that dynasty, was written using the symbol of the rising sun with the phonetic value of kha, and the quail chick with the phonetic value of ba.",
+            character_id: character_13.id,
+    )
+    character_14 = Character.create(
+        arabic_name: "حوني",
+        english_name: "Huni",
+        arabic_info: "حوني فرعون مصري قديم من الأسرة الثالثة خلال عصر الدولة القديمة التي استمرت لمدة 24 عاما. ترتيبه الزمني كآخر فراعنة الأسرة الثالثة أمر مؤكد إلى حد ما، لكن لم يتضح تحت أي اسم باليونانية سرده المؤرخ مانيتون. العديد من علماء المصريات يعتقدون أن حوني كان والد والسلف المباشرة للملك سنفرو، ولكن هذا الأمر لا يزال نقاشًا جاريًا.",
+        english_info: "Huni is an ancient Egyptian pharaoh of the Third Dynasty during the Old Kingdom, which lasted for 24 years. His chronological order as the last pharaoh of the Third Dynasty is fairly certain, but it is not clear under what Greek name Manetho listed it. Many Egyptologists believe that Huni was the father and direct ancestor of King Sneferu, but this is still an ongoing debate.",
+        date_of_birth: "2643",
+        date_of_death: "2637",
+        sub_era_id: sub_era_2.id,
+    )
+    character_14.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9f/Huni-StatueHead_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_14.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9f/Huni-StatueHead_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_15 = Character.create(
+        arabic_name: "سنفرو",
+        english_name: "Sneferu",
+        arabic_info: "سنفرو، المعروف باسم ساويرس باليونانية (وفقًا لمانيتون)، مؤسس الأسرة الرابعة خلال عصر الدولة القديمة. تختلف تقديرات مدة حكمه بين 24 سنة و48 سنة. تميز عهده بالتوسع في التجارة الخارجية، وإرسال الحملات التأديبية، وحملات التعدين . توصل مع مهندسه ومستشاره إمحتب إلى الشكل الكامل للهرم ، حيث قام ببناء ثلاثة أهرامات باقيه ليومنا هذا ، ويمكن زيارتها في دهشور.
+
+        ليس معروفًا تمامًا عما إذا كان سنفرو هو والد خوفو أم عمه . حكم خوفو مصر بعد سنفرو.",
+        english_info: "Sneferu, known as Severus in Greek (according to Manetho), founder of the Fourth Dynasty during the Old Kingdom. Estimates of the duration of his rule vary between 24 years and 48 years. His reign was characterized by the expansion of foreign trade, sending punitive expeditions, and mining campaigns. With his engineer and advisor Imhotep, he came up with the complete shape of the pyramid, where he built three pyramids that remain to this day, and can be visited in Dahshur.
+
+        It is not entirely known whether Sneferu was Khufu's father or his uncle. Khufu ruled Egypt after Sneferu.",
+        date_of_birth: "2613 ق م",
+        date_of_death: "2589 ق م",
+        sub_era_id: sub_era_2.id,
+    )
+    character_15.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f2/Snofru_Eg_Mus_Kairo_2002_b.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_15.cover_image.attach(io: URI.open("https://static.euronews.com/articles/stories/04/01/75/72/1440x810_cmsv2_f5a6cd5c-7d1f-5ab9-8610-90f3e9cb3d0e-4017572.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"عائلته",
+            english_title:"His family",
+            arabic_content:"تزوج سنفرو من حتب حرس، التي يعتقد أنها كانت ابنة الفرعون السابق له، هوني. وحماه ربما يكون أيضاً والده حسب بعض الباحثين. وحسب تلك الافتراضية أن هوني أنجب حتب حرس من زوجة ملكية، بينما أنجب سنفرو من جارية. ولذلك فكان زواج سنفرو هو جوازه إلى العرش.",
+            english_content:"Sneferu married Hetepheres, who is believed to have been the daughter of his previous pharaoh, Huni. His father-in-law may also have been his father, according to some researchers. According to this assumption, Huni gave birth to Hetepheres from a royal wife, while Sneferu gave birth to a slave girl. Therefore Bent marriage is was permissible to the throne.",
+            character_id: character_15.id,
+    )
+    CharacterSection.create(
+            arabic_title:"عهده",
+            english_title:"His reign",
+            arabic_content:"أغلب الظن أن انتقال الحكم من الاسرة الرابعة كان انتقالا سلميا . فقد تزوج سنفرو (ابن الملك حوني من زوجة فرعية) صاحبة الحق في وراثة العرش. وأسس الأسرة الرابعة. وهو ما أكدته المصادر الأدبية إذ ذكر أحد أدباء الدولة الوسطي في نصوصه: «وبعد أن توفي جلالة الملك حوني نصب جلالة الملك سنفرو باعتباره ملكا فاضلا في هذه الدنيا كلها». من هو الملك سنفرو ؟ سنفرو هو الاسم المختصر من «بتاح سنفروي»، أي «بتاح جملني».
+
+            وقد حكم سنفرو طبقا لما جاء في تاريخ مانيتون 26 عاما ،وذكرت بردية تورين 24 عاما ، ويحسب عالم الآثار الألماني «ستادلمان» أنه حكم 48 سنة وذلك على أساس أنه في فترة حكم سنفرو قد أجريت 24 أحصاءا في مصر ، وفي العادة كان الإحصاء يتم كل سنتين ، من هنا يعتقد ستادلمان في أن فترة حكم سنفرو بلغت 48 عاما.
+            
+            ونعرف الكثير عن أخبار سنفرو من خلال حجر باليرمو منها أنه أقام عددا كبيرا من القصور والمعابد. أن الملكة «مرس – عنخ» هي أم سنفرو، ويرجح أنها كانت إحدى زوجات الملك حوني الثانويات ، وأن سنفرو استحق وراثة العرش عن طريق زواجه بالأميرة «حتب – حرس» ابنة حوني التي حملت لقب «ابنة الإله» وأن زواجهما تم قبل وفاة حوني آخر ملوك الأسرة الثالثة.
+            
+            تبادل تجاري مع فينيقيا
+            يعتبر انه جمع بين القوة والرحمة، فحكم وقاد بلاده وشعبه إلى حياة أفضل يظللها الأمن والسلام. كما أنتعش في عهده الاقتصاد بفضل تشجيعه لإقامة علاقات تجارية مع فينيقيا (لبنان حاليا) وأحسن في استخدام موارد بلاده.
+            
+            كان يرسل أساطيل بحرية بصفة خاصة إلى ميناء جبيل (بلبنان حاليا) للتبادل التجاري . من ضمن تلك البعثات التجارية أرسل أسطولا كبيرا مكونا من أربعين سفينة لإحضار أخشاب الأرز «الصنوبر» . وبحسب ما جاء في حجر بالرمو استخدمت تلك الأخشاب في صناعة الأبواب وبعض الأجزاء الداخلية من أهرامات الملك ، كما استخدمت في صناعة السفن . ذكر أيضاً حجر بالرمو خبر تشييد ستين سفينة لكل منها ستة عشر مجدافاً.
+            
+            النشاط العسكري
+            اهتم الفرعون سنفرو بتأمين الحدود، فقام بحملة إلي بلاد النوبة ليعيد الأمن والطمأنينة إلي حدود مصر الجنوبية. وورد ذكر هذه الحملة على الوجه الثاني من حجر باليرمو ، ومن خلال الأرقام يتضح لنا مدى المقاومة التي واجهها الملك سنفرو هناك. وقد عاد جيشه بـ 7000 آلاف من الاسري و200 ألف رأس من الثيران والأغنام.
+            
+            وقد أطلق الملك سنفرو اسم «نحسيو» على السودانيين ، وكان المقصود بهذه التسمية كل القبائل التي تسكن جنوبي الحدود المصرية .كما كانت تلك المناطق تسمى «نوب» حيث كان يسخرج منها ال «نوب» وهو الذهب باللغة المصرية القديمة . (ومنها جاءت التسمية الحديثة بالعربية حيث تسمى تلك المناطق «النوبة».)
+            
+            إرسال حملات تأديبية لبدو سيناء، الذين كانوا يغيرون على مناجم الفيروز و النحاس وقوافل التجارة . وقد عثر علي نقش له علي صخور جبل المغارة تمثل الملك سنفرو وهو يؤدب الأسرى. كما استحق أن يمجد كحاميا للمنطقة إلي جانب المعبودين حتحور و سوبد.
+            
+            وأرسل حملة أخرى إلى الليبو ( ليبيا حالياً ) وأتى منها بـ 11 ألف أسير و13 ألف رأس من الثيران والأغنام.
+            
+            التنظيم الإداري
+            قد استحدث وظيفة وزير (تياتي) التي ظهرت لأول مرة في عهده. وليس هناك دليل أقوى من وجود ممثلات للأقاليم المصرية المنقوشة على جدران معبد الوادي بدهشور ، وهي أقدم نقش للأقاليم المصرية عثر عليه.
+            
+            كان تحديث التنظيم الإداري لمصر لازما لتنفيذ أغراض سنفرو من بناء هرمين في نفس المكان . فهذا العمل الضخم استخدم فيه كم من الأحجار قدرت بحوالي 3.842.000 متراً مكعباً من الحجر الجيري . بينما قدرت كمية الأحجار التي استخدمها الملك خوفو الذي جاء بعده في بناء الهرم الأكبر بحوالي 2.500.000 متراً مكعباً.
+            
+            احتاج بناء الأهرام عبر سنوات طويلة إلى إقامة مدينة سكنية للعمال والمهندسين . فكانوا يسكنون مع عائلاتهم قريبا من مكان العمل . وكانت الإدارة تخصهم بالمأكل والمشرب والملابس ، ونعرف أن لكل عامل من العمال كان له نصيبا من الخبز والثوم والبيرة يوميا يحصل عليه حتى يتفرغ لعمله في بناء الأهرام. وأحيانا كانت تقدم إليهم اللحوم والطيور.",
+            english_content:"Most likely, the transfer of power from the Fourth Dynasty was peaceful. Sneferu (King Huni's son from a subsidiary wife) married the woman who had the right to inherit the throne. He founded the Fourth Dynasty. This was confirmed by literary sources, as one of the writers of the Central State mentioned in his texts: 'After His Majesty King Huni died, His Majesty King Sneferu was installed as a virtuous king in this entire world.' Who is King Senefro ? Sneferu is the abbreviated form of 'Ptah Sneferu', meaning 'Ptah Camelni'.
+
+            According to Manetho’s history, Sneferu ruled for 26 years, and the Turin Papyrus mentioned 24 years. The German archaeologist Stadelmann calculates that he ruled for 48 years on the basis that during the period of Sneferu’s rule, 24 censuses were conducted in Egypt, and usually the census was carried out every year. Two years, hence Stadelmann believes that Sneferu's reign reached 48 years.
+            
+            We know a lot about Sneferu's news through the Palermo stone, including that he built a large number of palaces and temples. Queen Meresankh is the mother of Sneferu, and it is likely that she was one of King Huni’s secondary wives, and that Sneferu deserved to inherit the throne through his marriage to Princess Hetepheres, daughter of Huni, who bore the title “Daughter of God,” and that their marriage took place before the death of the last Huni. Kings of the Third Dynasty.
+            
+            Trade with Phoenicia
+            He is considered to have combined strength and mercy, so he ruled and led his country and people to a better life shaded by security and peace. The economy also revived during his reign thanks to his encouragement to establish trade relations with Phenicia (currently Lebanon) and he made better use of his country’s resources.
+            
+            He used to send naval fleets in particular to the port of Byblos (currently in Lebanon) for trade exchange. Among these trade missions, he sent a large fleet consisting of forty ships to bring cedar and pine wood. According to what was stated in the Palermo stone, these woods were used in the manufacture of doors and some interior parts of the king’s pyramids, and they were also used in the manufacture of ships. The Palermo stone also mentioned news of the construction of sixty ships, each with sixteen oars.
+            
+            Military activity
+            Pharaoh Sneferu was interested in securing the borders, so he launched a campaign into Nubia to restore security and tranquility to Egypt's southern borders. This campaign was mentioned on the second side of the Palermo stone, and through the numbers it becomes clear to us the extent of the resistance that King Sneferu faced there. His army returned with 7,000 captives and 200,000 heads of bulls and sheep.
+            
+            King Senefru gave the Sudanese the name 'Nahsio', and this name meant all the tribes that lived south of the Egyptian border. These areas were also called 'Nob', as 'Nub', which is gold in the ancient Egyptian language, was extracted from it. (From it came the modern name in Arabic, where these areas are called 'Nuba'.)
+            
+            Sending disciplinary campaigns to the Sinai Bedouins, who were raiding the turquoise and copper mines and trade caravans. An inscription of him was found on the rocks of Mount Cave, representing King Sneferu disciplining prisoners. He also deserved to be glorified as a protector of the region alongside the deities Hathor and Sobed.
+            
+            He sent another campaign to Libo (currently Libya), from which he brought 11,000 prisoners and 13,000 heads of bulls and sheep.
+            
+            Administrative regulation
+            He created the position of minister (Tiati), which appeared for the first time during his reign. There is no stronger evidence than the presence of representatives of the Egyptian regions inscribed on the walls of the Valley Temple in Dahshur, which is the oldest inscription of the Egyptian regions ever found.
+            
+            Modernizing the administrative organization of Egypt was necessary to implement Sneferu’s goals of building two pyramids in the same place. This huge work used a quantity of stones estimated at approximately 3,842,000 cubic meters of limestone. While the amount of stones used by King Khufu, who came after him, in building the Great Pyramid was estimated at about 2,500,000 cubic meters.
+            
+            The construction of the pyramids required, over many years, the establishment of a residential city for workers and engineers. They lived with their families close to the place of work. The administration provided them with food, drink, and clothing, and we know that each worker had a daily share of bread, garlic, and beer until he could devote himself to his work in building the pyramids. Sometimes meat and birds were offered to them.",
+            character_id: character_15.id,
+    )
+    CharacterSection.create(
+            arabic_title:"تماثيله",
+            english_title:"His statues",
+            arabic_content:"رأس من حجر الجرانيت قد تكون للملك سنفرو هي محفوظة حالياً بمتحف بروكلين، ارتفاعها 61 سم. تؤرخ هذه الرأس لأواخر الأسرة الثالثة وبداية الأسرة الرابعة، وتتشابه هذه الملامح من حيث الأنف العريض والشفاه الغليظة وامتلاءة الوجه مع ملامح سنفرو في رأس أخرى لتمثال من الحجرالجيري اكتشفت في دهشور الجنوبية . ونلاحظ طريقة وضع التاج على رأس الملك لكي يغطي جبين الملك ويميل الرأي لنسبتها إما لخوفو أو سنفرو وهما أكبر ملوك الأسرة الرابعة تأليهاً حيث أخذ كل منهما لقب «نيثر عا» أي المعبود الكبير.
+
+            كما ثر على تمثال من الحجر الجيري للملك سنفرو وهو محفوظ حالياً بالمتحف المصري بالقاهرة. عثر عليه د أحمد فخري في نيش (زاوية) بمعبد الوادي الخاص بهرمه في منطقة دهشور الجنوبية ، وينسبه العلماء للملك سنفرو، وخاصة للملامح من حيث الشفتين الغليظتين وامتلاء الوجه والأنف العريض وطريقة وضع التاج الأبيض فوق الرأس بحيث تغطي أكبر قدر من الجبين، ونلاحظ أن التمثال أصابه التلف في منطقة الصدر والأطراف.",
+            english_content:"A granite head that may belong to King Sneferu. It is currently preserved in the Brooklyn Museum. It is 61 cm high. This head dates to the late Third Dynasty and the beginning of the Fourth Dynasty, and these features, in terms of the broad nose, thick lips, and fullness of the face, are similar to the features of Sneferu in another head of a limestone statue discovered in southern Dahshur. We notice the way the crown is placed on the king’s head in order to cover the king’s forehead, and opinion tends to attribute it to either Khufu or Sneferu, who were the most deified kings of the Fourth Dynasty, as each of them took the title “Nether-A”, meaning the great deity.
+
+            It also found a limestone statue of King Sneferu, which is currently preserved in the Egyptian Museum in Cairo. It was found by Dr. Ahmed Fakhry in a niche (corner) of the valley temple of his pyramid in the southern Dahshur region. Scientists attribute it to King Sneferu, especially for the features in terms of thick lips, fullness of the face, wide nose, and the way the white crown is placed on top of the head so that it covers the largest amount of the forehead. We note that the statue He sustained damage to the chest and limbs area.",
+            character_id: character_15.id,
+    )
+    CharacterSection.create(
+            arabic_title:"أهم أعماله",
+            english_title:"His most important works",
+            arabic_content:"أرسل أسطولا ضخما إلى فينيقيا لاستيراد خشب الأرز النادر لعدم وجود أخشاب جيدة في مصر تصلح لأعمال الإنشاءات الكبيرة من أهرامات ومعابد ، تحتاج إلى الكثير من الزحافات الخشبية والعوارض ، وكذلك لبناء السفن التي نشطت صناعتها وركوبها للتبادل التجاري مع البلاد المحاورة . كما عمل على تأمين حدود مصر الغربية والجنوبية من الأعداء. شيد لنفسه ثلاثة أهرامات: الأول هرم ميدوم الذي يعتبر مرحلة انتقالية بين الهرم المدرج والهرم الحقيقى , ثم هرمين بدهشور وهما الهرم الأحمر والهرم المائل. كما أنه اهتم باستخراج المعادن، مثل :النحاس والفيروز من سيناء. تميزت فترة حكمه بالاستقرار والعدالة.",
+            english_content:"He sent a huge fleet to Phoenicia to import rare cedar wood, because there was no good wood in Egypt suitable for large construction works, such as pyramids and temples, which needed a lot of wooden skis and beams, as well as for building ships, the manufacture of which was active and their embarkation for trade exchange with the neighboring countries. He also worked to secure Egypt's western and southern borders from enemies. He built three pyramids for himself: the first, the Meidum Pyramid, which is considered a transitional stage between the Step Pyramid and the real pyramid, then two pyramids in Dahshur, which are the Red Pyramid and the Leaning Pyramid. He was also interested in extracting minerals, such as copper and turquoise from Sinai. His rule was characterized by stability and justice.",
+            character_id: character_15.id,
+    )
+    # character_16 = Character.create(
+    #     arabic_name: "",
+    #     english_name: "",
+    #     arabic_info: "",
+    #     english_info: "",
+    #     date_of_birth: "",
+    #     date_of_death: "",
+    #     sub_era_id: sub_era_2.id,
+    # )
+    # character_16.thumb_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
+    # character_16.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
+    # CharacterSection.create(
+    #         arabic_title:"",
+    #         english_title:"",
+    #         arabic_content:"",
+    #         english_content:"",
+    #         character_id: character_16.id,
+    # )
+    # CharacterSection.create(
+    #         arabic_title:"",
+    #         english_title:"",
+    #         arabic_content:"",
+    #         english_content:"",
+    #         character_id: character_16.id,
+    # )
     # character_2 = Character.create(
     #     arabic_name: "",
     #     english_name: "",
@@ -874,7 +1205,7 @@ require 'open-uri'
     #     english_info: "",
     #     date_of_birth: "",
     #     date_of_death: "",
-    #     sub_era_id: sub_era_1.id,
+    #     sub_era_id: sub_era_2.id,
     # )
     # character_2.thumb_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
     # character_2.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
@@ -885,6 +1216,344 @@ require 'open-uri'
     #         english_content:"",
     #         character_id: character_2.id,
     # )
+    # CharacterSection.create(
+    #         arabic_title:"",
+    #         english_title:"",
+    #         arabic_content:"",
+    #         english_content:"",
+    #         character_id: character_2.id,
+    # )
+
+
+
+#! Create Evetns
+    event_1 = Event.create(
+        type: "War",
+        arabic_title: "توحيد مصر العليا والسفلى",
+        english_title: "Unification of Upper and Lower Egypt",
+        start_date: "3150 ق.م",
+        end_date: "3150 ق.م",
+        arabic_info:"تم توحيد مصر العليا والسفلى من قبل الملك مينا، وهو أول فرعون في الأسرة الأولى، وقد تم توحيد البلاد بعد حرب طويلة بين البلدين.",
+        english_info:"Upper and Lower Egypt were unified by King Menes, the first pharaoh of the First Dynasty, and the country was unified after a long war between the two countries.",
+        character_id: character_1.id,
+        sub_era: sub_era_1
+    )
+    event_1.cover_image.attach(io: URI.open("https://www.abou-alhool.com/ima/32899_1.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+            arabic_title:"المرحلة الاولى",
+            english_title:"First stage",
+            arabic_content:"في البداية كانت مصر عبارة عن اقاليم لكل منها حكومتها ولكل اقليم مدينة توجد فيها مركز الحكم والرمز المقدس للمدينة ، وكان يحكم كل اقليم اسرة قوية ، كانت هذه الاسر القوية تؤسس تكتلات اشبه بالاتحاد بين كياناتها ، وكان يتم ذلك بأحد أمرين إما بالمصاهرات او باستخدام القوة، وكان يتم ذلك في الدلتا والصعيد على السواء.",
+            english_content:"At first, Egypt was divided into provinces, each of which had its own government, and each province had a city where the center of government and the sacred symbol of the city were located. Each province was ruled by a strong family. These strong families established alliances similar to a union between their entities, and this was done by one of two things, either by marriage or by using force, and this was done in the Delta and the Upper Egypt alike.",
+            event_id: event_1.id,
+    )
+    EventSection.create(
+            arabic_title:"المرحلة الثانية",
+            english_title:"Second stage",
+            arabic_content:"كان توحيدالشمال (الدلتا) تحت حكم مملكتين،الأولى وعاصمتها مدينة (عنجتي) قرب سمنود الحالية شرق الدلتا ، والثانية كانت عاصمتها (دمي-إن-حور) دمنهورالحالية غرب الدلتا، اجتمع شمل الصعيد تحت زعامة مدينة (نوبت) طوخ الحالية واتخذوا من (ست) شعاراً دينياً لهم .",
+            english_content:"The unification of the north (the Delta) was under the rule of two kingdoms, the first with its capital city (Anjati) near the current Samannoud east of the Delta, and the second with its capital (Demi-en-Hor) in the current Damanhur west of the Delta. The Upper Egypt was united under the leadership of the city of (Nubt) Tukh, and they took (Set) as a religious symbol for them.",
+            event_id: event_1.id,
+    )
+    EventSection.create(
+            arabic_title:"المرحلة الثالثة",
+            english_title:"Third stage",
+            arabic_content:"وكانت اتحاد مملكتي الدلتا في مملكة واحدة عاصمتها (صاو) صالحجرالآن بمركز بسيون بمحافظة الغربية واتخذت من النحلة (بيت) شعارلها وتوجوا بتاج احمر وابيض وازرق، وكانت اتحاد مملكتي الصعيد في مملكة واحدة عاصمتها (نوبت) العربية الحالية واتخذوا من (نت) شعاراً دينياً لهم وتوجوا بتاج احمر وابيض وازرق، وفي النهاية توحدت الدلتا والصعيد تحت حكم ملك واحد وكانت العاصمة في مدينة (منف) بني سويف وكانت العاصمة الدينية في مدينة (نت) العربية والعاصمة الاقتصادية في مدينة (ممفيس).",
+            english_content:"The union of the two kingdoms of the Delta into one kingdom with its capital (Saw) Salhagar now in the center of Basyoun in the Gharbia Governorate, and they took the bee (Bayt) as their symbol and were crowned with a red, white, and blue crown. The union of the two kingdoms of the Upper Egypt into one kingdom with its capital (Nubt) Al-Arabia now, and they took (Net) as a religious symbol for them and were crowned with a red, white, and blue crown. In the end, the Delta and the Upper Egypt united under the rule of one king, and the capital was in the city of (Menf) Beni Suef, and the religious capital was in the city of (Net) Al-Arabia, and the economic capital was in the city of (Memphis).",
+            event_id: event_1.id,
+    )
+    EventSection.create(
+        arabic_title:"المرحلة الرابعة",
+        english_title:"Fourth stage",
+        arabic_content:"انتقلت عاصمة مملكة الدلتا لأسباب غير معروفة من مدينة (ساو) إلى مدينة (عنجتي) فيشرق الدلتا والتي تبدل اسمها إلى (جدو) واتخذت من (أوزير) شعارادينياً لها فتغيراسمها إلى (بر-أوزير) وهى بلدة ابوصيربناغر بسمنود.",
+        english_content:"The capital of the Delta kingdom moved for unknown reasons from the city of (Saw) to the city of (Anjati) in the east of the Delta, which changed its name to (Jedu) and took (Ozir) as its religious symbol, so its name changed to (Bar-Ozir), which is the town of Abu Sir Bnagar in Samannoud.",
+        event_id: event_1.id,
+    )
+    EventSection.create(
+        arabic_title:"المرحلة الخامسة",
+        english_title:"Fifth stage",
+        arabic_content:"كان الشمال سباق بتوحيد شطري مصر حيث اكتملت وحدة الدلتا والصعيد تحت زعامة (أون) لتوحيد مصر.",
+        english_content:"The north was ahead in unifying the two halves of Egypt, as the unity of the Delta and the Upper Egypt was completed under the leadership of (On) to unify Egypt.",
+        event_id: event_1.id,
+    )
+    EventSection.create(
+        arabic_title:"المرحلة السادسة",
+        english_title:"Sixth stage",
+        arabic_content:"نجد ان مصر قد انفرط عقد وحدتها فحملت مدينة (ساو) على عاتقها توحيد الدلتا والصعيد تحت حكومة واحدة ولكنها لم تستمر طويلا ، حيث قام الصعيد بثورة تحت لواء (ست) ضد حكام الدلتا واستطاعواهزيمة ملوك الشمال وانفصال مملكة الجنوب مرة أخرى فعادت البلاد لسيرتها الأولى.",
+        english_content:"We find that Egypt had lost its unity, so the city of (Saw) took it upon itself to unify the Delta and the Upper Egypt under one government, but it did not last long, as the Upper Egypt revolted under the banner of (Set) against the rulers of the Delta and they were able to defeat the kings of the north and the southern kingdom separated again, so the country returned to its original course.",
+        event_id: event_1.id,
+    )
+    EventSection.create(
+        arabic_title:"المرحلة السابعة",
+        english_title:"Seventh stage",
+        arabic_content:"انقسمت البلاد مرة اخرى لمملكتين مرة اخرى وسميت المملكتين باسم (أتباع حور) كانت عاصمة الجنوب هي (نخن) او قرية الكاب الحالية بمركز ادفو ، اتخذت مملكة الجنوب رمز نبات البوص (سوت) واخذوا يلقبون ملوكهم بلقب (ني-سوت) او المنتسب الى نبات البوص وارتدوا التاج الابيض ، وكان شعار المملكة زهرة اللوتس ورمزها الديني الرخمة (نخبت) ، بينما عاصمة الشمال مدينة (بي) تل ابط و الحالية بمركز دسوق بمحافظة كفر الشيخ ، واتخذت مملكة الشمال من النحلة (بيت) رمز لهم ولقب ملوكها بلقب (بيت-ي) او المنتسب للنحلة وارتدوا التاج الاحمر ، وكان لهم عاصمة دينية تدعى (دب) واصبحت الكوبرا (وادجيت) هى رمزهم الديني ، وشعار المملكة هو نبات البردي",
+        english_content:"The country was divided again into two kingdoms again and the two kingdoms were named (Followers of Horus). The capital of the south was (Nekhen) or the current village of Al-Kab in the center of Edfu, and the southern kingdom took the plant of the papyrus (Soot) as a symbol and their kings were called (Ni-Soot) or affiliated with the plant of the papyrus and they wore the white crown. The symbol of the kingdom was the lotus flower and its religious symbol was the reed (Nekhbet), while the capital of the north was the city of (B) Tal Abt and the current center of Desouk in Kafr El-Sheikh Governorate, and the northern kingdom took the bee (Bayt) as their symbol and their kings were called (Bayt-Y) or affiliated with the bee and they wore the red crown. They had a religious capital called (Dab) and the cobra (Wadjet) became their religious symbol, and the symbol of the kingdom was the papyrus plant.",
+        event_id: event_1.id,
+    )
+    EventSection.create(
+        arabic_title:"المرحلة الثامنة",
+        english_title:"Eighth stage",
+        arabic_content:"يعتقد أن أحد ملوك الجنوب والمرجح انه الملك المدعو بـ (العقرب) تمكن من توحيد مصرولكن لسبب ما انقسمت البلاد مرة أخرى",
+        english_content:"It is believed that one of the kings of the south, and it is likely that the king called (Scorpion), was able to unify Egypt, but for some reason the country was divided again.",
+        event_id: event_1.id,
+    )
+    EventSection.create(
+        arabic_title:"المرحلة التاسعة",
+        english_title:"Ninth stage",
+        arabic_content:"كانت مصر على موعد مع الملك (نعرمر) والذي تمكن من إتمامالوحدة المصرية وتأسيس أول دولة في التاريخ ، ولكي يحافظ على الوحده من الانفراط كالمراحل السابقة قرر بناء عاصمة جديدة تتوسط الشمال والجنوب عند رأس الدلتا ، وأطلق عليها (إنب-حج) الجدارالأبيض والتي أصبحت (من-نفر) أو منف وممفيس وإنشاء لها جبانه ضخمة في سقارة والجيزة ،والتي ضمت رفات اعظم ملوك واشهر الحكماء من انبياء مصر القديمة ، ظلت منف مركز اداري هام حتى هجرت في حوالي عام ٦٤١م ، وبنيت من احجارها مدينه الفسطاط اول عاصمة عربية في مصر.",
+        english_content:"Egypt had an appointment with King Narmer, who was able to complete Egyptian unity and establish the first state in history. In order to preserve unity from disintegrating like previous stages, he decided to build a new capital in the middle of the north and south at the head of the delta, and he called it (Enb-Haj) the White Wall, which became ( From Nefer) or Memphis and Memphis, and the construction of huge cemeteries in Saqqara and Giza, which included the remains of the greatest kings and the most famous sages among the prophets of ancient Egypt. Memphis remained an important administrative center until it was abandoned in about the year 641 AD, and the city of Fustat, the first Arab capital in Egypt, was built from its stones.",
+        event_id: event_1.id,
+    )
+
+    event_2 = Event.create(
+        type: "War",
+        arabic_title: "بناء هرم زوسر",
+        english_title: "Building the Pyramid of Djoser",
+        start_date: "2667 ق.م",
+        end_date: "2648 ق.م",
+        arabic_info:"هرم زوسر أو هرم سقارة أو الهرم المدرج  هو معلم آثري بجبانة سقارة شمال غرب مدينة ممفيس القديمة في مصر. بُني خلال القرن 27 ق.م لدفن الفرعون زوسر؛ بناه له وزيره إمحوتب. وكان المهندس والطبيب أمحتب هو المهندس الأساسي للمجموعة الجنائزية الواسعة في فناء الهرم وما يحيطه من هياكل الاحتفالية.
+
+        يتكون أول هرم مصري من ست مصاطب بُنيت فوق بعضها البعض، شيء يمثل تطوراً هائلاً في تصميم القبور في ذلك العهد الذي كان يكتفي بمصطبة واحدة. يبلغ ارتفاع هرم زوسر المدرج 62 متر (203 قدم) ، مع وجود قاعدة بمساحة 109 م × 125 م (358 قدم × 410 قدم)، وكان مُغطى بالحجر الجيرى الأبيض المصقول. يُعتبر الهرم المدرج أول بنية حجرية وقتها، على الرغم من أن الحوش المعروفة باسم جسر المدير يبدو أنه سبق بناء الهرم.
+        
+        تأثر الهرم بزلزال وقع عام 1992 وأثر على بنية الهرم وأدى إلى سقوط أجزاء من مجموعة الجنائزية وكان اقدم هرم في التاريخ.",
+        english_info:"The Pyramid of Djoser, the Saqqara Pyramid, or the Step Pyramid is an archaeological landmark in the Saqqara Necropolis, northwest of the ancient city of Memphis in Egypt. It was built during the 27th century BC to bury Pharaoh Djoser. It was built for him by his minister Imhotep. The engineer and physician Imhotep was the primary architect of the vast funerary group in the courtyard of the pyramid and the ceremonial structures surrounding it.
+
+        The first Egyptian pyramid consisted of six mastabas built on top of each other, something that represents a huge development in the design of tombs in that era, which was sufficient for one mastaba. The Step Pyramid of Djoser was 62 meters (203 ft) high, with a base measuring 109 m × 125 m (358 ft × 410 ft), and was faced with polished white limestone. The Step Pyramid is considered the first stone structure of its time, although the courtyard known as Jisr al-Mudair appears to have preceded the construction of the pyramid.
+        
+        The pyramid was affected by an earthquake that occurred in 1992, which affected the structure of the pyramid and led to the fall of parts of the funerary group. It was the oldest pyramid in history.",
+        character_id: character_12.id,
+        sub_era: sub_era_2
+    )
+    event_2.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/09/Saqqara_pyramid.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"استكشافه العلمي",
+        english_title:"Scientific exploration",
+        arabic_content:"اكتشف مجمع هرم سقارة لأول مرة في عام 1821 حيث قام القنصل العام الألماني هينريش فون ميوتولي' وأيضا المهندس الإيطالي 'غيرولانو سيجاتو' بفحصه، واكتشفا مدخله. وعثرا في ممراته الداخلية على بقايا مومياء من جمجمة مغطاة بالذهب وكعبي قدمين مغطيين أيضا بالذهب. واعتقد 'فون مينوتولي' أنها تنتمي إلى مومياء زوسر. وحدث أن 'فون مينوتولي' حصل بتفويض من القيصر الألماني وموافقة من محمد علي باشا حاكم مصر في ذلك الوقت على تصريح بأخذ تلك الآثار مع مجموعة آثار أخرى إلى ألمانيا. ولكن السفينة وتسمى سفينة جوتفريد غرقت بسبب إعصار شديد بالقرب من ميناء هامبورغ في ألمانيا، وضاعت تقريبا كل ما كان عليها من آثار (أنظر سفينة جوتفريد). وتبين فيما بعد أن ما وجده 'فون مينوتولي في ممرات الهرم المدرج لم يكن إلا لمومياء أخرى وضعت في المقبرة في وقت لاحق بالعهد القديم.
+
+        وفي عام 1837 عثر الباحث جون بيرينغ على أثار مومياوات أخرى في الممرات، واكتشف أيضا حجرات وأبوهة تحت الهرم.
+        
+        ثم قام 'سيسيل فيرث' في عام 1926 باستكشافات مستفيضة، إلا أنه توفي قبل الانتهاء منها. فتولى 'جيمس كيبل' رعاية الحفريات، لكن توفي أيضا في عام 1935 . وواصل 'جين لاور' الذي كان يعمل تحت إدارة كيبل الاشراف على عمليات الحفريات، وقام بقياس الحجرات تحت الأرض والممرات المؤدية إليها. وفي عام 1934 كان قد عثر في حجرة المقبرة بقايا مومياء وأخذت إلى جامعة القاهرة بعد فحص ابتدائي وحفظت في الجامعة حتى عام 1988 . اعتقد 'لاور' انه قد عثر على مومياء زوسر. ولكن بالفحص الدقيق الذي تم بعد ذلك تبين أنها من عدة موميات لأناس آخرين. وعين تاريخ تلك البقايا بواسطة طريقة الكربون-14 (تأريخ بالكربون المشع) واتضح انها لأناس من عهد البطالمة (أي أنها ليست من عهد زوسر نحو 2650 قبل الميلاد وإنما منذ نحو 200 سنة فقط قبل الميلاد).
+        
+        واستمر لاور مكرساً حياته في استكشاف هرم زوسر والمدينة الجنائزية في سقارة حتى نهاية عمره في عام 2001 . وبمعاونة لاور فقد تمكن من استعادة تشكيل بعض أجزاء الجدار المحيط بفناء الهرم والمباني الأخرى التابعة.
+        
+        وقد عثرت مجموعة من علماء الأثار من لتوانيا في عام 2001 على عدة أنفاق في مجمع الهرم، لم تكن معروفة من قبل.",
+        english_content:"The Saqqara pyramid complex was discovered for the first time in 1821, when the German Consul General Heinrich von Miotoli and the Italian engineer Girolano Segato examined it and discovered its entrance. In its inner corridors, they found the remains of a mummy, including a skull covered in gold and the heels of two feet also covered in gold. Von Minutoli thought it belonged to Djoser's mummy. It happened that 'von Minutoli', with the authorization of the German Kaiser and the approval of Muhammad Ali Pasha, the ruler of Egypt at that time, obtained a permit to take these antiquities with a group of other antiquities to Germany. But the ship, called the Gottfried Ship, sank due to a severe hurricane near the port of Hamburg in Germany, and almost all traces on it were lost (see Gottfried Ship). It later became clear that what Von Minutoli found in the corridors of the Step Pyramid was none other than another mummy that was placed in the cemetery at a later time in the Old Testament.
+
+        In 1837, researcher John Bering found traces of other mummies in the corridors, and also discovered chambers and chambers under the pyramid.
+        
+        Then, in 1926, Cecil Firth carried out extensive explorations, but he died before they were completed. James Keppel took care of the excavations, but he also died in 1935. 'Jean Lauer', who was working under Keppel's management, continued to supervise the excavations, and measured the underground chambers and the passages leading to them. In 1934, the remains of a mummy were found in the tomb room and were taken to Cairo University after a preliminary examination and preserved at the university until 1988. Lauer thought he had found Djoser's mummy. But upon careful examination afterwards, it was found that it was from several mummies of other people. The date of these remains was determined using the carbon-14 method (radiocarbon dating), and it became clear that they belonged to people from the Ptolemaic era (that is, they were not from the era of Djoser, about 2650 BC, but rather only from about 200 years BC).
+        
+        Lauer continued to devote his life to exploring the Pyramid of Djoser and the funerary city at Saqqara until the end of his life in 2001. With Lauer's help, he was able to restore the shape of some parts of the wall surrounding the pyramid's courtyard and other affiliated buildings.
+        
+        In 2001, a group of archaeologists from Lithuania found several tunnels in the pyramid complex, which were not known before.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"بناء الهرم المدرج ومجمعه",
+        english_title:"Building the Step Pyramid and its complex",
+        arabic_content:"كان زوسر يتخذ منذ توليه عرش مصر لقب اسم حورس 'نيثري خت' أي الجسد المقدس؛ وأمر كبير كهنة هليوبوليس أمحتب بتصميم وتشييد مقبرة كبيرة له. كان من ألقاب أمحتب 'إري بات' بمعنى 'عضو النخباء' وكبير الكهنة ورئيس المثالين ومدير أعمال البناء.",
+        english_content:"Since his accession to the throne of Egypt, Djoser had taken the title of the name of Horus, 'Nethri Khet', meaning the Holy Body. The high priest of Heliopolis, Imhotep, ordered the design and construction of a large tomb for him. One of Imhotep's titles was 'Eribat', meaning 'member of the elite', chief priest, chief sculptor, and director of construction works.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"الأوضاع في زمن بناء الهرم",
+        english_title:"Conditions at the time of building the pyramid",
+        arabic_content:"وأقام زوسر خلال فترة حكمه التي استمرت 19 سنة (بين 2665–2645 قبل الميلاد) صرحا بنائيا كبيرا لم يبنى مثله من قبل، حيث كانت الأوضاع السياسية مستقرة، وكان عصره عصر تقدم في العلوم الهندسية والطبية ورخاء للشعب.
+
+        واختار زوسر المدينة الجنائزية في سقارة لإنشاء مقبرته. وكان مكان مجمع الهرم بالقرب من مقابر فراعنة الأسرة الثانية: حتب سخم وى أو رع نب و'ني نيثر'؛ وبالقرب منها قبور جسر المدير ومصاطب عهد الأسرة الأولى. وكان المجمع ليس خاليا تماما فقد وجدت فيه قبور قديمة تعرف بالقبور السلمية في منطقة المجمع الشمالية.",
+        english_content:"During his reign, which lasted 19 years (between 2665-2645 BC), Djoser erected a large building like it had never been built before, as the political situation was stable, and his era was an era of progress in the engineering and medical sciences and prosperity for the people.
+
+        Djoser chose the funerary city of Saqqara to create his tomb. The location of the pyramid complex was near the tombs of the pharaohs of the Second Dynasty: Hotepsekhemwy or Ra-neb and 'Ni-Nether'; Nearby are the tombs of Jisr al-Mudir and the terraces of the First Dynasty. The complex was not completely empty, as ancient graves known as peaceful graves were found in the northern area of the complex.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"تطور البناء الهرمي المدرج من المصاطب",
+        english_title:"The development of the step pyramid construction from the terraces",
+        arabic_content:"ولم ينشأ مجمع الهرم على مرة واحدة وإنما أدخلت فيه طرق بنائية وجنائزية مختلفة من جنوب مصر وشمالها. فكان المجمع ذروة البنايات في ذلك العهد حيث طور قبور فراعنة الأسرتين الأولى والثانية التي كان بعضها يوجد في أبيدوس في جنوب البلاد. يمثل الهرم المدرج وما يجاوره من مباني اندماج بين بنية قبر وبنايات الوادي. وطور تصميم مقابر سقارة من عهد الاسرة الثانية والتي كانت في هيئة أروقة تحت الأرض ومغطاة بالأحجار فبني منها العديد من الاروقة في مجمع هرم زوسر.
+
+        يتخذ الهرم نفسه شكلا مطورا 'للتل الأولي' الذي يدخل في المعتقدات الدينية لقدماء المصريين، مثلما اتـُخذ شكل التل أيضا في بناء مصاطب سقارة. فمثلا نجد في مصطبة إس 3507 في سقارة مقبرة في شكل تل، وفي المصطبة إس 3038 شكل تل مدرج من الأحجار. ويعتقد العلماء أن المصطبة المدرجة إس 3038 التي بناها الفرعون دن هي النموذج الذي أختاره زوسر لهرمه، مع الفرق الكبير في الحجم والارتفاع.",
+        english_content:"The pyramid complex was not created all at once, but rather various construction and funerary methods were introduced into it from southern and northern Egypt. The complex was the pinnacle of buildings in that era, as it contained the tombs of the pharaohs of the First and Second Dynasties, some of which were located in Abydos in the south of the country. The Step Pyramid and its adjacent buildings represent a fusion between the structure of a tomb and the buildings of the valley. The design of the Saqqara tombs was developed during the Second Dynasty, which were in the form of underground galleries and covered with stones, from which many galleries were built in the pyramid complex of Djoser.
+
+        The pyramid itself takes the form of a developed 'primary hill' which is part of the religious beliefs of the ancient Egyptians, just as the shape of the hill was also taken in the construction of the terraces of Saqqara. For example, we find in Mastaba S 3507 in Saqqara a cemetery in the shape of a hill, and in Mastaba S 3038 the shape of a stepped hill made of stones. Scientists believe that the step mastaba S 3038 built by Pharaoh Den is the model that Djoser chose for his pyramid, with a significant difference in size and height.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"الهرم المدرّج",
+        english_title:"The Step Pyramid",
+        arabic_content:"يحيط بالهرم المدرج ساحة كبيرة محدودة بجدار من عهد زوسر. ولم يصمم إمحتب المقبرة على أن تكون هرما في الأصل ولكن كان يصممها على ان تكون مقبرة زوسر في شكل مصطبة مربعة عالية.",
+        english_content:"The Step Pyramid is surrounded by a large square bounded by a wall from the time of Djoser. Imhotep did not originally design the tomb to be a pyramid, but he designed it to be the tomb of Djoser in the form of a high square mastaba.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"تطوير المصطبة لتصبح هرما مدرّجا",
+        english_title:"Developing the mastaba to become a stepped pyramid",
+        arabic_content:"طبقا للدراسات التي قام بها «دين فيليب لاور» فقد بني ما فوق المصطبة الأولى على خمس مراحل، أي أن الهرم عند اكتماله تكون من ستة مصاطب فوق بعضها البعض . تظهر مراحل البناء على الناحيتين الجنوبية والشرقية وما تتبعها من توسعات. وبعد اكتمال المصاطب الستة وصل ارتفاع الهرم المدرج 62 متر، حيث تتكون قاعدته من مصطبة مستطيلة تبلغ طول أضلاعها 121 متر * 109 متر.
+
+        مراحل البناء كانت كالآتي:
+        
+        مصطبة M1: بنيت أولا مصطبة مربعة يبلغ طول ضلعها 63 متر وارتفاعها 8 متر. وهي تختلف عن ما كانت تبنى عليه المصاطب من قبل، حيث كانت المصاطب تبنى قبل ذلك في شكل مستطيل، وغير ذلك ان مصطبة زوسر كانت هي أول مصطبة تبنى كلها من الأحجار الجيرية. وغلفت المصطبة M1 من الخارج من أحجار حجرية ملساء.وكان الجزء السفلي للمصطبة عبارة عن جزء من الأرضية الصخرية وشكل ليناسب شكل المصطبة.وبني الدهليز إلى حجرة الملك في داخل المصطبة.
+        مصطبة M2: في المرحلة الثانية للبناء وسع ضلع المصطبة إلى 71 ونصف متر. ووصل ارتفاع الزيادة التي تمت إلى نحو 7 أمتار فقط، بحيث ظهر شكل مدرج. خلال تلك المرحلة بنيت 11 من الأبوهة في الجهة الشرقية للمصطبة.
+        مصطبة M3: في المرحلة الثالثة للبناء وسعت المصطبة من جهتها الشرقية إلى 79 ونصف متر بحيث غطيت دهاليز الجزء الشرقي، الذي أصبح مغطى ببناء ارتفاعه 5 أمتار.
+        الهرم P1: خلال المرحلة الرابعة للبناء تحول بناء المصطبة إلى هرم ذو ثلاثة مدرجات، يبغ ضلعيه 85.5 متر * 77 متر.
+        كان جسم الهرم يبنى من احجار كبيرة وتغطى من الخارج بطبقة من أحجار مسواة بعناية. وكانت أحجار التغطية تبنى بحيث تكون مائلة إلى الداخل بزاوية نحو 17° حتى تكون متماسكة ومستقرة. وخلال تلك المرحلة لم يزد ارتفاع البناء عن الارتفاع الأول للمصطبة.
+        
+        الهرم P1': خلال المرحلة الخامسة للبناء تمت تغطية الهرم الصغير ليصبح هرما ذو خمسة أو ستة مصاطب وتبلغ قاعدته 119 متر في 107 متر. ومع تلك التوسعة أصبح المدخل الأصلي مغطى وبني مدخل آخر في الأرض على الناحية الشمالية، وبنى عليها أيضا معبد جنائزي فوق الأرض. خلال تلك المرحلة أستخدمت أحجار أكثر حجما عما قبل. وكانت المصطبة الأولى تكمل قبل القيام بزيادة البناء.
+        الهرم P2: في المرحلة السادسة والأخيرة للبناء وسع الهرم مرة أخرى حتى أصبح ضلعيه 121 متر * 109 متر (وهو ما يعادل 231 * 208 ذراع ملكي قديم). واصبح الهرم ذو 6 مدرجات ووصل ارتفاعه 62.5 متر. وشكلت الدرجة السادسة بحيث تكون مقوسة بعض الشيء بحيث تظهر مع الهرم في شكل مستوي.
+        يعتقد باحث الآثار «لاور» أن طبقات تغطية المرحلتين P1 وP2 قد تمت بعد الانتهاء من كل طبقة. وبناء على ذلك يستخلص أن الهرم P1 كان قد اكتمل بنائه قبل بدأ التوسعة لبناء الهرم P2 . كما يتمثل رأي الباحث الألماني «ستادلمان» بأن الأحجار الخارجية للهرم لم تكن مسواة. وعلاوة على ذلك فقد بينت حفريات في الناحية الشمالية الغربية للهرم أجريت في عام 2007 عدم وجود بقايا أحجار تغطية خارجية.",
+        english_content:"According to studies carried out by Dean Philip Lauer, what was above the first mastaba was built in five stages, meaning that the pyramid, when completed, would consist of six mastabas on top of each other. The construction stages and subsequent expansions appear on the southern and eastern sides. After the completion of the six mastabas, the height of the Step Pyramid reached 62 metres, as its base consists of a rectangular mastaba with sides measuring 121 meters * 109 metres.
+
+        The construction stages were as follows:
+        
+        Mastaba M1: First, a square mastaba was built with a side length of 63 meters and a height of 8 metres. It differs from what mastabas were built on before, as mastabas were built before that in a rectangular shape, and other than that, Djoser’s mastaba was the first mastaba to be built entirely of limestone. The M1 mastaba was covered from the outside with smooth stone stones. The lower part of the mastaba was part of the rock floor and was shaped to fit the shape of the mastaba. The vestibule to the king’s chamber was built inside the mastaba.
+        M2 Mastaba: In the second phase of construction, the side of the mastaba was expanded to 71 and a half metres. The height of the increase was only about 7 metres, so that a terraced form appeared. During that stage, 11 al-Abwaha buildings were built on the eastern side of the mastaba.
+        M3 Mastaba: In the third phase of construction, the mastaba was expanded from its eastern side to 79 and a half metres, covering the corridors of the eastern part, which became covered by a building 5 meters high.
+        Pyramid P1: During the fourth phase of construction, the mastaba building was transformed into a pyramid with three terraces, its sides measuring 85.5 meters * 77 metres.
+        The body of the pyramid was built of large stones and covered from the outside with a layer of carefully leveled stones. The covering stones were built so that they were inclined inward at an angle of about 17° so that they were cohesive and stable. During that stage, the height of the building did not exceed the first height of the mastaba.
+        
+        Pyramid P1': During the fifth phase of construction, the small pyramid was covered to become a pyramid with five or six terraces and its base is 119 meters by 107 metres. With this expansion, the original entrance became covered and another entrance was built in the ground on the northern side, and a funerary temple was also built over it. During this stage, larger stones were used than before. The first mastaba was completed before further construction.
+        Pyramid P2: In the sixth and final stage of construction, the pyramid was expanded again until its sides became 121 meters * 109 meters (which is equivalent to 231 * 208 ancient royal cubits). The pyramid now had 6 terraces and reached a height of 62.5 metres. The sixth step was shaped so that it was slightly curved, so that it appeared with the pyramid in a flat form.
+        Archaeologist Lauer believes that the covering layers of phases P1 and P2 were completed after each layer was completed. Based on this, it is concluded that Pyramid P1 had been completed before the expansion to build Pyramid P2 began. The German researcher Stadelmann also believes that the outer stones of the pyramid were not leveled. Moreover, excavations in the northwestern side of the pyramid conducted in 2007 showed that there were no remains of external covering stones.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"المظهر الخارجي الحالي",
+        english_title:"The current external appearance",
+        arabic_content:"أغلب القشرة الخارجية للهرم قد اختفت، كما اختفت من البناء الرئيسي بعض الأجزاء الخارجية. ومن الواضح أنه كانت هناك مراحل مختلفة من البناء، يظهر أفضل شكل للهرم من الجانب الشرقي.
+
+        بعد الانتهاء من تشييد المرحلة الثالثة، بدأت عملية جعله هرما حقيقيا. وقداستخدمت أكثر من 200,000 طنِ من الحجارة لبناء المصطبتين الإضافيينِ اللتين وضعتا فوق الأربعة الموجودة، صانعة منه هرما ذو 6 مدرّجات. وتبدو إضافة وجه من الحجر الكلسي الأبيض على الجانب الشماليِ للهرمِ.
+        
+        يعد الهرم المدرج من أهم الآثار الخالدة الباقية من المصريين القدماء، حيث أنه أول بناء يبنيه الإنسان بهذه الضخامة. وبنائه يدل على تمكن قدماء المصريين من تقنية تقطيع الحجارة في ذلك العهود القديمة منذ نحو 2650 سنة قبل الميلاد. علاوة على الهندسة المعمارية التي يلاحظ تطورها خلال مراحل البناء والتي قام بها إمحتب؛ وإدارة عمل تم على سنوات طويلة يحتاج إلى مجموعات عمال ذوي مهارات مختلفة، وإمدادهم وامداد عائلاتهم بالغذاء والمشرب، ليتفرغوا للعمل في البناء حتى وصل ارتفاع الهرم المدرج إلى 5و62 متر. منذ عام 1979 تعتبر اليونسكو مجمع هرم سقارة موقعا للتراث العالمي.
+        
+        حاليا يظهر هرم سقارة على الأفق الغربي للمسافر بالسيارة عبر طريق الجيزة بني سويف الصحراوي الغربي.",
+        english_content:"Most of the outer shell of the pyramid has disappeared, and some of the outer parts have also disappeared from the main building. It is clear that there were different stages of construction, the shape of the pyramid is best seen from the eastern side.
+
+        After completing the construction of the third phase, the process of making it a real pyramid began. More than 200,000 tons of stones were used to build the two additional terraces that were placed on top of the existing four, creating a pyramid with 6 steps. The addition of a white limestone face appears on the northern side of the pyramid.
+        
+        The Step Pyramid is considered one of the most important immortal monuments remaining from the ancient Egyptians, as it was the first building built by man of this magnitude. Its construction indicates that the ancient Egyptians were able to use the technique of cutting stones in that ancient era, about 2650 years BC. In addition to the architecture, which is noted for its development during the construction stages, which was carried out by Imhotep; Managing work that took place over many years requires groups of workers with different skills, and providing them and their families with food and drink, so that they can devote themselves to working in construction until the height of the step pyramid reached 5.62 meters. Since 1979, UNESCO has considered the Saqqara pyramid complex a World Heritage Site.
+        
+        Currently, the Saqqara Pyramid appears on the western horizon of a traveler by car via the western Giza-Bani Suef desert road.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"البنية التحتية للهرم المدرج",
+        english_title:"The infrastructure of the Step Pyramid",
+        arabic_content:"بنيت حجرة الملك عند نهاية بئر بعمق 28 متر تحت الهرم بمقاس 7 متر * 7 متر. وهي تتكون من أحجار الجرانيت الأحمر ذات اسطح ملساء في أربع طبقات. تؤدي غرفة يسميها الباحثون 'غرفة مناورة' إلى حجرة الملك عن طريق فتحة مستديرة يبلغ قطرها نحو 1 متر. ويغلق المدخل قطعة حجرية كبيرة من الجرانيت يبلغ وزنها نحو 5و3 طن، تنزل من غرفة المناورة بواسطة حبال. عثر على بقايا من الألبستر في شكل نجمي في حجرة الملك، يعتقد أنها كانت من غرفة المناورة التي كانت مزينة بما يشبهها . ويعتقد باحث الآثار 'لاور' أن الحجرة الجرانيتية بنيت بدلا من حجرة دفن كانت قد بنيت خلال المرحلة الأولى للبناء.
+
+        وبعد حفر حجرة الدفن وغرفة المناورة في أسفل البئر بطنت حجرة الدفن وغرفة المناورة وسد البئر بأحجار ورمال ثم بأججار كبيرة من أعلاه. أخلي ما كان يملأ البئر من أنقاض خلال الأسرة السادسة والعشرين.
+        
+        بنيت حول حجرة الملك مجموعات دهاليز من جميع النواحي على ابعاد مختلفة . وترتبط الدهاليز ببعضها البعض عن طريق ممرات . توجد في الدهليز الشرقي أربعة حجرات تغطي جدرانها قطع مستطيلة من فاينس أزرق وهي تشبه تلك الموجودة في المقبرة الجنوبية . تفصل بين مساحات تزيينات الفاينس الأزرق براويز بارزة كاعمدة مشكلة في هيئة حصائر الخوص تشبه الستائر . الفاينس الأزرق الذي يغطي الجدران يوحي بمياه عالم الآخرة طبقا للمعتقدات الدينية لدى قدماء المصريين. كما توجد في الدهاليز ثلاثة لوحات منقوشة تبين صور لفرعون أثناء احتفال عيد سد وهي من الأعياد المصرية القديمة التي كانت تتكرر في بعض السنين . ويبدو مجمع الهرم كاملا - بعكس المقبرة الجنوبية التي تبدو كما لو كانت لم تستكمل.",
+        english_content:"The king's chamber was built at the end of a 28-meter-deep well under the pyramid, measuring 7 meters * 7 metres. It consists of red granite stones with smooth surfaces in four layers. A room that researchers call a 'maneuvering room' leads to the king's chamber through a circular opening with a diameter of about 1 meter. The entrance is closed by a large piece of granite weighing about 3.5 tons, which is lowered from the maneuvering room using ropes. Remains of star-shaped alabaster were found in the king's chamber. It is believed that they were from the maneuvering room, which was decorated in a similar way. Archaeological researcher Lauer believes that the granite chamber was built instead of a burial chamber that had been built during the first phase of construction.
+
+        After digging the burial chamber and the maneuvering room at the bottom of the well, I lined the burial chamber and the maneuvering room and blocked the well with stones and sand, then with large stones from above. The debris that filled the well was cleared during the Twenty-Sixth Dynasty.
+        
+        Groups of corridors were built around the king's chamber on all sides of different dimensions. The vestibules are connected to each other through corridors. In the eastern vestibule there are four rooms whose walls are covered with rectangular pieces of blue vines, which are similar to those found in the southern cemetery. The areas of blue vine decoration are separated by prominent frames such as columns formed in the form of wicker mats resembling curtains. The blue vines covering the walls suggest the waters of the afterlife, according to the religious beliefs of the ancient Egyptians. There are also three engraved panels in the corridors showing pictures of Pharaoh during the Sid Eid celebration, which is one of the ancient Egyptian holidays that was repeated in some years. The pyramid complex appears complete - unlike the southern cemetery, which appears as if it was not completed.",
+        event_id: event_2.id,
+    )
+    EventSection.create(
+        arabic_title:"مجمع هرم زوسر",
+        english_title:"Djoser Pyramid Complex",
+        arabic_content:"مسحة مجمع هرم زوسر هي أكبر مجمع أهرامات في مصر . بعض المنشآت في المجمع تخص وظائف معينة في المراسيم والاحتفالات وبعضها كان له وظيفة بعد وفاة فرعون . البنيات الوظيفية تعطي فكرة عن مجريات الطقوس والاحتفالات التي كانت تقام فيها ويشارك فيها الملك، واما البنيات الأخرى فكانت لخدمة كا (روح) الملك في الحياة الآخرة . وكانت تعطى اهمية كبيرة لزينة العناصر الخارجية للمباني، وبعض البنيات المختفية عن الأنظار فلم تحظي بنفس العناية .
+
+        ومما يلفت النظر أن بعض الأشياء التي كانت تقابل في الحياة اليومية مثل سيقان الأشجار والنخيل واللوتس والحصير المجدل من الخوص كانت تنفذ في المعبد بنحتها على الحجارة من دون أن يكون لها استخدام وظيفي، فكانت تشكل نوعا من التزيين.
+        
+        يرى المأرخون أن مجمع هرم زوسر قد تم بنائه على فترتين. فتوجد بقايا جدران كانت تحيط بساحة الهرم في الناحية الشمالية . ويبدو ان كانت المرحلة الأولى للبناء محدودة بالارتفاعات الأرضية الغربية .",
+        english_content:"Djoser's Pyramid Complex is the largest pyramid complex in Egypt. Some of the facilities in the complex had specific functions in ceremonies and celebrations, and some of them had a function after the death of Pharaoh. The functional structures give an idea of the course of the rituals and celebrations that were held and in which the king participated. As for the other structures, they were to serve the king’s soul in the afterlife. Great importance was given to decorating the external elements of buildings, and some structures hidden from view did not receive the same care.
+
+        What is striking is that some things that were encountered in daily life, such as tree stems, palm trees, lotuses, and braided wicker mats, were made in the temple by carving them on stones without having any functional use, so they constituted a kind of decoration.
+        
+        Historians believe that the Djoser pyramid complex was built in two periods. There are remains of walls that surrounded the pyramid courtyard on the northern side. It seems that the first phase of construction was limited to the western ground elevations.",
+        event_id: event_2.id,
+    )
+    event_3 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title: "بناءهرم سنفرو",
+        english_title: "Building the Pyramid of Snefru",
+        start_date: "2600",
+        end_date: "2550",
+        arabic_info:"هرم سنفرو المائل أو الهرم المنحني هو أحد أهرامات مصر وأحد ثلاثة أهرامات قام ببنائها سنفرو. سمي بالهرم المائل حيث بدء في بناء الهرم ليصعد بزاوية 58 درجة، وعندما وصل بناء الهرم إلى نصف ارتفاعه تقريبا تقرر بناء الجزء العلوي بزاوية 43 درجة. أفادت تلك التقنية في توصل سنفرو ومهندسوه إلى بناء هرما كاملا بتقنية جديدة في بلدة دهشور بجواره يسمى الهرم الأحمر.",
+        english_info:"The Leaning Pyramid of Sneferu or the Bent Pyramid is one of the pyramids of Egypt and one of three pyramids built by Sneferu. It was called the tilted pyramid because he started building the pyramid to ascend at an angle of 58 degrees, and when the construction of the pyramid reached approximately half its height, it was decided to build the upper part at an angle of 43 degrees. This technology helped Sneferu and his engineers build a complete pyramid using new technology in the town of Dahshur next to it, called the Red Pyramid.",
+        character_id: character_15.id,
+        sub_era: sub_era_2
+    )
+    event_3.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/e/eb/Snefru%27s_Bent_Pyramid_in_Dahshur.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"مقدمه",
+        english_title:"Introduction",
+        arabic_content:"استغرق العمل في بناء الهرم المائل 14 سنة، ويبدو انه لم يعجب سنفرو فقرر بناء الهرم الأحمر طبقا للخبرة التي تعلمها مهنسوه عند بناء الهرم المائل. فاختار المكان لهرمه الذي يدفن فيه على بعد نحو 2 كيلومتر من شمال الهرم المائل في بلدة دهشور.
+
+        عند بناء الهرم المائل بُني الهرم من الحجارة بزوايا مائلة بالنسبة للأرض تقدر بنحو 59 درجة. ويرجح أنه بإقامة البناء بهذا الشكل أن بدأ البناء يغوص بسبب الأحمال الحجرية. علاوة على أن الزواية الكبيرة تتسبب في ارتفاع كبير حاد للهرم تـُصعب العمل من اجل تكملته وبناء الجزء العلوي منه. ولتدارك هذه المشكلة قام المهندسون ببناء جدرانا تدعيمية جعلت زاية الميل 55 درجة للبناء الذي لم يكتمل بعد. ثم أكملوا البناء بزاوية منحنية قدرها 43 درجة مما جعله يطلق عليه الهرم المنحني. وبهذا أكتشفت تقنية بناء الأهرامات الكاملة عن طريق وضع طوابق أفقية من الحجارة. كل طبقة مربعة من الحجارة يعلوها طبقة أقل في المساحة على ان تكون زاوية الميل 52 درجة، بدلا من البناء بزاوية 55 أو 43 درجة كما كان في حالة الهرم المنحني. واصبح هذا الشكل هو الشكل الكامل للهرم كما نعرفه اليوم.
+        
+        قام سنفرو باستغلال التقنية الجديدة ببناء هرمه العملاق وأطلق عليه اسم «الهرم الشمالي» ونسميه اليوم الهرم الأحمر. يقع الهرم الأحمر علي بعد نحو 1,8 كيلومتر شمال الهرم المنحني بدهشور. وبناء علي تقنية بناء هرم سنفرو الأحمر بنيت الأهرامات بالجيزة. فقد قام خوفو ابن سنفرو ببناء الهرم الأكبر على هضبة الجيزة ووصل ارتفاعه إلى 157 متر، ثم تبعه ابنه خفرع وبنى هرمه بجانب هرم والده وكان اقل ارتفاعا منه، ثم جاء ابنه منقرع وبنى الهرم الثالث (الصغير)، والثلاثة أهرامات موجودة في الجيزة. وكانت تلك الأهرامات مقابر لهم.",
+        english_content:"The work on building the Leaning Pyramid took 14 years, and it seems that Sneferu did not like it, so he decided to build the Red Pyramid according to the experience that his engineers learned when building the Leaning Pyramid. He chose the place for his pyramid in which he was buried, about 2 kilometers north of the Leaning Pyramid in the town of Dahshur.
+
+        When building the tilted pyramid, the pyramid was built of stones at inclined angles relative to the ground, estimated at about 59 degrees. It is likely that by erecting the building in this way, the building began to sink due to the stone loads. In addition, the large angle causes a large, sharp rise in the pyramid, making it difficult to work on completing it and building the upper part of it. To remedy this problem, engineers built support walls that made the inclination angle 55 degrees for the building, which was not yet completed. Then they completed the construction with a curved angle of 43 degrees, which made it called the Bent Pyramid. Thus, I discovered the technique of building complete pyramids by placing horizontal floors of stones. Each square layer of stones is topped with a smaller layer in area, provided that the angle of inclination is 52 degrees, instead of building at an angle of 55 or 43 degrees as was the case in the case of the curved pyramid. This shape became the complete shape of the pyramid as we know it today.
+        
+        Taking advantage of the new technology, Sneferu built his giant pyramid and called it the 'Northern Pyramid'. Today we call it the Red Pyramid. The Red Pyramid is located about 1.8 kilometers north of the Bent Pyramid in Dahshur. Based on the technique of building the Red Pyramid of Sneferu, the pyramids in Giza were built. Khufu, son of Sneferu, built the Great Pyramid on the Giza Plateau and its height reached 157 meters. Then his son Khafre followed him and built his pyramid next to his father’s pyramid, which was lower in height than it. Then his son Menkaure came and built the third (small) pyramid. The three pyramids are located in Giza. These pyramids were their tombs.",
+        event_id: event_3.id,
+    )
+    EventSection.create(
+        arabic_title:"نظرة عامة",
+        english_title:"Overview",
+        arabic_content:"يعتقد علماء الآثار الآن أن الهرم المنحني يمثل شكلاً انتقاليًا بين الهرم المتدرج والهرم الأملس. لقد تم اقتراح أنه نظرًا لانحدار زاوية الميل الأصلية، فقد يبدأ الهيكل في إظهار علامات عدم الاستقرار أثناء البناء، مما أجبر البناة على تبني زاوية ضحلة لتجنب انهيار الهيكل. يبدو أن هذه النظرية تؤكدها حقيقة أن تم بناء الهرم الأحمر المجاور، بعد ذلك مباشرة من قبل نفس الملك، بزاوية 43 درجة من قاعدته. تتناقض هذه الحقيقة أيضًا مع النظرية القائلة بأن البناء في الزاوية الأولية سيستغرق وقتًا طويلاً لأن موت سنفرو كان يقترب، لذلك قام البناة بتغيير الزاوية لإكمال البناء في الوقت المناسب. في عام 1974، اقترح كورت مندلسون أن يتم تغيير الزاوية كإجراء احترازي أمني كرد فعل لانهيار كارثي لهرم ميدوم بينما كان لا يزال قيد الإنشاء.
+
+        يمكن أن يكون سبب تخلي سنفرو عن هرم ميدوم والهرم المنحني ناتجًا عن تغيير في الأيديولوجية. لم يعد القبر الملكي يعتبر سلمًا للنجوم؛ بدلاً من ذلك، تم تقديمه كرمز لعبادة الشمس والتل البدائي الذي نشأت منه الحياة.
+        
+        كما أنه فريد من نوعه بين الأهرامات الموجودة في مصر، حيث أن غلافه الخارجي الأصلي المصقول الحجر الجيري لا يزال سليماً إلى حد كبير. يعزو المهندس الإنشائي البريطاني بيتر جيمس ذلك إلى وجود مساحات أكبر بين أجزاء الغلاف أكثر من تلك المستخدمة في الأهرامات اللاحقة؛ تعمل هذه العيوب مثل وصلات التمدد وتمنع التدمير المتتالي للغلاف الخارجي عن طريق التمدد الحراري.",
+        english_content:"Archaeologists now believe that the curved pyramid represented a transitional form between the stepped pyramid and the smooth pyramid. It has been suggested that as the original tilt angle became steeper, the structure may begin to show signs of instability during construction, forcing the builders to adopt a shallower angle to avoid collapse of the structure. This theory seems to be confirmed by the fact that the adjacent Red Pyramid was built, immediately afterwards, by the same king, at an angle of 43 degrees from its base. This fact also contradicts the theory that construction at the initial angle would take too long because Sneferu's death was approaching, so the builders changed the angle to complete construction in time. In 1974, Kurt Mendelssohn suggested that the angle be changed as a security precaution in response to the catastrophic collapse of the Meidum Pyramid while it was still under construction.
+
+        The reason for Sneferu's abandonment of the Meidum Pyramid and the Bent Pyramid could be due to a change in ideology. The royal tomb was no longer considered a ladder to the stars; Instead, it was presented as a symbol of sun worship and the primordial hill from which life arose.
+        
+        It is also unique among the pyramids in Egypt, as its original polished limestone outer shell is still largely intact. British structural engineer Peter James attributes this to the presence of larger spaces between the shell parts than those used in later pyramids; These defects act like expansion joints and prevent successive destruction of the outer shell by thermal expansion.",
+        event_id: event_3.id,
+    )
+    EventSection.create(
+        arabic_title:"مرحلة البناء الأولى",
+        english_title:"First construction phase",
+        arabic_content:"في مرحلة البناء الأولى، تم التخطيط لهرم شديد الانحدار بطول قاعدته 157 مترًا وزاوية ميل حوالي 58 درجة (ربما حتى 60 درجة). لو كان الهرم قد اكتمل بهذا الشكل، لكان قد وصل إلى ارتفاع حوالي 125 م. أقيم الهرم على هذا الشكل باستخدام تقنية الطبقة المائلة التي تم تجربتها واختبارها في الأهرامات المتدرجة. بينما أدت هذه التقنية إلى تحسين ثبات الأهرامات المتدرجة، حيث كانت البنية التحتية أسفل الهرم، إلا أنها أدت إلى مشاكل كبيرة مع هذا الهرم، حيث زادت الأوضاع المائلة من الضغط على داخل الهرم وفي الغرف وفي جسم الهرم الممرات أدت إلى مشاكل استقرار وتشققات وحتى خطر الانهيار. ربما كان المبنى نصف محاط بسور فقط في هذه المرحلة عندما أصبحت مشاكل الاستقرار واضحة. نظرًا للدرجة الكلية الجيدة للحفاظ على الهرم، لا يمكن التحقق من مرحلة البناء الأولى هذه إلا بشكل غير مباشر من خلال نقاط الإزاحة على بعد حوالي 12.70 مترًا من المدخل في الممر السفلي النازل وحوالي 11.60 مترًا في الممر العلوي الهابط.",
+        english_content:"In the first construction phase, a steep pyramid was planned with a base length of 157 meters and an inclination angle of about 58 degrees (possibly even 60 degrees). If the pyramid had been completed in this way, it would have reached a height of about 125 m. The pyramid was erected in this shape using the inclined layer technique that has been tried and tested in step pyramids. While this technique improved the stability of the stepped pyramids, as the infrastructure was at the bottom of the pyramid, it led to major problems with this pyramid, as the tilted positions increased the pressure on the inside of the pyramid, in the rooms, and in the body of the pyramid, the corridors, which led to stability problems, cracks, and even the risk of collapse. . The building was probably only half walled at this point when stability problems became apparent. Given the overall good degree of preservation of the pyramid, this first construction phase can only be verified indirectly through offset points about 12.70 m from the entrance in the lower descending passage and about 11.60 m in the upper descending passage.",
+        event_id: event_3.id,
+    )
+    EventSection.create(
+        arabic_title:"مرحلة البناء الثانية",
+        english_title:"Second construction phase",
+        arabic_content:"لتحسين الاستقرار، قام البناة بتقليل زاوية الميل إلى 54 درجة. لهذا الغرض، تم بناء حزام بعرض 15.70 م حول هرم مرحلة البناء الأولى. أدى هذا إلى زيادة طول القاعدة إلى 188 م. هنا أيضًا، تم استخدام طبقات الجدران المائلة مرة أخرى. لو تم الالتزام بزاوية الانحدار البالغة 54 درجة، لكانت قد وصلت إلى ارتفاع 129.4 مترًا وحجمها حوالي 1524000 متر مكعب. سيكون هرم شبكي ثالث أعلى هرم في العالم، لكن حجمه سيظل خلف الهرم الأحمر (1,694,000 متر مكعب)، بحيث يكون رابع أكبر هرم في مصر فقط. ومع ذلك، نظرًا لأنه لا يمكن حل مشاكل البناء من خلال التدابير، تم إلغاء البناء على ارتفاع 49 & نبسب؛ م. حجر هذه المرحلة مكسو بالحجر الجيري الناعم طرة.",
+        english_content:"To improve stability, the builders reduced the tilt angle to 54 degrees. For this purpose, a 15.70 m wide belt was built around the pyramid of the first construction phase. This increased the length of the base to 188 m. Here too, diagonal wall layers were used again. If the slope angle of 54 degrees had been adhered to, it would have reached a height of 129.4 meters and a volume of approximately 1,524,000 cubic metres. The reticulated pyramid will be the third highest pyramid in the world, but its volume will still be behind the Red Pyramid (1,694,000 cubic metres), making it only the fourth largest pyramid in Egypt. However, since the construction problems could not be solved through measures, the construction at the height of 49&nbsp; M. The stone of this stage is faced with soft Tura limestone.",
+        event_id: event_3.id,
+    )
+    EventSection.create(
+        arabic_title:"مرحلة البناء الثالثة",
+        english_title:"Third construction phase",
+        arabic_content:"في مرحلة البناء الثالثة، تم تقليل الزاوية إلى 43 درجة ووضع البناء في طبقات أفقية، تمامًا كما في الهرم الأحمر، مما أدى إلى تخفيف الضغط بالداخل. هذا خلق الشباك الفريد الذي لا يوجد في أي هرم آخر. نظرًا لزاوية الميل السفلية للجزء العلوي، تم تقليل الارتفاع الكلي إلى 105 م. بلغ الحجم الإجمالي 1,440,808 متر مكعب. أيضًا المنطقة العلوية مغطاة بحجر جيري طرة ناعم.",
+        english_content:"In the third construction phase, the angle was reduced to 43 degrees and the construction was placed in horizontal layers, just as in the Red Pyramid, which relieved the pressure inside. This created a unique window that is not found in any other pyramid. Due to the lower inclination angle of the upper part, the total height was reduced to 105 m. The total volume reached 1,440,808 cubic metres. Also the upper area is covered with soft Tura limestone.",
+        event_id: event_3.id,
+    )
+
+
+    # event_2 = Event.create(
+    #     type: "",
+    #     arabic_title: "",
+    #     english_title: "",
+    #     start_date: "",
+    #     end_date: "",
+    #     arabic_info:"",
+    #     english_info:"",
+    #     character_id: character_12.id,
+    #     sub_era: sub_era_2
+    # )
+    # event_2.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
+    # EventSection.create(
+    #     arabic_title:"",
+    #     english_title:"",
+    #     arabic_content:"",
+    #     english_content:"",
+    #     event_id: event_2.id,
+    # )
+    # EventSection.create(
+    #     arabic_title:"",
+    #     english_title:"",
+    #     arabic_content:"",
+    #     english_content:"",
+    #     event_id: event_2.id,
+    # )
+
 
 #! Create Products
     product_1 = Product.create(
@@ -939,11 +1608,3 @@ require 'open-uri'
         product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
         product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
             Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-
-
-
-
-#! Create Evetns
-# file =URI.open("https://1.bp.blogspot.com/-MnYr5ykw2b4/XqdYhwxWoQI/AAAAAAAAAG0/YCPPDe0oXIIyJOWhGP9iv-zrjHEknZLnwCLcBGAsYHQ/s400/photo-jpg.webp")
-# event = Event.create(type: "War", arabic_title: "معركه ابو بكر", english_title: "Battle of Badr", start_date: "624-03-13", sub_era: sub_era)
-# event.cover_image.attach(io: file, filename: 'nes.jpg', content_type: 'image/jpg')
