@@ -1173,31 +1173,195 @@ require 'open-uri'
             english_content:"He sent a huge fleet to Phoenicia to import rare cedar wood, because there was no good wood in Egypt suitable for large construction works, such as pyramids and temples, which needed a lot of wooden skis and beams, as well as for building ships, the manufacture of which was active and their embarkation for trade exchange with the neighboring countries. He also worked to secure Egypt's western and southern borders from enemies. He built three pyramids for himself: the first, the Meidum Pyramid, which is considered a transitional stage between the Step Pyramid and the real pyramid, then two pyramids in Dahshur, which are the Red Pyramid and the Leaning Pyramid. He was also interested in extracting minerals, such as copper and turquoise from Sinai. His rule was characterized by stability and justice.",
             character_id: character_15.id,
     )
-    # character_16 = Character.create(
-    #     arabic_name: "",
-    #     english_name: "",
-    #     arabic_info: "",
-    #     english_info: "",
-    #     date_of_birth: "",
-    #     date_of_death: "",
-    #     sub_era_id: sub_era_2.id,
-    # )
-    # character_16.thumb_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # character_16.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # CharacterSection.create(
-    #         arabic_title:"",
-    #         english_title:"",
-    #         arabic_content:"",
-    #         english_content:"",
-    #         character_id: character_16.id,
-    # )
-    # CharacterSection.create(
-    #         arabic_title:"",
-    #         english_title:"",
-    #         arabic_content:"",
-    #         english_content:"",
-    #         character_id: character_16.id,
-    # )
+    character_16 = Character.create(
+        arabic_name: "خوفو",
+        english_name: "Khufu",
+        arabic_info: "خوفو (خووّ-فووّ)، هو اسم الولادة للفرعون المصري القديم، الذي حكم في عهد الأسرة الرابعة من عصر الدولة القديمة، حوالي 2580 قبل الميلاد. يعرف بالتساوي أيضًا بالاسم الهليني خوبوس أو شوبوس (باليونانية: Χέοψ من خلال المؤرخين الإغريقيين ديودورس وهيرودوت).
+
+        الفرعون خوفو ثاني ملوك الأسرة الرابعة، الذي تبع الفرعون سنفرو على العرش، والمُرجح أن يكون أبيه. ومن الثابت أن أمه كانت الملكة حتب حرس الموجود قبرها في مقابر الجيزة. يُعزى إليه بناء الهرم الأكبر على هضبة الجيزة لتكون مقبرة له، أحد عجائب الدنيا السبع في العالم القديم. ولكن لم يتم توثيق جوانب أخرى كثيرة من حكمه.
+        
+        أرسل البعثات إلى وادي المغارة بسيناء لإحضار الفيروز. حيث وجد اسمه وصورة تمثله وهو يهوي على رأس شخص بدبوس. له تمثال وحيد عثر عليه في أبيدوس من العاج، نقش اسمه على كرسي العرش. طول التمثال خمسة سنتيمترات؛ وهو الآن بالمتحف المصري. حكم طبقاً لبردية (تورين) حوالي ثلاث وعشرين سنة. في عهده بني الهرم الأكبر في الجيزة، وكان أعلى بناء حجري في العالم حتى بناء كتدرائية في عام 1350 ووصل ارتفاعها إلى 160 متر، ولكن هرم خوفو هو أضحم مبنى من صنع الإنسان حتى الآن. أطلق على الهرم اسم (آخت خوفو) بمعنى أفق خوفو، وشيد سنة 2650 ق.م. وقد اشرف على بنائه وزيره والمسؤول عن كل أعمال الملك حم إيونو، وتمثاله موجود بمتحف رومر-بيليسوس]] بهيلدسهايم بشمال ألمانيا.",
+        english_info: "Khufu (Khoe-Fuu) is the birth name of the ancient Egyptian pharaoh, who ruled during the Fourth Dynasty of the Old Kingdom, around 2580 BC. It is equally known by the Hellenistic name of Chobos or Chobos (Greek: Χέοψ through the Greek historians Diodorus and Herodotus).
+
+        Pharaoh Khufu, the second king of the Fourth Dynasty, who followed Pharaoh Sneferu on the throne, and is likely to be his father. It is proven that his mother was Queen Hetepheres, whose tomb is located in the Giza cemeteries. He is credited with building the Great Pyramid on the Giza Plateau as his tomb, one of the Seven Wonders of the Ancient World. But many other aspects of his rule have not been documented.
+        
+        He sent missions to Wadi al-Maghara in Sinai to bring turquoise. Where he found his name and a picture representing him falling on someone's head with a pin. He has a single statue, found in Abydos, made of ivory. His name is engraved on the throne seat. The length of the statue is five centimeters; It is now in the Egyptian Museum. He ruled, according to the Turin Papyrus, for about twenty-three years. During his reign, the Great Pyramid of Giza was built, and it was the tallest stone building in the world until the cathedral was built in 1350 and its height reached 160 meters, but the Pyramid of Khufu is the largest man-made building to date. The pyramid was called (Akhet Khufu), meaning the horizon of Khufu, and it was built in 2650 BC. Its construction was supervised by his minister, who was responsible for all King Iono's works, and his statue is located in the Romer-Bellissus Museum in Hildesheim in northern Germany.",
+        date_of_birth: "2580 ق.م",
+        date_of_death: "2566 ق.م",
+        sub_era_id: sub_era_2.id,
+    )
+    character_16.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f7/Kairo_Museum_Statuette_Cheops_03_%28cropped%29.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_16.cover_image.attach(io: URI.open("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0VPNxwtZ-ueEWjUUENGi5smiY1FxqJRCSivQmjUNL22AkBr4zBOU31VXPGr9eCKjEmcmJN0KvglvUyYPKmR3Ei1qTgPW3_9n4kdRmY6AFpyHUm_-RL5s0umfm-UEmnIhTfRf7_xzhWRg/w640-h320-rw/%25D8%25A7%25D8%25B4%25D9%2587%25D8%25B1-%25D8%25B5%25D9%2588%25D8%25B1-%25D8%25A7%25D9%2584%25D9%2585%25D9%2584%25D9%2583-%25D8%25AE%25D9%2588%25D9%2581%25D9%2588.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"أصول خوفو",
+            english_title:"Khufu's origins",
+            arabic_content:"من الثوابت أن أم خوفو كانت الملكة حتب حرس، وكان يعتقد أن والده الفرعون سنفرو. وكان لسنفرو أبناء أخرين عنخ حاف (والذي قد يكون في الحقيقة أبن لخوفو)، ونفر معات والأمير رع حتب؛ وهم أخوات لخوفو ولكن من أم ثانية.
+
+            في أوائل القرن العشرين كان يعتقد أن خوفو كان أحد الأمراء وتزوج من عائلة سنفرو. ولكن حفريات قام بها 'سيورج رايزنر', على هضبة الجيزة في عام 1925 أدت إلى اكتشاف مقبرة حتب حرس (G 7000x) شرق هرم خوفو، ووجدت في مقبرتها الكثير من الأثاث والقوارير والقرابين والأختام. ووجدت على بعض تلك الآثار اسم الفرعون سنفرو، كما وجد ان حتب حرس كانت تلقب 'موت نسوت' بمعنى 'أم الملك'. بهذا يبدو أنها كانت زوجة سنفرو، وبالتالي فكان سنفرو وحتب حرس هما أبوي خوفو.",
+            english_content:"It is certain that Khufu's mother was Queen Hetepheres, and it was believed that his father was Pharaoh Sneferu. Sneferu had other sons Ankhhaf (who may in fact be a son of Khufu), Nefer-Maat, and Prince Ra-hotep; They are sisters to Khufu, but from a second mother.
+
+            In the early twentieth century, it was believed that Khufu was one of the princes and had married into the Sneferu family. However, excavations carried out by Sorge Reisner on the Giza Plateau in 1925 led to the discovery of the tomb of Hetepheres (G 7000x) east of the Pyramid of Khufu, and a lot of furniture, flasks, offerings and seals were found in its tomb. The name of Pharaoh Sneferu was found on some of these antiquities, and it was also found that Hetepheres was nicknamed 'Mut-nesut', meaning 'Mother of the King'. Thus, it seems that she was Sneferu's wife, and therefore Sneferu and Hetepheres were Khufu's parents.",
+            character_id: character_16.id,
+    )
+    CharacterSection.create(
+            arabic_title:"شجرة العائلة",
+            english_title:"Family tree",
+            arabic_content:"الملك سنفرو هو أبو الفرعون خوفو، وأبو الملك سنفرو هو الفرعون زوسر مؤسس الأسرة الثالثة، وأم خوفو هي الملكة حتب حرس، حيث كان لقبها «أم ملك مصر العليا والسفلى».
+
+            وابن الملك خوفو الملك خفرع الذي بنى الهرم الثاني؛ وانجب خفرع الملك منكاورع أو منقرع.",
+            english_content:"King Senefru is the father of Pharaoh Khufu, and King Senefru's father is Pharaoh Djoser, the founder of the Third Dynasty, and Khufu's mother is Queen Hetepheres, as her title was 'Mother of the King of Upper and Lower Egypt'.
+
+            And the son of King Khufu, King Khafre, who built the second pyramid; Khafre gave birth to King Menkaure or Menkaure.",
+            character_id: character_16.id,
+    )
+    CharacterSection.create(
+            arabic_title:"مدة حكمه",
+            english_title:"His reign",
+            arabic_content:"تختلف التقديرات في معرفة فترة حكمه بالضبط. تذكر بردية تورينو وهي من عهد الدولة الحديثة وتعتبر من أهم الوثائق بالنسبة لتتابع ملوك مصر أن خوفو حكم مدة 23 عاما. ويقول المؤرخ الإغريقي هيرودوت أنه حكم 50 سنة، كما أن الكاهن المصري مانيتو الذي عاش في القرن الثالث قبل الميلاد يعني أنه حكم 63 سنة. كما ذكر في وقت الأسرة الرابعة أن مدة حكمه كانت 17 تعدادات (حيث كان في العادة يتم تعداد لأعداد الماشية ومساحات الأراضي بغرض فرض الضرائب) وكان التعداد يتم عادة كل سنتين - ولكنه كان أحيانا يتم كل سنة - فإذا كان التعداد كل سنتين بانتظام في عهد خوفو فتكون فترة حكمه 34 سنة.",
+            english_content:"Estimates vary regarding the exact period of his reign. The Turin Papyrus, which dates back to the New Kingdom and is considered one of the most important documents regarding the succession of Egyptian kings, states that Khufu ruled for 23 years. The Greek historian Herodotus says that he ruled for 50 years, and the Egyptian priest Manetho, who lived in the third century BC, means that he ruled for 63 years. It was also mentioned at the time of the Fourth Dynasty that the duration of his rule was 17 censuses (where a census of the number of livestock and land areas was usually carried out for the purpose of levying taxes) and the census was usually carried out every two years - but sometimes it was carried out every year - so if the census was every two years regularly during the reign of Khufu So his reign will be 34 years.",
+            character_id: character_16.id,
+    )
+    CharacterSection.create(
+            arabic_title:"التجارة والبعثات",
+            english_title:"Trade and missions",
+            arabic_content:"يذكر من عهد خوفو بعثتان: واحدة منهما أرسلها على منطقة واحة الداخلة في الصحراء الليبية، والأخرى إلى سيناء بغرض الحصول على الفيروز والنحاس. وتذكر كتابات هيروغليفية توجد منقوشة في الصخور على بعد 50 كيلومتر غرب واحة الداخلة  جبل ماء جد ف رع - نسبة إلى الإله رع الدائم. وبحسب تأريخ تلك البعثة فقد تمت في 'عام 12 من التعداد' وهذا ما يعادل العام 24 من حكم خوفو؛ وفي تاريخ ثاني 'عام 13 من التعداد' وهذ يعادل العام 26 من حكم خوفو - باعتبار أن التعداد كان يتم في مصر كل سنتين.",
+            english_content:"Two expeditions are mentioned from the era of Khufu: one of them he sent to the Dakhla Oasis region in the Libyan Desert, and the other to Sinai for the purpose of obtaining turquoise and copper. Hieroglyphic writings found inscribed in the rocks 50 kilometers west of Dakhla Oasis mention Jabal Ma Djed-Fre - named after the everlasting god Ra. According to the history of that mission, it took place in 'year 12 of the census', which is equivalent to year 24 of Khufu's rule. On the second date, 'Year 13 of the Census', which is equivalent to Year 26 of Khufu's rule - considering that the census was carried out in Egypt every two years.",
+            character_id: character_16.id,
+    )
+    CharacterSection.create(
+            arabic_title:"البلاط الملكي",
+            english_title:"The royal court",
+            arabic_content:"الكثير من كبار موظفي الدولة من عهد خوفو معروفون من مقابرهم في منطقة أهرامات الجيزة. ويعرف أيضا أن الوظائف العليا كانت مخصصة لعائلة الملك. في عهد خوفو ظهرت رتبة الوزير بالمصرية القديمة تياتي؛ وشغلها عدد من الوزراء، منهم: عنخاف و خوفوخعف الأول و مينخعف الأول، ويحتمل أيضا كان كا وعب وزيرا لخوفو. وقد ذكر اسم كواب على تمثال من الأسرة التاسعة عشر على أنه كان وزيرا لخوفو.
+
+            في غرب الهرم الأكبر -هرم خوفو- توجد مقابر كبار رجال الدولة الذين كانوا يعملون بصفة رئيسية في أعمال الهنة والبناء، وكبار الكتاب. وكان من أكبر المهندسين الذين قاموا ببناء هرم خوفو حم إيونو الذي كان ابن أخ خوفو. وكان متقلدا في نفس الوقت أعمال 'الوزير'، كما حمل لقب 'ناظر جميع أعمال فرعون'. أي أنه كان المسؤول عن يناء هرم خوفو وما يحيط به من منشآت.
+            
+            بجانب حم إيونو تعرف أيضا أسماء مديرون في أعمال البناء مثل إيونو، وكاإماخ و 'كا-نفر' و 'وب-إم-نوفرت . لم توجد دلائل على كون هؤلاء الموظفين الكبار ينتمون إلى العائلة الملكية. صحيح أن الواحد من منهم كان يحمل لقب 'ابن الملك ' أو 'ابنة الملك' ولكنهم كانوا لا يحملون ألقابا أخرى مثل الأمراء والأميرات. وتوجد قبورهم أيضا في منطقة مقابر الجيزة. ويبدو أن لقب 'ابن فرعون' كان لقبا رمزيا لا تعني بالتمام صلة قرابة للملك.",
+            english_content:"Many senior civil servants from the era of Khufu are known from their tombs in the area of the Giza Pyramids. It is also known that the highest positions were reserved for the king's family. During the reign of Khufu, the rank of vizier appeared in the ancient Egyptian word tiati. It was occupied by a number of ministers, including: Ankhaf, Khufu I, and Minkhaf I. It is also possible that Ka'ab was Khufu's minister. Kwab's name was mentioned on a statue from the Nineteenth Dynasty, indicating that he was Khufu's minister.
+
+            In the west of the Great Pyramid - the Pyramid of Khufu - there are the tombs of senior statesmen who worked mainly in art and construction work, and major writers. One of the greatest engineers who built the pyramid of Khufu was Iono's father-in-law, who was Khufu's nephew. At the same time, he held the duties of a 'minister', and also held the title of 'inspector of all Pharaoh's affairs'. That is, he was responsible for building the pyramid of Khufu and its surrounding facilities.
+            
+            Besides Ham Iunu, the names of managers in construction work are also known, such as Iunu, Ka-Amakh, 'Ka-nefer' and 'Web-em-Nofret'. There is no evidence that these senior officials belong to the royal family. It is true that one of them had the title 'the king's son' or 'the king's daughter', but they did not have other titles such as princes and princesses. Their graves are also located in the Giza Cemetery area. It seems that the title 'Son of Pharaoh' was a symbolic title that did not entirely mean a relationship to the king.",
+            character_id: character_16.id,
+    )
+    character_17 = Character.create(
+        arabic_name: "خفرع",
+        english_name: "Khafre",
+        arabic_info: "خفرع أو خعف رع (وتعني بالمصرية: الظاهر كرع أو الظاهر كالشمس)، ملك من الأسرة الرابعة. هو ثالث أو رابع ملوك هذه الأسرة بالدولة القديمة حكم بين سنتي 2559 و2535 ق م هو من شيد الهرم الثاني بالجيزة. هو على الأغلب ابن الملك خوفو من زوجة ثانوية تولى الحكم بعد الملك جدف رع الذي كان قد استولى على الحكم. هرم خفرع يشابه في عظمته هرم خوفو. ملامحه نتعرف عليها من خلال أبو الهول الموجود بجانب هرمه والمتمثل في صورة أسد يدل على القوة، برأس إنسان يدل على الحكمة. كما عُثِر على صورة منحوتة بمعبده بوادي الملوك وتمثال للملك جالس موجود بالمتحف المصري. ليعرف الكثير عن فترة حكمه، ولا توجد شواهد تؤكد رواية الرحالة اليوناني هيرودت التي تصف خوفو وخفرع كطغاة.",
+        english_info: "Khafre or Khaf-Ra (which in Egyptian means: Al-Zahir as Ra or Al-Zahir as the sun), a king of the Fourth Dynasty. He was the third or fourth king of this dynasty in the Old Kingdom. He ruled between the years 2559 and 2535 BC. He was the one who built the second pyramid in Giza. He is most likely the son of King Khufu from a secondary wife. He assumed power after King Djedefre, who had seized power. The Pyramid of Khafra is similar in its magnitude to the pyramid of Khufu. We recognize his features through the Sphinx located next to his pyramid, which is represented in the image of a lion, indicating strength, with a human head, indicating wisdom. A carved image was also found in his temple in the Valley of the Kings, and a statue of the seated king is in the Egyptian Museum. Much is known about the period of his rule, and there is no evidence to confirm the story of the Greek traveler Herodotus, which describes Khufu and Khafre as tyrants.",
+        date_of_birth: "2570 ق.م",
+        date_of_death: "2546 ق.م",
+        sub_era_id: sub_era_2.id,
+    )
+    character_17.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/08/%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%AE%D9%81%D8%B1%D8%B9.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_17.cover_image.attach(io: URI.open("https://www.tripsinegypt.com/wp-content/uploads/2018/12/King-Khafre-Trips-in-Egypt-2.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"عائلته",
+            english_title:"His family",
+            arabic_content:"كان خفرع أحد أبناء خوفو وأمه غير معروفة حتى الآن على وجه الدقة، لكن يُعتقد أنها إما مريت إتس الأولى أو حنوتسن.
+
+            وكان لخفرع عدة أخوة أكبرهم كا وعب من أم ثانية، ولكنه مات شابا. يعتقد بعض العلماء أن كاوعب كان في الحقيقة إبنا لسنفرو، وبذلك من المحتمل أن يكون كاوعب أخا لخوفو.
+            
+            تزوج خفرع من أربعة زوجات، أنجب من واحدة منهم وهي خع مرر نبتي الأولى ابنه منكاورع، كما انجبت له ابنته 'خع مرر نبتي الثانية'، ومعنى اسمها بالعربية 'ظهور محبوبة السيدتين'.",
+            english_content:"Khafre was one of Khufu's sons and his mother is not yet known exactly, but is believed to be either Meritets I or Henutsen.
+
+            Khafre had several brothers, the eldest of whom was Ka and Heb from a second mother, but he died young. Some scholars believe that Ka'ab was in fact a son of Snefru, and thus it is possible that Ka'ab was a brother of Khufu.
+            
+            Khafre married four wives. One of them, Khafre Mernabti I, gave birth to his son Menkaure. She also gave birth to his daughter, Khafre Nabti II, whose name in Arabic means the appearance of the beloved of the two women.",
+            character_id: character_17.id,
+    )
+    CharacterSection.create(
+            arabic_title:"عهده",
+            english_title:"His reign",
+            arabic_content:"لا يوجد اتفاق حول تاريخ حكمه، ولكن قد قيل بأنه حكم بين عامي 2558 ق.م و2532 ق.م. بنى ثاني أكبر هرم في الجيزة وارتفاعه 143م والآن 136م وشيد فوق مساحة 215 متر مربع وله مدخلان في الجهة الشمالية بالإضافة إلى تمثال أبو الهول الذي يبلغ طوله 57م وارتفاعه 20م، ومعبدالإله رع.",
+            english_content:"There is no agreement about the date of his rule, but it has been said that he ruled between 2558 BC and 2532 BC. He built the second largest pyramid in Giza, its height is 143 meters and now 136 meters. It was built over an area of 215 square meters and has two entrances on the northern side, in addition to the Sphinx, which is 57 meters long and 20 meters high, and the temple of the god Ra.",
+            character_id: character_17.id,
+    )
+    CharacterSection.create(
+            arabic_title:"هرم خفرع",
+            english_title:"Khafre Pyramid",
+            arabic_content:"هرم خفرع هو أحد أهرامات الجيزة في مصر. بناه الملك خفرع رابع ملوك الأسرة الرابعة ابن الملك خوفو. تزوج من الأميرة مراس عنخ. حكم ست وعشرين سنة. بني الهرم الثاني من أهرام الجيزة، وهو أقل ارتفاعا من هرم أبيه (خوفو). كان ارتفاعه 143 مترا والآن 136 مترا.
+
+            شيد فوق مساحة 215 مترا مربعا.وله مدخلان في الجهة الشمالية. وما زال يحتفظ بجزء من كسوته الخارجية عند القمة.عثر ضمن مجموعته الهرمية على تماثيل من حجر الشست في معبد الوادي الخاص ز من بينها تمثال من أجمل ما أنتجه فن النحت المصري، وهو موجود بالمتحف المصري، وينسب له نحت صخرة تمثال أبي الهول.
+            
+            يقع هرم خفرع جنوب غرب هرم أبيه خوفو. ويبلغ ارتفاعه 143,5 متراً وطول كل ضلع 215,5 متراً، وزاوية ميله 53,10ْ. يقع في مستوى سطح الأرض، والمدخل يؤدي إلى ممر هابط، سقفه من الجرانيت وزاوية انحداره 22ْ. وينتهي عند متراس يفضي إلى ممر أفقي، ثم ممر منحدر يؤدي إلى حجيرة يطلق عليها خطأ حجرة الدفن وهي فارغة منحوتة في الصخر، ويؤدي الدهليز إلى متراس آخر يرتفع إلى أعلى بممر أفقي ينتهي بحجرة الدفن، وهذه الحجرة سقفها جمالوني مشيد بالحجر الجيري، وتكاد تكون منتصف الهرم، أطلق خفرع على هرمه اسم(العظيم).",
+            english_content:"The Pyramid of Khafre is one of the pyramids of Giza in Egypt. It was built by King Khafre, the fourth king of the Fourth Dynasty, son of King Khufu. He married Princess Ankh berths. He ruled for twenty-six years. The second pyramid of Giza was built, and it is lower in height than his father's pyramid (Khufu). Its height was 143 meters and now it is 136 metres.
+
+            It was built on an area of 215 square meters. It has two entrances on the northern side. It still retains part of its outer covering at the top. Within its pyramid collection, schist stone statues were found in the Wadi Khas Temple, including one of the most beautiful statues produced by Egyptian sculpture. It is located in the Egyptian Museum, and he is credited with carving the rock of the Sphinx.
+            
+            Khafre's pyramid is located southwest of the pyramid of his father Khufu. Its height is 143.5 metres, the length of each side is 215.5 metres, and its inclination angle is 53.10 degrees. It is located at ground level, and the entrance leads to a descending corridor, with a granite ceiling and a slope angle of 22 degrees. It ends at a rampart that leads to a horizontal passage, then a sloped passage that leads to a chamber mistakenly called the burial chamber, which is empty and carved into the rock. The vestibule leads to another rampart that rises upwards with a horizontal passage that ends with the burial chamber. This chamber has a trussed roof built of limestone, and is almost the middle of The Pyramid: Khafre called his pyramid the Great.",
+            character_id: character_17.id,
+    )
+    CharacterSection.create(
+            arabic_title:"أبو الهول",
+            english_title:"The Sphinx",
+            arabic_content:"أبو الهول هو تمثال لمخلوق أسطوري بجسم أسد ورأس إنسان وقد نحت من الحجر الكلسيّ، ومن المرجح أنه كان في الأصل مغطى بطبقة من الجص وملون، ولا زالت آثار الألوان الأصلية ظاهرة بجانب إحدى أذنيه.
+
+            يقع على هضبة الجيزة على الضفة الغربية من النيل في الجيزة، مصر، ويعد أبو الهول أيضاً حارساً للهضبة. وهو أقدم المنحوتات الضخمة المعروفة، يبلغ طوله نحو 73.5 متر، من ضمنها 15 متر طول قدميه الأماميتين، وعرضه 19.3 م، وأعلى ارتفاع له عن سطح الأرض حوالي 20 متراً إلى قمة الرأس. يعتقد أن قدماء المصريين بنوه في عهد الملك خفرع (2558 ق.م -2532 ق.م)، باني الهرم الأوسط في الجيزة.
+            
+            
+            رأس أبو الهول.
+            ومن المعتقد أن تمثال أبي الهول كان محجراً قبل أن يفكر الملك خفرع في نحته على شكل تمثال، وينظر هذا التمثال ناحية الشرق لذا قد تم تغيير الجهات الأصلية في القرن الماضي لتوافق نظر أبي الهول.",
+            english_content:"The Sphinx is a statue of a mythical creature with the body of a lion and the head of a human. It was carved from limestone. It was likely that it was originally covered with a layer of plaster and colored, and traces of the original colors are still visible next to one of its ears.
+
+            Located on the Giza Plateau on the west bank of the Nile in Giza, Egypt, the Sphinx is also a guardian of the plateau. It is the oldest known huge sculpture. It is about 73.5 meters long, including 15 meters the length of its front feet, and 19.3 meters wide, and its highest height above the ground is about 20 meters to the top of the head. It is believed that the ancient Egyptians built it during the reign of King Khafre (2558 BC - 2532 BC), the builder of the middle pyramid in Giza.
+            
+            
+            Head of the Sphinx.
+            It is believed that the Sphinx was quarried before King Khafre thought of sculpting it into the shape of a statue. This statue looks to the east, so the original directions were changed in the last century to match the view of the Sphinx.",
+            character_id: character_17.id,
+    )
+    character_18 = Character.create(
+        arabic_name: "منكاورع",
+        english_name: "Menkaure",
+        arabic_info: "منكاورع (ينطق بالعربية نطقاً غير دقيق: منقرع ولكن النطق المصري الأدق 'مِنْ كاو رَع')، هو ملك مصري من الأسرة الرابعة خلال عصر الدولة القديمة. ابن الملك خعفرع، ملكا مصر. واسمه يعني: 'فلتبقى هيئته مثل رع'. تزوج من الأميرة خع مرر نپتي الثانية. عثر في المعبد الجنائزى لـ منكاورع على سكين من حجر الصوان منقوش عليه اسم والدة الملك وتدعى خع مررنپتي الأولى، فيما يشير إلى أن خعفرع وهذه الملكة هما والدا منكاورع. ويعتقد أن منكاورع كان لديه زوجتان•",
+        english_info: "Menkaure (pronounced in Arabic imprecisely: Menkaure, but the more accurate Egyptian pronunciation is 'men Kau-Ra'), was an Egyptian king of the Fourth Dynasty during the Old Kingdom. Son of King Khafre, King of Egypt. His name means: 'May his form remain like Ra'. He married Princess Khamerar-Nebty II. In Menkaure's funerary temple, a flint knife was found engraved with the name of the king's mother, called Kha Merernepti I, indicating that Khafre and this queen were Menkaure's parents. It is believed that Menkaure had two wives.",
+        date_of_birth: "2530 ق.م",
+        date_of_death: "2500 ق.م",
+        sub_era_id: sub_era_2.id,
+    )
+    character_18.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fb/Menkaura_Bust_Closeup.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_18.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fb/Menkaura_Bust_Closeup.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"عائلته",
+            english_title:"His family",
+            arabic_content:"الملكة خعمررنبتي الثانية وهي ابنة خعمررنبتي الأولى ووالدة ابن الملك الذي يدعى خو إن رع. موقع قبر خو إن رع يدل على إنه ابن منكاورع، ويدل على أن والدته هي زوجة الملك.
+            الملكة رخيت رع تعرف على أنها ابنة خعفرع وأن أكثر الشخصيات المرشحة كزوج لها هو منكاورع.
+            و لا يوجد أطفال كثر يعتقد أنهم أبناء منكاورع:        
+            خو إن رع أو خونرع: هو ابن الملكة خعمررنبتي الثانية. هو الابن الأكبر للملك من كاو رع الذي توفى قبل والده ولذلك لم يصعد إلى العرش في حين أن الابن الأصغر شبسسكاف تلى والده على العرش.
+            شبسسكاف: هو الحاكم التالى لمنكاورع والذي من المحتمل أن يكون ابنه.
+            سخم رع: وجد له تمثال ومن المرجح أن يكون ابنا لمنكاورع.
+            ابنة توفيت في بداية سن البلوغ ذكرها هيرودوت.
+            خنت كاوس: ابنة محتملة للملك من كاو رع.
+            و تضمن كذلك البلاط الملكى أخوة غير أشقاء للملك منكاورع. شغل الأخوة نب إم أخت و دوا إن رع و نيكاورع و إيون مين منصب وزير أثناء حكم أخوهم. بينما الأخ سخم كارع ربما يكون أصغر سنا وأصبح وزيرا بعد وفاة منكاورع.",
+            english_content:"Queen Khamerernebty II, the daughter of Khamerernebty I, and the mother of the king's son, Khuen Ra. The location of Khuen Ra's tomb indicates that he is the son of Menkaure, and indicates that his mother is the king's wife.
+            Queen Rekhetre is known as the daughter of Khafre and the most likely candidate for her husband is Menkaure.
+            There are not many children believed to be the sons of Menkaure:
+            Khoenra or Khonre: He is the son of Queen Khamerernebty II. He is the eldest son of the king from Kao Ra, who died before his father, and therefore did not ascend to the throne, while the youngest son, Shepseskaf, succeeded his father to the throne.
+            Shepseskaf: He was the next ruler of Menkaure and possibly his son.
+            Sekhemre: A statue of him was found and it is likely that he was the son of Menkaure.
+            A daughter who died in early adulthood is mentioned by Herodotus.
+            Khent-Kaos: Possible daughter of the king by Kao-Ra.
+            The royal court also included half-brothers of King Menkaure. The brothers Neb-em-Akhet, Du-en-ra, Nikaure, and Iun-min served as viziers during their brother's rule. While brother Sekhemkare may have been younger and became a minister after the death of Menkaure.",
+            character_id: character_18.id,
+    )
+    CharacterSection.create(
+            arabic_title:"حكمه",
+            english_title:"His reign",
+            arabic_content:"بعض الكتاب يضعون تاريخ حكمه بين عامي 2532 ق.م. و 2504 ق.م، أي 28 سنة، إلا أن بردية تورين تقول أنه حكم لمدة 18 عامًا، وهو الأقرب للصحة إذا ما أخذنا في الاعتبار العديد من التماثيل غير المكتملة له. بنى ثالث أكبر هرم في الجيزة وبنى هرمه بجوار هرمي جده وأبيه، خوفو وخفرع، ويبلغ ارتفاع هرمه 66 مترًا تقريبًا، وكان عهده أكثر حرية من ابيه وجده، حيث مارس الشعب شعائره الدينية بحرية لم يعهدها من قبل.",
+            english_content:"Some writers place the date of his rule between 2532 BC. And 2504 BC, i.e. 28 years, but the Turin Papyrus says that he ruled for 18 years, which is closest to being true if we take into account the many unfinished statues of him. He built the third largest pyramid in Giza and built his pyramid next to the pyramids of his grandfather and father, Khufu and Khafre. The height of his pyramid is approximately 66 meters, and his reign was freer than that of his father and grandfather, as the people practiced their religious rituals with a freedom they had never experienced before.",
+            character_id: character_18.id,
+    )
+    CharacterSection.create(
+            arabic_title:"هرم منكاورع",
+            english_title:"Menkaure Pyramid",
+            arabic_content:"بنى الملك منكاورع الهرم الأصغر بين الثلاثة أهرامات الكبرى في الجيزة. ويبلغ ضلعي قاعدته 102,2 متر في 104,6 متر وارتفاعه 65,55 متراً، وهو أصغر كثيرا عن هرمي خوفو وخفرع. المادة الأساسية في بنائه كانت من الحجر الجيري التي استخرجت من محاجر بالقرب من مكان البناء، ولكن طلب منقرع من مهندسيه أن يبنوا الجزء السفلي الخارجي من حجر الجرانيت الوردي . وعمل المهندسون على إحضار أحجار الجرانيت الرملي من أسوان وتم نقلها على النيل حتى الجيزة. وتم تغطية هرم منقرع بأحجار الجرانيت الوردي إلى ارتفاع 15 متر، وما فوقها فكان من الحجر الجيري الأبيض الذي أتوا به من طره، على الضفة الشرقية من النيل.
+            يهبط من شمال الهرم سرداب مائل إلى حجرة أولية تحت ارضية الهرم. ويمتد منها سرداب آخر مائلا إلى أعلي وينتهي تحت أرضية الهرم مباشرة وينتهي بحائط. ويبدو أن هذا السرداب كان مخططا له أصلا أن يمتد داخل الهرم. بنيت حجرة التابوت أسفل من الحجرة الأولية. وعثر فيها على تابوت من الجرانيت تبلغ مقاييسه 2,43 × 0,94 × 0,88 متر. وكان التابوت مزينا - على عكس تابوتي خوفو وخفرع اللذان كانا بسيطان من دون زينة - إذ حفر على أوجهه تابوت منقرع شكل مدخل القصر.
+            كان من المفروض نقل التابوت إلى بريطانيا في عام 1838، ولكنه لم يصل، إذ اعترضت عاصفة السفينة الناقلة وأغرقتها.",
+            english_content:"King Menkaure built the smallest pyramid among the three great pyramids in Giza. Its base sides are 102.2 meters by 104.6 meters and its height is 65.55 metres. It is much smaller than the pyramids of Khufu and Khafre. The basic material in its construction was limestone extracted from quarries near the construction site, but Menkaure asked his engineers to build the lower outer part of pink granite stone. The engineers worked to bring granite sandstones from Aswan, and they were transported on the Nile to Giza. Menkaure's pyramid was covered with pink granite stones to a height of 15 meters, and above them was made of white limestone that they brought from Tura, on the eastern bank of the Nile.
+            From the north of the pyramid descends a sloping crypt to a preliminary room under the floor of the pyramid. Another crypt extends from it, sloping upward, and ends directly under the floor of the pyramid and ends with a wall. It seems that this basement was originally planned to extend inside the pyramid. The coffin chamber was built down from the primary chamber. A granite coffin measuring 2.43 x 0.94 x 0.88 meters was found there. The coffin was decorated - unlike the coffins of Khufu and Khafre, which were simple and without decoration - as the coffin of Menkaure was engraved on its faces, which formed the entrance to the palace.
+            The coffin was supposed to be transported to Britain in 1838, but it did not arrive, as a storm intercepted the carrier ship and sank.",
+            character_id: character_18.id,
+    )
     # character_2 = Character.create(
     #     arabic_name: "",
     #     english_name: "",
@@ -1464,7 +1628,7 @@ require 'open-uri'
     )
     event_3 = Event.create(
         type: "PeaceTreaty",
-        arabic_title: "بناءهرم سنفرو",
+        arabic_title: "بناء هرم سنفرو",
         english_title: "Building the Pyramid of Snefru",
         start_date: "2600",
         end_date: "2550",
@@ -1525,7 +1689,232 @@ require 'open-uri'
         english_content:"In the third construction phase, the angle was reduced to 43 degrees and the construction was placed in horizontal layers, just as in the Red Pyramid, which relieved the pressure inside. This created a unique window that is not found in any other pyramid. Due to the lower inclination angle of the upper part, the total height was reduced to 105 m. The total volume reached 1,440,808 cubic metres. Also the upper area is covered with soft Tura limestone.",
         event_id: event_3.id,
     )
+    event_4 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title: "بناء هرم خوفو (الهرم الأكبر)",
+        english_title: "Building the Pyramid of Khufu (the Great Pyramid)",
+        start_date: "2560",
+        end_date: "2540",
+        arabic_info:"الهرم الأكبر أو هرم خوفو هو الأثر الوحيد الباقي من عجائب الدنيا السبع، ويقع بمنطقة أهرام الجيزة في مصر المسجلة ضمن مواقع اليونيسكو للتراث العالمي. يعود بناء الهرم إلى نحو سنة 2560 قبل الميلاد حيث شيد كمقبرة لفرعون الأسرة الرابعة خوفو واستمر بناؤه لفترة 20 عامًا. يعد بناء الهرم الأكبر نقلة حضارية كبرى في تاريخ مصر القديم، وقد تأثر خوفو بأبيه الملك سنفرو في بناء هرمه؛ فبعد موته، أصبح خوفو الإله الحاكم على الأرض، وأصبح من الضروري أن يفكر في بناء مقبرته والتي تعد المشروع القومي الأول في مصر القديمة، الذي اشترك في بنائه عمال محترفون من جميع أنحاء مصر. وظل الهرم الأكبر بارتفاعه الأصلي الذي كان يصل إلى 148 متر أعلى بناء أتمه الإنسان على الأرض على مدى 3800 سنة.",
+        english_info:"The Great Pyramid, or the Pyramid of Khufu, is the only remaining relic of the Seven Wonders of the World. It is located in the Giza Pyramids area in Egypt, which is registered as a UNESCO World Heritage Site. The construction of the pyramid dates back to about 2560 BC, when it was built as a tomb for the Fourth Dynasty Pharaoh Khufu, and its construction continued for 20 years. The construction of the Great Pyramid is a major cultural shift in the history of ancient Egypt, and Khufu was influenced by his father, King Sneferu, in building his pyramid. After his death, Khufu became the ruling god on earth, and it became necessary for him to think about building his tomb, which was considered the first national project in ancient Egypt, in which professional workers from all over Egypt participated in its construction. With its original height of 148 metres, the Great Pyramid remained the tallest building completed by man on Earth over a period of 3,800 years.",
+        character_id: character_16.id,
+        sub_era: sub_era_2
+    )
+    event_4.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"مقدمه",
+        english_title:"Introduction",
+        arabic_content:"كان الأمير حم إيونو هو مهندس الملك خوفو - ويوجد له تمثال أكبر من الحجم العادي من الحجر الجيري محفوظ في متحف رومر-بيليزيوس في مدينة هيلدسهايم في ألمانيا. وقد أرسل الكهنة والمهندسين إلى مدينة أون كي يختاروا اسمًا للهرم، وكان ذلك الاسم هو: «آخت خوفو»، أي بمعنى «أفق خوفو». فهو يمثل الأفق الذي سيستقل منه الإله رع مراكب الشمس كي يبحر بها وتجدف له النجوم، ويقتل بمجاديفها الأرواح الشريرة في العالم الآخر ليفنى الشر فيقدسه شعبه. والملك خوفو هو أول ملك يعتبر نفسه الإله رع على الأرض[؟]. ونلاحظ أن ابنه خفرع وحفيده منقرع يدخل في اسمهما اسم الإله رع.",
+        english_content:"Prince Ham-Iono was King Khufu's architect - and a larger-than-life limestone statue of him is preserved in the Romer-Belizius Museum in Hildesheim, Germany. Priests and engineers were sent to the city of On to choose a name for the pyramid, and that name was: 'Akhet Khufu', meaning 'Horizon of Khufu'. It represents the horizon from which the god Ra will board the chariots of the sun in order to sail on them and the stars will paddle for him, and with their oars he will kill evil spirits in the other world in order to annihilate evil and be sanctified by his people. King Khufu is the first king to consider himself God Ra on Earth. We note that his son Khafre and his grandson Menkaure include the name of the god Ra in their names.",
+        event_id: event_4.id,
+    )
+    EventSection.create(
+        arabic_title:"التاريخ والوصف",
+        english_title:"History and Description",
+        arabic_content:"شيد الهرم كمقبرة لفرعون الأسرة المصرية الرابعة خوفو واستمر بناؤه لفترة 20 عامًا. يعتقد بعض علماء الآثار بأن يكون التياتي (الوزير) حم إيونو هو معماري الهرم الأكبر. يعتقد بأن الهرم الأكبر أثناء البناء كان طوله 280 قدم بالمقياس المصري 146.5 متر (480.6 قدم) لكن مع التآكل وغياب القطعة الهرمية الخاصة به أصبح ارتفاعه الحالي 138.8 متر (455.4 قدم). كل جانب للقاعدة كان 440 ذراع 230.4 متر (755.9 قدم) طول. تقدر كتلة الهرم بنحو 5.9 مليون طن. حجم الهرم بالإضافة إلى الأَكَمَة الداخلية تقارب 2.5 مليون متر مكعب. استنادًا على هذه التقديرات، يحتاج بناء هذا الهرم في 20 عامًا تقطيع ونقل وتركيب ما يقرب من 800 طن من الحجارة يوميًا. وبالمثل، لأنه يتكون من ما يقدر بـ 2.3 مليون كتلة حجرية، فاستكمال البناء في 20 عامًا يحتاج تحريك نحو 12 كتلة حجرية إلى موقعها كل ساعة ليلًا ونهارًا. أجريت أول قياسات دقيقة للهرم من قبل عالم المصريات السير فلندرز بيتري من عام 1880 إلى 1882 ونشرها بعنوان أهرامات ومعابد الجيزة. تستند تقريبًا جميع التقارير على قياساته. كثيرًا من حجارة الكسوة وكتل الغرفة الداخلية تتناسب مع بعضها البعض بدقة متناهية. بناءً على القياسات التي أخذت لحجارة كسوة الجانب الشمالي الشرقي فعرض مدخل الأوْصال الرئيسي 0.5 مليمتر فقط.
 
+        ظل الهرم الأكبر أعلى مبنى في العالم طيلت 3,800 عام، لم يَفُقْهُ مبنى آخر حتى تم بناء قمة كاتدرائية لينكولن بارتفاع 160 متر (في عام 1300 بعد الميلاد). الدقة في إتقان بناء الهرم تتمثل في الجوانب الأربعة للقاعدة فمعدل متوسط الخطأ 58 مليمتر في الطول، فأطوال أضلاع الهرم التي قدرها 'بيتري' في عام 1925 هي: 230.252 متر و 230.454 متر و 230.391 متر. قاعدة الهرم أفقية ومسطحة في حدود ±15 مـم (0.6 بوصة). جوانب القاعدة المربعة تُحاذي الجِهاتُ الأصلِيّة الأربعة للبوصلة (ضمن 4 دقائق قوسية)  على أساس الشمال الحقيقي، لا الشمال المغناطيسي، والقاعدة النهائية كانت مربعة بخطأ في الزاوية بمتوسط 12 ثانية قوسية. تقدر أبعاد التصميم النهائي، كما اقترحته دراسة بيتري والدراسات التالية: أن الارتفاع كان في الأصل 280 ذراعا وبطول ضلع للهرم 440 ذراع، فيكون محيط الهرم 1760 ذراع مصري قديم. النسبة بين المحيط إلى الارتفاع 1760/280، أي ما يعادل 2 ط وهي تختلف عن القيمة المضبوطة ل [ط] بنسبة 0.05% فقط. يعتبر بعض علماء المصريات أن هذه النسبة كانت متعمدة وقت التصميم. وبالإشارة إلى تلك الحقيقة كتب 'فيرنر' : 'نحن نستطيع أن نستنتج أنه بالرغم من عدم معرفة المصريين القدماء تحديد قيمة π (ط) بدقة، إلا أنهم في الواقع قد استخدموها.'",
+        english_content:"The pyramid was built as a tomb for the Fourth Dynasty Egyptian Pharaoh Khufu, and its construction continued for a period of 20 years. Some archaeologists believe that Al-Tiyati (Vizier) Ham-Iuno was the architect of the Great Pyramid. It is believed that the Great Pyramid during construction was 280 feet tall by the Egyptian standard (146.5 meters (480.6 feet), but with erosion and the absence of its pyramidal piece, its current height became 138.8 meters (455.4 feet). Each side of the base was 440 cubits long and 230.4 meters (755.9 ft) long. The mass of the pyramid is estimated at about 5.9 million tons. The volume of the pyramid plus the inner mound is approximately 2.5 million cubic metres. Based on these estimates, building this pyramid in 20 years would require cutting, transporting and installing approximately 800 tons of stones per day. Likewise, because it consists of an estimated 2.3 million stone blocks, completing the construction in 20 years would require moving about 12 stone blocks into position every hour, day and night. The first accurate measurements of the pyramid were made by Egyptologist Sir Flinders Petrie from 1880 to 1882 and published with the title The Pyramids and Temples of Giza. Almost all reports are based on its measurements. Many of the cladding stones and interior room blocks fit together with great precision. Based on the measurements taken for the cladding stones of the northeastern side, the width of the main awsal entrance is only 0.5 mm.
+
+        The Great Pyramid remained the tallest building in the world for 3,800 years, and was not surpassed by another building until the top of Lincoln Cathedral was built at a height of 160 meters (in 1300 AD). The accuracy in perfecting the construction of the pyramid is represented in the four sides of the base. The average error rate is 58 millimeters in length. The lengths of the pyramid’s sides estimated by Petrie in 1925 are: 230.252 metres, 230.454 metres, and 230.391 metres. The base of the pyramid is horizontal and flat to within ±15 mm (0.6 in). The sides of the square base aligned with the four cardinal directions of the compass (within 4 arc minutes) based on true north, not magnetic north, and the final base was square with an angle error of 12 arc seconds on average. The dimensions of the final design, as suggested by Petrie's study and the following studies, are estimated to be: The height was originally 280 cubits and the side length of the pyramid was 440 cubits, so the circumference of the pyramid would be 1760 ancient Egyptian cubits. The perimeter to height ratio is 1760/280, which is equivalent to 2t and differs from the set value of [t] by only 0.05%. Some Egyptologists consider that this proportion was intentional at the time of design. Referring to this fact, Werner wrote: “We can conclude that although the ancient Egyptians did not know how to precisely determine the value of π, they in fact used it.”",
+        event_id: event_4.id,
+    )
+    EventSection.create(
+        arabic_title:"تسوية الموقع والقياس",
+        english_title:"Site settlement and measurement",
+        arabic_content:"بعد اختيار المهندسون لهضبة الجيزة بأرضيتها الصخرية الصلبة لبناء الهرم بدؤوا مع العمال بتسوية السطح حول الهرم المزمع إنشاؤه لتكون الأساس. فقاموا بالقياس وتحديد مواقع الأركان لتكون كل واجهة للهرم متجهة نحو الجهات الجغرافية: شمال، جنوب، شرق، وغرب. وحطم العمال كل ما يزيد من جوانب الهرم من صخور ونقلت الأنقاض بعيدا عن الموقع. بهذا استفاد المهندسون بجزء بارز من صخرة الهضبة ليجعلوا منها جزءا من الطبقة السفلية للهرم، وتظهر صخرة الهضبة الآن في بعض أجزاء الهرم في الطبقة الأولى أو الثانية. وقاموا بتشكيل جزء الهضبة الداخلة من ضمن بناية الهرم لتكون مدرجة بحيث تسهل رص الأحجار بعد ذلك، وملؤا ما فيها من شقوق بالحجارة لإتمام التسوية. بعد ذلك قاموا بتغطية الطبقة الأولى من الجوانب بصف حجارة تغطية من الحجر الجيري الأبيض من محاجر طره بحيث تضبط أضلاع الهرم والزوايا القائمة لأركانه. وتمت تسوية الأساس بإتقان شديد: فإن الفرق في الارتفاع فيه لا يزيد عن 21 مليمتر. كما أن القياسات قد تمت بإتقان شديد لأضلاع الهرم، هذا على الرغم من أن ارتفاع الأرضية الصخرية في الوسط كانت تشكل عائقًا لقياس المحاور. إن مقدار الاختلاف عن اتجاه الشمال لا يزيد عن 3′6″ نحو الغرب. ولا تختلف أطوال أضلاع الهرم كثيرا عن المقاس المحدد لها والبالغ 440 ذراع (~ 230,383 متر)؛ على الناحية الجنوبية 7 سنتيمتر، وعلى الناحية الشمالية 13 سنتيمتر. كما أن زوايا الأركان كانت دقيقة جدا أيضا؛ فيبلغ انحراف الزاوية 2″ عند الركن الشمالي الغربي، و3′2 عند الركن الشمالي الشرقي، و3′33 عند الركن الجنوبي الشرقي و33 عند الجنوبي الغربي. وتبلغ زاوية ميل أسطح الهرم 51°50′40، وهو طبقا للمقياس المصري القديم ما يعادل ارتفاع ذراع مع إزاحة أفقية قدرها خمسة ونصف لعرض اليد. وهذا الميل ما يجعل الهرم يصل إلى ارتفاع 280 ذراع (= 146,59 متر). ويبلغ ارتفاع الهرم اليوم 138,75 متر، حيث هدم جزء من القمة على مر العصور. وطبقا للمقاييس المصرية القديمة: يبلغ 1 ذراع (ذراع ملكي قديم) = 7 عروض يد؛ لهذا تحسب زاوية ميل سطح الهرم بنسبة الارتفاع إلى الإزاحة الأفقية كالآتي: 7:5,5 = 14:11 = 28:22 = 280:220 = ظل زاوية 50,84 درجة. أسطح الهرم اليوم منحنية وليست مستوية تماما. ويبلغ انحناء السطح الشمالي إلى الداخل 0,94 متر.",
+        english_content:"After the engineers chose the Giza Plateau, with its solid rocky floor, to build the pyramid, they and the workers began leveling the surface around the pyramid to be built to form the foundation. They measured and determined the locations of the corners so that each face of the pyramid would face the geographical directions: north, south, east, and west. The workers destroyed all the rocks on the pyramid's sides and moved the rubble away from the site. Thus, the engineers took advantage of a prominent part of the plateau rock to make it part of the bottom layer of the pyramid, and the plateau rock now appears in some parts of the pyramid in the first or second layer. They formed the part of the plateau inside the pyramid building to be a terrace to facilitate the laying of stones afterwards, and they filled the cracks in it with stones to complete the leveling. After that, they covered the first layer of the sides with a row of covering stones made of white limestone from the Tora quarries, so that the pyramid’s ribs and the right angles of its corners were aligned. The foundation was leveled very carefully: the difference in height does not exceed 21 millimeters. The measurements of the pyramid's sides were also carried out very carefully, despite the fact that the height of the rocky floor in the middle constituted an obstacle to measuring the axes. The amount of difference from the north direction is no more than 3′6″ towards the west. The lengths of the pyramid's sides do not differ much from the specified size of 440 cubits (~230,383 meters). On the southern side, 7 cm, and on the northern side, 13 cm. The corner angles were also very precise; The angle deviation is 2″ at the northwest corner, 3′2 at the northeast corner, 3′33 at the southeast corner, and 33 at the southwest. The angle of inclination of the pyramid's surfaces is 51°50′40, which according to the ancient Egyptian scale is equivalent to the height of an arm with a horizontal displacement of five and a half to the width of the hand. This tilt makes the pyramid reach a height of 280 cubits (= 146.59 metres). Today, the height of the pyramid is 138.75 meters, as part of the summit was demolished over the ages. According to ancient Egyptian standards: 1 cubit (ancient royal cubit) = 7 hand widths; For this reason, the angle of inclination of the pyramid's surface is calculated as a ratio of height to horizontal displacement as follows: 7:5.5 = 14:11 = 28:22 = 280:220 = tangent of 50.84 degrees. Today's pyramid surfaces are curved and not completely flat. The northern surface has an inward curvature of 0.94 metres.",
+        event_id: event_4.id,
+    )
+    EventSection.create(
+        arabic_title:"قلب الهرم والغلاف",
+        english_title:"The heart of the pyramid and the cover",
+        arabic_content:"كان هرم خوفو مغطى بطبقة ملساء من أحجار طرة البيضاء. إلا أن أغلب تلك الحجارة قد استغل في بناء القاهرة، مما يجعل الجزء الداخلي للهرم مرئية وطبقاته المتراصة. وترى بعض أجزاء التغطية في الطبقة السفلي من الهرم. وعلى بعض أحجار تلك التغطية توجد كتابات وعلامات كانت تكتبها مجموعات العمال أثناء العمل، وكانت تلك العلامات والكتابات تكتب باللون الأحمر. وكان الهرم وتغطيته ينتهي من أعلى بهرم صغير. هذا الهرم الصغير مفقود اليوم وأغلب الظن أنه كان من حجر من نوع آخر غير أحجار طرة، وإنما من البازلت أو الجرانيت.
+
+        أحجار قلب الهرم تتكون من أحجار جيرية. وكانت الأحجار المقطوعة على أشكال مكعبات أو مستطيلات يصل ارتفاعها نحو 1 متر أو 1.5 متر مرصوصة أففيًا. ويوجد منها اليوم 203 طبقة، حيث تحطمت السبعة طبقات التي كانت تشكل القمة مع الزمن. يبلغ وزن القطعة الحجرية منها في الطبقات العليا نحو 1 طن وفي الطبقات السفلى بين 2 - 3 طن.
+        
+        أما لبناء حجرة الملك فقد بنيت بقطع حجرية كبيرة تزن بين 40 - 70 طن من الجرانبيت الأحمر، كانت تنقل إلى نحو ارتفاع 70 متر أثناء البناء لوضعها في أماكنها. كان العمال يكتبون علامات على بعض الأحجار أثناء عملية البناء، مثلما في بنايات خفض الضغط على أسقف الحجرات، وهي تعبر عن مقاييس وأسماء المجموعات العاملة، وفي حالتين تذكر اسم خوفو. وجدت بعض تلك الكتابات أيضا بالألوان الأحمر والأسود عل بعض أحجار الطبقتين 5 و 6، واكتشفها 'ليزلي غرينسيل' على أحجار عارية.",
+        english_content:"The pyramid of Khufu was covered with a smooth layer of white Tura stones. However, most of these stones were used in the construction of Cairo, making the interior of the pyramid and its interconnected layers visible. You can see some parts of the coverage in the bottom layer of the pyramid. On some of the stones of this covering there are writings and marks that were written by groups of workers while working, and these marks and writings were written in red. The pyramid was covered with a small pyramid at the top. This small pyramid is missing today, and it is most likely that it was made of a different type of stone than the Tora stones, but rather made of basalt or granite.
+
+        The core stones of the pyramid are made up of limestone. The stones were cut into cubes or rectangles, about 1 meter or 1.5 meters high, and stacked horizontally. Today there are 203 layers, as the seven layers that formed the top were destroyed with time. The weight of the stone piece in the upper layers is about 1 ton, and in the lower layers it is between 2 and 3 tons.
+        
+        As for the construction of the King’s Chamber, it was built with large stone pieces weighing between 40 and 70 tons of red granite, which were transported to a height of about 70 meters during construction to put them in their places. The workers used to write marks on some of the stones during the construction process, such as in pressure-reducing buildings on the ceilings of the rooms, which express the standards and names of the working groups, and in two cases mention the name of Khufu. Some of these writings were also found in red and black on some of the stones of layers 5 and 6, and were discovered by 'Leslie Greensill' on bare stones.",
+        event_id: event_4.id,
+    )
+    EventSection.create(
+        arabic_title:"الحجارة الخارجية",
+        english_title:"Outer stones",
+        arabic_content:"كان الهرم الأكبر مغلفا بطبقة ملساء من الحجر الجيري الأبيض، أما اليوم فكل ما يظهر من الهرم هو الطبقة المتدرجة أسفل الطبقة الملساء. ففي عام 1300 تراخت كميات كبيرة من حجارة الغلاف الخارجي نتيجة زلزال عنيف، ليتم بعدها استخراج تلك الحجارة واستخدامها في بناء التحصينات والمساجد في مدينة القاهرة. ويمكن رؤية تلك الحجارة حتى اليوم في إنشاءات مختلفة في مدينة القاهرة. وقد وصف مستكشفون لاحقون كميات كبيرة من الأنقاض عند سفح الهرم تراكمت من الانهيارات المتكرة لطبقة الحجارة الخارجية. وتمت إزالتها لاحقا أثناء عمليات الاستكشاف في الموقع. وعلى الرغم من ذلك، فقد تبقى القليل من حجارة الغلاف في مواقعها في بعض الأجزاء السفلية حول قاعدة الهرم.
+
+        وقد وصف عالم المصريات فلندرز بيتري دقة تشكيل حجارة الغلاف بأنها 'مساوية لدقة عمل صانع النظارات اليوم، لكن على قياس فدادين' و'لوضع مثل هذه الحجارة في الموضع المحدد هو عمل دقيق، ولكن للقيام بذلك بدون إسمنت في المفاصل يبدو شبه مستحيل'. وقد اقترح البعض انه تم استخدام الملاط الذي وفر سطح مستوي ساعد البنائين على تثبيت تلك الحجارة في أماكنها، ليجعل بذلك تلك المهمة المستحيلة ممكنة.",
+        english_content:"The Great Pyramid was covered with a smooth layer of white limestone, but today all that is visible of the pyramid is the stepped layer below the smooth layer. In the year 1300, large quantities of the stones of the outer shell fell as a result of a violent earthquake, after which those stones were extracted and used in the construction of fortifications and mosques in the city of Cairo. These stones can still be seen today in various constructions in Cairo. Later explorers described large amounts of rubble at the foot of the pyramid, accumulated from repeated collapses of the outer stone layer. They were later removed during excavations at the site. However, a few casing stones may remain in place in some of the lower parts around the base of the pyramid.
+
+        The Egyptologist Flinders Petrie described the precision of shaping the casing stones as 'equal to the precision of the work of an optician today, but on the scale of acres' and 'to place such stones in the exact position is a delicate work, but to do it without cement in the joints seems almost impossible'. Some have suggested that mortar was used, which provided a flat surface that helped the builders hold these stones in place, thus making this impossible task possible.",
+        event_id: event_4.id,
+    )
+    event_5 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title: "بناء هرم خفرع",
+        english_title: "Building the Pyramid of Khufu",
+        start_date: "2570 BC",
+        end_date: "2546 BC",
+        arabic_info:"هرم خفرع هو أحد أهرامات الجيزة في مصر. بناه الملك خفرع رابع ملوك الأسرة الرابعة ابن الملك خوفو. تزوج من الأميرة مراس عنخ. حكم ست وعشرين سنة. بني الهرم الثاني من أهرام الجيزة، وهو أقل ارتفاعا من هرم أبيه (خوفو). كان ارتفاعه 143 مترا والآن 136 مترا.
+
+        شيد فوق مساحة 215 مترا مربعا.وله مدخلان في الجهة الشمالية. وما زال يحتفظ بجزء من كسوته الخارجية عند القمة.عثر ضمن مجموعته الهرمية على تماثيل من حجر الشست في معبد الوادي الخاص ز من بينها تمثال من أجمل ما أنتجه فن النحت المصري، وهو موجود بالمتحف المصري، وينسب له نحت صخرة تمثال أبي الهول.
+        
+        يقع هرم خفرع جنوب غرب هرم أبيه خوفو. ويبلغ ارتفاعه 143,5 متراً وطول كل ضلع 215,5 متراً، وزاوية ميله 53,10ْ. يقع في مستوى سطح الأرض، والمدخل يؤدي إلى ممر هابط، سقفه من الجرانيت وزاوية انحداره 22ْ. وينتهي عند متراس يفضي إلى ممر أفقي، ثم ممر منحدر يؤدي إلى حجيرة يطلق عليها خطأ حجرة الدفن وهي فارغة منحوتة في الصخر، ويؤدي الدهليز إلى متراس آخر يرتفع إلى أعلى بممر أفقي ينتهي بحجرة الدفن، وهذه الحجرة سقفها جمالوني مشيد بالحجر الجيري، وتكاد تكون منتصف الهرم، أطلق خفرع على هرمه اسم(العظيم).",
+        english_info:"The Pyramid of Khafre is one of the pyramids of Giza in Egypt. It was built by King Khafre, the fourth king of the Fourth Dynasty, son of King Khufu. He married Princess Ankh berths. He ruled for twenty-six years. The second pyramid of Giza was built, and it is lower in height than his father's pyramid (Khufu). Its height was 143 meters and now it is 136 metres.
+
+        It was built on an area of 215 square meters. It has two entrances on the northern side. It still retains part of its outer covering at the top. Within its pyramid collection, schist stone statues were found in the Wadi Khas Temple, including one of the most beautiful statues produced by Egyptian sculpture. It is located in the Egyptian Museum, and he is credited with carving the rock of the Sphinx.
+        
+        Khafre's pyramid is located southwest of the pyramid of his father Khufu. Its height is 143.5 metres, the length of each side is 215.5 metres, and its inclination angle is 53.10 degrees. It is located at ground level, and the entrance leads to a descending corridor, with a granite ceiling and a slope angle of 22 degrees. It ends at a rampart that leads to a horizontal passage, then a sloped passage that leads to a chamber mistakenly called the burial chamber, which is empty and carved into the rock. The vestibule leads to another rampart that rises upwards with a horizontal passage that ends with the burial chamber. This chamber has a trussed roof built of limestone, and is almost the middle of The Pyramid: Khafre called his pyramid the Great.",
+        character_id: character_17.id,
+        sub_era: sub_era_2
+    )
+    event_5.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/1/1b/Khafre%27s_Pyramid343.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"الحجم",
+        english_title:"Size",
+        arabic_content:"يبلغ طول قاعدة الهرم 215.5 متر (706 قدم) وترتفع حتى ارتفاع 136.4 متر (448 قدم) . وهي مصنوعة من كتل الحجر الجيري التي يزيد وزن كل منها عن 2 طن. يرتفع منحدر الهرم بزاوية 53 درجة 13 بوصة ، وهو أكثر انحدارًا من جاره هرم خوفو ، الذي تبلغ زاويته 51 درجة 50'24 . يقع هرم خفرع على قاعدة صخرية أعلى 10 أمتار (33 قدم) أعلى من هرم خوفو ، مما يجعله يبدو أطول.",
+        english_content:"The base of the pyramid is 215.5 meters (706 feet) long and rises to a height of 136.4 meters (448 feet). It is made of limestone blocks weighing over 2 tons each. The pyramid's slope rises at an angle of 53 degrees 13', which is steeper than its neighbor the Pyramid of Khufu, which has an angle of 51 degrees 50'24. The Pyramid of Khafre sits on a rock base 10 meters (33 ft) higher than the Pyramid of Khufu, making it appear taller.",
+        event_id: event_5.id,
+    )
+    EventSection.create(
+        arabic_title:"التاريخ",
+        english_title:"History",
+        arabic_content:"من المحتمل أن الهرم قد تم فتحه وسرقته خلال الفترة الانتقالية الأولى. خلال الأسرة المصرية التاسعة عشر ، أخذ المشرف على بناء المعبد حجارة الغلاف من الهرم لبناء معبد في أون بناءً على أوامر رمسيس الثاني.
+
+        سجل المؤرخ العربي ابن عبد السلام أن الهرم تم فتحه في 1372 م. على جدار حجرة الدفن ، هناك نقوش لغة عربية ربما يرجع تاريخها إلى نفس الوقت.
+        
+        من غير المعروف متى تم سرقة ما تبقى من حجارة الغلاف ؛ من المفترض أنها كانت لا تزال في مكانها بحلول عام 1646 ، عندما كتب جون جريفز ، أستاذ علم الفلك في جامعة أكسفورد في كتابه Pyramidographia ، أنه بينما لم تكن أحجارها كان السطح كبيرًا أو منتظمًا كما هو الحال في خوفو ، وكان السطح أملسًا وخاليًا من انتهاكات عدم المساواة ، باستثناء الجنوب.
+        
+        تم استكشاف الهرم لأول مرة في العصر الحديث بواسطة جوفاني باتيستا بلزوني في 2 مارس 1818 ، عندما تم العثور على المدخل الأصلي في الجانب الشمالي. كان بلزوني يأمل في العثور على دفن سليم لكن الغرفة كانت فارغة باستثناء تابوت مفتوح وغطائها مكسور على الأرض.
+        
+        تم إجراء أول استكشاف كامل من قبل جون شاي بيرينج  في عام 1837. في عام 1853 ، قام أوجوست مارييت بحفر جزئي في معبد وادي خفرع ، وفي عام 1858 ، أثناء استكمال تطهيره ، تمكن من اكتشاف تمثال ديوريت لخفرع.",
+        english_content:"It is likely that the pyramid was opened and stolen during the First Intermediate Period. During the 19th Dynasty of Egypt, the temple construction supervisor took the casing stones from the pyramid to build a temple at On on the orders of Ramesses II.
+
+        The Arab historian Ibn Abd al-Salam recorded that the pyramid was opened in 1372 AD. On the wall of the burial chamber, there are Arabic language inscriptions probably dating to the same time.
+        
+        It is not known when the remaining casing stones were stolen; It was supposedly still in place by 1646, when John Greaves, professor of astronomy at Oxford University, wrote in his book Pyramidographia, that while its stones were not as large or regular as those of Khufu, the surface was smooth and free of irregularity violations. Equality, except in the South.
+        
+        The pyramid was first explored in modern times by Giovanni Battista Belzoni on March 2, 1818, when the original entrance was found on the north side. Belzoni had hoped to find an intact burial but the room was empty except for an open coffin with its lid broken on the floor.
+        
+        The first complete exploration was undertaken by John Shaye Bering in 1837. In 1853, Auguste Mariette carried out a partial excavation of the Valley Temple of Khafre, and in 1858, while completing its clearing, he was able to discover a diorite statue of Khafre.",
+        event_id: event_5.id,
+    )
+    EventSection.create(
+        arabic_title:"البناء",
+        english_title:"Construction",
+        arabic_content:"مثل الهرم الأكبر ، تم استخدام نتوء صخري في القلب. بسبب منحدر الهضبة ، تم قطع الركن الشمالي الغربي 10 أمتار (33 قدمًا) من باطن الصخور وتم بناء الركن الجنوبي الشرقي.
+
+        الهرم مبني من مسارات أفقية. الأحجار المستخدمة في القاع كبيرة جدًا ، ولكن مع ارتفاع الهرم ، تصبح الحجارة أصغر ، ويصبح سمكها 50 سم (20 بوصة) عند القمة. تكون الدورات قاسية وغير منتظمة في النصف الأول من ارتفاعها ، لكن هناك نطاقًا ضيقًا من البناء العادي واضحًا في الجزء الأوسط من الهرم. في الركن الشمالي الغربي للهرم ، تم تشكيل حجر الأساس في درجات. تغطي أحجار الغلاف الثلث العلوي من الهرم ، لكن الهرم وجزء من القمة مفقودة.
+        
+        تم صنع الطبقة السفلية لأحجار الغلاف من الجرانيت الوردي ولكن تم تغليف باقي الهرم بالحجر الجيري من طرة . يكشف الفحص الدقيق أن حواف زوايا أحجار الغلاف المتبقية ليست مستقيمة تمامًا ، ولكنها متداخلة ببضعة مليمترات. تقول إحدى النظريات أن هذا يرجع إلى الاستقرار من النشاط الزلزالي. تفترض نظرية بديلة أن المنحدر على الكتل قد تم قطعه للشكل قبل وضعه بسبب مساحة العمل المحدودة باتجاه قمة الهرم.",
+        english_content:"Like the Great Pyramid, a rock outcrop was used for the core. Because of the slope of the plateau, the northwest corner was cut off 10 meters (33 ft) of soffit and the southeast corner was built up.
+
+        The pyramid is built of horizontal paths. The stones used at the bottom are very large, but as the pyramid rises, the stones become smaller, becoming 50 cm (20 in) thick at the top. The courses are rough and irregular in the first half of its height, but a narrow band of regular masonry is evident in the central part of the pyramid. At the northwest corner of the pyramid, the foundation stone is shaped into steps. Casing stones cover the upper third of the pyramid, but the pyramid and part of the summit are missing.
+        
+        The bottom layer of the casing stones was made of pink granite but the rest of the pyramid was encased in limestone from Tura. Closer examination reveals that the edges of the corners of the remaining casing stones are not perfectly straight, but are overlapping by a few millimetres. One theory is that this is due to stability from seismic activity. An alternative theory posits that the slope on the blocks was cut to shape before being placed due to the limited working space towards the top of the pyramid.",
+        event_id: event_5.id,
+    )
+    EventSection.create(
+        arabic_title:"داخلي",
+        english_title:"Interior",
+        arabic_content:"يؤدي مدخلان إلى حجرة الدفن ، أحدهما يوجد على ارتفاع 11.54 متر (37.9 قدم) أعلى وجه الهرم والآخر يوجد عند قاعدة الهرم. لا تتماشى هذه الممرات مع الخط المركزي للهرم ، ولكنها تقابلها جهة الشرق بمقدار 12 متر (39 قدم). الممر السفلي النازل محفور بالكامل من حجر الأساس ، ينزل ، ويمر أفقيًا ، ثم يصعد لينضم إلى الممر الأفقي المؤدي إلى حجرة الدفن.
+
+        إحدى النظريات حول سبب وجود مدخلين هي أن الهرم كان من المفترض أن يكون أكبر بكثير مع تحول القاعدة الشمالية 30 متر (98 قدم) إلى الشمال مما يجعل هرم خفرع أكبر بكثير من هرم أبيه. هذا من شأنه أن يضع المدخل إلى الممر السفلي النازل داخل بناء الهرم. بينما يتم قطع حجر الأساس بعيدًا عن الهرم على الجانب الشمالي منه على الجانب الغربي ، فليس من الواضح أن هناك مساحة كافية على الهضبة لجدار السياج وشرفة الهرم. النظرية البديلة هي أنه ، كما هو الحال مع العديد من الأهرامات السابقة ، تم تغيير المخططات وتم نقل المدخل في منتصف الطريق خلال البناء.
+        
+        توجد غرفة فرعية ، مساوية في الطول لغرفة الملك في هرم خوفو ،  التي تفتح إلى الغرب من الممر السفلي ، الغرض منها انه غير مؤكد. يمكن استخدامه لتخزين القرابين ، أو تخزين معدات الدفن ، أو قد يكون غرفة سرداب. الممر العلوي النازل مغطى بالجرانيت وينحدر للانضمام إلى الممر الأفقي المؤدي إلى حجرة الدفن.
+        
+        تم نحت حجرة الدفن من حفرة في الصخر. السقف مبني من عوارض جملونية من الحجر الجيري. الغرفة مستطيلة الشكل ، 14.15 متر × 5 متر (46.4 × 16.4 قدمًا) ، وموجهة بين الشرق والغرب. تم نحت تابوت خفرع من كتلة صلبة من الجرانيت وغرق جزئيًا في الأرض ، ووجد بلزوني فيه عظام حيوان ، ربما ثور. من المحتمل أن تحتوي حفرة أخرى في الأرضية على صندوق كانوبي ، وكان من الممكن أن يكون غطاءها أحد ألواح الرصيف.",
+        english_content:"Two entrances lead to the burial chamber, one of which is located 11.54 meters (37.9 ft) above the face of the pyramid and the other is located at the base of the pyramid. These corridors do not align with the center line of the pyramid, but offset it to the east by 12 meters (39 ft). The lower descending passage is entirely excavated from bedrock, descends, passes horizontally, and then ascends to join the horizontal passage leading to the burial chamber.
+
+            One theory as to why there were two entrances is that the pyramid was meant to be much larger with the northern base shifted 30 meters (98 ft) to the north making Khafre's pyramid much larger than his father's pyramid. This would place the entrance to the lower descending passage within the pyramid construction. While the bedrock is cut farther away from the pyramid on the north side than on the west side, it is not clear that there was enough space on the plateau for the enclosure wall and terrace of the pyramid. An alternative theory is that, as with many earlier pyramids, the plans were changed and the entrance was moved midway through construction.
+            
+            There is a subsidiary chamber, equal in length to the King's Chamber in the Pyramid of Khufu, which opens to the west of the lower passage, the purpose of which is uncertain. It may have been used to store offerings, store burial equipment, or it may have been a crypt room. The descending upper passage is covered with granite and descends to join the horizontal passage leading to the burial chamber.
+            
+            The burial chamber was carved out of a hole in the rock. The roof is built of limestone gabled beams. The room is rectangular in shape, 14.15 m × 5 m (46.4 × 16.4 ft), and oriented east-west. Khafre's sarcophagus was carved from a solid block of granite and partially sunk into the ground, and Belzoni found in it the bones of an animal, perhaps a bull. Another hole in the floor likely contained a canopic box, the lid of which could have been one of the pavement slabs.",
+        event_id: event_5.id,
+    )
+
+    event_6 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title:"بناء ابو الهول",
+        english_title:"Building the Sphinx",
+        start_date: "2494 BC",
+        end_date: "2520 BC",
+        arabic_info:"أبو الهول هو تمثال لمخلوق أسطوري بجسم أسد ورأس إنسان وقد نحت من الحجر الكلسيّ، ومن المرجح أنه كان في الأصل مغطى بطبقة من الجص وملون، ولا زالت آثار الألوان الأصلية ظاهرة بجانب إحدى أذنيه.
+
+        يقع على هضبة الجيزة على الضفة الغربية من النيل في الجيزة، مصر، ويعد أبو الهول أيضاً حارساً للهضبة. وهو أقدم المنحوتات الضخمة المعروفة، يبلغ طوله نحو 73.5 متر، من ضمنها 15 متر طول قدميه الأماميتين، وعرضه 19.3 م، وأعلى ارتفاع له عن سطح الأرض حوالي 20 متراً إلى قمة الرأس. يعتقد أن قدماء المصريين بنوه في عهد الملك خفرع (2558 ق.م -2532 ق.م)، باني الهرم الأوسط في الجيزة.
+        
+        
+        رأس أبو الهول.
+        ومن المعتقد أن تمثال أبي الهول كان محجراً قبل أن يفكر الملك خفرع في نحته على شكل تمثال، وينظر هذا التمثال ناحية الشرق لذا قد تم تغيير الجهات الأصلية في القرن الماضي لتوافق نظر أبي الهول.",
+        english_info:"The Sphinx is a statue of a mythical creature with the body of a lion and the head of a human. It was carved from limestone. It was likely that it was originally covered with a layer of plaster and colored, and traces of the original colors are still visible next to one of its ears.
+
+        Located on the Giza Plateau on the west bank of the Nile in Giza, Egypt, the Sphinx is also a guardian of the plateau. It is the oldest known huge sculpture. It is about 73.5 meters long, including 15 meters the length of its front feet, and 19.3 meters wide, and its highest height above the ground is about 20 meters to the top of the head. It is believed that the ancient Egyptians built it during the reign of King Khafre (2558 BC - 2532 BC), the builder of the middle pyramid in Giza.
+        
+        
+        Head of the Sphinx.
+        It is believed that the Sphinx was quarried before King Khafre thought of sculpting it into the shape of a statue. This statue looks to the east, so the original directions were changed in the last century to match the view of the Sphinx.",
+        character_id: character_17.id,
+        sub_era: sub_era_2
+    )
+    event_6.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f6/Great_Sphinx_of_Giza_-_20080716a.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"البناء",
+        english_title:"Construction",
+        arabic_content:"أبو الهول هو تمثال منحوت من إحدى صخور هضبة الجيزة، والتي كانت أيضًا بمثابة مقلع لـ أهرام الجيزة والآثار الأخرى في المنطقة. نيموليت الحجر الجيري للمنطقة يتكون من طبقات ذات مقاومة مختلفة لتعرية الرياح، ما يفسر التدهور غير المتكافئ الظاهر في جسم أبو الهول. الجزء السفلي من الجسم، بما في ذلك الساقين، مكون من صخرة صلبة. أما باقي جسم الحيوان حتى رقبته فيتكوّن من طبقات أكثر ليونة تعرضت لتفكك كبير. الطبقة التي نحت فيها الرأس هي أصعب بكثير. من المعروف وجود عدد من الأعمدة «المسدودة» داخل وأسفل جسد أبو الهول العظيم، على الأرجح حفرها صائدي الكنوز ولصوص القبور قبل عام 1925، كان هناك فجوة كبير مماثلة لتلك الموجودة في الجزء العلوي من رأس أبو الهول، يُعتقد أنها ربما كانت نقطة تثبيت لتاج أو غطاء رأس منحوت تمت إضافته خلال فترة المملكة المصرية الحديثة.",
+        english_content:"The Sphinx is a statue carved from one of the rocks of the Giza Plateau, which also served as a quarry for the Pyramids of Giza and other monuments in the area. The Nimolite limestone of the area consists of layers with varying resistance to wind erosion, which explains the uneven deterioration seen in the body of the Sphinx. The lower body, including the legs, is made of solid rock. The rest of the animal's body, up to its neck, consists of softer layers that have undergone significant disintegration. The layer where the head is sculpted is much more difficult. There are known to be a number of 'bolted' shafts inside and below the body of the Great Sphinx, most likely dug by treasure hunters and grave robbers before 1925. There was a large recess similar to that at the top of the Sphinx's head, which is believed to have been a mounting point for a crown or A carved headdress added during the New Kingdom period.",
+        event_id: event_6.id,
+    )
+    EventSection.create(
+        arabic_title:"الأصل والهوية",
+        english_title:"Origin and Identity",
+        arabic_content:"يعد تمثال أبو الهول أحد أكبر وأقدم التماثيل في العالم، لكن بعض الحقائق الأساسية عنه، مثل تاريخ بنائه، ومن قام به ولأي غرض، لا تزال محل نقاش.
+        من المستحيل تحديد الاسم الذي أطلقه بناة أبو الهول على تمثالهم، حيث لا يظهر تمثال أبو الهول في أي نقش معروف لـ المملكة المصرية القديمة ولا توجد نقوش في أي مكان تصف بنائه أو الغرض الأصلي منه. في المملكة المصرية الحديثة يتم تبجيل أبو الهول باعتباره الإله الشمسي حور -إم-أخيت ((بالعربية: حورس في الأفق) ، (بالقبطية: ϩⲁⲣⲙⲁϣⲓ) ، (بالهيلينية: هارماشيس).
+        الاسم الشائع الاستخدام 'سفنكس' أُعطي له في العصور الكلاسيكية القديمة، بعد حوالي 2000 عام من التاريخ المقبول عمومًا لبناءه واسم سفنكس هو إشارة إلى سفنكس الوحش الأسطوري اليوناني مع رأس إنسان أو صقر أو قطة أو شاة وجسم أسد بجناحي نسر. (على الرغم من أن أبو الهول الكبير، مثل باقي تماثيل أبو الهول المصرية الأخرى، له رأس رجل وليس له أجنحة مثل سفنكس اليوناني). تأتي الكلمة الإنجليزية سفنكس من الكلمة اليونانية القديمة سفنكس، على اسم الكائن الأسطوري اليوناني.",
+        english_content:"The Great Sphinx is one of the largest and oldest statues in the world, but some basic facts about it, such as when it was built, who built it and for what purpose, are still subject to debate.
+        It is impossible to determine what name the Sphinx's builders gave their statue, as the Sphinx does not appear in any known inscription of the Old Kingdom of Egypt and there are no inscriptions anywhere describing its construction or original purpose. In New Kingdom Egypt the Sphinx is venerated as the solar god Hor-em-Akhet (Arabic: Horus on the Horizon), (Coptic: ϩⲁⲣⲙⲁϣⲓ), (Hellenized: Harmachis).
+        The commonly used name 'Sphynx' was given to it in classical antiquity, about 2,000 years after the generally accepted date of its construction. The name Sphinx is a reference to the Greek mythological monster Sphinx with the head of a human, hawk, cat or sheep and the body of a lion with the wings of an eagle. (Although the Great Sphinx, like other Egyptian sphinxes, has the head of a man and does not have wings like the Greek Sphinx.) The English word sphynx comes from the ancient Greek word sphinx, after the Greek mythological creature.",
+        event_id: event_6.id,
+    )
+    event_7 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title: "بناء هرم منكاورع",
+        english_title: "Building the Menkaure Pyramid",
+        start_date: "2532 ق.م",
+        end_date: "2503 ق.م",
+        arabic_info:"هرم منكاورع أو كما هو معروف باسمه المحرّف هرم منقرع، هو أصغر الأهرامات الثلاثة الرئيسية لمجمع أهرامات الجيزة يقع على هضبة الجيزة في الضواحي الجنوبية الغربية للقاهرة، مصر. يُعتقد أنه بني ليكون بمثابة مقبرة للفرعون المصري منكاورع (ابن الملك خفرع) من الأسرة المصرية الرابعة. يبلغ طول كل ضلع من أضلاعه 108.5 متراً وارتفاعه 65.5 متراً، يبلغ طوله حاليا 62 متراً وذلك بعد سقوط كسوته الخارجية.",
+        english_info:"The Pyramid of Menkaure, or as it is known by its distorted name, the Pyramid of Menkaure, is the smallest of the three main pyramids of the Giza pyramid complex located on the Giza Plateau in the southwestern suburbs of Cairo, Egypt. It is believed to have been built to serve as a tomb for the Egyptian Pharaoh Menkaure (son of King Khafre) of the Fourth Dynasty of Egypt. The length of each side is 108.5 meters and its height is 65.5 metres. Its length is currently 62 metres, after the fall of its outer covering.",
+        character_id: character_18.id,
+        sub_era: sub_era_2
+    )
+    event_7.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/3/3b/Pyramid_1.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"الحجم والبناء",
+        english_title:"Size and Construction",
+        arabic_content:"كان هرم منكاورع يبلغ ارتفاعه الأصلي 65.5 متر (215 قدم) ، وكان أصغر الأهرامات الثلاثة الرئيسية في مجمع أهرامات الجيزة. يبلغ ارتفاعه الآن 61 متر (200 قدم) وقاعدتها 108.5 متر (356 قدم). زاوية ميله حوالي 51 درجة 20-25 درجة مئوية. شيد من الحجر الجيري من طرة والجرانيت من أسوان. تم صنع الدورات الستة عشر الأولى من الخارج من الجرانيت الأحمر. تم تغليف الجزء العلوي بالطريقة العادية مع الحجر الجيري من طرة. ترك جزء من الجرانيت في الخام. تساعد المشاريع غير المكتملة مثل هذا الهرم علم الآثار في فهم الأساليب المستخدمة لبناء الأهرامات والمعابد. تقع جنوب هرم منكاورع ثلاثة أهرامات تابعة، ويصاحب كل منها معبد وبنية تحتية. أقصى الشرق هو أكبر هرم حقيقي. غلافه مصنوع جزئيًا من الجرانيت، مثل الهرم الرئيسي، ويُعتقد أنه اكتمل بسبب هرم الحجر الجيري الذي تم العثور عليه بالقرب منه. لم يتقدم أي من الاثنين الآخرين بعد بناء اللب الداخلي.
+        قبل الوصول إلى حجرة الدفن الجرانيتية بفترة وجيزة، يؤدي باب في الجدار الشمالي لقاعة المدخل عبر درج مكون من ست درجات إلى سلسلة من ستة متاجر مرتبة بأسنان مشط منحوتة في الصخر ووجهتها هي عادة ما يتم تفسيرها على أنها الغرف التي تم فيها الاحتفاظ بالجرار الكانوبية وتيجان مصر العليا ومصر السفلى.
+        لذلك يبدو أن ثلاثة مشاريع اتبعت بعضها البعض في قبر الملك. أول حجم متواضع يتوافق مع الممر غير المكتمل. توسيع ثانٍ للمشروع الأول مع غرفة انتظار وغرفة مسلفة وغرفة كبيرة تسبق حجرة الدفن التي سيتم التخلي عنها في النهاية. أخيرًا، تم تضمين مشروع ثالث في الثاني من خلال تكملة ممر تحت الأرض يؤدي مباشرة إلى حجرة الدفن الجرانيتية المجهزة بالمخازن لإيواء جنازة الملك. إذا بدا أن المشروع الأول قد تم التخلي عنه بالفعل، فمن الممكن أن يكون الثاني والثالث قد تم التخطيط لهما وتنفيذهما في نفس الوقت مما يفسر أبعاد الغرفة المستطيلة الكبيرة التي من شأنها أن تكون بمثابة غرفة مناورة من أجل ترتيب الكتل. وعوارض من الجرانيت تغطي حجرة دفن الملك.
+        هذه هي المرة الأولى التي يتم فيها تطوير الشقق الجنائزية لهرم ملكي. سوف تتولى المقابر الملكية المعاصرة وتطور مكونات الشقق الجنائزية لهرم منكاورع. يمكننا الاستشهاد بأمثلة لمقابر خنت كاوس وشبسسكاف وستحتفظ الأهرامات الملكية الأسرة المصرية الخامسة بالعناصر الإرشادية، بما في ذلك غرفة الانتظار التي تسبق حجرة الأمشاط، القبة مقسمة إلى غرفة انتظار وغرفة تابوت وغرف تخزين لم يتم توضيح دورها بعد اليوم.
+        من ناحية أخرى، لا تزال زخرفة غرفة الانتظار الأولى وتابوت منكاورع فريدة من نوعها ولن نجد مثل هذه الزخارف المتقنة في الأهرامات الملكية قبل الأسرة المصرية السادسة ، بعد أكثر من قرن ونصف. بهذا المعنى، فإن هرم منكاورع هو استثناء ويمثل النموذج الأولي للأهرامات الكلاسيكية في العصور اللاحقة.",
+        english_content:"The Pyramid of Menkaure had an original height of 65.5 meters (215 ft), and was the smallest of the three main pyramids in the Giza pyramid complex. It now stands 61 meters (200 ft) high and has a base of 108.5 meters (356 ft). Its inclination angle is about 51° 20-25°. It was constructed of limestone from Tura and granite from Aswan. The first sixteen courses on the outside are made of red granite. The upper part was covered in the usual way with limestone from Tura. Leave part of the granite in the rough. Unfinished projects like this pyramid help archeology understand the methods used to build pyramids and temples. South of the Pyramid of Menkaure are three satellite pyramids, each accompanied by a temple and infrastructure. Farther east is the largest true pyramid. Its casing is partly made of granite, like the main pyramid, and is believed to have been completed due to the limestone pyramid that was found nearby. Neither of the other two progressed after the inner core was constructed.
+        Shortly before reaching the granite burial chamber, a door in the north wall of the entrance hall leads via a six-step staircase to a series of six shops arranged with comb teeth carved into the rock whose destination is usually interpreted as the rooms in which the Canopic jars and crowns of Egypt were kept. Upper and Lower Egypt.
+        So it seems that three projects followed each other into the king's tomb. The first modest size corresponds to the unfinished corridor. A second expansion of the first project with an antechamber, harrow room, and large chamber precedes the burial chamber that will eventually be abandoned. Finally, a third project was included in the second by completing an underground passage leading directly to the granite burial chamber equipped with storerooms to house the king's funeral. If the first project appears to have already been abandoned, it is possible that the second and third were planned and implemented at the same time which explains the dimensions of the large rectangular room that would have served as a maneuvering room for the arrangement of the blocks. Granite beams cover the king's burial chamber.
+        This is the first time that funerary apartments have been developed for a royal pyramid. The contemporary royal tombs will take over and develop the funerary apartment components of the Menkaure Pyramid. We can cite examples of the tombs of Khent-Kaos and Shepseskaf. The royal pyramids of the Fifth Dynasty of Egypt will retain indicative elements, including the antechamber that preceded the comb chamber. The dome is divided into an antechamber, a sarcophagus chamber, and storage rooms whose role has not yet been clarified.
+        On the other hand, the decoration of the first antechamber and the sarcophagus of Menkaure is still unique and we will not find such elaborate decorations in the royal pyramids before the Sixth Dynasty of Egypt, more than a century and a half later. In this sense, the Pyramid of Menkaure is an exception and represents the prototype of the classical pyramids of later eras.",
+        event_id: event_7.id,
+    )
+    EventSection.create(
+        arabic_title:"الطريق",
+        english_title:"The Way",
+        arabic_content:"من الجسر الذي يبلغ طوله ستمائة وخمسة أمتار، لم يتبق سوى الموقع الذي ربط المعبد في وادي مجمع الهرم المصري بالمعبد الجنائزي الملحق به محيط هرم الملك. كان الوصول إلى هذا الطريق عبر بابين. وضع أحدهما في الفناء الأمامي لمعبد الوادي والثاني إلى الجنوب من الغرف الداخلية الواقعة إلى الغرب من فناء المعبد نفسه. لقد سمحوا بالوصول إلى ممر يتجاوز المعبد على جانبه الجنوبي ويلحق بالمحور المركزي للمجمع في الخلف. لذلك يمكن للمواكب أن تأخذ الجسر مباشرة لتتسلق إلى الهرم ومعبدها الجنائزي، أو بعد أن تقوم بطقوس التطهير للقرابين في الفناء الكبير لمعبد الوادي، تمر عبر الغرف الغربية وتأخذ الممر. عموديًا على محور المعبد، انضم إلى الجسر قبل وقت قصير من تفرعه باتجاه الجزء الخلفي من المعبد.
+        ربما لم يكتمل هذا الجسر أبدًا بسبب الوفاة المبكرة للملك. في الواقع، يبدو أن كل شيء يشير من الطلاء غير المكتمل للهرم، من خلال مرحلتي بناء المعبد الجنائزي وحالة الطريق، إلى أن منكاورع لم يكن لديه وقت لإكماله مجمع جنازته. كان شبسسكاف خليفته هو الذي تعهد بإكمال المجموعة باستخدام الطوب اللبن للجدران التي تعلو الطريق. شكل ممرًا طويلًا، ربما كان غطاءه مصنوعًا من نفس المواد وشكل قوسًا. يؤدي الممر الطويل مباشرة إلى الفناء الكبير المكشوف للمعبد العالي، الموضوعة في محور النصب، مروراً بممر تشير سماكة الأساسات والممرات الأولى إلى أن هذا الجزء قد تم تصميمه لدعم قوي. جدران قادرة على دعم ألواح السقف الكبيرة.",
+        english_content:"Of the bridge, which was six hundred and five meters long, only the site remained that connected the temple in the valley of the Egyptian pyramid complex with the mortuary temple attached to it surrounding the king's pyramid. Access to this road was through two doors. One of them was placed in the front courtyard of the Valley Temple and the second to the south of the inner rooms located to the west of the courtyard of the temple itself. They allowed access to a corridor that bypassed the temple on its southern side and joined the central axis of the complex at the rear. So the processions could take the bridge directly to climb to the pyramid and its mortuary temple, or, after performing the purification rites of sacrifice in the great courtyard of the valley temple, pass through the western chambers and take the passage. Perpendicular to the temple axis, join the bridge shortly before it branches off towards the back of the temple.
+        This bridge was probably never completed due to the early death of the king. In fact, everything from the incomplete painting of the pyramid, through the two stages of construction of the mortuary temple and the condition of the road, seems to indicate that Menkaure did not have time to complete his funerary complex. It was Shepsskav, his successor, who undertook to complete the ensemble by using mud bricks for the walls above the road. It formed a long corridor, the cover of which was probably made of the same materials and formed an arch. The long corridor leads directly to the large open courtyard of the High Temple, placed in the axis of the monument, passing through a corridor. The thickness of the foundations and the first aisles indicates that this part was designed for strong support. Walls capable of supporting large roof panels.",
+        event_id: event_7.id,
+    )
 
     # event_2 = Event.create(
     #     type: "",
