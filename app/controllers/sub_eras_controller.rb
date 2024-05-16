@@ -45,8 +45,18 @@ class SubErasController < ApplicationController
 
   def add_points
     sub_era = SubEra.find(params[:id])
-    sub_era.points += 1
-    sub_era.save
+    sub_era.point += 1
+    era = sub_era.era
+    user = User.find(params[:user_id])
+    if SubEraPoint.where(user: user, sub_era: sub_era).empty?
+      sub_era_p = SubEraPoint.create(sub_era: sub_era, user: user, points: 1)
+      render json: { message: 'point added' }, status: :ok
+      return
+    end
+    sub_era_point = SubEraPoint.find_by(sub_era: sub_era, user: user)
+    sub_era_point.update(points: sub_era_point.points + 1)
+    sub_era_point.set_tier(user)
+    sub_era_point.save
     render json: { message: 'point added' }, status: :ok
   end
 

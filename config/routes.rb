@@ -11,7 +11,6 @@ Rails.application.routes.draw do
     passwords: 'users/passwords'  # Specify the custom controller for passwords
   }
 
-  post 'era/:id/points', to: 'eras#add_points'
   post 'sub_era/:id/points', to: 'sub_eras#add_points'
   get 'characters/search', to: 'characters#search'
   get 'events/search', to: 'events#search'
@@ -50,6 +49,10 @@ Rails.application.routes.draw do
 
   # recomendation routes
   # <<< setting the data
-  # <<< getting the data
+  post 'eras/:id/points', to: 'eras#add_points'
+  post 'sub_eras/:id/points', to: 'sub_eras#add_points'
+  post 'characters/:id/points', to: 'characters#add_points'
 
+  # <<< getting the data
+  get 'characters/dalil/get_four', to: 'characters#get_recommenderd_four'
 end
