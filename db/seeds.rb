@@ -339,12 +339,61 @@ require 'open-uri'
             sub_era: sub_era_2,
     )
     # sub_era_3
+    Section.create(
+            arabic_title:"مصطلح عصر الاضمحلال الأول",
+            english_title:"The term of the first collapse",
+            arabic_content:"كان فترة تدهور وضعف، حيث انهار نظام الحكم المركزي. وتسمى كل من استطاع باسم فرعون سقوط الدولة القديمة والثورة الاجتماعية
+            يطلق مصطلح عصر الاضمحلال الأول في التاريخ المصري القديم على الفترة من نهاية الأسرة السادسة وانهيار السلطة الملكية المركزية. حتى إعادة توحيد البلاد على يد الأسرة الحادية عشرة..وقد حكم البلاد محتلين أجانب بدو شاسو قادمين من الشرق.",
+            english_content:"It was a period of decline and weakness, as the central system of government collapsed. Everyone who could named Pharaoh called the fall of the Old Kingdom and the social revolution
+            The term First Decline in ancient Egyptian history refers to the period from the end of the Sixth Dynasty and the collapse of central royal authority. Until the reunification of the country at the hands of the Eleventh Dynasty...the country was ruled by foreign occupiers, Shasu Bedouins, coming from the east.",
+            sub_era: sub_era_3,
+    )
+    Section.create(
+            arabic_title:"ما ذكر في التاريخ",
+            english_title:"What is mentioned in history",
+            arabic_content:"و يبدو مانيتون.. أو بالأحرى أفريكانوس عن مانيتون.. وهو يكتب مؤرخا لهذا العصر في أسوأ حالاته.. فيذكر أن الأسرة السابعة تتكون من سبعين ملكا حكموا سبعين يوما.. ويؤرخ للأسرة الثامنة بسبعة وعشرين ملكا في 146 عاما.. وللأسرتين التاسعة والعاشرة في العاصمة هيراكليوبوليس (المعروفه بأسم إهناسيا) بتسعة عشر ملكا مجتمعين حكموا في 594 عاما.. والأسرة الحادية عشرة في طيبة.. بستة عشر ملكا في ثلاثة وأربعين عاما..
+            أما رواية إيوسيبوس عن مانيتون فتبدو أقل شطحا في الخيال.. وإن لم تستلهم من الواقع أقله.. فعلى طول هذه المرحلة لم يذكر ملك واحد بالاسم عدا أخيتوس.. من ملوك الأسرة التاسعة.. والذي هو أسوأ من كل أسلافه..
+            على أية حال ما كتبه مانيتون لا يعدو كونه تاريخا خرافيا.. غير ذي صلة بالواقع.. لكنه في تقسيمه العام قد وضع خطة للكتابة نناقشها فيما يلي...",
+            english_content:"It seems that Manetho... or rather Africanus on the authority of Manetho... is writing as a historian of this era at its worst... He mentions that the Seventh Dynasty consists of seventy kings who ruled for seventy days... and dates the Eighth Dynasty with twenty-seven kings in 146 years... and the Ninth and Tenth Dynasties in The capital, Heracleopolis (known as Ihnasia), had nineteen kings together who ruled in 594 years... and the Eleventh Dynasty in Thebes... with sixteen kings in forty-three years...
+            As for Eusebus’s account of Manetho, it seems less fanciful, even if it was not inspired by reality in the least. Throughout this period, not a single king was mentioned by name except Achaetus, one of the kings of the Ninth Dynasty, who is worse than all his predecessors.
+            In any case, what Maniton wrote is nothing more than a mythical history... irrelevant to reality... but in its general division, he laid out a plan for writing that we will discuss below...",
+            sub_era: sub_era_3,
+    )
+    Section.create(
+            arabic_title:"نظرية انخفاض درجة الحرارة",
+            english_title:"The theory of temperature drop",
+            arabic_content:"تدعي إحدى النظريات أن انخفاضا في درجة حرارة الكوكب قد أدى إلى انخفاض مخيف في مستوى الأمطار الموسمية.. وبالتالي إلى انخفاض مستوى فيضان النيل.. وأن ذلك الانخفاض في مستوى الفيضان قد تتابع لعقدين أو ثلاثة في أواخر حكم بيبي الثاني.. منذ نحو 2200 سنة قبل الميلاد.. ويظهر ذلك في انخفاض مستوى المياه في بحيرة منخفض الفيوم انخفاضا ملحوظا.. مما أدى إلى مجاعة هائلة.. ولعل المثل المصري القديم عن انخفاض مستوى النهر حتى لتعبره على الأقدام دليل على تلك المأساة..
+            و لما كان هذا الانخفاض في مستوى الأمطار عالميا فإنه لم يكن يشمل شرق أفريقيا فحسب.. بل امتد إلى الشرق الأوسط.. مما أدى إلى نزوح جماعات هائلة من سكان شرقي النيل وغربه إلي وادي النيل التماسا للغذاء..
+            و تفصيل ذلك أن البدو رغم الهزيمة المنكرة التي لحقت بهم في عهد بيبي الأول لم يفقدوا الأمل في غزو مصر التي كانت في تلك الفترة تزخر بالثراء والغنى.. وقد سنحت لهم الفرصة في عهد بيبي الثاني لنيل مآربهم إذ كانت الأحوال مهيئة لذلك فقد كان كل حاكم من حكام المقاطعات الوراثيين في الوجه القبلي منهمكا في المحافظة على مقاطعته التي تعد بمثابة مملكة صغيرة مستقلة ضد المجاعة.. أما في الوجه البحري فيحتمل أن القوم كانوا ملتفين حول الملك.. حيث مقر حكمه.. غير أنه ليس لدينا من الوثائق التاريخية ما يحدد لنا الموقف بالضبط.. لكن على أية حال كان موقف الحكومة المصرية في هذا العهد في حالة يرثى لها..",
+            english_content:"One theory claims that a decrease in the planet's temperature led to a frightening decrease in the level of monsoon rains... and thus to a decrease in the level of the Nile flood... and that this decrease in the level of the flood continued for two or three decades towards the end of the reign of Pepi II... about 2,200 years ago. BC.. This is evident in the noticeable drop in the water level in the Fayoum Depression Lake.. which led to a massive famine.. Perhaps the ancient Egyptian proverb about the river’s level falling so low that it can be crossed on foot is evidence of that tragedy..
+            Since this decrease in rainfall was global, it did not include only East Africa, but also extended to the Middle East, which led to the exodus of huge groups of people from the east and west of the Nile to the Nile Valley in search of food.
+            The details of this are that the Bedouins, despite the terrible defeat that befell them during the reign of Pepi I, did not lose hope in conquering Egypt, which at that time was full of wealth and wealth. They had the opportunity during the reign of Pepi II to achieve their goals, as conditions were prepared for that. Every ruler was One of the hereditary provincial rulers in Upper Egypt is busy preserving his province, which is considered a small, independent kingdom against famine. As for Lower Egypt, it is likely that the people were gathered around the king... where his rule was based... However, we do not have any historical documents that determine for us The exact position.. But in any case, the position of the Egyptian government during this era was in a deplorable state..",
+            sub_era: sub_era_3,
+    )
+    Section.create(
+            arabic_title:"بداية الفوضي",
+            english_title:"The beginning of chaos",
+            arabic_content:"و كانت الضرائب في مصر تحدد سنويا على أساس مستوى الفيضان.. على أساس مقدار ما يمكن للفلاح زراعته لا على ما يزرعه فعلا.. وربما كان ارتفاع الضرائب في ظل انخفاض المحاصيل هو الشرارة الأولى التي أدت إلى أول ثورة اجتماعية سجلها التاريخ..
+            و قد كان من جراء امتداد الفوضى أن ساد البلاد الخوف وانتشر القحط.. وعم الانحلال الخلقي وعدم المبالاة بالتقاليد الدينية والمعتقدات الموروثة.. وليس لدينا وثائق تاريخية تنير لنا الطريق خلال هذا العصر المظلم اللهم إلا معلومات ضئيلة جدا.. لكن من جهة أخرى قد اسعفتنا الوثائق الأدبية الشعبية مما يمكن أن نسميه مراثي الدولة القديمة.. وترجع معظمها إلى أوائل الدولة الوسطى.. والواقع أن أزمة هذا العصر قد طال أمدها فأثرت على أذهان القوم.. وبخاصة على أفكار الحكماء وأهل الفكر وعلى خيال القصاصين.. فنراهم يصورون ما حاق بالبلاد من ضعف وشدة وما قاست من ويلات وخراب بعبارات مؤثرة قوية خارجة من الأعماق.. بينما يشير بعضها الآخر إلى غزو الساميين حاملي السهام..
+            و أهم ما وصل إلينا من هذا العصر كتاب تحذيرات نبي.. وهو من الكتب الأدبية النادرة في حسن تركيبها وتأثيرها في النفس.. حتى أن أدباء العصور التالية كانوا يحتذون منه نموذجا أدبيا يدرس.. ولا نبالغ إذ نقول أن هذه القطعة الأدبية تصف لنا أول انقلاب اجتماعي معروف في التاريخ.. ولعلنا لا نبالغ إذا ما شبهناه بالثورة البلشفية في أوائل القرن العشرين..",
+            english_content:"Taxes in Egypt were determined annually on the basis of the level of the flood... on the basis of how much the farmer could cultivate, not on what he actually cultivated... and perhaps the rise in taxes in light of the decline in crops was the first spark that led to the first social revolution recorded in history..
+            As a result of the spread of chaos, fear prevailed in the country and drought spread. Moral decay and indifference to religious traditions and inherited beliefs prevailed. We do not have historical documents to illuminate the way for us during this dark age, except for very scant information. But on the other hand, it has helped us. Popular literary documents are what we might call elegies of the Old Kingdom. Most of them date back to the early Middle Kingdom. In fact, the crisis of this era has lasted for a long time, affecting the minds of the people, especially the ideas of the wise and intellectuals, and the imagination of storytellers. We see them depicting what befell the country. Of weakness and distress and the scourges and devastation it endured, in powerful, poignant expressions emerging from the depths... while others refer to the invasion of the arrow-carrying Semites...
+            The most important thing that has come down to us from this era is the book The Warnings of a Prophet... It is one of the rare literary books in its good composition and impact on the soul... so much so that the writers of later eras used it as a literary model to study... We do not exaggerate when we say that this piece of literature describes for us the first A social revolution known in history.. Perhaps we are not exaggerating if we liken it to the Bolshevik Revolution in the early twentieth century..",
+            sub_era: sub_era_3,
+    )
+    Section.create(
+            arabic_title:"التحذيرات",
+            english_title:"Warnings",
+            arabic_content:"و موضوع هذه التحذيرات هو أنه حاقت بالبلاد مصيبة شنعاء في عهد أحد حكام الأزمان القديمة.. فثار عامة الناس على الموظفين وعلية القوم.. وعصي الجند المرتزقة من الأجانب قادة البلاد.. ويحتمل أن الساميين قد هددوا الحدود الشرقية أيضا.. وبذلك انحل الحكم المنظم في مصر بالجملة.. لكن الملك الطاعن في السن كان يعيش في طمأنينة في قصره.. لأنه كان يغذى على الأكاذيب.. وعندئذ ظهر حكيم يدعى إي بور وأخبر الملك بكل الحقيقة فوصف له البؤس الذي عم البلاد وتنبأ بما سيأتي بعد.. وحرّض سامعيه على أن يحاربوا أعداء البلاد.. وذكّرهم بأن العبادات لابد أن تعاد إلى ما كانت عليه..",
+            english_content:"The subject of these warnings is that a terrible calamity befell the country during the reign of one of the rulers of ancient times... so the common people revolted against the officials and the high-ranking people... and the foreign mercenary soldiers disobeyed the leaders of the country... and it is possible that the Semites threatened the eastern borders as well... and thus organized rule was dissolved. In Egypt in general...but the old king was living in peace in his palace...because he was fed on lies...and then a wise man named E-Bor appeared and told the king all the truth. He described to him the misery that had spread throughout the country and predicted what would come next...and incited his listeners to To fight the country's enemies... and remind them that worship must be restored to what it was...",
+            sub_era: sub_era_3,
+    )
     # Section.create(
         #     arabic_title:"",
         #     english_title:"",
         #     arabic_content:"",
         #     english_content:"",
-        #     sub_era: sub_era_2,
+        #     sub_era: sub_era_3,
     #)
 
 
@@ -562,8 +611,8 @@ require 'open-uri'
         english_name: "'Jar' (Pharaoh)",
         arabic_info: "إتي حسب قائمة أبيدوس. كانت هناك علاقات تجارية مع ليبيا في عهدهِ، غزا جزء من أرض سيناء والكنعان. حارب كلا من سيناء وبلاد النوبة، وتوغل حتى وصل إلى الشلال الثاني، وفقا لما تعرضه لوحة محفورة وجدت بالقرب من قلعة بوهين. ومن المرجح انه قاد حملة ضد الليبيين. زوجته هي مريت نيت. كما تم اكتشاف مقبرته في أبيدوس، ودفن بجانبه أكثر من 300 خادم لخدمته في العالم الاخر.",
         english_info: "'Eti' according to the Abydos list. There were trade relations with Libya during his reign, and he conquered part of the land of Sinai and Canaan. He fought both Sinai and Nubia, and penetrated until he reached the second cataract, according to an engraved tablet found near Buhin Castle. It is likely that he led a campaign against the Libyans. His wife is Merit Nate. His tomb was also discovered in Abydos, and more than 300 servants who served him in the other world were buried next to him.",
-        date_of_birth: "3049 ق م",
-        date_of_death: "3008 ق م",
+        date_of_birth: "3049",
+        date_of_death: "3008",
         sub_era_id: sub_era_1.id,
     )
     character_3.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/b/b5/Djer_stela_retouched.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -886,8 +935,8 @@ require 'open-uri'
         english_name: "Nope Nefer",
         arabic_info: "يُعتقد أنه كان معاصرا للفرعون ني نتجر. لا يمكن تحديد ترتيبه الزمني بشكل دقيق",
         english_info: "It is believed that he was a contemporary of Pharaoh Nyentjer. Its chronological order cannot be determined precisely",
-        date_of_birth: "",
-        date_of_death: "",
+        date_of_birth: "2500",
+        date_of_death: "2450",
         sub_era_id: sub_era_1.id,
     )
     character_10.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/e/e7/Nubnefer.png"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -911,8 +960,8 @@ require 'open-uri'
         english_name: "Sanakht",
         arabic_info: "سانخت أو حور سا ناختي هو الفرعون الثالث من أسرة مصرية ثالثة خلال المملكة المصرية القديمة. فترة حكمة الزمنية غير مؤكدة للغاية، ومن غير الواضح أيضا تحت أي تسمية إغريقية قد وثقه بها المؤرخ مانيتون. والكثير من علماء المصريات يصلون سا ناختي بالفرعون نيبكا ويعتقدون أنه هو نيبكا ولكن يبقى الأمر متنازع فيه لعدم وجود أي لقب ملكي لهذا الملك.",
         english_info: "Sankhet or Hor-sa-nakhti was the third pharaoh of the Third Egyptian Dynasty during the Old Kingdom of Egypt. The period of his wisdom is highly uncertain, and it is also unclear under what Greek name Manetho documented him. Many Egyptologists link Sa Nakhty to the Pharaoh Nibka and believe that he is Nibka, but the matter remains disputed because there is no royal title for this king.",
-        date_of_birth: "2780 ق م",
-        date_of_death: "2715 ق م",
+        date_of_birth: "2780",
+        date_of_death: "2715",
         sub_era_id: sub_era_2.id,
     )
     character_11.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/e/eb/ReliefFragmentOfPharaohSanakht-BritishMuseum-August21-08.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -929,8 +978,8 @@ require 'open-uri'
         english_name: "Zoser",
         arabic_info: "صاحب هرم سقارة المدرج الذي صممه إمحوتب",
         english_info: "Owner of the Step Pyramid of Saqqara, designed by Imhotep",
-        date_of_birth: "2700 ق.م",
-        date_of_death: "2670 ق.م",
+        date_of_birth: "2700",
+        date_of_death: "2670",
         sub_era_id: sub_era_2.id,
     )
     character_12.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/4/43/Djoser_statue.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -1085,8 +1134,8 @@ require 'open-uri'
         english_info: "Sneferu, known as Severus in Greek (according to Manetho), founder of the Fourth Dynasty during the Old Kingdom. Estimates of the duration of his rule vary between 24 years and 48 years. His reign was characterized by the expansion of foreign trade, sending punitive expeditions, and mining campaigns. With his engineer and advisor Imhotep, he came up with the complete shape of the pyramid, where he built three pyramids that remain to this day, and can be visited in Dahshur.
 
         It is not entirely known whether Sneferu was Khufu's father or his uncle. Khufu ruled Egypt after Sneferu.",
-        date_of_birth: "2613 ق م",
-        date_of_death: "2589 ق م",
+        date_of_birth: "2613",
+        date_of_death: "2589",
         sub_era_id: sub_era_2.id,
     )
     character_15.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f2/Snofru_Eg_Mus_Kairo_2002_b.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -1186,8 +1235,8 @@ require 'open-uri'
         Pharaoh Khufu, the second king of the Fourth Dynasty, who followed Pharaoh Sneferu on the throne, and is likely to be his father. It is proven that his mother was Queen Hetepheres, whose tomb is located in the Giza cemeteries. He is credited with building the Great Pyramid on the Giza Plateau as his tomb, one of the Seven Wonders of the Ancient World. But many other aspects of his rule have not been documented.
         
         He sent missions to Wadi al-Maghara in Sinai to bring turquoise. Where he found his name and a picture representing him falling on someone's head with a pin. He has a single statue, found in Abydos, made of ivory. His name is engraved on the throne seat. The length of the statue is five centimeters; It is now in the Egyptian Museum. He ruled, according to the Turin Papyrus, for about twenty-three years. During his reign, the Great Pyramid of Giza was built, and it was the tallest stone building in the world until the cathedral was built in 1350 and its height reached 160 meters, but the Pyramid of Khufu is the largest man-made building to date. The pyramid was called (Akhet Khufu), meaning the horizon of Khufu, and it was built in 2650 BC. Its construction was supervised by his minister, who was responsible for all King Iono's works, and his statue is located in the Romer-Bellissus Museum in Hildesheim in northern Germany.",
-        date_of_birth: "2580 ق.م",
-        date_of_death: "2566 ق.م",
+        date_of_birth: "2580",
+        date_of_death: "2566",
         sub_era_id: sub_era_2.id,
     )
     character_16.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f7/Kairo_Museum_Statuette_Cheops_03_%28cropped%29.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -1248,8 +1297,8 @@ require 'open-uri'
         english_name: "Khafre",
         arabic_info: "خفرع أو خعف رع (وتعني بالمصرية: الظاهر كرع أو الظاهر كالشمس)، ملك من الأسرة الرابعة. هو ثالث أو رابع ملوك هذه الأسرة بالدولة القديمة حكم بين سنتي 2559 و2535 ق م هو من شيد الهرم الثاني بالجيزة. هو على الأغلب ابن الملك خوفو من زوجة ثانوية تولى الحكم بعد الملك جدف رع الذي كان قد استولى على الحكم. هرم خفرع يشابه في عظمته هرم خوفو. ملامحه نتعرف عليها من خلال أبو الهول الموجود بجانب هرمه والمتمثل في صورة أسد يدل على القوة، برأس إنسان يدل على الحكمة. كما عُثِر على صورة منحوتة بمعبده بوادي الملوك وتمثال للملك جالس موجود بالمتحف المصري. ليعرف الكثير عن فترة حكمه، ولا توجد شواهد تؤكد رواية الرحالة اليوناني هيرودت التي تصف خوفو وخفرع كطغاة.",
         english_info: "Khafre or Khaf-Ra (which in Egyptian means: Al-Zahir as Ra or Al-Zahir as the sun), a king of the Fourth Dynasty. He was the third or fourth king of this dynasty in the Old Kingdom. He ruled between the years 2559 and 2535 BC. He was the one who built the second pyramid in Giza. He is most likely the son of King Khufu from a secondary wife. He assumed power after King Djedefre, who had seized power. The Pyramid of Khafra is similar in its magnitude to the pyramid of Khufu. We recognize his features through the Sphinx located next to his pyramid, which is represented in the image of a lion, indicating strength, with a human head, indicating wisdom. A carved image was also found in his temple in the Valley of the Kings, and a statue of the seated king is in the Egyptian Museum. Much is known about the period of his rule, and there is no evidence to confirm the story of the Greek traveler Herodotus, which describes Khufu and Khafre as tyrants.",
-        date_of_birth: "2570 ق.م",
-        date_of_death: "2546 ق.م",
+        date_of_birth: "2570",
+        date_of_death: "2546",
         sub_era_id: sub_era_2.id,
     )
     character_17.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/08/%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%AE%D9%81%D8%B1%D8%B9.png"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -1315,8 +1364,8 @@ require 'open-uri'
         english_name: "Menkaure",
         arabic_info: "منكاورع (ينطق بالعربية نطقاً غير دقيق: منقرع ولكن النطق المصري الأدق 'مِنْ كاو رَع')، هو ملك مصري من الأسرة الرابعة خلال عصر الدولة القديمة. ابن الملك خعفرع، ملكا مصر. واسمه يعني: 'فلتبقى هيئته مثل رع'. تزوج من الأميرة خع مرر نپتي الثانية. عثر في المعبد الجنائزى لـ منكاورع على سكين من حجر الصوان منقوش عليه اسم والدة الملك وتدعى خع مررنپتي الأولى، فيما يشير إلى أن خعفرع وهذه الملكة هما والدا منكاورع. ويعتقد أن منكاورع كان لديه زوجتان•",
         english_info: "Menkaure (pronounced in Arabic imprecisely: Menkaure, but the more accurate Egyptian pronunciation is 'men Kau-Ra'), was an Egyptian king of the Fourth Dynasty during the Old Kingdom. Son of King Khafre, King of Egypt. His name means: 'May his form remain like Ra'. He married Princess Khamerar-Nebty II. In Menkaure's funerary temple, a flint knife was found engraved with the name of the king's mother, called Kha Merernepti I, indicating that Khafre and this queen were Menkaure's parents. It is believed that Menkaure had two wives.",
-        date_of_birth: "2530 ق.م",
-        date_of_death: "2500 ق.م",
+        date_of_birth: "2530",
+        date_of_death: "2500",
         sub_era_id: sub_era_2.id,
     )
     character_18.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fb/Menkaura_Bust_Closeup.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -1362,31 +1411,256 @@ require 'open-uri'
             The coffin was supposed to be transported to Britain in 1838, but it did not arrive, as a storm intercepted the carrier ship and sank.",
             character_id: character_18.id,
     )
-    # character_2 = Character.create(
-    #     arabic_name: "",
-    #     english_name: "",
-    #     arabic_info: "",
-    #     english_info: "",
-    #     date_of_birth: "",
-    #     date_of_death: "",
-    #     sub_era_id: sub_era_2.id,
-    # )
-    # character_2.thumb_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # character_2.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # CharacterSection.create(
-    #         arabic_title:"",
-    #         english_title:"",
-    #         arabic_content:"",
-    #         english_content:"",
-    #         character_id: character_2.id,
-    # )
-    # CharacterSection.create(
-    #         arabic_title:"",
-    #         english_title:"",
-    #         arabic_content:"",
-    #         english_content:"",
-    #         character_id: character_2.id,
-    # )
+    character_19 = Character.create(
+        arabic_name: "أوسركاف",
+        english_name: "Userkaf",
+        arabic_info: "أَوْسَرْكاف (المعروف في اليونانية القديمة باسم Οὐσερχέρης ،Usercherês) كان أحد فَراعنة مِصر القديمة ومُؤسِّس الأسرة الخامسة. حَكم لمدة سَبع إلى ثماني سَنوات في أَوائل القرنِ الخامسِ والعشرينَ قبل الميلاد خلال عهد المملكة القديمة، وربما كان ينحدر من أحد فروع العائلة المالكة من الأسرة الرابعة. على الرغم من أنَّ اسم أبويه غير مؤكد؛ إلا أنه مِن المُرجَّح أنْ يكون ابنُ الملكة خنت كاوس. كان لديه ابنة واحدة على الأقل وربما ابن اسمه ساحو رع من قَرينته نفر حتبس وخَلَفَه هذا الابن في الحُكم.
+        شهدت فترة حكمه ظهور عبادة الإله رع، الذي أصبح فعليًا إله الدولة في مِصر خلال عَصر الأسرة الخامسة. ربما كان أوسركاف أحد كبار كهنة رع قبل صُعوده العرش حيث بنى معبدًا للشمس يُعرف باسم معبد نخن رع يقع اليوم بين قريتي أبو صير وأبو غراب في مصر. وبذلك، أرسى تقليدًا سار عليه خلفاؤُه من بعده وعلى مدى 80 عامًا. بُني معبد نخن رع ليكون معبداً جنائزياً لعبادة الشمس عند الغروب. حيث كانت الطُقوس التي تُقام في المعبد معنية في المقام الأول بوظيفة رع كخالق ودوره كأب للملك الفرعوني. وبالنظر إلى تقليص حجم المعبد الجنائزي الملكي، فإن هذا يشير إلى وجود فصل ملموس بين وظيفة إله الشمس والملك أكثر مما كان عليه في السلالات السابقة. بعد وفاة أوسركاف، أُعيد بناء معبده على أربع مراحل ووُضعت فيه مِسلة كبيرة.
+        بَنى أوسركاف هرمًا في سقارة قريبًا من هرم زوسر، وهو الموقع الذي أَجبر المعماريين آنذاك على بناء المعبد الجنائزي المرتبط بالهرم في وضع غير عادي في مكان ما جنوب الهرم. كان هذا الهرم أصغر بكثير من الأهرامات التي بُنيت في عهد الأسرة الرابعة، بينما كان المعبد الجنائزي مزخرفًا ببذخ وعلى نطاق واسع بنقوشٍ بارزة مرسومة. وبالإضافة إلى هرمه ومعبده، بنى أوسركاف هرمًا أصغر قريبًا من هرمه لإحدى ملكاته والتي على الأرجح الملكة نفر حتبس. وعلى الرغم من أنَّ أوسركاف تم تقديسه في طقوس جنائزية بعد وفاته مثل ملوك الأسرة الخامسة الآخرين، إلا أنه لم يكن مهمًا نسبيًا، وتم التخلي عن عبادته وتقديسه بعد نهاية عصر الأسرة الخامسة.
+        لا يُعرف سوى القليل عن أنشطته عدا عن بناءه للهرم ومعبد الشمس. تُسجِّل السجلات الملكية للمملكة القديمة أنه قام بتقديم قرابين من البيرة والخبز والأراضي لآلهة مختلفة، بعض هذه القرابين يتوافق مع مشاريع بناء قام بها أشخاص بالنيابة عن أوسركاف بما في ذلك معبد الإله منتو في الطود حيث عُثر هناك على أول إثبات تاريخي لوجوده. أما خارج حدود مصر، فيُعتقد أنه قام بحملة عسكرية إلى كنعان أو الصحراء الشرقية، ويبدو أن التواصل التجاري مع حضارة إيجية كان نشطًا في ذلك الوقت.",
+        english_info: "Userkaf (known in ancient Greek as Οὐσερχέρης, Usercherês) was one of the pharaohs of ancient Egypt and the founder of the Fifth Dynasty. He ruled for seven to eight years in the early 25th century BC during the Old Kingdom, and may have been descended from a branch of the royal family of the Fourth Dynasty. Although the name of his parents is uncertain; However, it is likely that he was the son of Queen Khent-Kaos. He had at least one daughter and perhaps a son named Sahure by his consort Neferhetepes, and this son succeeded him in power.
+        His reign witnessed the emergence of the cult of Ra, who effectively became the state god of Egypt during the Fifth Dynasty. Userkaf may have been one of the high priests of Ra before he ascended the throne, as he built a sun temple known as the Temple of Nekhenre, located today between the villages of Abu Sir and Abu Ghurab in Egypt. In doing so, he established a tradition that his successors followed after him for 80 years. The Temple of Nekhenre was built as a funerary temple for worshiping the sun at sunset. The rituals held in the temple were primarily concerned with Ra’s function as creator and his role as father to the Pharaonic king. Given the reduction in size of the royal mortuary temple, this indicates a more tangible separation between the functions of the sun god and the king than in previous dynasties. After Userkaf's death, his temple was rebuilt in four stages and a large obelisk was placed in it.
+        Userkaf built a pyramid at Saqqara close to the pyramid of Djoser, a location that forced architects to build the funerary temple associated with the pyramid in an unusual position somewhere south of the pyramid. This pyramid was much smaller than the pyramids built during the Fourth Dynasty, while the mortuary temple was lavishly and extensively decorated with painted bas-reliefs. In addition to his pyramid and temple, Userkaf built a smaller pyramid close to his pyramid for one of his queens, who was most likely Queen Neferhetepes. Although Userkaf was canonized in funerary rites after his death like other Fifth Dynasty kings, he was relatively unimportant, and his cult and reverence were abandoned after the end of the Fifth Dynasty.
+        Little is known about his activities other than his construction of the pyramid and the Temple of the Sun. Royal records of the Old Kingdom record that he made offerings of beer, bread, and land to various gods, some of which correspond to building projects undertaken by people on Userkaf's behalf, including the temple of the god Mentu at Tud, where the first historical evidence of his existence was found. As for outside the borders of Egypt, it is believed that he carried out a military campaign to Canaan or the Eastern Desert, and it seems that commercial contact with the Aegean civilization was active at that time.",
+        date_of_birth: "2494",
+        date_of_death: "2487",
+        sub_era_id: sub_era_2.id,
+    )
+    character_19.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/b/b9/By_ovedc_-_Egyptian_Museum_%28Cairo%29_-_046_%28cropped%29.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_19.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/b/b9/By_ovedc_-_Egyptian_Museum_%28Cairo%29_-_046_%28cropped%29.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"الوالدان والزوجة",
+            english_title:"Parents and wife",
+            arabic_content:"هوية والد ووالدة أوسركاف غير مؤكدة وغامضة، لكنه بلا شك كان له صلات عائلية بحكام الأسرة الرابعة السابقة. يقترح عالم المصريات ميروسلاف فيرنر  أنه كان ابن منقرع من إحدى ملكاته، وربما كان أخًا شقيقًا لسلفه وآخر ملوك الأسرة الرابعة شبسس كاف.
+            اقترح كل من نيكولاس جريمال وبيتر كلايتون  ومايكل رايس أن أوسركاف كان ابن الملكة نفر حتبس، التي اعتبرها بعض علماء المصريات ابنة الملك دجيدف رع والملكة حتب حرس الثانية. بناءً على هذه الفرضية فإن زوج نفر حتبس يصبح من الصعب معرفته، لكن نيكولاس جريمال يعتقد أن زوجها ربما يكون (كاهن رع، سيد ساخبو) المذكور في بردية ويستكار. يقترح العالمان أيدان دودسون وديان هيلتون أن الملكة نفر حتبس دفنت في هرم مجاور للهرم الذي دُفن فيه أوسركاف، إذ يُعتقد أن هذا الهرم يعود لإمرأة تحمل نفس الاسم.
+            ومع ذلك، فإن موقع الهرم الذي ينسب إلى نفر حتبس يشير بقوة إلى أنها ربما كانت زوجة أوسركاف بدلاً من أُمه. ولو كانت هذه الفرضية صحيحة فإن نفر حتبس في هذه الحالة تكون والدة ساحو رع الذي خلف أوسركاف في الحكم. عُثر على نقش يظهر فيه الملك ساحو رع بجانب زوجته الملكة ووالدته التي تم التعرف عليها على أنها نفر حتبس، مما يؤكد مرة أخرى أنها على الأرجح زوجة أوسركاف. يؤيد العالم يارومير مالك ما توصل إليه نيكولاس جريمال سابقًا من أن نفر حتبس هي ابنة الملك دجيدف رع والملكة حتب حرس الثانية. وعلى اعتبار صحة هذه الفرضية فقد أيد عالم المصريات الأمريكي مارك لينر فكرة أن والدة أوسركاف ربما تكون خنت كاوس، وهي نفس الفكرة التي أيدها العالم أرييل كوزلوف.
+            بينما جادل أيدان دودسون وديان هيلتون بأن نفر حتبس لم تُمنح لقب زوجة الملك في الوثائق اللاحقة المتعلقة بعبادة الجنائز، ولاحظا عدم وجود سبب مقنع لهذا الأمر، كما اقترحا أن زوجة (قرينة) أوسركاف ربما كانت خنت كاوس الأولى، وهي الفرضية التي أيدها المؤرخ المصري سليم حسن. يتفق العلماء كلايتون وروزالي وأنتوني ديفيد على أن خنت كاوس الأولى كانت ابنة الملك منقرع. جادل العالم برنهارد جردسيلوف بأن أوسركاف باعتباره سليلًا للفرعون دجيدف رع ربما تزوج امرأة من السلالة الملكية الرئيسية - خط خفرع ومنقرع - فأصبح بإمكانه توحيد فصيلين متنافسين داخل العائلة المالكة وإنهاء صراعات الأسرة الحاكمة المحتملة. بدلاً من ذلك، من الممكن أن يكون أوسركاف هو رئيس كهنة رع قبل اعتلاءه العرش، مما يمنحه تأثيرًا كافيًا للزواج من أرملة شبسس كاف والتي يُعتقد أنها خنت كاوس الأولى.",
+            english_content:"The identity of Userkaf's father and mother is uncertain and ambiguous, but he undoubtedly had family connections to the rulers of the previous Fourth Dynasty. Egyptologist Miroslav Werner suggests that he was Menkaure's son by one of his queens, and may have been a full brother of his predecessor and the last king of the Fourth Dynasty, Shepseskaf.
+            Nicholas Grimall, Peter Clayton, and Michael Rice have all suggested that Userkaf was the son of Queen Neferhetepes, whom some Egyptologists consider to be the daughter of King Djedefre and Queen Hetepheres II. Based on this hypothesis, Neferhetepes's husband becomes difficult to identify, but Nicholas Grimal believes that her husband may be the (priest of Ra, master of Sakhpu) mentioned in the Westkar Papyrus. Scientists Aidan Dodson and Diane Hilton suggest that Queen Neferhetepes was buried in a pyramid adjacent to the pyramid in which Userkaf was buried, as it is believed that this pyramid belonged to a woman with the same name.
+            However, the location of the pyramid attributed to Neferhetepes strongly suggests that she may have been Userkaf's wife rather than his mother. If this hypothesis is correct, then Neferhoteps in this case would be the mother of Sahure, who succeeded Userkaf in power. An inscription was found showing King Sahure alongside his wife, the queen, and his mother, who has been identified as Neferhetepes, once again confirming that she was most likely Userkaf's wife. The scholar Jaromir Malik supports Nicholas Grimal's previous findings that Neferhetepes is the daughter of King Djedefre and Queen Hetepheres II. Considering the validity of this hypothesis, the American Egyptologist Mark Lehner supported the idea that Userkaf’s mother may have betrayed Kaos, which is the same idea that was supported by the scientist Ariel Kozlov.
+            While Aidan Dodson and Diane Hilton argued that Neferhetepes was not given the title of king's wife in later documents relating to the funeral cult, and noted that there was no convincing reason for this, they also suggested that Userkaf's wife (consort) may have been Khent-Kaos I, a hypothesis supported by the Egyptian historian Selim. Hassan. Scholars Clayton, Rosalie, and Anthony David agree that Khentkaos I was the daughter of King Menkaure. Scholar Bernhard Gerdsilov has argued that Userkaf, as a descendant of Pharaoh Djedefre, may have married a woman from the main royal line—the line of Khafre and Menkaure—so he could unite two rival factions within the royal family and end potential dynastic conflicts. Alternatively, it is possible that Userkaf was the high priest of Ra before his accession to the throne, giving him enough influence to marry the widow of Shepesskaf who is believed to have betrayed Kaos I.",
+            character_id: character_19.id,
+    )
+    CharacterSection.create(
+            arabic_title:"الأبناء",
+            english_title:"Children",
+            arabic_content:"Many Egyptologists believe that Sahure was Userkaf's son and not his brother as mentioned in the Westkar Papyrus. What confirms this is the discovery of an inscription showing Sahure and his mother Neferhetepes, which is the name that appears on a pyramid built next to the pyramid of Userkaf. An additional argument supporting Sahure's son is the location of his pyramid in close proximity to the Temple of the Sun built by Userkaf. No other child of Userkaf has been identified except for a daughter named Khamat, who was mentioned in inscriptions discovered in the mastaba of the high priest at Tahshepses.",
+            english_content:"Many Egyptologists believe that Sahure was Userkaf's son and not his brother as mentioned in the Westkar Papyrus. What confirms this is the discovery of an inscription showing Sahure and his mother Neferhetepes, which is the name that appears on a pyramid built next to the pyramid of Userkaf. An additional argument supporting Sahure's son is the location of his pyramid in close proximity to the Temple of the Sun built by Userkaf. No other child of Userkaf has been identified except for a daughter named Khamat, who was mentioned in inscriptions discovered in the mastaba of the high priest at Tahshepses.",
+            character_id: character_19.id,
+    )
+    CharacterSection.create(
+            arabic_title:"فترة الحكم",
+            english_title:"His reign",
+            arabic_content:"لا يُعرف على وجه الدقة مدة حكم الملك أوسركاف. بالنظر إلى الأدلة التاريخية والأثرية التي عُثر عليها فإن الإجماع بين علماء المصريات هو أنه حكم لمدة سبع إلى ثماني سنوات في بداية الأسرة الخامسة في مصر. إذ يُظهر الدليل الأول وهو تحليل تقريبي للسجلات الملكية للمملكة القديمة أن عهد أوسركاف سًجِّل في ثمانية أقسام تقابل ما لا يقل عن سبع سنوات كاملة ولكن ليس أكثر من ذلك بكثير. آخر سنة مقروءة مسجلة في سجلات أوسركاف هي السنة التي تقابل ثالث إحصاء للماشية، وهو الإحصاء الذي كان معمولاً به في مصر القديمة لتقدير مقدار الضرائب التي ستُفرض على السكان. يُعتقد أن هذا الحدث الهام كان يتم كل سنتين خلال فترة المملكة القديمة، مما يعني أن الإحصاء الثالث للماشية يمثل السنة السادسة من حكمه. تم التوصل لنفس النتيحة أيضا عندما عُثر على نقش وُجد على حجر من معبد الشمس الذي بناه أوسركاف. أما الدليل الثاني فهو في بردية تورينو (وهي وثيقة كُتبت في عهد رمسيس الثاني) إذ تُظهر في العمود الثالث الصف 17 أن أوسركاف قد حكم لفترة مدتها سبع سنوات. أما الدليل الثالث فهو العثور على عدد قليل جدًا من القطع الأثرية الصغيرة التي تحمل اسم أوسركاف وهي تشهد على فترة حكمه القصيرة وتشمل هذه الآثار جرة مصنوعة من الديوريت مطلية بالذهب، وقطعة من الحجر وزنها 5 ديبن  (وحدة مصرية قديمة لقياس الوزن) وختم أسطواني حجري عُثر عليه في إلفنتين، وكلها اليوم معروضة في متحف المتروبوليتان للفنون، بالإضافة إلى ختم أسطواني عاجي محفوظ في المتحف البريطاني  وختم آخر في متحف بولاق.
+            المصدر التاريخي الوحيد الذي يذكر أن أوسركاف قد حكم لفترة طويلة هو كتاب (تاريخ مصر) الذي كُتب في القرن الثالث قبل الميلاد في عهد بطليموس الثاني (283-246 قبل الميلاد) بواسطة المؤرخ مانيتون. لم تصل إلينا أي نسخة محفوظة من هذا الكتاب الذي تعرض للتلف والضياع وهو معروف اليوم فقط من خلال كتابات بعض المؤرخين اللاحقين مثل يوليوس أفريكانوس ويوسابيوس القيصري. وقد نقل الباحث البيزنطي جورج سينسيلوس عن يوليوس أفريكانوس أنه قال أن كتاب (تاريخ مصر) يُذكر فيه حكام الأسرة الخامسة بالترتيب التالي: أوسركاف و ساحو رع 
+            و نفر إر كارع كاكاي. على وجه الخصوص، يتفق ترتيب الملوك الذي ذكره المُؤرخ مانيتون عن ملوك الأسرة الخامسة مع ما ورد في قائمة ملوك أبيدوس ولوح سقارة، وهما قائمتان للملوك كُتبتا خلال عهدي سيتي الأول ورمسيس الثاني على التوالي. على النقيض من بردية تورين، يقدر يوليوس أفريكانوس أن أوسركاف حكم لمدة 28 عامًا  وهي مدة أطول بكثير من الإجماع الحديث للمؤرخين.",
+            english_content:"The exact length of King Userkaf's reign is not known. Given the historical and archaeological evidence found, the consensus among Egyptologists is that he ruled for seven to eight years at the beginning of the Fifth Dynasty in Egypt. The first piece of evidence, a rough analysis of the royal records of the Old Kingdom, shows that Userkaf's reign was recorded in eight sections corresponding to at least seven full years but not much more. The last readable year recorded in Userkaf's records is the year corresponding to the third cattle census, which was the census used in ancient Egypt to estimate the amount of taxes to be imposed on the population. This important event is believed to have occurred every two years during the Old Kingdom period, meaning that the third cattle census marks the sixth year of his reign. The same conclusion was also reached when an inscription was found on a stone from the Temple of the Sun built by Userkaf. The second piece of evidence is in the Turin Papyrus (a document written during the reign of Ramses II), which shows in the third column, row 17, that Userkaf ruled for a period of seven years. The third piece of evidence is the discovery of a very small number of small artifacts bearing Userkaf’s name, which testify to his short reign. These artifacts include a jar made of diorite plated with gold, a piece of stone weighing 5 deben (an ancient Egyptian unit for measuring weight), and a stone cylinder seal that was found. On it in Elephantine, all of them are today displayed in the Metropolitan Museum of Art, in addition to an ivory cylinder seal preserved in the British Museum and another seal in the Bulaq Museum.
+            The only historical source that mentions that Userkaf ruled for a long time is the book (History of Egypt), which was written in the third century BC during the reign of Ptolemy II (283-246 BC) by the historian Manetho. No preserved copy of this book has reached us, which was damaged and lost, and it is known today only through the writings of some later historians such as Julius Africanus and Eusebius of Caesarea. The Byzantine researcher George Syncellus quoted Julius Africanus as saying that the book (History of Egypt) mentions the rulers of the Fifth Dynasty in the following order: Userkaf and Sahu Ra.
+            And Neferirkare Kakai. In particular, the order of kings given by the historian Manetho for the kings of the Fifth Dynasty agrees with what is stated in the Abydos King List and the Saqqara Tablet, two king lists written during the reigns of Seti I and Ramesses II, respectively. In contrast to the Turin Papyrus, Julius Africanus estimates that Userkaf ruled for 28 years, much longer than the modern consensus of historians.",
+            character_id: character_19.id,
+    )
+    CharacterSection.create(
+            arabic_title:"مؤسس الأسرة الخامسة",
+            english_title:"Founder of the Fifth Dynasty",
+            arabic_content:"يُعتبر المؤرخ مانيتون هو أول من قسَّم الملوك المصريين القدماء إلى سلالات (عائلات) وذلك في كتابه المفقود (تاريخ مصر)، كان الهدف من هذا التقسيم هو أن يكون قريبا أكثر ما يمكن إلى قائمة الحكام اليونانيين لمصر في العهد البطلمي. مع ذلك فإن التنبأ بانتهاء حكم الأسرة الرابعة وبداية حكم الأسرة الخامسة ربما لاحظه المصريون القدماء الذين قاموا بتوثيقه كرواية عَثَر عليها الباحثون في بردية ويستكار. في هذه الرواية، تنبأ الملك خوفو وهو من ملوك الأسرة الرابعة بزوال سلالته وصعود سلالة جديدة من خلال تولي ثلاثة إخوة أبناء رع عرش مصر. يعود تاريخ هذه القصة إلى الأسرة السابعة عشرة أو ربما الأسرة الثانية عشرة.
+            إلى جانب هذه الأدلة التاريخية، يبدو أن الانقسام بين الأسرة الرابعة والخامسة يعكس التغييرات الفعلية التي حدثت في ذلك الوقت لا سيما في الديانة المصرية وفي دور الملك. إن تفضيل رع على بقية الآلهة المصرية وتقديسه وعبادته بشكل أكثر عن غيره جعله يبدو وكأنه إله المملكة أو الأسرة، وهي الطقوس التي لم يكن موجودة خلال فترة حكم الأسرة الرابعة التي كانت تركز بشكل أكبر على طقوس الدفن الملكية.
+            لا تعرف وظيفة أوسركاف قبل صعوده إلى العرش. يذكر المؤرخ جريمال أن أوسركاف ربما كان كاهنًا كبيرًا للإله رع في مدينة هليوبوليس أو ساخبو وهما مركز عبادة رع المذكور في بردية ويستكار. اقترح عالم المصريات فليندرز بيتري فرضية وجود علاقة بين أصول الأسرة الخامسة ومدينة ساخبو، حيث أشار إلى أن اسم المدينة في الكتابة الهيروغليفية المصرية يشبه اسم مدينة إلفنتين، وهي المدينة التي اعتبرها مانيتون مهد الأسرة الخامسة وبداية ظهورها فيها. وفقًا للعالم لبيتري، فإن افتراض أن بردية ويستكار قد وثَّقت تقليدًا يذكر أصول الأسرة الخامسة من الممكن أن يفسر تقسيم القوائم (العائلات) التي وضعها مانيتون، خاصة بالنظر إلى أنه لا توجد علاقة معينة بين إلفنتين والفراعنة من الأسرة الخامسة.",
+            english_content:"The historian Manetho is considered the first to divide the ancient Egyptian kings into dynasties (families) in his lost book (The History of Egypt). The aim of this division was to be as close as possible to the list of Greek rulers of Egypt in the Ptolemaic era. However, the prediction of the end of the rule of the Fourth Dynasty and the beginning of the rule of the Fifth Dynasty may have been noticed by the ancient Egyptians, who documented it as a narrative found by researchers in the Westkar Papyrus. In this novel, King Khufu, one of the kings of the Fourth Dynasty, predicted the demise of his dynasty and the rise of a new dynasty through the accession of three brothers, sons of Ra, to the throne of Egypt. This story dates back to the Seventeenth Dynasty or perhaps the Twelfth Dynasty.
+            Besides this historical evidence, the division between the Fourth and Fifth Dynasties seems to reflect the actual changes that occurred at that time, especially in Egyptian religion and in the role of the king. Preferring Ra over the rest of the Egyptian gods and sanctifying and worshiping him more than others made him appear to be the god of the kingdom or family, a ritual that did not exist during the Fourth Dynasty, which focused more on royal burial rituals.
+            Userkaf's function before his ascension to the throne is not known. The historian Grimal states that Userkaf may have been a high priest of the god Ra in the city of Heliopolis or Sakhbu, the center of the cult of Ra mentioned in the Westkar Papyrus. Egyptologist Flinders Petrie proposed the hypothesis of a relationship between the origins of the Fifth Dynasty and the city of Sakhbu, as he pointed out that the name of the city in Egyptian hieroglyphs is similar to the name of the city of Elephantine, which is the city that Manetho considered the cradle of the Fifth Dynasty and the beginning of its emergence there. According to the scholar Petrie, the assumption that the Westkar Papyrus documented a tradition mentioning the origins of the Fifth Dynasty could explain the division of lists (families) drawn up by Manetho, especially considering that there is no specific relationship between Elephantine and the pharaohs of the Fifth Dynasty.",
+            character_id: character_19.id,
+    )
+    CharacterSection.create(
+            arabic_title:"التماثيل",
+            english_title:"Statues",
+            arabic_content:"اكتشفت عدة تماثيل متفرقة لأوسركاف من بينها تمثال نصفي للإلهة نيث له ملامح تشبه ملامح أوسركاف  وشكله عُثر عليه في معبده الشمسي في أبو صير وهو موجود اليوم في المتحف المصري. يبلغ ارتفاع التمثال 45 سم (18 بوصة) وقد نُحت من الحجر الرمادي. يعتبر هذا التمثال ذو أهمية خاصة لأنه من بين المنحوتات القليلة جدًا من عصرالمملكة القديمة التي تُظهر أوسركاف وهو يرتدي التاج الأحمر الذي يرمز إلى مصر السفلى. اكتشف التمثال في عام 1957 أثناء رحلة تنقيب مشتركة بين المعاهد الألمانية والسويسرية في القاهرة. هناك تمثال رأس آخر يُعتقد أنه يعود أيضاً لأوسركاف يظهر فيه وهو يرتدي التاج الأبيض الذي يرمز إلى صعيد مصر وقد صُنع من الحجر الجيري الملون وهو محفوظ اليوم في متحف كليفلاند للفنون.
+            في عام 1928  عُثر العالم البريطاني سيسيل مالابي فيرث في فناء معبد يقع في المعبد الجنائزي في سقارة على رأس تمثال ضخم لأوسركاف وهو موجود اليوم في المتحف المصري. نُحت هذا الرأس الضخم من جرانيت أسوان الوردي ويظهر فيه أوسركاف وهو يرتدي غطاء الرأس الفرعوني مع صورة لأفعى الكوبرا على جبهته ، وهو أكبر تمثال رأس باقٍ يرجع تاريخه إلى المملكة القديمة والتمثال الملكي الضخم والوحيد من هذه الفترة بخلاف تمثال أبو الهول بالجيزة. العديد من قطع تماثيل أوسركاف صُنعت من الديوريت والأردواز والجرانيت ولكن لم يتم العثور على أي تمثال من الحجر الجيري في نفس الموقع. يَظهر على بعض القطع خرطوش أوسركاف واسم حورس.
+            كما يلاحظ السمات الشبابية لأوسركاف في معظم تماثيله، إذ يعتقد بعض العلماء أنه هذه مؤشرات جيدة على عمره، فقد يكون قد اعتلى العرش كمراهق ومات في أوائل العشرينات من عمره.",
+            english_content:"Several separate statues of Userkaf were discovered, including a bust of the goddess Neith, which has features similar to Userkaf's features and shape. It was found in his solar temple in Abusir and is located today in the Egyptian Museum. The statue is 45 cm (18 in) high and was carved from gray stone. This statue is of particular interest because it is among the very few Old Kingdom sculptures that show Userkaf wearing the red crown symbolizing Lower Egypt. The statue was discovered in 1957 during a joint excavation trip between German and Swiss institutes in Cairo. There is another head statue, believed to also belong to Userkaf, in which he appears wearing the white crown that symbolizes Upper Egypt. It was made of colored limestone and is preserved today in the Cleveland Museum of Art.
+            In 1928, the British scientist Cecil Mallaby Firth was found in the courtyard of a temple located in the mortuary temple at Saqqara on top of a huge statue of Userkaf, which is located today in the Egyptian Museum. Carved from pink Aswan granite and showing Userkaf wearing a pharaonic headdress with an image of a cobra on his forehead, this colossal head is the largest surviving head statue dating from the Old Kingdom and the only colossal royal statue from this period other than the Great Sphinx of Giza. Many pieces of Userkaf's statues were made of diorite, slate, and granite, but no limestone statues have been found at the same site. On some pieces, Userkaf's cartouche and the name Horus appear.
+            Userkaf's youthful features are also noted in most of his statues, as some scholars believe that these are good indicators of his age, as he may have ascended to the throne as a teenager and died in his early twenties.",
+            character_id: character_19.id,
+    )
+    character_20 = Character.create(
+        arabic_name: "ني أوسر رع",
+        english_name: "Nyuserra",
+        arabic_info: "نى اوسر رع (بالإنجليزية: Nyuserra) هو سادس ملك فرعوني في الأسرة المصرية الخامسة، ويسمى في اليونانية راثوريس. وقد تولى الحكم لمدة 25 عام، في الفترة من (2416 ق.م - 2392 ق.م). واسم ميلاده يعني الملك من قوة رع. والملك ني أوسر رع هو ابن للملك نفر إر كا رع (كاكاي) من زوجته الملكة خنت كاوس الثانية وأخيه الملك نفر اف رع.
+        يعتقد بعض العلماء أنه حكم مصر لمدة 30 عام أو أكثر. وتشير آثاره التي بناها في منطقة أبو صير إلى نشاط كبير في إقامة البنايات، فمنها هرمه ومنطقته، وبنائه لمعبد الشمس، وتكملة مقبرة والده، ومقبرة أخيه ومقبرة أمه.
+        قام بإنابة وزير Tjati لمتابعة مرافق الحياة في البلاد. كما أرسل بعثات حربية إلى وادي المغارة بسيناء وإلى النوبة لتأمين محاجر استخراج النحاس والذهب؛ وكانت له علاقات تجارية مع جبيل (في لبنان اليوم). عدل الطقوس الدينية وبصفة خاصة في الطقوس الجنائزية للملك بعد وفاته، واتبعت تلك الطقوس حتى عصر الدولة المصرية الوسطى.",
+        english_info: "Nyuserra (in English: Nyuserra), is the sixth Pharaonic king in the Fifth Egyptian Dynasty, and is called Rathoris in Greek. He ruled for 25 years, from 2416 BC - 2392 BC. His birth name means king of the power of Ra. King Neuserre is the son of King Nefererkare (Kakai) from his wife, Queen Khentkaus II, and his brother, King Neferrere.
+        Some scholars believe that he ruled Egypt for 30 years or more. The monuments he built in the Abu Sir area indicate great activity in erecting buildings, including his pyramid and its area, his construction of the Temple of the Sun, and the completion of his father’s tomb, his brother’s tomb, and his mother’s tomb.
+        He appointed Minister Tjati to monitor the country's life facilities. He also sent military missions to Wadi al-Maghara in Sinai and to Nubia to secure quarries for extracting copper and gold. He had trade relations with Byblos (in Lebanon today). He modified the religious rituals, especially the funeral rituals of the king after his death, and these rituals were followed until the era of the Egyptian Middle Kingdom.",
+        date_of_birth: "",
+        date_of_death: "",
+        sub_era_id: sub_era_2.id,
+    )
+    character_20.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f1/Niuserre_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_20.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f1/Niuserre_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"نظام الحكم",
+            english_title:"His reign",
+            arabic_content:"عمل ني-أوسر-رع على تركيز حكم البلاد وتوكيلها إلى 'وزير' يقوم بأعلى وظائف القصر ويرعاها. فجمع وظيفة 'رئيس غرفتي الثروة'، و 'رئيس الشونتين'، و'رئيس غرفتي حلي الملك' في يد وزير Tjati.
+            بذلك تجمعت كل شئون البلاط الملكي في وظيفة واحدة. كما ظهرت في عهده أيضا وظيفتين جديدتين حملهما وزير يدعى 'كاي'، فكان هذا 'رئيسا للبيت العالي' بوظيفة قضائية، ثم رقي إلى مرتبة وزير بلقب 'رئيس 6 البيوت الكبيرة' وكبير القضاة على مصر. كما حمل 'كاي' أيضا لقب 'محافظ مصر العليا'.
+            كذلك يذكر التاريخ تقليد 'من نفر' وبتاح شبسيس مقاليد الوزارة أثناء حكم ني-أوسر-رع. كما يشير بعض علماء الآثار أن الوزير 'سخم عنخ بتاح' كان أيضا أثناء حكم ني-أوسر-رع . وكان بتاح شبسيس قد وصل إلى أعلى المراتب في الدولة بزواجه من الأميرة 'غاميرر نبتي' ويدل على ذلك مقبرته التي بناها والتي تعتبر أكبر مقبرة خاصة من الدولة القديمة. ",
+            english_content:"Ne-User-Ra worked to centralize the rule of the country and entrust it to a 'minister' who would carry out the highest functions of the palace and take care of it. He combined the functions of 'President of the Chambers of Wealth', 'President of the Shounen', and 'President of the Chambers of Royal Jewelry' in the hands of the Tjati Vizier.
+            Thus, all the affairs of the royal court were gathered in one function. Two new positions also appeared during his reign, held by a minister called “Kay.” He was “President of the High House” with a judicial position, then he was promoted to the rank of minister with the title of “Head of the 6 Great Houses” and chief judge of Egypt. 'Kay' also held the title of 'Governor of Upper Egypt'.
+            History also mentions the tradition of 'Mennefer' and Ptah-Shepesis holding the reins of the ministry during the rule of Ne-user-Ra. Some archaeologists also indicate that the minister 'Sekhemankhptah' was also during the rule of Neuser-Ra. Ptah Shepsis had reached the highest ranks in the state through his marriage to Princess 'Gamerer-Nebty', and this is evidenced by his tomb that he built, which is considered the largest private tomb of the Old Kingdom.",
+            character_id: character_20.id,
+    )
+    CharacterSection.create(
+            arabic_title:"العلاقات التجارية والحملات",
+            english_title:"Business relationships and campaigns",
+            arabic_content:"توجد في وادي المغارة بسيناء لوحتان منقوشتان في الصخور من عهد ني-أوسر-رع. اخذت أحدهما إلى المتحف المصري بالقاهرة. تدل اللوحتين على استغلال ني-أوسر-رع استخراج النحاس واحجار الفيروز الكريمة من منطقة هذا الوادي.
+            نقوش من وادي المغارة بسيناء من عهد ني-أوسر-رع.
+            وكانت للملك علاقات تجارية مع بلاد الشام، وتدل عليها تبادل التجارة مع جبيل على البحر الأبيض المتوسط، وتقع حاليا في لبنان، حيث عثر فيها على أحد تماثيل 'ني-أوسر-رع'، وكذلك من شقفة قارورة من مدينة 'ترافرتين' تحمل اسمه.
+            ويدل على نشاطه في الجنوب في النوبة والعثور على ختم كان موجودا في قلعة بوهين عند الشلال الثاني على النيل. كما وجد جزء من لوحة حجرية نقش عليها اسم الملك ني-أوسر-رع وجدت في أحد محاجر الجنيس (نوع من أحجار فلدسبار).",
+            english_content:"In Wadi al-Maghara in Sinai, there are two rock-cut stelae from the era of Neuser-Ra. I took one of them to the Egyptian Museum in Cairo. The two paintings indicate the exploitation of Ni-User-Ra by extracting copper and turquoise gems from the area of this valley.
+            Inscriptions from Wadi al-Maghara in Sinai from the era of Neuser-Ra.
+            The king had commercial relations with the Levant, as evidenced by the exchange of trade with Byblos on the Mediterranean Sea, currently located in Lebanon, where one of the statues of “Ni-user-Ra” was found, as well as a fragment of a bottle from the city of “travertine” bearing his name.
+            Evidence of his activity in the south in Nubia is the finding of a seal that was present in Buhin Castle at the second cataract on the Nile. A part of a stone plaque inscribed with the name of King Neuser-Ra was also found in one of the gneiss quarries (a type of feldspar stone).",
+            character_id: character_20.id,
+    )
+    CharacterSection.create(
+            arabic_title:"أنشطته المعمارية",
+            english_title:"Architectural activities",
+            arabic_content:"قام ني أوسر رع ببناء منشآت عديدة في أبو صير فاقت ما بني قبل ذلك في تلك المنطقة. فبعد وفاة أبيه ثم أخيه بعد فترة حكم قصيرة، واجه ني أوسر رع عدة مشروعات بنائية لم تكتمل بعد، فأكملها. من ضمنها مقبرة 'نفر ير كا رع' و 'رع نفر إف'، ومقبر ة أمه 'خنتكاوس الثانية'. وقام ببناء هرمه مجاورا لهرم أبيه حيث لم تسمح تضاريس المنطقة بغير ذلك. واضطر لبناء مقابر زوجاته في جنوب أبي قير بالقرب من مقبرة أخيه ومقبرة أمه.
+            كما قام ببناء معبد الشمس في منطقة أبو غراب في الجزى الشمالي من أبي صير.
+            بعد وفاة ني أوسر رع فقدت منطقة أبي صير موقعها كمنطقة لمقابر المفراعنة. فكان هو آخر فرعون يبني مقبرته فيها. وبنى خليفته من-كا-حور مقبرته في سقارة. إلا أن الملك 'جد-كا-رع' قام ببناء مقابر عائلته في أبي صير.",
+            english_content:"Niuserre built many facilities in Abusir that exceeded what had been built before in that region. After the death of his father and then his brother after a short reign, Neuser Ra faced several construction projects that had not yet been completed, so he completed them. Including the tomb of 'Neferirkare' and 'Ra'neferef', and the tomb of his mother 'Khentekaus II'. He built his pyramid adjacent to his father's pyramid, as the terrain of the area did not allow otherwise. He was forced to build graves for his wives in the south of Abu Qir, near his brother's cemetery and his mother's cemetery.
+            He also built the Temple of the Sun in the Abu Ghurab area in the northern part of Abu Sir.
+            After the death of Neuserre, the Abusir area lost its position as an area for the tombs of the Pharaohs. He was the last Pharaoh to build his tomb there. His successor, Men-Ka-Hur, built his tomb in Saqqara. However, King Djed-Ka-Ra built his family tombs in Abu Sir.",
+            character_id: character_20.id,
+    )
+    CharacterSection.create(
+            arabic_title:"هرم ني-أوسر-رع",
+            english_title:"The Pyramid of Nyuserra",
+            arabic_content:"هرم ني أوسر رع (في الهيروغليفية من ست ني أوسر رع، بمعنى البقاء في أماكن ني أوسر رع) هو هرم مصري تم تشييد مجمع للمصري للملك المصري ني أوسر رع من الأسرة الخامسة منتصف القرن الخامس والعشرين قبل الميلاد. خلال فترة حكمه، أكمل ني أوسر رع الآثار غير المكتملة لوالده، نفر إر كارع كاكاي، والدته، خنتكاوس الثانية، وشقيقه نفر ف رع، قبل أن يباشر العمل في مجمع الهرم الشخصي. اختار موقعًا في مقبرة أبو صير بين مجمعات نفر إر كارع وساحورع، مما أدى إلى تقييد التكاليف من حيث المساحة والتضاريس. العمل والمواد. كان ني أوسر رع آخر ملك دُفن في المقبرة، بينما اختار خلفاؤه أن يُدفنوا في مكان آخر. يشتمل نصبه التذكاري على هرم رئيسي ومعبد جنائزي ومعبد وادي على بحيرة أبو صير وجسر كان مخصصًا في الأصل لنصب نفرركاري وهرم عبادة.",
+            english_content:"The Pyramid of Niuserre (in hieroglyphics from Set Niuserre, meaning staying in the places of Niuserre) is an Egyptian pyramid. A complex was built for the Egyptian king Niuserre of the Fifth Dynasty in the middle of the twenty-fifth century BC. During his reign, Neuserre completed the unfinished monuments of his father, Nefererkare Kakai, his mother, Khentakaus II, and his brother Neferrere, before beginning work on his personal pyramid complex. He chose a site in the necropolis of Abusir between the complexes of Neferirkare and Sahure, which limited costs in terms of space and terrain. Work and materials. Niuserre was the last king to be buried in the necropolis, while his successors chose to be buried elsewhere. His monument includes a main pyramid, a mortuary temple, a valley temple on Lake Abusir, a bridge originally intended for the Neferekare monument, and a cult pyramid.",
+            character_id: character_20.id,
+    )
+    character_21 = Character.create(
+        arabic_name: "تتي",
+        english_name: "Teti",
+        arabic_info: "الملك تتي هو أول فراعنة الاسرة السادسة، ويذكر مانيتون أن اصله من منف. انصرف تتي عن كهنة رع، واهتم بعباده بتاح المقدس في منف. ويبدو أنه تعرض في نهايه حياته لمؤامرة من قبل افراد البيت المالك أودت بحياته. خلفه في الحكم أوسر كا رع الذي لم يستمر في الحكم أكثر من أربع سنوات. كما أهملته النقوش القديمة فلم يخلف وراءه اثاراً.",
+        english_info: "King Teti is the first pharaoh of the Sixth Dynasty, and Manetho mentions that his origin is from Memphis. Teti turned away from the priests of Ra, and focused on his worshipers, the sacred Ptah, in Memphis. It seems that at the end of his life, he was subjected to a conspiracy by members of the royal house that claimed his life. He was succeeded in power by Userkare, who did not continue to rule for more than four years. The ancient inscriptions also neglected it, leaving no traces behind it.",
+        date_of_birth: "",
+        date_of_death: "",
+        sub_era_id: sub_era_2.id,
+    )
+    character_21.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/1/19/Statue_of_Teti_Quibell_Saqqara_1.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_21.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/1/19/Statue_of_Teti_Quibell_Saqqara_1.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"عائلته",
+            english_title:"His family",
+            arabic_content:"الفرعون تتي مؤسس الأسرة السادسة في مصر لم ينشأ من العائلة الملكية. فقد تولى الحكم نظرا لزواجه من الملكة إيبوت الأولى، ِإحدى بنات الفرعون أوناس. وكان أوناس أخر حكام الأسرة الخامسة.
+            يعتقد ان تيتي كان إبنا ل 'شبس إبوبتاح' وامه 'سششت' وربما كان له أخ اسمه ميحو. وتزوج تتي من زوجتين بخلاف إيبوت الأولى، أحداهما 'خويت الثانية' والأخرى غير معروف اسمها بالضبط ومن المحتمل أنها كانت 'خنتكاوس الرابعة'.
+            وأنجب تيتي من زوجته إيبوت الأولى ابنه بيبي الأول الذي اعتلي العرش فيما بعد. كما أنجب تتي تسع بنات لا تعرف أسماء امهاتهن بالضبط، وأشهرهن: 'سششت وعتت حتحور' (زوجة الوزير مريروكا) و 'إنتي'، و 'نبت أنوبخت سششت'.
+            الاسم الحوري له يعني 'محقق السلام للقطرين' (الوجه البحري والوجه القبلي في مصر)، مما يشير إلى أنه قام بتقوية ترابط الدولة.",
+            english_content:"Pharaoh Teti, founder of the Sixth Dynasty in Egypt, did not originate from the royal family. He assumed power due to his marriage to Queen Ibut I, one of the daughters of Pharaoh Unas. Unas was the last ruler of the Fifth Dynasty.
+            It is believed that Titi was the son of 'Sheps-Ebuptah' and his mother 'Seshesht', and he may have had a brother named Mihu. Teti married two wives other than the first Ibut, one of whom was 'Khoit II' and the other whose exact name is unknown and it is possible that she was 'Khentkaus IV'.
+            Titi and his first wife, Ebot, had a son, Pepi I, who later ascended the throne. Teti also gave birth to nine daughters whose mothers’ exact names are not known, the most famous of whom are: ‘Seshsht and Atat Hathor’ (wife of Minister Mereruka), ‘Enti’, and ‘Nebet Anubakht Sshsht’.
+            His Hurrian name means 'bringer of peace to the two countries' (Uzera and Upper Egypt in Egypt), indicating that he strengthened the cohesion of the state.",
+            character_id: character_21.id,
+    )
+    CharacterSection.create(
+            arabic_title:"فترة حكمه",
+            english_title:"His reign",
+            arabic_content:"عدد السنوات التي حكمها تيتي ليس معروفا تماما. لا تذكر بردية تورينو التي كتبت في عهد الدولة الحديثة عدد السنوات التي حكمها. ولكن الكاهن والمؤرخ المصري مانيتون الذي عاش في القرن الثالث قبل الميلاد ينسب إليه فترة حكم 33 سنة. ولكن يختلف المؤرخون في تفسير المصادر المختلفة عن فترة حكم تتي، ومما هو مرجح انه كان فرعونا لمصر مدة بين 13 إلى 23 سنة.
+            وقد عمل عدد كبير من الوزراء خلال حكم تيتي: 'كاجيمني' ومريروكا، وخنوم نتي، و: نفر سخ إم رع'، و 'نفر سخ إم بتاح'. و 'عنخ ما حور'، و 'خنتي كاي'.",
+            english_content:"The number of years Titi ruled is not exactly known. The Turin Papyrus, which was written during the New Kingdom, does not mention the number of years he ruled. But the Egyptian priest and historian Manetho, who lived in the third century BC, attributes to him a reign of 33 years. However, historians differ in their interpretation of the various sources regarding the period of Tetti’s rule, and it is likely that he was Pharaoh of Egypt for a period between 13 and 23 years.
+            A large number of ministers served during the rule of Teti: 'Kagemeni', Merruca, Khnum-Neti, 'Nefersekhemre', and 'Nefersekhemptah'. And 'ankh ma hor', and 'khenti kay'.",
+            character_id: character_21.id,
+    )
+    CharacterSection.create(
+            arabic_title:"هرم تتي",
+            english_title:"The Pyramid of Teti",
+            arabic_content:"بنى تيتي لنفسه هرما في سقارة. وتبلغ مقاييس هرم تتي 78,8 متر × 78,8 متر وكان ارتفاعه 52 مترا. وهو الآن أصبح مهدّما مثل ما يجاوره من أهرامات الملكات. عثر في أحد أهرامات الملكات على مومياء الملكة إيبوت الأولى في تابوت من الخشب. جدران الغرف الداخلية لهرم تتي مغطاة بأحجار رملية وأحجار جرانيت، وعليها نصوص من نصوص الأهرام، التي تصف رحلة الفرعون المتوفي في العالم الآخر.",
+            english_content:"Titi built himself a pyramid at Saqqara. The dimensions of the Pyramid of Teti are 78.8 meters x 78.8 meters and its height was 52 meters. It is now in ruins, like the Queens Pyramids next to it. In one of the queens' pyramids, the mummy of Queen Ibut I was found in a wooden coffin. The walls of the inner chambers of the Pyramid of Teti are covered with sandstones and granite stones, and on them are texts from the Pyramid Texts, which describe the journey of the deceased pharaoh in the other world.",
+            character_id: character_21.id,
+    )
+    CharacterSection.create(
+            arabic_title:"تماثيله",
+            english_title:"His statues",
+            arabic_content:"التمثال المجسم الوحيد المعروف لتتي أكتشفه 'جيمس كيبل' أثناء حفرياته في عام 1907/1906 في سقارة، في منطقة تقع شرقا من هرمه، حيث وجد في مقبرة تحت الأرض. يوجد هذا التمثال الآن في المتحف المصري بالقاهرة وأعطي له الرقم (Inv.-Nr. JE 39103). التمثال مشكل من الجرانيت الأحمر ويبلغ طول جزئه السليم 74 سنتيمتر. ولم يعثر على الجزء السفلي من هذا التمثال من تحت الركبة. ويستند تمثال الملك على عمود من جهة ظهره حيث يظهر الملك متقدما برجله اليسرى. وذراعاه ممتدان بجانب جسمه ويداه قابضتان. يرتدي الملك ثوبا قصيرا ويعلو رأسه التاج الأبيض المميز لصعيد مصر. العينان والحاجبان مشكلان بعناية، ويبدو ان التمثال كان دون ذقن.
+            لا يوجد على التمثال اسم تتي (حيث كان اسم الملك يكتب عادة على قاعدة التمثال). واعتبره عالم الآثار 'كيبل' أنه قد يكون تمثالا ل مري كا رع من الفترة الانتقالية الأولى. وانتساب التمثال إلى الفرعون تتي كان من الباحث 'وليام سميث' على أساس عدة شواهد: أولا، مكان وجود التمثال الذي عثر عليه بالقرب من هرم تيتي. ومن جهة أخرى فإن درجة اتقان صناعة التمثال كانت أعلى من جودة صناعة التماثيل خلال الفترة الانتقالية الأولى.",
+            english_content:"The only known anthropomorphic statue of Teti was discovered by James Keppel during his excavations in 1906/1907 in Saqqara, in an area east of his pyramid, where it was found in an underground tomb. This statue is now in the Egyptian Museum in Cairo and was given the number (Inv.-Nr. JE 39103). The statue is made of red granite, and its intact part is 74 centimeters long. The lower part of this statue below the knee was not found. The king's statue rests on a column on its back, where the king appears advancing with his left leg. His arms are extended beside his body and his hands are clenched. The king wears a short dress and has the distinctive white crown of Upper Egypt on his head. The eyes and eyebrows are carefully shaped, and it appears that the statue was without a chin.
+            The statue does not have Titi's name on it (as the king's name was usually written on the base of the statue). The archaeologist 'Keppel' considered it to be a statue of Merikare from the First Intermediate Period. The statue was attributed to Pharaoh Teti by researcher William Smith on the basis of several pieces of evidence: First, the location of the statue that was found near the pyramid of Teti. On the other hand, the degree of mastery of statue making was higher than the quality of statue making during the First Intermediate Period.",
+            character_id: character_21.id,
+    )
+    CharacterSection.create(
+            arabic_title:"موته",
+            english_title:"His death",
+            arabic_content:"طبقا لما جاء عن الكاهن والمؤرخ المصري مانيتو من القرن الثالث قبل الميلاد أغتيل تيتي من حراسه خهلال تمرد عليه. وربما كان ذلك سببا في اعتلاء أوسر كا رع الذي كان في مرحلة ما وزيرا (تياتي) للفرعون تتي. ولم يعتلي بيبي الأول ابن تتي عرش مصر إلا بعد وفاة أوسر كا رع.
+            ,ظهرت قصة خلال دولة مصرية وسطى ودولة مصرية حديثة غير كاملة من 'نفر كا رع' و 'سازينت' أن روح الملك تتي ظهرت له - وهو قائد الجيش سازينت - في جبانة منف. ولكن نص تلك القصة غير مكتمل تماما، ولا نعرف عنها أي تفاصيل أخرى.
+            مع بدء أسرة مصرية ثامنة عشر كتبت بردية إبيرس الطبية. وتلك البردية تذكر في القسم 468 (العمود 66، سطر 15 - 18) وصفة طبية لعقار يطوّل الشعر - وان صاحبة العقار هي 'سيشيسخت' أم الفرعون تتي (مذكورة في البردية باسم سيش).",
+            english_content:"According to what was reported by the Egyptian priest and historian Manetho from the third century BC, Titi was assassinated by his guards during a rebellion against him. This may have been the reason for the accession of Userkare, who was at some point a minister (Tiati) of Pharaoh Teti. Pepi I, Ibn Titi, did not ascend to the throne of Egypt until after the death of Userkare.
+            A story emerged during the Middle Egyptian state and the incomplete modern Egyptian state from 'Neferkare' and 'Sazint' that the spirit of King Teti appeared to him - the army commander Sazint - in the necropolis of Memphis. But the text of this story is completely incomplete, and we do not know any other details about it.
+            With the beginning of the Eighteenth Egyptian Dynasty, the Ebers Medical Papyrus was written. That papyrus mentions in Section 468 (column 66, lines 15-18) a prescription for a drug that lengthens hair - and that the owner of the drug is 'Sesheshekhet', the mother of Pharaoh Teti (mentioned in the papyrus as Seshe).",
+            character_id: character_21.id,
+    )
+    character_22 = Character.create(
+        arabic_name: "بيبي الثاني",
+        english_name: "Pepi II",
+        arabic_info: "پيپي الثاني نفر كا رع (2278 قبل الميلاد سادت جيم - ج. 2184 قبل الميلاد) كان فرعون من السلاله السادسة في المملكة المصرية القديمة. بعد وفاة مري أن رع تولي الحكم أخوه الملك ببي الثاني. الذي ذكر عنه مانيتون أنه وصل الي العرش وعمره 6 سنوات بعد وفاة والده وانه حكم 94 عاما وأن امه كانت الوصية عليه كما أن خاله الأمير 'جاو' ووزير في نفس الوقت صاحب اليد العليا في تصريف أمور البلاد.
+        عموما يعد حكم پيپي الثاني أطول فترة حكم لعاهل في التاريخ 94 (2278—2184)، على الرغم من أن هذا الرقم متنازع عليه من قبل بعض علماء المصريات الذين يؤيدون عهد أقصر مدة 64 عاما.",
+        english_info: "Pepi II Neferkare (c. 2278 BC - c. 2184 BC) was a pharaoh of the Sixth Dynasty of the Old Kingdom of Egypt. After the death of Meri Ra, his brother, King Pepi II, assumed power. What Maniton mentioned about him is that he reached the throne at the age of 6 years after the death of his father, and that he ruled for 94 years, and that his mother was his guardian, and that his uncle, Prince 'Gao', was a minister at the same time and had the upper hand in running the affairs of the country.
+        Overall the reign of Pepi II is the longest reign of a monarch in history (94 years 2278—2184), although this number is disputed by some Egyptologists who favor a shorter reign of 64 years.",
+        date_of_birth: "2278",
+        date_of_death: "2247",
+        sub_era_id: sub_era_2.id,
+    )
+    character_22.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/6/64/AnkhnesmeryreII-and-Son-PepiII-SideView_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_22.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/6/64/AnkhnesmeryreII-and-Son-PepiII-SideView_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"الحملات",
+            english_title:"Campaigns",
+            arabic_content:"ارتبط اسم هذا الملك بالحملات التي كان يرسلها الي الجنوب بقيادة حكام الفنتين. اشهرهم 'حرخوف' و'بيبي-نخت' و'ميخو' كانت مصر في هذه الفترة في حاجة الي الملك قوي يكون له من النفوذ والسلطان مايكبح بهما جماح حكام الأقاليم الذين ضعف ولاؤهم للحكومة المركزية وأصبح ولأهم لهم ألا الحصول علي مزيد من السلطة والمال دون اهتمام بأحوال رعيتهم ولكن الملك بيبي لم يكن قويا وبالتالي لم يكن قادراً علي تصريف الامور واخذ حكام الأقاليم يسلبونه سلطاته ماأمكنهم ذلك. في ظل هذه الظروف عمت الفوضي أرجاء البلاد ولم يكن هناك من ضحية سوي العامل والفلاح الذين ذقوا الأمرين وما أن واتتهم الفرصة للتعبير عما تجيش به صدروهم حتي قاموا بثورة اجتماعية عارمة رافضين كل مافي المجتمع من ظلم وفساد.",
+            english_content:"The name of this king was associated with the campaigns that he sent to the south under the leadership of the rulers of Elephantine. The most famous of them are 'Harkhuf', 'Pepi-Nakht' and 'Mikho'. Egypt in this period was in need of a strong king who would have influence and authority to restrain the rulers of the regions whose loyalty to the central government had weakened and it became more important for them not to obtain more power and money without They cared about the conditions of their subjects, but King Bibi was not strong, and therefore he was not able to manage matters, and the governors of the regions began to rob him of his powers as much as they could. Under these circumstances, chaos spread throughout the country, and there was no victim except the worker and the farmer who experienced both things. As soon as they were given the opportunity to express what was burning in their hearts, they launched a massive social revolution, rejecting all the injustice and corruption in society.",
+            character_id: character_22.id,
+    )
+    CharacterSection.create(
+            arabic_title:"نهاية الاسرة السادسة",
+            english_title:"The end of the Sixth Dynasty",
+            arabic_content:"انتهت الاسرة السادسة بملكة تدعي «نيت - أقرت» أو «نيتوكريس» التي ذكر مانيتون انها حكمت عامين.وحكي حول هذه الملكة العديد من الأساطير التي ذكرت أنها أجمل نساء عصرها وانها بانية الهرم الثالث وذكر هيرودوت بأنها حكمت البلاد وانها انتحرت بعد انتقاهما من الذين قتلوا اخاها ليضعوها مكانه وبنهاية حكم هذه الملكة انتهت الأسرة السادسة وانتهي معاها عصر من ازهي عصور مصر القديمة ألا وهو عصر الدولة القديمة وقبل أن ننتقل الي فترة زمنية جديدة نود ان نشير الي بعض المظاهر البارزة المرتبطة بهذه الفترة وهي اللامركزية وسلطات حكام الأقاليم وعلاقات مصر بالجنوب ثم الثورة الاجتماعية",
+            english_content:"The Sixth Dynasty ended with a queen called 'Nite-Acret' or 'Nitocris', which Manetho mentioned ruled for two years. Many legends were told about this queen that mentioned that she was the most beautiful woman of her time and that she was the builder of the third pyramid. Herodotus mentioned that she ruled the country and that she committed suicide after selecting them from those who were killed. Her brother to put her in his place, and with the end of the rule of this queen, the Sixth Dynasty ended, and with it one of the most prosperous eras of ancient Egypt ended, which is the era of the Old Kingdom. Before we move to a new period of time, we would like to point out some of the prominent aspects associated with this period, which are decentralization, the powers of the regional rulers, Egypt’s relations with the south, and then the revolution. Social",
+            character_id: character_22.id,
+    )
+    character_23 = Character.create(
+        arabic_name: "نفر كا رع الاول",
+        english_name: "Neferkare I",
+        arabic_info: "الملك المصرى 'نفر كا رع' أى جميل قرين رع وهو آخر ملوك الأسرة السادسه وآخر ملوك الدولة القديمة (بناة الأهرامات) وهو أول ملك تقوم فى عهده أول ثورة مصرية فى التاريخ.",
+        english_info: "The Egyptian king 'Neferkare', meaning Beautiful, the consort of Ra, is the last king of the Sixth Dynasty and the last king of the Old Kingdom (builders of the pyramids), and he is the first king during whose reign the first Egyptian revolution in history took place.",
+        date_of_birth: "2181",
+        date_of_death: "2055",
+        sub_era_id: sub_era_3.id,
+    )
+    character_23.thumb_image.attach(io: URI.open("https://www.albawabhnews.com/UploadCache/libfiles/155/4/600x338o/542.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_23.cover_image.attach(io: URI.open("https://www.albawabhnews.com/UploadCache/libfiles/155/4/600x338o/542.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"حكمه لمصر",
+            english_title:"His reign over Egypt",
+            arabic_content:"يقول الباحث الأثرى الطيب عبد الله الملك نفر كا رع حكم مصر لفترة تقارب 94 عاما وهى أطول فترة حكم فى التاريخ المصرى وغالبا حكم فى سنه السادسه من عمره خلفا لوالده الملك مرى-إن-رع الأول وارتبط ايضا اسمه بالحملات التى كان يقودها بارونات جزيرة الفنتين الى افريقيا الأستوائيه
+            في أواخر عهد الملك حوالي عام 2280ق.م دب الوهن والضعف في أوصال المملكة مما ادى الى انهياره حيث تقدم به السن وأصبح لا يقوى على حكم البلاد كما قويت حكام الأقاليم وزادت رغبتهم في الوصول إلى كرسي الحكم وزادت الفقر وأصبح الناس في كرب .",
+            english_content:"The good archaeological researcher Abdullah says King Neferkare ruled Egypt for a period of approximately 94 years, which is the longest period of rule in Egyptian history. He probably ruled in the sixth year of his life, succeeding his father, King Mer-en-Ra I. His name was also associated with the campaigns that were led by the barons of Elephantine Island to Equatorial Africa
+            At the end of the king’s reign, around the year 2280 BC, weakness and weakness spread throughout the kingdom, which led to its collapse, as he grew old and became unable to rule the country. The governors of the regions also became stronger, their desire to reach the throne increased, poverty increased, and the people became distressed.",
+            character_id: character_23.id,
+    )
+    CharacterSection.create(
+            arabic_title:"أول ثورة اجتماعية في التاريخ فى عهده",
+            english_title:"The first social revolution in history during his reign",
+            arabic_content:"وعادت هجمات بدو الصحراء من الشرق والغرب فقامت في البلاد ثورة اجتماعيه ضخمة هى الأولى في التاريخ حوالي عام 2280ق.م حتى أن بعضهم يطلق عليها (الثورة البلشفية الأولى) خرجت الجموع تنادي بعودة العدل والنظام والمساواة وانهارات السلطة المركزية وأصبحت الحدود مفتوحة وتوافدت جماعات كبيرة من بدو الصحراء على الحدود الشرقية كانوا ينهبون الناس ويذيعون الذعر في النفوس ورجال الأمن فقدوا السيطرة على حفظ الامن ولم يسلم منها مدفن أو معبد أو ديوان حكومي وامتد غضب الشعب إلى بيوت الأثرياء فنهبوها وشردوهم”هكذا كان الوضع في مصر حاله من الفوضى والضعف والتحلل وبرزت في تلك الفترة عدد من البيوت القوية الحاكمة في صعيد مصر ودلتاها استأثرت كل منها بإقليم تحكمه، وكانت البلاد مفككة العرى، خاصة فى الوجه البحري التي أشاعت الذعر والخوف بين الأهالي أما في مصر الوسطى فكان الحال أفضل حيث استقل كل حاكم بإقليم وفرض عليه سلطانه.
+            وقام عدد من كبار الموظفين وحكام الأقاليم المخلصين تشكيل هيئة من 70 شخص لتحكم البلاد ولكنها لم تلبث سوى 70 يوما وانهارت الدولة المركزية وقسمت البلاد واندلعت الحرب الأهلية بين الأقاليم بغية السيطرة على أراضي الأقاليم المجاورة.",
+            english_content:"Desert Bedouin attacks returned from the east and west, and a huge social revolution took place in the country, the first in history, around the year 2280 BC. Some even called it (the first Bolshevik revolution). Crowds came out calling for the return of justice, order, and equality. Central authority collapsed, the borders became open, and large groups of Bedouins arrived. In the desert on the eastern border, they were plundering people and spreading fear in the souls. The security men lost control over maintaining security, and no cemetery, temple, or government office was spared. The anger of the people extended to the homes of the wealthy, so they looted them and displaced them. Thus, the situation in Egypt was a state of chaos, weakness, and decay, and a number of people emerged during that period. Of the powerful ruling houses in Upper Egypt and its delta, each of them controlled a region under its control, and the country was disjointed, especially in Lower Egypt, which spread panic and fear among the people. However, in Middle Egypt, the situation was better, as each ruler became independent of a region and imposed his authority on it.
+            A number of senior officials and loyal governors of the regions formed a body of 70 people to govern the country, but within only 70 days the central state collapsed, the country was divided, and civil war broke out between the regions in order to control the lands of the neighboring regions.",
+            character_id: character_23.id,
+    )
+    CharacterSection.create(
+            arabic_title:"الأمر ببناء معبد لشهداء الثورة",
+            english_title:"Order to build a temple for the martyrs of the revolution",
+            arabic_content:"وعثر أثناء الحفريات بعين أصيل بقرية بلاط (واحة الداخلة) حائط من الطوب اللبن المخلوط على حجر ترجم محتواه 'بانتالاتشى' وترجمته رساله من الفرعون الى الأدميرال حاكم الواحه وكبير الكهنه، أمرنا حضرتنا أن يتم بناء معبد للطقوس الجنائزية لحكام الواحة الذين ماتوا فى الثورة وقد عهدت اليكم من خلال السلطات المخولة من الفرعون المنسق الأكبر للطقوس الجنائزيه ببناء هذا المعبد وعلى حاكم الواحه أن يعد العده لإتمام هذا البناء الذى سيكون مخصصا لأجداده حكام الواحه ايدى دونى وابنه ديكرو وابنه خينتيكا.",
+            english_content:"During excavations in Ain Asil in the village of Balat (Dakhla Oasis), a wall of mud bricks mixed on a stone was found, the contents of which were translated as 'Pantalachi' and translated as a letter from the pharaoh to the admiral, the ruler of the oasis and the chief priest. Our Holiness ordered that a temple be built for the funerary rituals of the rulers of the oasis who died in the revolution, and I have known Through the authorities delegated by the Pharaoh, you are the Grand Coordinator of the funerary rituals to build this temple. The ruler of the oasis must prepare to complete this building, which will be dedicated to his grandfathers, the rulers of the oasis, Eddie Doni, his son Dekru, and his son Khintika.",
+            character_id: character_23.id,
+    )
 
 
 
@@ -1395,8 +1669,8 @@ require 'open-uri'
         type: "War",
         arabic_title: "توحيد مصر العليا والسفلى",
         english_title: "Unification of Upper and Lower Egypt",
-        start_date: "3150 ق.م",
-        end_date: "3150 ق.م",
+        start_date: "3150",
+        end_date: "3150",
         arabic_info:"تم توحيد مصر العليا والسفلى من قبل الملك مينا، وهو أول فرعون في الأسرة الأولى، وقد تم توحيد البلاد بعد حرب طويلة بين البلدين.",
         english_info:"Upper and Lower Egypt were unified by King Menes, the first pharaoh of the First Dynasty, and the country was unified after a long war between the two countries.",
         character_id: character_1.id,
@@ -1471,8 +1745,8 @@ require 'open-uri'
         type: "War",
         arabic_title: "بناء هرم زوسر",
         english_title: "Building the Pyramid of Djoser",
-        start_date: "2667 ق.م",
-        end_date: "2648 ق.م",
+        start_date: "2667",
+        end_date: "2648",
         arabic_info:"هرم زوسر أو هرم سقارة أو الهرم المدرج  هو معلم آثري بجبانة سقارة شمال غرب مدينة ممفيس القديمة في مصر. بُني خلال القرن 27 ق.م لدفن الفرعون زوسر؛ بناه له وزيره إمحوتب. وكان المهندس والطبيب أمحتب هو المهندس الأساسي للمجموعة الجنائزية الواسعة في فناء الهرم وما يحيطه من هياكل الاحتفالية.
 
         يتكون أول هرم مصري من ست مصاطب بُنيت فوق بعضها البعض، شيء يمثل تطوراً هائلاً في تصميم القبور في ذلك العهد الذي كان يكتفي بمصطبة واحدة. يبلغ ارتفاع هرم زوسر المدرج 62 متر (203 قدم) ، مع وجود قاعدة بمساحة 109 م × 125 م (358 قدم × 410 قدم)، وكان مُغطى بالحجر الجيرى الأبيض المصقول. يُعتبر الهرم المدرج أول بنية حجرية وقتها، على الرغم من أن الحوش المعروفة باسم جسر المدير يبدو أنه سبق بناء الهرم.
@@ -1756,8 +2030,8 @@ require 'open-uri'
         type: "PeaceTreaty",
         arabic_title: "بناء هرم خفرع",
         english_title: "Building the Pyramid of Khufu",
-        start_date: "2570 BC",
-        end_date: "2546 BC",
+        start_date: "2570",
+        end_date: "2546",
         arabic_info:"هرم خفرع هو أحد أهرامات الجيزة في مصر. بناه الملك خفرع رابع ملوك الأسرة الرابعة ابن الملك خوفو. تزوج من الأميرة مراس عنخ. حكم ست وعشرين سنة. بني الهرم الثاني من أهرام الجيزة، وهو أقل ارتفاعا من هرم أبيه (خوفو). كان ارتفاعه 143 مترا والآن 136 مترا.
 
         شيد فوق مساحة 215 مترا مربعا.وله مدخلان في الجهة الشمالية. وما زال يحتفظ بجزء من كسوته الخارجية عند القمة.عثر ضمن مجموعته الهرمية على تماثيل من حجر الشست في معبد الوادي الخاص ز من بينها تمثال من أجمل ما أنتجه فن النحت المصري، وهو موجود بالمتحف المصري، وينسب له نحت صخرة تمثال أبي الهول.
@@ -1841,8 +2115,8 @@ require 'open-uri'
         type: "PeaceTreaty",
         arabic_title:"بناء ابو الهول",
         english_title:"Building the Sphinx",
-        start_date: "2494 BC",
-        end_date: "2520 BC",
+        start_date: "2494",
+        end_date: "2520",
         arabic_info:"أبو الهول هو تمثال لمخلوق أسطوري بجسم أسد ورأس إنسان وقد نحت من الحجر الكلسيّ، ومن المرجح أنه كان في الأصل مغطى بطبقة من الجص وملون، ولا زالت آثار الألوان الأصلية ظاهرة بجانب إحدى أذنيه.
 
         يقع على هضبة الجيزة على الضفة الغربية من النيل في الجيزة، مصر، ويعد أبو الهول أيضاً حارساً للهضبة. وهو أقدم المنحوتات الضخمة المعروفة، يبلغ طوله نحو 73.5 متر، من ضمنها 15 متر طول قدميه الأماميتين، وعرضه 19.3 م، وأعلى ارتفاع له عن سطح الأرض حوالي 20 متراً إلى قمة الرأس. يعتقد أن قدماء المصريين بنوه في عهد الملك خفرع (2558 ق.م -2532 ق.م)، باني الهرم الأوسط في الجيزة.
@@ -1883,8 +2157,8 @@ require 'open-uri'
         type: "PeaceTreaty",
         arabic_title: "بناء هرم منكاورع",
         english_title: "Building the Menkaure Pyramid",
-        start_date: "2532 ق.م",
-        end_date: "2503 ق.م",
+        start_date: "2532",
+        end_date: "2503",
         arabic_info:"هرم منكاورع أو كما هو معروف باسمه المحرّف هرم منقرع، هو أصغر الأهرامات الثلاثة الرئيسية لمجمع أهرامات الجيزة يقع على هضبة الجيزة في الضواحي الجنوبية الغربية للقاهرة، مصر. يُعتقد أنه بني ليكون بمثابة مقبرة للفرعون المصري منكاورع (ابن الملك خفرع) من الأسرة المصرية الرابعة. يبلغ طول كل ضلع من أضلاعه 108.5 متراً وارتفاعه 65.5 متراً، يبلغ طوله حاليا 62 متراً وذلك بعد سقوط كسوته الخارجية.",
         english_info:"The Pyramid of Menkaure, or as it is known by its distorted name, the Pyramid of Menkaure, is the smallest of the three main pyramids of the Giza pyramid complex located on the Giza Plateau in the southwestern suburbs of Cairo, Egypt. It is believed to have been built to serve as a tomb for the Egyptian Pharaoh Menkaure (son of King Khafre) of the Fourth Dynasty of Egypt. The length of each side is 108.5 meters and its height is 65.5 metres. Its length is currently 62 metres, after the fall of its outer covering.",
         character_id: character_18.id,
@@ -1915,6 +2189,34 @@ require 'open-uri'
         This bridge was probably never completed due to the early death of the king. In fact, everything from the incomplete painting of the pyramid, through the two stages of construction of the mortuary temple and the condition of the road, seems to indicate that Menkaure did not have time to complete his funerary complex. It was Shepsskav, his successor, who undertook to complete the ensemble by using mud bricks for the walls above the road. It formed a long corridor, the cover of which was probably made of the same materials and formed an arch. The long corridor leads directly to the large open courtyard of the High Temple, placed in the axis of the monument, passing through a corridor. The thickness of the foundations and the first aisles indicates that this part was designed for strong support. Walls capable of supporting large roof panels.",
         event_id: event_7.id,
     )
+    event_8 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title: "بناء معبد الشمس",
+        english_title: "Building the Sun Temple",
+        start_date: "2455",
+        end_date: "2420",
+        arabic_info:"معبد الشمس كان معبدًا مصريًا قديمًا مكرسًا لعبادة إله الشمس رع، بناه الفرعون أوسركاف مؤسس الأسرة الخامسة في مصر في بداية القرن الخامس والعشرين قبل الميلاد. يقع معبد الشمس بين جنوب أهرامات أبوصير وشمال مدينة أبو غراب على بعد حوالي 15 كم (9.3 ميل) جنوب مدينة القاهرة. كان الاسم القديم للمعبد «نخن رع» والذي يعني «معقل رع». يتكون مجمع المعبد من عدة أجزاء أهمها المعبد الرئيسي المبني على تل منخفض يقع على حافة الصحراء، ويمكن الوصول إليه عبر جسر من معبد وادي يقع بالقرب من منطقة الزراعة ونهر النيل.",
+        english_info:"The Temple of the Sun was an ancient Egyptian temple dedicated to the worship of the sun god Ra, built by Pharaoh Userkaf, founder of the Fifth Dynasty in Egypt, at the beginning of the twenty-fifth century BC. The Temple of the Sun is located between the south of the Abusir pyramids and the north of the city of Abu Ghurab, about 15 km (9.3 mi) south of Cairo. The ancient name of the temple was 'Nekhenre', which means 'stronghold of Ra'. The temple complex consists of several parts, the most important of which is the main temple built on a low hill located on the edge of the desert, and can be reached via a bridge from a valley temple located near the agricultural area and the Nile River.",
+        character_id: character_19.id,
+        sub_era: sub_era_2
+    )
+    event_8.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/f5/Temple-solaire-abousir.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"التنقيب",
+        english_title:"Excavation",
+        arabic_content:"اكتُشف معبد الشمس من قبل العالم كارل ريتشارد لبسيوس رئيس البعثة البروسية إلى مصر في عام 1842. لم يتعرف لبسيوس على معبد الشمس في البداية وقام بإدارجه في قائمته للأهرامات تحت الرقم السابع عشر. قام لبسيوس باستكشاف المعبد من سطحه الخارجي فقط. بدأت أولى عمليات الحفر للمعبد بعد ذلك بكثير (في عامي 1907 و 1913) تحت إشراف العالم الألماني لودفيج بورشاردت الذي كان يعمل بشكل أساسي في المقبرة الملكية القريبة في أبو صير. أما عمليات التنقيب الدقيقة في المعبد فلم تبدأ إلا بعد 40 عاما (بين عامي 1954 و 1957) وكانت هذه المرة بواسطة بعثة ألمانية سويسرية مشتركة بقيادة العالم الألماني هربرت ريك ونُشرت نتائجها في مجلدين.",
+        english_content:"The Temple of the Sun was discovered by the scientist Karl Richard Lepsius, head of the Prussian expedition to Egypt, in 1842. Lepsius did not recognize the Temple of the Sun at first and included it in his list of pyramids under the number seventeen. Lepsius explored the temple only from its outer surface. The first excavations of the temple began much later (in 1907 and 1913) under the supervision of the German scientist Ludwig Borchardt who was working mainly in the nearby royal cemetery at Abusir. As for meticulous excavations in the temple, they did not begin until 40 years later (between 1954 and 1957), and this time it was by a joint German-Swiss mission led by the German scientist Herbert Reich, and its results were published in two volumes.",
+        event_id: event_8.id,
+    )
+    EventSection.create(
+        arabic_title:"وصف المعبد",
+        english_title:"Description of the Temple",
+        arabic_content:"عُثر على المعبد مدمرًا بشدة بحيث كانت أي عملية لإعادة بناءه تعتبر مشكلة كبيرة. كان المعبد الرئيسي في الأصل يتألف من هيكل صلب كبير يشبه المصطبة مع سارية على قمته. يمكن تخمين ذلك من المراجع الموجودة في النصوص حيث تم تصوير المعبد على أنه مصطبة مع سارية. كان المعبد محاطًا بجدار، وقد بُنيت مصليتين صغيرتين أو مصليات قرابين على مدخله الرئيسي. كان كل مصلية (غرفة صلاة) تتكون من غرفة واحدة فقط. في مرحلة لاحقة أضيف على الهيكل الرئيسي ما يشبه المسلة. وأضيف مذبح أمام المبنى. شُيِّد المعبد على الأرجح في العام الخامس أو السادس من عهد الملك أوسركاف كما هو مذكور على حجر باليرمو. على الأرجح لم تبنى هذه المسلة في عهد أوسركاف، ولكن ربما في عهد أحد خلفائه وهو الملك نفر إر كا رع. يمكن استنتاج شكل المسلة من الأعلى من كتابة اسم المعبد في نصوص المملكة القديمة، فبدأً من عهد آخر ملك في الأسرة الخامسة أصبح الأسماء تُكتب دائما على المسلات. علاوة على ذلك، هناك أدلة أثرية مؤكدة على وجود هذه المسلة فقد عُثر على قطعة زاوية من الحافة العلوية للمسلة مصنوعة من الجرانيت. عُثر أيضاً على بقايا تمثالين على الأقل مصنوعة من الجرواق ومزينان بنقوش.
+        عُثر على معبد الوادي وكان مدمر بشدة أيضًا. كان على الأرجح ساحة مفتوحة بها أعمدة والعديد من المصليات في الخلف. عدد هذه المصليات غير معروف. كما عُثر في حطام المعبد على رأس حجري لملك على الأرجح أنه لأوسركاف. من المحتمل أن المعبد الحجري لم يبنى في عهد أوسركاف، ولكن ربما لاحقًا تحت حكم ني أوسر رع. لم يزين أي من المعبدين بأي نقوش أو رسومات، وربما من المحتمل أنها تعرضت للتلف مع تقادم الزمن.",
+        english_content:"The temple was found so badly damaged that any reconstruction was considered a major problem. The main temple originally consisted of a large mastaba-like solid structure with a mast on its top. This can be guessed from references in texts where the temple is depicted as a mastaba with a mast. The temple was surrounded by a wall, and two small chapels, or offering chapels, were built over its main entrance. Each musalla (prayer room) consisted of only one room. At a later stage, something resembling an obelisk was added to the main structure. An altar was added in front of the building. The temple was probably built in the fifth or sixth year of the reign of King Userkaf as mentioned on the Palermo Stone. Most likely, this obelisk was not built during the reign of Userkaf, but perhaps during the reign of one of his successors, King Neferirkare. The shape of the obelisk from the top can be deduced from the writing of the name of the temple in the texts of the Old Kingdom. Starting from the era of the last king in the Fifth Dynasty, names were always written on the obelisks. Moreover, there is confirmed archaeological evidence of the existence of this obelisk, as a corner piece of the upper edge of the obelisk made of granite was found. The remains of at least two statues made of jarwaq and decorated with carvings were also found.
+        The Valley Temple was found and was also badly damaged. It was most likely an open court with columns and several chapels at the back. The number of these chapels is unknown. A stone head of a king, most likely Userkaf, was also found in the ruins of the temple. The stone temple was probably not built during the reign of Userkaf, but perhaps later under Nyuserre. Neither temple was decorated with any inscriptions or drawings, and they may have been damaged over time.",
+        event_id: event_8.id,
+    )
 
     # event_2 = Event.create(
     #     type: "",
@@ -1925,7 +2227,7 @@ require 'open-uri'
     #     arabic_info:"",
     #     english_info:"",
     #     character_id: character_12.id,
-    #     sub_era: sub_era_2
+    #     sub_era: sub_era_3
     # )
     # event_2.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
     # EventSection.create(
