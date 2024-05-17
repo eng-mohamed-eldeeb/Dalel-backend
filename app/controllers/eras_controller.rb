@@ -5,6 +5,7 @@ class ErasController < ApplicationController
     user = User.find(params[:user_id])
     if EraPoint.where(user: user, era: era).empty?
       era_p = EraPoint.create(era: era, user: user, points: 1)
+      era_p.save
       era_p.set_tier(user)
       render json: {message: 'point added'}, status: :ok
       return

@@ -20,18 +20,24 @@ class User < ApplicationRecord
   end
 
   def get_4_recommended_characters(era)
-    sub_eras = era.sub_eras.sort_by { |sub_era| sub_era.point }.reverse
-    sub_eras = sub_eras.first(10)
-    characters = sub_eras.map(&:characters).flatten
-    return [] if characters.empty?
-    characters = characters.sort_by { |character| character.points }.reverse
-    characters = characters.filter do |character|
-      character_point = character.character_points.find_by(user: self)
-      character_point && character_point.seen == false
-    end if self.character_points.any?
-    characters = characters.first(4)
+    sub_eras = era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(10)
+    a_tier_era = self.era_points.last.era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(10)
 
-    characters
+    characters = sub_eras.flat_map(&:characters)
+    a_tier_characters = a_tier_era.flat_map(&:characters)
+
+    return [] if characters.empty?
+
+    if self.character_points.any?
+      unseen_characters = self.character_points.where(seen: false).map(&:character)
+      characters = characters & unseen_characters
+      a_tier_characters = a_tier_characters & unseen_characters
+    end
+
+    characters = characters.sort_by(&:points).reverse.first(2)
+    a_tier_characters = a_tier_characters.sort_by(&:points).reverse.first(2)
+
+    characters + a_tier_characters
   end
 
 end
