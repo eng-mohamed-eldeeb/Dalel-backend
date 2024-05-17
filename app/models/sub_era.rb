@@ -6,10 +6,9 @@ class SubEra < ApplicationRecord
   has_many :sections
   has_many :characters
   has_many :events
-
+  has_many :sub_era_points
   belongs_to :era
-  enum tier: { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5}
-  after_save :set_tier
+  
 
 
 

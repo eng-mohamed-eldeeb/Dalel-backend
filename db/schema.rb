@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -68,6 +68,18 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "character_points", force: :cascade do |t|
+    t.bigint "character_id", null: false
+    t.bigint "user_id", null: false
+    t.integer "points"
+    t.integer "tier", default: 0
+    t.boolean "seen", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_character_points_on_character_id"
+    t.index ["user_id"], name: "index_character_points_on_user_id"
+  end
+
   create_table "character_recommendations", force: :cascade do |t|
     t.integer "level"
     t.integer "belong_to_tier"
@@ -97,12 +109,25 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
     t.date "date_of_birth"
     t.date "date_of_death"
     t.text "arabic_info"
+    t.integer "points", default: 0
     t.text "english_info"
     t.bigint "sub_era_id", null: false
     t.integer "tier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["sub_era_id"], name: "index_characters_on_sub_era_id"
+  end
+
+  create_table "era_points", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "era_id", null: false
+    t.integer "points"
+    t.boolean "seen", default: false
+    t.integer "tier", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["era_id"], name: "index_era_points_on_era_id"
+    t.index ["user_id"], name: "index_era_points_on_user_id"
   end
 
   create_table "eras", force: :cascade do |t|
@@ -251,10 +276,23 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
     t.index ["user_id"], name: "index_shopping_carts_on_user_id"
   end
 
+  create_table "sub_era_points", force: :cascade do |t|
+    t.bigint "sub_era_id", null: false
+    t.bigint "user_id", null: false
+    t.integer "points"
+    t.boolean "seen", default: false
+    t.integer "tier", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["sub_era_id"], name: "index_sub_era_points_on_sub_era_id"
+    t.index ["user_id"], name: "index_sub_era_points_on_user_id"
+  end
+
   create_table "sub_eras", force: :cascade do |t|
     t.string "arabic_name"
     t.string "english_name"
     t.text "arabic_info"
+    t.integer "points", default: 0
     t.text "english_info"
     t.bigint "era_id", null: false
     t.integer "tier"
@@ -288,10 +326,14 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "character_points", "characters"
+  add_foreign_key "character_points", "users"
   add_foreign_key "character_recommendations", "characters"
   add_foreign_key "character_recommendations", "events"
   add_foreign_key "character_sections", "characters"
   add_foreign_key "characters", "sub_eras"
+  add_foreign_key "era_points", "eras"
+  add_foreign_key "era_points", "users"
   add_foreign_key "event_recommendations", "characters"
   add_foreign_key "event_recommendations", "events"
   add_foreign_key "event_sections", "events"
@@ -316,5 +358,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_14_150454) do
   add_foreign_key "shopping_cart_items", "products"
   add_foreign_key "shopping_cart_items", "shopping_carts"
   add_foreign_key "shopping_carts", "users"
+  add_foreign_key "sub_era_points", "sub_eras"
+  add_foreign_key "sub_era_points", "users"
   add_foreign_key "sub_eras", "eras"
 end

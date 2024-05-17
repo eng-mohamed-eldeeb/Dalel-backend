@@ -4,6 +4,7 @@ class CreateSubEras < ActiveRecord::Migration[7.0]
       t.string :arabic_name
       t.string :english_name
       t.text :arabic_info
+      t.integer :points, default: 0
       t.text :english_info
       t.references :era, null: false, foreign_key: true
       t.integer :tier

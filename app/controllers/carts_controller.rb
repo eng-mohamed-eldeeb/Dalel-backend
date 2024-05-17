@@ -59,7 +59,6 @@ class CartsController < ApplicationController
     render json: products
   end
 
-
   def update_quantity
     user = User.find(params[:user_id])
     if !user.shopping_carts
@@ -71,17 +70,14 @@ class CartsController < ApplicationController
     render json: cart_item
   end
 
-
   # remove product from cart
   def remove_product
     user = User.find(params[:user_id])
     product = Product.find(params[:product_id])
     shopping_cart = user.shopping_cart.last
-
     if shopping_cart.nil?
       render json: { errorMessage: "User does not have a shopping cart" }, status: 400
     end
-
     cart_item = ShoppingCartItem.find_by(shopping_cart: shopping_cart, product: product)
     cart_item.destroy
 
@@ -93,11 +89,9 @@ class CartsController < ApplicationController
     user = User.find(params[:user_id])
     product = Product.find(params[:product_id])
     shopping_cart = user.shopping_carts.last
-
     if shopping_cart.nil?
       render json: { errorMessage: "User does not have a shopping cart" }, status: 400
     end
-
     cart_item = ShoppingCartItem.find_by(shopping_cart: shopping_cart, product: product)
     if params[:inc_or_dec] == "increment"
       cart_item.update(quantity: cart_item.quantity + 1)
@@ -108,7 +102,6 @@ class CartsController < ApplicationController
     else
       render json: { errorMessage: "Invalid action" }, status: 400
     end
-
   end
 
 end

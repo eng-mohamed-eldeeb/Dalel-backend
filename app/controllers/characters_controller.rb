@@ -80,6 +80,28 @@ class CharactersController < ApplicationController
         render json: characters
     end
 
+    def add_points
+        character = Character.find(params[:id])
+        character.points += 1
+        character.save
+        user = User.find(params[:user_id])
+        if character.character_points.where(user: user).empty?
+            character_point = CharacterPoint.create(character: character, user: user, points: 1, seen: true)
+        else
+            character_point = character.character_points.where(user: user).first
+            character_point.update(points: character_point.points + 1)
+        end
+        character_point.set_tier(user)
+        render json: { message: 'success' }
+    end
+
+    def get_recommenderd_four
+        user = User.find(params[:user_id])
+        era = Era.find(params[:era_id])
+        recommended_characters = user.get_4_recommended_characters(era)
+        render json: recommended_characters
+    end
+
       private
 
     def get_sub_era
