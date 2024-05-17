@@ -388,13 +388,103 @@ require 'open-uri'
             english_content:"The subject of these warnings is that a terrible calamity befell the country during the reign of one of the rulers of ancient times... so the common people revolted against the officials and the high-ranking people... and the foreign mercenary soldiers disobeyed the leaders of the country... and it is possible that the Semites threatened the eastern borders as well... and thus organized rule was dissolved. In Egypt in general...but the old king was living in peace in his palace...because he was fed on lies...and then a wise man named E-Bor appeared and told the king all the truth. He described to him the misery that had spread throughout the country and predicted what would come next...and incited his listeners to To fight the country's enemies... and remind them that worship must be restored to what it was...",
             sub_era: sub_era_3,
     )
+    # sub_era_4
+    Section.create(
+            arabic_title:"العصر المتوسط",
+            english_title:"The Middle Ages",
+            arabic_content:"العصر المتوسط في تاريخ مصر القديمة هو الفترة التي تلي العصور القديمة وتسبق العصور الحديثة، ويمتد تقريبًا من القرن الثاني عشر قبل الميلاد إلى القرن السابع عشر قبل الميلاد. خلال هذه الفترة، تعاقبت العديد من الأسر الفرعونية، بما في ذلك الأسرة الحادية عشر والثانية عشر.",
+            english_content:"The Middle Ages in the history of ancient Egypt is the period that follows antiquity and precedes modern times, extending roughly from the twelfth century BC to the seventeenth century BC. During this period, several Pharaonic dynasties succeeded each other, including the Eleventh and Twelfth Dynasties.",
+            sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"الأسرة الحادية عشر (العصور الوسطى)",
+        english_title:"The Eleventh Dynasty (Middle Ages)",
+        arabic_content:"بدأت الأسرة الحادية عشر في العام 2134 قبل الميلاد واستمرت حتى العام 1991 قبل الميلاد تقريبًا. كانت هذه الفترة مليئة بالازدهار الاقتصادي والثقافي، حيث ازدهرت العلوم والفنون والهندسة والأدب. وقد بنت الأسرة الحادية عشر العديد من المعابد والمقابر الضخمة.",
+        english_content:"The Eleventh Dynasty began in 2134 BC and continued until approximately 1991 BC. This period was full of economic and cultural prosperity, as sciences, arts, engineering, and literature flourished. The Eleventh Dynasty built many huge temples and tombs.",
+        sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"الأسرة الثانية عشر (العصور الوسطى المتأخرة)",
+        english_title:"The Twelfth Dynasty (Late Middle Ages)",
+        arabic_content:"تلت الأسرة الثانية عشر الحادية عشر، وبدأت في العام 1991 قبل الميلاد تقريبًا واستمرت حتى العام 1802 قبل الميلاد. شهدت هذه الفترة ازدهارًا في الفنون والثقافة والهندسة، حيث تم بناء العديد من المعابد والمقابر الفخمة، وتطورت الأدبية والشعرية.",
+        english_content:"The Twelfth Dynasty was followed by the Eleventh Dynasty, which began in approximately 1991 BC and continued until 1802 BC. This period witnessed a flourishing of arts, culture and architecture, many magnificent temples and tombs were built, and literature and poetry developed.",
+        sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"التوسع الإمبراطوري",
+        english_title:"Imperial expansion",
+        arabic_content:"خلال العصور المتوسطة، شهدت مصر القديمة فترات من التوسع الإمبراطوري والتوجه نحو تأسيس إمبراطورية مصرية أكبر. قامت بعض الأسر بحملات عسكرية ناجحة لتوسيع الحدود وتوحيد البلاد تحت سلطتها.",
+        english_content:"During the Middle Ages, ancient Egypt experienced periods of imperial expansion and a drive toward establishing a larger Egyptian empire. Some families undertook successful military campaigns to expand the borders and unify the country under their authority.",
+        sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"الابتكارات الدينية",
+        english_title:"Religious innovations",
+        arabic_content:"تطورت المفاهيم الدينية خلال العصور المتوسطة، حيث تغيرت الآلهة الرئيسية وتطورت المعتقدات الدينية. وشهدت بناء المعابد وتوسيعها، وازدهرت الممارسات الدينية والطقوس.",
+        english_content:"Religious concepts evolved during the Middle Ages, as the main gods changed and religious beliefs evolved. Temples were built and expanded, religious practices and rituals flourished.",
+        sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"التطور الثقافي",
+        english_title:"Cultural evolution",
+        arabic_content:"شهدت العصور المتوسطة تطوراً ثقافياً هاماً، حيث تبادلت مصر القديمة العديد من العلاقات الثقافية مع الشعوب المجاورة، مما أثر على اللغة والفنون والعادات والتقاليد.",
+        english_content:"The Middle Ages witnessed significant cultural development, as ancient Egypt exchanged many cultural relations with neighboring peoples, affecting language, arts, customs, and traditions.",
+        sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"التجارة والتبادل الثقافي",
+        english_title:"Trade and cultural exchange",
+        arabic_content:"نتيجة للتوسع الإمبراطوري، تزايدت الفرص للتجارة والتبادل الثقافي مع الشعوب الأخرى في المنطقة الشرق الأوسط والبحر الأبيض المتوسط. وقد ساهم هذا التبادل في إثراء الحضارة المصرية بالعديد من الفكر والفنون والتقاليد الجديدة.",
+        english_content:"As a result of imperial expansion, opportunities for trade and cultural exchange with other peoples in the Middle East and the Mediterranean region increased. This exchange contributed to enriching Egyptian civilization with many new ideas, arts, and traditions.",
+        sub_era: sub_era_4,
+    )
+    Section.create(
+        arabic_title:"التطورات التكنولوجية",
+        english_title:"Technological developments",
+        arabic_content:"خلال العصور المتوسطة، شهدت مصر القديمة تطورات تكنولوجية هامة في مجالات مثل الهندسة والبناء والزراعة والحرف اليدوية، مما أدى إلى تحسين ظروف الحياة وتطوير البنية التحتية للمجتمع.",
+        english_content:"During the Middle Ages, ancient Egypt witnessed important technological developments in areas such as engineering, construction, agriculture, and handicrafts, leading to improved living conditions and the development of the community's infrastructure.",
+        sub_era: sub_era_4,
+    )
+    # sub_era_5
+    Section.create(
+        arabic_title:"فترة مصرية انتقالية ثانية",
+        english_title:"Second Transitional Egyptian Period",
+        arabic_content:"الفترة المصرية الانتقالية الثانية هو الاسم الذي اطلقه علماء المصريات في القرن العشرين على الفترة ما بين نهاية المملكة الوسطى وحلول المملكة المصرية الحديثة، يعود تاريخ الفترة الانتقالية الثانية إلى الفترة من 1700 إلى 1550 ق.م  وهي الفترة التي انقسمت فيها مصر القديمة إلى سلالات أصغر للمرة الثانية. عرف هذا العصر بعصر الفوضى والإضمحلال الثاني، وفيه حكم مصر الملوك الرعاة أو ماعرف بالهكسوس واتخذوا من أواريس بشرق الدلتا عاصمة لهم، تشمل الفترة الانتقالية الثانية عمومًا الأسرة الثالثة عشر حتى الأسرة السابعة عشر ولأنهم كانوا حكاماً غير مصريين لم يسمهم المصريين بالفراعنة إنما أطلق على الحاكم منهم لفظ الملك.
+        تُعرف هذه الفترة بأنها الفترة التي أسس فيها شعب الهكسوس في غرب آسيا الأسرة الخامسة عشرة وحكموا من أواريس، والتي أسسها (وفقًا لكتاب مانيتون إيجيبتياكا)، ملك يُدعى ساليتيس.
+        يعتقد البعض، ضمن بضعة نظريات، ربطاً بالقصص الديني، أنه في عصر حكم الهكسوس لمصر حدثت مجاعة عالمية كان الفضل ليوسف بن يعقوب العبراني في حلها وعلى أثرها جاء بني إسرائيل إلى مصر وظلوا بها بالرغم من خروج الهكسوس الذين استقبلوهم بها حتى خرجوا منها في عصر الدولة الحديثة بزعامة النبي موسى في عصر الرعامسة.",
+        english_content:"The Second Intermediate Egyptian Period is the name given by Egyptologists in the twentieth century to the period between the end of the Middle Kingdom and the advent of the New Kingdom of Egypt. The Second Intermediate Period dates back to the period from 1700 to 1550 BC  which is the period in which ancient Egypt was divided into smaller dynasties for the first time. the second. This era was known as the Second Age of Chaos and Decay, in which Egypt was ruled by shepherd kings, or what was known as the Hyksos, and they took Avaris in the eastern Delta as their capital. The second transitional period generally included the Thirteenth Dynasty until the Seventeenth Dynasty, and because they were non-Egyptian rulers, the Egyptians did not call them pharaohs, but rather called the ruler from among them. The word king.
+        This period is known as the period in which the Hyksos people of western Asia founded the Fifteenth Dynasty and ruled from Avaris, which was founded (according to Manetho's Egyptica) by a king called Salitis.
+        Some believe, among a few theories, in connection with religious stories, that during the era of the Hyksos’ rule of Egypt, a global famine occurred, which was credited to Joseph ibn Jacob the Hebrew, who solved it. As a result, the children of Israel came to Egypt and remained there despite the departure of the Hyksos, who welcomed them there until they left it in the era of the state. Modernism under the leadership of the Prophet Moses in the Ramesside era.",
+        sub_era: sub_era_5,
+    )
+    Section.create(
+        arabic_title:"نهاية الدولة الوسطى",
+        english_title:"End of the Middle Kingdom",
+        arabic_content:"انتهت الأسرة الثانية عشرة في مصر في نهاية القرن التاسع عشر قبل الميلاد بوفاة الملكة سبك نفرو (1806-1802 قبل الميلاد). ومن الواضح أنها لم يكن لديها ورثة، مما تسبب في نهاية الأسرة الثانية عشرة فجأة، وبالتالي نهاية العصر الذهبي للمملكة الوسطى؛ وقد خلفتها الأسرة الثالثة عشرة الأضعف بكثير. احتفظت الأسرة الثالثة عشرة بمقر الأسرة الثانية عشرة، وحكمت من إيتجتاوي لمعظم فترة وجودها، ومع ذلك، ربما في عهد مرنفر رع آي، حولت عاصمتها إلى طيبة في أقصى الجنوب.",
+        english_content:"The Twelfth Dynasty in Egypt ended at the end of the nineteenth century BC with the death of Queen Sobekneferu (1806-1802 BC). She obviously had no heirs, causing the Twelfth Dynasty to end abruptly, and thus the end of the Golden Age of the Middle Kingdom; It was succeeded by the much weaker Thirteenth Dynasty. The Thirteenth Dynasty retained the seat of the Twelfth Dynasty, ruling from Itjtawi for most of its existence, however, probably during the reign of Merneferre Ai, it shifted its capital to Thebes farther south.",
+        sub_era: sub_era_5,
+    )
+    Section.create(
+        arabic_title:"إعادة التوحيد",
+        english_title:"Reunification",
+        arabic_content:"في نهاية الفترة الانتقالية الثانية، وصلت الأسرة الثامنة عشرة إلى السلطة في مصر. أكمل أحمس الأول (أول ملوك الأسرة الثامنة عشرة) طرد الهكسوس من مصر وفرض هيمنته على الأرض. وبذلك بدأ فترة جديدة من الازدهار في مصر عرفت بالمملكة الحديثة.",
+        english_content:"At the end of the Second Intermediate Period, the Eighteenth Dynasty came to power in Egypt. Ahmose I (the first king of the Eighteenth Dynasty) completed the expulsion of the Hyksos from Egypt and imposed his dominance on the land. Thus began a new period of prosperity in Egypt known as the New Kingdom.",
+        sub_era: sub_era_5,
+    )
+    Section.create(
+        arabic_title:"أسرة أبيدوس",
+        english_title:"Abydos Dynasty",
+        arabic_content:"ربما كانت أسرة أبيدوس (حوالي 1640 إلى 1620 قبل الميلاد) سلالة محلية قصيرة العمر حكمت جزءًا من صعيد مصر خلال الفترة الانتقالية الثانية في مصر القديمة وكانت معاصرة للأسرة الخامسة عشرة والسادسة عشرة. ظلت أسرة أبيدوس صغيرة جدًا وحكمت أبيدوس أو ثينيس فقط. لا يُعرف سوى القليل جدًا عن أسرة أبيدوس لأنها كانت سلالة قصيرة العمر. بالرغم من أننا لدينا بعض أسماء الملوك التي تتعلق بأسرة أبيدوس إلا أن الأسماء تظهر في قائمة ملوك تورينو، لكنها لا تظهر في أي مصادر أخرى. تضم السلالة مؤقتًا أربعة حكام: ويب واوتيمساف ، بانتجيني  ، سنايب  ، سينبكاي. انتهى عهد أسرة أبيدوس عندما وسع الهكسوس نفوذهم إلى صعيد مصر.",
+        english_content:"The Abydos Dynasty (ca. 1640 to 1620 BC) was probably a short-lived local dynasty that ruled part of Upper Egypt during the Second Intermediate Period in ancient Egypt and was contemporary with the Fifteenth and Sixteenth Dynasties. The Abydos dynasty remained very small and ruled only Abydos or Thinis. Very little is known about the Abydos Dynasty as it was a short-lived dynasty. Although we have some king names related to the Abydos dynasty, the names appear in the Turin king list, but they do not appear in any other sources. The dynasty provisionally includes four rulers: Webb, Utimsaf, Pantjeni, Snaib, and Senbekai. The era of the Abydos dynasty ended when the Hyksos expanded their influence into Upper Egypt.",
+        sub_era: sub_era_5,
+    )
     # Section.create(
-        #     arabic_title:"",
-        #     english_title:"",
-        #     arabic_content:"",
-        #     english_content:"",
-        #     sub_era: sub_era_3,
-    #)
+    #     arabic_title:"",
+    #     english_title:"",
+    #     arabic_content:"",
+    #     english_content:"",
+    #     sub_era: sub_era_5,
+    # )
 
 
 #! Create Characters
@@ -1662,6 +1752,623 @@ require 'open-uri'
             character_id: character_23.id,
     )
 
+    character_24 = Character.create(
+        arabic_name: "خيتي الأول",
+        english_name: "Kheti I",
+        arabic_info: "واح كا رع خيتي الأول، (بالإنجليزية: Kheti I)، أو خيتي الأول، هو أول فرعون تولى عرش الأسرة المصرية التاسعة في أهناسيا. قد كانت له شهرة سيئة في التاريخ حسبما جاء في الروايات التي رواها عنه مانيتون وأنه ارتكب مظالم كثيرة.",
+        english_info: "Wahkare Kheti I, or Kheti I, was the first pharaoh to assume the throne of the Ninth Dynasty of Ahanasia. He had a bad reputation in history, according to the stories told about him by Maniton, and that he committed many injustices.",
+        date_of_birth: "2181",
+        date_of_death: "2055",
+        sub_era_id: sub_era_3.id,
+    )
+    character_24.thumb_image.attach(io: URI.open("https://www.albawabhnews.com/UploadCache/libfiles/155/4/600x338o/542.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_24.cover_image.attach(io: URI.open("https://www.albawabhnews.com/UploadCache/libfiles/155/4/600x338o/542.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+            arabic_title:"حكمه لمصر",
+            english_title:"His reign over Egypt",
+            arabic_content:"يقول الباحث الأثرى الطيب عبد الله الملك نفر كا رع حكم مصر لفترة تقارب 94 عاما وهى أطول فترة حكم فى التاريخ المصرى وغالبا حكم فى سنه السادسه من عمره خلفا لوالده الملك مرى-إن-رع الأول وارتبط ايضا اسمه بالحملات التى كان يقودها بارونات جزيرة الفنتين الى افريقيا الأستوائيه
+            في أواخر عهد الملك حوالي عام 2280ق.م دب الوهن والضعف في أوصال المملكة مما ادى الى انهياره حيث تقدم به السن وأصبح لا يقوى على حكم البلاد كما قويت حكام الأقاليم وزادت رغبتهم في الوصول إلى كرسي الحكم وزادت الفقر وأصبح الناس في كرب .",
+            english_content:"The good archaeological researcher Abdullah says King Neferkare ruled Egypt for a period of approximately 94 years, which is the longest period of rule in Egyptian history. He probably ruled in the sixth year of his life, succeeding his father, King Mer-en-Ra I. His name was also associated with the campaigns that were led by the barons of Elephantine Island to Equatorial Africa
+            At the end of the king’s reign, around the year 2280 BC, weakness and weakness spread throughout the kingdom, which led to its collapse, as he grew old and became unable to rule the country. The governors of the regions also became stronger, their desire to reach the throne increased, poverty increased, and the people became distressed.",
+            character_id: character_24.id,
+    )
+    CharacterSection.create(
+            arabic_title:"أول ثورة اجتماعية في التاريخ فى عهده",
+            english_title:"The first social revolution in history during his reign",
+            arabic_content:"وعادت هجمات بدو الصحراء من الشرق والغرب فقامت في البلاد ثورة اجتماعيه ضخمة هى الأولى في التاريخ حوالي عام 2280ق.م حتى أن بعضهم يطلق عليها (الثورة البلشفية الأولى) خرجت الجموع تنادي بعودة العدل والنظام والمساواة وانهارات السلطة المركزية وأصبحت الحدود مفتوحة وتوافدت جماعات كبيرة من بدو الصحراء على الحدود الشرقية كانوا ينهبون الناس ويذيعون الذعر في النفوس ورجال الأمن فقدوا السيطرة على حفظ الامن ولم يسلم منها مدفن أو معبد أو ديوان حكومي وامتد غضب الشعب إلى بيوت الأثرياء فنهبوها وشردوهم”هكذا كان الوضع في مصر حاله من الفوضى والضعف والتحلل وبرزت في تلك الفترة عدد من البيوت القوية الحاكمة في صعيد مصر ودلتاها استأثرت كل منها بإقليم تحكمه، وكانت البلاد مفككة العرى، خاصة فى الوجه البحري التي أشاعت الذعر والخوف بين الأهالي أما في مصر الوسطى فكان الحال أفضل حيث استقل كل حاكم بإقليم وفرض عليه سلطانه.
+            وقام عدد من كبار الموظفين وحكام الأقاليم المخلصين تشكيل هيئة من 70 شخص لتحكم البلاد ولكنها لم تلبث سوى 70 يوما وانهارت الدولة المركزية وقسمت البلاد واندلعت الحرب الأهلية بين الأقاليم بغية السيطرة على أراضي الأقاليم المجاورة.",
+            english_content:"Desert Bedouin attacks returned from the east and west, and a huge social revolution took place in the country, the first in history, around the year 2280 BC. Some even called it (the first Bolshevik revolution). Crowds came out calling for the return of justice, order, and equality. Central authority collapsed, the borders became open, and large groups of Bedouins arrived. In the desert on the eastern border, they were plundering people and spreading fear in the souls. The security men lost control over maintaining security, and no cemetery, temple, or government office was spared. The anger of the people extended to the homes of the wealthy, so they looted them and displaced them. Thus, the situation in Egypt was a state of chaos, weakness, and decay, and a number of people emerged during that period. Of the powerful ruling houses in Upper Egypt and its delta, each of them controlled a region under its control, and the country was disjointed, especially in Lower Egypt, which spread panic and fear among the people. However, in Middle Egypt, the situation was better, as each ruler became independent of a region and imposed his authority on it.
+            A number of senior officials and loyal governors of the regions formed a body of 70 people to govern the country, but within only 70 days the central state collapsed, the country was divided, and civil war broke out between the regions in order to control the lands of the neighboring regions.",
+            character_id: character_24.id,
+    )
+    CharacterSection.create(
+            arabic_title:"الأمر ببناء معبد لشهداء الثورة",
+            english_title:"Order to build a temple for the martyrs of the revolution",
+            arabic_content:"وعثر أثناء الحفريات بعين أصيل بقرية بلاط (واحة الداخلة) حائط من الطوب اللبن المخلوط على حجر ترجم محتواه 'بانتالاتشى' وترجمته رساله من الفرعون الى الأدميرال حاكم الواحه وكبير الكهنه، أمرنا حضرتنا أن يتم بناء معبد للطقوس الجنائزية لحكام الواحة الذين ماتوا فى الثورة وقد عهدت اليكم من خلال السلطات المخولة من الفرعون المنسق الأكبر للطقوس الجنائزيه ببناء هذا المعبد وعلى حاكم الواحه أن يعد العده لإتمام هذا البناء الذى سيكون مخصصا لأجداده حكام الواحه ايدى دونى وابنه ديكرو وابنه خينتيكا.",
+            english_content:"During excavations in Ain Asil in the village of Balat (Dakhla Oasis), a wall of mud bricks mixed on a stone was found, the contents of which were translated as 'Pantalachi' and translated as a letter from the pharaoh to the admiral, the ruler of the oasis and the chief priest. Our Holiness ordered that a temple be built for the funerary rituals of the rulers of the oasis who died in the revolution, and I have known Through the authorities delegated by the Pharaoh, you are the Grand Coordinator of the funerary rituals to build this temple. The ruler of the oasis must prepare to complete this building, which will be dedicated to his grandfathers, the rulers of the oasis, Eddie Doni, his son Dekru, and his son Khintika.",
+            character_id: character_24.id,
+    )
+    character_25 = Character.create(
+        arabic_name: "منتوحوتب الأول",
+        english_name: "Mentuhotep I",
+        arabic_info: "منتوحوتب الأول، (بالإنجليزية: Mentuhotep I). هو ملك فرعونى في طيبة خلال عهد الأسرة الحادية عشر في أوائل الفترة الانتقالية الأولى (2072 - 2064 ق.م). ويعتبر منتوحوتب الأول الأب المؤسس للأسرة الحادية عشر. أطلق على نفسه لقب حاكم مصر العليا ثم اتخذ بعد ذلك لقب ملك مصر كلها.",
+        english_info: "Mentuhotep I. He was a Pharaonic king in Thebes during the Eleventh Dynasty in the early First Intermediate Period (2072 - 2064 BC). Mentuhotep I is considered the founding father of the Eleventh Dynasty. He called himself the ruler of Upper Egypt and later assumed the title of King of all Egypt.",
+        date_of_birth: "2069",
+        date_of_death: "2061",
+        sub_era_id: sub_era_4.id,
+    )
+    character_25.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fd/Statue_Mentuhotep-aa_by_Khruner.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_25.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/f/fd/Statue_Mentuhotep-aa_by_Khruner.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"عائلته",
+        english_title:"His family",
+        arabic_content:"زوجة منتوحوتب ربما كانت نيف رع الأولى، وقد كان والد كل من الملك إنتف الأول، وإنتف الثاني حسب قائمة ملوك الكرنك. والده هو إنتف الأكبر - (أنتف بن إكو). وجد اسمه في قائمة الملوك تحت الرقم 12.",
+        english_content:"Mentuhotep's wife was probably Neferu I, and he was the father of both King Intef I and Intef II according to the Karnak Kings List. His father is Intef the Elder - (Intef son of Iku). His name was found on the list of kings under number 12.",
+        character_id: character_25.id,
+    )
+    CharacterSection.create(
+        arabic_title:"حكمه",
+        english_title:"His reign",
+        arabic_content:"حكم منتوحوتب الأول خلال الفترة الانتقالية الأولى المتوسطة قبل الميلاد (2135 ق.م). ذكر في قائمة ملوك الكرنك لتماثيل الفراعنة برقم 12. كان على تحالف كبير مع كوبتوس ضد ملوك وحكام الأسرة العاشرة في مصر السفلى. خلفه في الحكم على مصر الوسطى ابنه إنتف الأول.",
+        english_content:"Mentuhotep I ruled during the early Middle Intermediate Period (2135 BC). He was mentioned in the Karnak Kings List of Pharaohs statues under number 12. He was in a large alliance with Koptos against the kings and governors of the Tenth Dynasty in Lower Egypt. His son Intef I succeeded him in ruling Middle Egypt.",
+        character_id: character_25.id,
+    )
+    character_26 = Character.create(
+        arabic_name: "إنتف الأول",
+        english_name: "Intef I",
+        arabic_info: "إنتف الأول، (بالإنجليزية: Intef I)، ويسمى أيضا (سحر تاوى - إنتف) بمعني (حور مهدئ الأرضين) ويعتبر هذا الفرعون الأمير الأول من الأمراء الستة الذين تتالف منهم الأسرة الحادية عشر. في الفترة الانتقالية الأولى. وهم الذين حكموا نصف البلاد قبل مجيء الأسرة الثانية عشر بما يقرب من 143 سنة.",
+        english_info: "Intef I, (Intef I), also called (Sahar Tawi - Intef) meaning (Horus, the pacifier of the two lands), and this pharaoh is considered the first prince of the six princes that make up the Eleventh Dynasty. In the early transitional period. They ruled half the country before the arrival of the Twelfth Dynasty for about 143 years.",
+        date_of_birth: "2120",
+        date_of_death: "2070",
+        sub_era_id: sub_era_4.id,
+    )
+    character_26.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/4/42/Intef_I.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_26.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/4/42/Intef_I.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"حكمه",
+        english_title:"His reign",
+        arabic_content:"حكم انتف الأول من 4 إلى 16 خلال الفترة 2120 - 2070 قبل الميلاد. بعد الملك منتوحوتب الأول، وقد كان أول حاكم طيبي يكتب اسمه داخل شن (المناظر للطغراء السلطانية في عهد العثمانيين) وكان مناهضا للفرعون الذي كان يحكم البلاد في اهناسيا ومنف في تلك الفترة. خلفه في الحكم إنتف الثاني.",
+        english_content:"Intef I ruled from 4 to 16 during the period 2120 - 2070 BC. After King Mentuhotep I, he was the first Theban ruler to write his name inside the shen (the views of the sultanate in the Ottoman era) and was opposed to the pharaoh who ruled the country in Ahanasia and Manf at that time. Intef II succeeded him in ruling.",
+        character_id: character_26.id,
+    )
+    CharacterSection.create(
+        arabic_title:"تعريفه",
+        english_title:"His definition",
+        arabic_content:"الملك الفرعوني إنتف الأول كان حاكمًا مهمًا في تاريخ مصر القديمة. يعود حكمه إلى الأسرة الحادية عشر في العصر الوسيط من عصور الأسر المصرية القديمة، وتحديدًا حوالي القرن الثاني عشر قبل الميلاد. يُعتقد أنه كان يحكم من 2116 إلى 2055 قبل الميلاد تقريبًا.
+        من المعروف أن إنتف الأول قاد حملات عسكرية ناجحة وقام بتوسيع نفوذ مصر إلى المناطق المجاورة. كما أنه شهد بعض التطورات الثقافية والدينية خلال حكمه.
+        تشير الآثار والنقوش إلى أنه قد قام بتوسيع السلطة الملكية وربما قام بتنظيم الإدارة الحكومية بشكل أكبر. للأسف، ليست لدي الكثير من المعلومات المحددة حول سيرته الذاتية أو الأحداث البارزة خلال فترة حكمه، ولكن يبدو أنه كان ملكًا قويًا وناجحًا في توسيع نفوذ مصر في ذلك الوقت.",
+        english_content:"Pharaonic King Entef I was an important ruler in the history of ancient Egypt. His rule dates back to the Eleventh Dynasty in the Middle Ages of ancient Egyptian dynastic times, specifically around the twelfth century BC. He is believed to have ruled from approximately 2116 to 2055 BC.
+        It is known that Intef I led successful military campaigns and expanded Egypt's influence into neighboring regions. He also witnessed some cultural and religious developments during his rule.
+        Monuments and inscriptions indicate that he expanded royal authority and perhaps further organized governmental administration. Unfortunately, I do not have much specific information about his biography or notable events during his reign, but he appears to have been a powerful king and successful in expanding Egypt's influence at the time.",
+        character_id: character_26.id,
+    )
+    character_27 = Character.create(
+        arabic_name: "إنتف الثاني",
+        english_name: "Intef II",
+        arabic_info: "إنتف الثاني، (بالإنجليزية: Intef II) (وح عنخ -إنتف). هو أحد أبناء الملك منتوحوتب الأول، وحكام من الأسرة الحادية عشر الفرعونية في مصر القديمة. لم يترك من مخلفاته إلا لوحة واحدة وقد عثر عليها مريد عام 1860م ولكنه تركها في مكانها ومعظمها مهشم.",
+        english_info: "Intef II (in English: Intef II), (Wahankh-Intef). He is one of the sons of King Mentuhotep I, and a ruler of the Eleventh Pharaonic Dynasty in ancient Egypt. He left only one painting left behind, and it was found by Murid in 1860 AD, but he left it in place, most of it broken.",
+        date_of_birth: "2069",
+        date_of_death: "2118",
+        sub_era_id: sub_era_4.id,
+    )
+    character_27.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Funerary_stele_of_Intef_II.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_27.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/03/Funerary_stele_of_Intef_II.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"حكمه",
+        english_title:"His reign",
+        arabic_content:"فترة حكم أنتف الثاني الطويلة (2115 – 2066 ق.م). تميزت بالحرب مع مملكة هراكليوبوليس. ولقد تقابل جيشاهما في منطقة أبيدوس، بحيث استولى كل واحد منهما بالتتابع على مدينة ثينيس ثم فقداها.وأخيرا استطاع أنتف الثاني أن يمد أطراف مملكته جهة الشمال عند حدود مقاطعة هيبسيليس.",
+        english_content:"The long reign of Antef II (2115 - 2066 BC). It was marked by the war with the Kingdom of Herakleopolis. Their two armies met in the Abydos region, so that each one of them sequentially captured the city of Thinis and then lost it. Finally, Antef II was able to extend the outskirts of his kingdom to the north, at the borders of the Hypsilis province.",
+        character_id: character_27.id,
+    )
+    CharacterSection.create(
+        arabic_title:"اللوحة",
+        english_title:"The painting",
+        arabic_content:"لوحة الموظف العظيم هي لشخص عاصر هذا الملك ففيها ما يمكن ان يستشف في هذا الملك وهذا العصر بالإضافة إلى أشياء تخص نتى نفسه. ويتحدث عن أخلاصه لمليكه في مقاطعة طيبة. وعن نفسه قائلا: (لم أحدث تقصير استحق عليه عقاباً لأننى كنت حازماً موضع ثقة حقيقية عند سيدي وحاكما غاية في العقل هادئ في الاخلاق في بيت سيده. ولم أتعود البحث وراء الشر الذي بسببه تـُكره الرجال وإننى إنسان يحب الخير ويكره الشر وشخصية محبوبة في بيت سيدها وإنسان تعوّد أن ينفذ كل واجب حسب إرادة سيده. وإذا وليت عمل مثل تحقيق شكاية أو فحص ملتمس إنسان في حاجة كنت عادلاً ولم أكن متغطرساً لما أوتيت من ثراء ولم آخذ شيئا اختلاسا لأجل أن أنهى عملاً.).",
+        english_content:"The painting of the Great Servant is of a person who was a contemporary of this king. It contains what can be learned about this king and this era, in addition to things related to Nitti himself. He talks about his loyalty to his king in the province of Thebes. Concerning himself, he said: (I did not commit a negligence that deserved punishment for it, because I was firm, truly trusted by my master, and a very rational ruler, calm in morals, in his master’s house. I was not accustomed to searching for evil, for which men hated me, and I am a person who loves goodness and hates evil, and a beloved character in her master’s house. A person is accustomed to carrying out every duty according to the will of his master. If I undertake a task such as investigating a complaint or examining someone who seeks a need, I will be fair and not arrogant due to the wealth I have been given, and I will not take anything by embezzlement in order to complete a job.)",
+        character_id: character_27.id,
+    )
+    CharacterSection.create(
+        arabic_title:"مقبرته",
+        english_title:"His tomb",
+        arabic_content:"عثرت بعثات الاكتشاف على مقبرته، وقد تعرضت للسلب والنهب خلال الأسرة العشرين، مقبرة إنتف الثاني وإن كانت أضيق بقليل من مقبرة والده يمتد طولها في داخل الصحراء إلى الوراء ما بين 180و 200 متر تقريبًا، وليس هناك أي أثر ظاهر لهرم حيث وجد بداخلها على لوحة الموظف العظيم، ولوحة صور عليها وهو بصحبة كلابه التي أطلق عليها أسماء من أصل بربري.",
+        english_content:"The discovery missions found his tomb, which was looted and plundered during the Twentieth Dynasty. The tomb of Intef II, although slightly narrower than his father's tomb, extends inside the desert to the rear between approximately 180 and 200 meters. There is no visible trace of a pyramid, as found inside it on the painting of the Great Servant, and a painting with pictures on it, with him accompanied by his dogs, which he named after names of Berber origin.",
+        character_id: character_27.id,
+    )
+    character_28 = Character.create(
+        arabic_name: "منتوحتب الثاني",
+        english_name: "Mentuhotep II",
+        arabic_info: "منتوحوتپ الثاني ملك مصري قديم حكم في الفترة (2061 - 2010 ق.م.)، ومعنى اسمه الملكي هو (الإله مونتو راضٍ)، ويُعرف أيضاً بلقب التتويج نب-حابت-رع أي (ربان دفة رع)، وهو مؤسس الاسرة الحادية عشر، وهو ابن انتف الثالث. يرجع إليه الفضل في إعادة توحيد البلاد بعد نهاية فترة إضطرابات عصر الاضمحلال الأول وأصبح أول ملك مصري في الدولة الوسطى. واستمرت ولايته 51 عاماً وفقا لقائمة ملوك تورين. فمنتوحتب الثاني خلف والدة إنتف الثالث على العرش ومن بعده خلفه إبنه منتوحتب الثالث.
+        صعد منتوحتب الثاني على عرش مصر في مدينة طيبة بمصر العليا خلال فترة عصر الانتقال الأول. فمصر لم تكن موحدة في ذلك الوقت، والأسرة العاشرة المناوئة لأسرة منتوحتب الحادية عشر كانت تحكم مصر السفلى من مدينة هيراكليوبوليس. وبعد أن قام ملوك هيراكليوبوليس بتدنيس الجبانة الملكية المقدسة الموجودة في منطقة أبيدوس بمصر العليا في العام الرابع عشر من حكم منتوحتب الثاني، قام الأخير بإرسال جيوشه شمالاً لإحتلال مصر السفلى. وإستمراراً لحملات أبيه إنتف الثالث نجح منتوحتب في توحيد بلاده ربما قبل نهاية عامه التاسع والثلاثين من جلوسه على العرش. وبعد الإعتراف بالوحدة في العام التاسع والثلاثين قام بتغيير لقبه إلى سما-ناوي أي (موحد الأرضين).
+        قام منتوحتب الثاني بعمل إصلاحات في الحكومة المصرية فور الإنتهاء من توحيد البلاد. فألغى عدم مركزية السلطة التي ساهمت في إنهيار الدولة القديمة وكانت علامة مميزة للفترة الإنتقالية الأولى، وذلك عن طريق تجريد حكام الأقاليم من بعض سلطتهم وتركيز الحكم في طيبة. كما إبتكر أيضاً مناصب حكومية جديدة قد شغلها رجال طيبة المخلصين له، مما منح الملك مزيداً من السلطة على بلاده. كما سافر المسئولين عبر البلاد بصفة منتظمة لمراقبة حكام الأقاليم.
+        تم دفن منتوحتب الثاني في جبانة طيبة بالدير البحري. وكان معبده الجنائزي من أكثر المشاريع المعمارية الطموحة لمنتوحتب الثاني، حيث أنه إشتمل على العديد من الإبتكارات المعمارية والدينية. فإحتوى على سبيل المثال على شرفات وممرات مغطاة حول المبنى المركزي، وكان أول معبد جنائزي يتم تمثيل الملك فيه على هيئة المعبود أوزير. وألهم معبده المعابد التي جائت من بعده مثل معبد حتشبسوت ومعبد تحتمس الثالث من الأسرة الثامنة عشر.
+        بقايا معبده بالدير البحرى لا زالت موجودة بجوار معبد حتشبسوت، أحبه المصريون كثيرا واعتبروه مثل مينا (موحد الوجهين القبلي والبحري) ومؤسس الأسرة الأولى، ومثل أحمس طارد الهكسوس ومؤسس الدولة الحديثة) ويوجد صورة له بجانب الملك مينا وأحمس.",
+        english_info: "Mentuhotep II is an ancient Egyptian king who ruled in the period (2061 - 2010 BC). The meaning of his royal name is (the god Montu is satisfied). He is also known by the coronation title Neb-Hapet-Ra, meaning (the captain of the helm of Ra). He is the founder of the Eleventh Dynasty. He is the son of Intef III. He is credited with reuniting the country after the end of the turmoil of the First Decline and becoming the first Egyptian king of the Middle Kingdom. His rule lasted 51 years, according to the Turin King List. Mentuhotep II succeeded Intef III's mother on the throne, and after him, his son Mentuhotep III succeeded him.
+        Mentuhotep II ascended to the throne of Egypt in the city of Thebes in Upper Egypt during the First Intermediate Period. Egypt was not unified at that time, and the Tenth Dynasty, opposed to the Eleventh Dynasty of Mentuhotep, ruled Lower Egypt from the city of Heracleopolis. After the kings of Heracleopolis desecrated the sacred royal cemetery located in the Abydos region of Upper Egypt in the fourteenth year of the reign of Mentuhotep II, the latter sent his armies north to occupy Lower Egypt. In continuation of the campaigns of his father Entef III, Mentuhotep succeeded in unifying his country, perhaps before the end of his thirty-ninth year on the throne. After recognizing the unity in the thirty-ninth year, he changed his title to Sama-Nawi, meaning (Uniter of the Two Lands).
+        Mentuhotep II made reforms in the Egyptian government immediately after the unification of the country was completed. He abolished the decentralization of power that contributed to the collapse of the Old Kingdom and was a distinctive feature of the first transitional period, by stripping the governors of the regions of some of their authority and concentrating rule in Thebes. He also created new government positions that were filled by loyal Theban men, giving the king more power over his country. Officials also traveled across the country on a regular basis to monitor regional governors.
+        Mentuhotep II was buried in the Theban cemetery in Deir el-Bahri. His mortuary temple was one of the most ambitious architectural projects of Mentuhotep II, as it included many architectural and religious innovations. For example, it contained balconies and covered corridors around the central building, and it was the first funerary temple in which the king was represented in the form of the god Osiris. His temple inspired the temples that came after him, such as the Temple of Hatshepsut and the Temple of Tuthmosis III of the Eighteenth Dynasty.
+        The remains of his temple in Deir el-Bahari are still present next to the Temple of Hatshepsut. The Egyptians loved him very much and considered him like Menes (the unifier of the tribal and maritime sides) and the founder of the First Dynasty, and like Ahmose, who expelled the Hyksos and the founder of the modern state. There is a picture of him next to King Menes and Ahmose.",
+        date_of_birth: "2061",
+        date_of_death: "1995",
+        sub_era_id: sub_era_4.id,
+    )
+    character_28.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/MentuhotepII.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_28.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/MentuhotepII.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"عائلته",
+        english_title:"His family",
+        arabic_content:"كان منتوحتب الثاني ابن إنتف الثالث، وربما كانت زوجة إنتف الثالث إعح هي أيضاً أخته. ويوضح هذا النسب لوحة حننو (متحف القاهرة 36346) الذي كان مسئولاً في القصر الملكي تحت ولاية إنتف الثاني، وإنتف الثالث، وإبنه الذي تعرفه اللوحة باللقب الحوري سعنخ-إب-تاوي أي (محيي قلب الأرضين)، وهو أول لقب حوري لمنتوحتب الثاني. أما إعح فقد حملت لقب موت-نسوت أي (الأم الملكية). كما تم تأكيد نسب منتوحتب الثاني أيضاً بطريقة غير مباشرة من خلال نقش موجود في منطقة شط الرجال. وكان لمنتوحتب الثاني العديد من الزوجات اللاتي تم دفنهن معه أو بجواره في معبدة الجنائزي.
+        تم التي ربما كانت الزوجة الرئيسية لمنتوحتب الثاني حيث كانت تحمل لقب حمت-نسوت أي (الزوجة الملكية)، و حمت-نسوت-مريت.ف أي (محبوبته الزوجة الملكية)، و ورت-حتس-نبوي أي (عظيمة صولجان السيدين). وقد إنجبت لمنتوحتب الثاني طفلين، بالتاكيد أحدهما كان منتوحتب الثالث نظراً لأن 'تم' كانت تُدعى أيضاً 'موت-نسوت' أي (الأم الملكية). ويبدوا أنها قد توفت بعد زوجها وقام إبنها بدفنها في معبد منتوحتب الثاني. وإكتشف قبرها اللورد دوفرين عام 1859، وأتم أرنولد حفر القبر عام 1968.
+        نفرو الثانية وتعني (جميلة الثانية)، وكانت تُدعى 'حمت-نسوت-مريت.ف' أي (الزوجة الملكية ومحبوبته)، وربما كانت أخت منتوحتب الثاني نظراً لأنها تحمل أيضاً ألقاب مثل 'سات-نسوت-سمسوت-ن-خت.ف' أي (الأخت الملكية الكبيرة المنتمية إلى جسده)، و 'حموت-نبوت' أي (سيدة كل النساء). وتم دفنها في المقبرة رقم TT319 بالدير البحري.
+        كاويت كانت إحدى زوجات منتوحتب الثاني الثانوية. وكانت تحمل الألقاب 'حمت-نسوت-مريت.ف' أي (الزوجة الملكية ومحبوبته)، و 'غكرت-نسوت' أي (المحظية الملكية). وكانت 'إحدى كاهنات المعبودة حتحور'. ويعتقد أنها كانت نوبية. وقد تم دفنها تحت شرفة معبد منتوحتب الثاني الجنائزي، حيث كشف نافيل عن تابوتها في عام 1907.
+        سادة، وعاشيت، وهنهنيت، وكمسيت كلهن كانوا زوجات ثانويات لمنتوحتب الثاني. وكانوا يحملون
+        الألقاب 'حمت-نسوت-مريت.ف' أي (الزوجة الملكية ومحبوبته)، و 'غكرت-نسوت-وعتت' أي (المحظية الملكية الوحيدة). وكانوا كاهنات المعبودة حتحور، وكل واحدة منهن تم دفنها في حفرة منفردة محفورة تحت شرفة معبد منتوحتب الثاني. مع ملاحظة أنه توجد نظرية بديلة ترى أن هنهنيت هي إحدى الزوجات الثانويات لإنتف الثالث، وربما كانت أم نفرو الثانية، وتوفت أثناء ولادتها.
+        ماويت، وهي طفلة ذات خمسة سنوات تم دفنها مع زوجات منتوحتب الثاني الثانويات، وعلى الأرجح أنها إحدى بناته.",
+        english_content:"Mentuhotep II was the son of Intef III, and the wife of Intef III Iah may also have been his sister. This lineage is illustrated by the painting of Hannu (Cairo Museum 36346), who was an official in the royal palace under the rule of Intef II and Intef III, and his son, whom the painting identifies with the Hurrian title of Sankh-ib-Tawi, meaning (Giver of the Heart of the Two Lands), which is the first Hurrian title of Mentuhotep II. As for Iah, she bore the title of Mut-Nesut, meaning (Royal Mother). The lineage of Mentuhotep II was also confirmed indirectly through an inscription found in the Shatt al-Rijal area. Mentuhotep II had many wives who were buried with him or next to him in his funerary temple.
+        Tam was probably the main wife of Mentuhotep II, as she held the title of Hemet-Nesut, meaning (the royal wife), Hemet-Nesut-meret.f., meaning (his beloved, the royal wife), and Wort-hetes-nebwy, meaning (the great scepter of the two masters). She bore Mentuhotep II two children, one of whom was certainly Mentuhotep III, given that 'Tamm' was also called 'Mut-Nesut', meaning (the royal mother). It seems that she died after her husband, and her son buried her in the temple of Mentuhotep II. Her grave was discovered by Lord Dufferin in 1859, and Arnold completed the excavation of the grave in 1968.
+        Neferu II, which means (beautiful the second), was called 'Hamat-Nesut-Merit.f', meaning (the royal wife and his beloved), and she may have been the sister of Mentuhotep II since she also had titles such as 'Sat-Nesut-Semsut-N-Khat.f'. That is, (the senior royal sister belonging to his body), and 'Hamut-Neboth', that is, (the mistress of all women). She was buried in Cemetery No. TT319 in Deir el-Bahri.
+        Kawit was one of Mentuhotep II's secondary wives. She had the titles 'Hamt-Nesut-Mrit.f', meaning (the royal wife and his beloved), and 'Ghakert-Nsut', meaning (the royal concubine). She was 'one of the priestesses of the goddess Hathor'. It is believed that she was Nubian. She was buried under the balcony of the mortuary temple of Mentuhotep II, where Naville unveiled her sarcophagus in 1907.
+        Sada, Ashit, Hanhinit, and Kamset were all secondary wives of Mentuhotep II. And they were carrying
+        The titles are 'Hamt-Nesut-Mrit.f', meaning (the royal wife and his lover), and 'Ghakert-Nsut-Watat', meaning (the only royal concubine). They were priestesses of the goddess Hathor, and each of them was buried in a separate hole dug under the balcony of the temple of Mentuhotep II. Note that there is an alternative theory that holds that Hehnenit was one of the secondary wives of Entef III, and perhaps she was the mother of Neferu II, and she died during childbirth.
+        Mawit, a five-year-old girl who was buried with Mentuhotep II's secondary wives, is most likely one of his daughters.",
+        character_id: character_28.id,
+    )
+    CharacterSection.create(
+        arabic_title:"حقبته",
+        english_title:"His era",
+        arabic_content:"يُعتبر منتوحتب الثاني أول حاكم للمملكة المصرية الوسطى. ولائحة تورين تنسب إليه ولاية عهد استمرت 51 عاماً. ظل كثيراً من علماء المصريات يأخذون بعين الإعتبار لفترة طويلة محتوى نقشين على الصخر، تظهر منتوحتب الثاني يعلوا شخصية أصغر منه مكتوب عليها الملك 'إنتف'، على أنه دليلاً قاطعا بأن سلفه 'إنتف الثالث' كان والده؛ إلا أن ذلك لم يتم تأكيده بشكل قطعى، حيث أن هذه النقوش قد تكون لها دوافع دعائية أخرى، كما أن منتوحتب تحيط به مشاكل أخرى متعلقة بأصله الحقيقي، وتغير أسمه ثلاثة مرات، ومحاولاته المتكررة التي إدعى فيها أنه منحدر من سلالات إلهية مختلفة.",
+        english_content:"Mentuhotep II is considered the first ruler of the Middle Kingdom of Egypt. The Turin List attributes to him a reign that lasted 51 years. For a long time, many Egyptologists considered the content of two rock inscriptions, showing Mentuhotep II above a smaller figure bearing the inscription King 'Intef', as conclusive evidence that his predecessor 'Intef III' was his father; However, this has not been confirmed definitively, as these inscriptions may have other propaganda motives, and Mentuhotep is also surrounded by other problems related to his true origin, the change of his name three times, and his repeated attempts in which he claimed that he descended from different divine lineages.",
+        character_id: character_28.id,
+    )
+    CharacterSection.create(
+        arabic_title:"إعادة توحيد مصر",
+        english_title:"Reunification of Egypt",
+        arabic_content:"لقد حدثت إنتفاضة في شمال مصر وذلك في العام الرابع عشر من ولايته. وهذه الإنتفاضة على الأرجح متعلقة بالنزاع المتواصل بين منتوحتب الثاني المتمركز في طيبة والأسرة العاشرة المناوئة له والمتمركزة في هيراكليوبوليس التي هددت بإجتياح مصر العليا. والعام الرابع عشر من ولاية منتوحتب الثاني بالفعل قد تم تسميتها عام جريمة ثني. وبالتأكيد يشير ذلك إلى إستيلاء ملوك هيراكليوبوليس على منطقة ثني، ويبدوا أنهم قاموا بتدنيس الجبانة الملكية المقدسة بأبيدوس في هذه العملية، وجبانة أبيدوس هي جبانة ملكية عتيقة. وبناء عليه أرسل منتوحتب الثاني على الفور جيشه إلى شمال البلاد. ومقبرة المحاربين المشهورة بالدير البحري والتي تم إكتشافها في عشرينيات القرن العشرن تحتوي على رفاة 60 جثة من جثث الجنود الذين قتلوا في معركة، وهي جثث لم يتم تحنيطها وتم لفها بالكتان وعليها الخرطوش الملكي للملك منتوحتب الثاني. ونظراً لقربها من مقابر طيبة الملكية يُعتقد أن مقبرة المحاربين هي مقبرة الأبطال الذين قتلوا خلال الصراع بين منتوحتب الثاني وعدوه في الشمال. وأن 'مري-كا-رع' حاكم مصر السفلى في ذلك الوقت ربما قد توفى خلال هذا الصراع، مما زاد من ضعف مملكته وأعطى منتوحتب الثاني الفرصة لإعادة توحيد مصر. والتاريخ الذي تحقق فيه هذا التوحيد غير معروف بشكل دقيق، إلا أنه من المفترض حدوثه قبل العام التاسع والثلاثون من ولايته بفترة وجيزة. وتظهر الأدلة بالفعل أن عملية التوحيد قد إستغرقت وقاتاً طويلاً، ربما نتيجة إنعدام الأمن بشكل عام في البلاد في ذلك الوقت: فالعامة قد تم دفنهم بالأسلحة، وأظهرت اللوحات الجنائزية المسئولين يحملون الأسلحة بدلاً من الشعارات الملكية المعتادة، وعندما أرسل خليفة منتوحتب الثاني حملته إلى بلاد بونت بعد حوالي 20 عاماً من التوحيد كان عليهم تطهير وادي الحمامات من المتمردين.
+        إن رعايا منتوحتب الثاني إعتبروه إله أو نصف إله بعد إعادة التوحيد. واستمر هذا هو الحال خلال أواخر الأسرة الثانية عشر بعد حوالي 200: فأقام سنوسرت الثالث وأمنمحات الثالث لوحات تذكارية لشعائر فتح الفم المقامة عند تماثيل منتوحتب الثاني.",
+        english_content:"An uprising occurred in northern Egypt in the fourteenth year of his term. This uprising is most likely related to the ongoing conflict between Mentuhotep II, based in Thebes, and the opposing Tenth Dynasty, based in Heracleopolis, which threatened to invade Upper Egypt. The fourteenth year of the reign of Mentuhotep II has already been called the year of the crime of Thinni. This certainly indicates that the kings of Heracleopolis took over the Theni region, and it seems that they desecrated the sacred royal cemetery in Abydos in the process, and the Abydos cemetery is an ancient royal cemetery. Accordingly, Mentuhotep II immediately sent his army to the north of the country. The famous warriors' cemetery in Deir el-Bahari, which was discovered in the 1920s, contains the remains of 60 bodies of soldiers who were killed in battle. These bodies were not mummified and were wrapped in linen and bearing the royal cartouche of King Mentuhotep II. Due to its proximity to the Royal Tombs of Thebes, it is believed that the Warriors’ Cemetery is the cemetery of the heroes who were killed during the conflict between Mentuhotep II and his enemy in the north. And that 'Meri-Ka-Ra', the ruler of Lower Egypt at that time, may have died during this conflict, which increased the weakness of his kingdom and gave Mentuhotep II the opportunity to reunite Egypt. The date on which this unification was achieved is not known precisely, but it is assumed to have occurred shortly before the thirty-ninth year of his term. Evidence does show that the unification process took a long time, perhaps as a result of the general insecurity in the country at the time: commoners were buried with weapons, funerary stelae showed officials carrying weapons instead of the usual royal regalia, and when Mentuhotep II's successor sent his expedition to Punt After about 20 years of unification, they had to clear Wadi Hammamet of rebels.
+        Mentuhotep II's subjects considered him a god or demigod after reunification. This continued to be the case during the late Twelfth Dynasty, after about 200: Senusret III and Amenemhat III erected memorial plaques for the mouth-opening ritual performed at the statues of Mentuhotep II.",
+        character_id: character_28.id,
+    )
+    CharacterSection.create(
+        arabic_title:"النشاط العسكري خارج مصر",
+        english_title:"Military activity outside Egypt",
+        arabic_content:"لقد شن منتوحتب الثاني حملات عسكرية في العام التاسع والعشرين والواحد والثلاثين من ولايته تحت قيادة وزيره ختي في إتجاه الجنوب إلى النوبة، التي قد حصلت على إستقلالها خلال عصرالإنتقال الأول. وهي المرة الأولى التي يظهر فيها مصطلح كوش بشكل موثق لمنطقة النوبة في السجلات المصرية. ونجد على وجه التحديد أن منتوحتب الثاني قد وضع حامية عسكرية في قلعة جزيرة الفنتين حتى يتمكن من نشر قواته العسكرية بسرعة في إتجاه الجنوب. كما توجد شواهد على أعمال عسكرية ضد الكنعانيين. وتم العثور على نقش يحمل اسم الملك في جبل العوينات القريب من الحدود مع ليبيا والسودان وتشاد يشهد بحد أدنى على وجود اتصالات تجارية في هذه المنطقة.",
+        english_content:"Mentuhotep II launched military campaigns in the twenty-ninth and thirty-first years of his rule under the leadership of his vizier Khiti towards the south towards Nubia, which had gained its independence during the First Intermediate Period. This is the first time that the term Kush appears documented in the Nubia region in Egyptian records. Specifically, we find that Mentuhotep II placed a military garrison in the castle of Elephantine Island so that he could quickly deploy his military forces towards the south. There is also evidence of military actions against the Canaanites. An inscription bearing the king's name was found in Jabal Al-Owaynat, near the borders with Libya, Sudan, and Chad, attesting at a minimum to the existence of commercial contacts in this region.",
+        character_id: character_28.id,
+    )
+    CharacterSection.create(
+        arabic_title:"إعادة تنظيم الحكومة",
+        english_title:"Reorganization of the government",
+        arabic_content:"لقد شغل حكام الأقاليم سلطات هامة في جميع أرجاء مصر وذلك خلال عصر الانتقال الأول حتى ولاية منتوحتب الثاني. وأصبح منصبهم هو منصب وراثي خلال الأسرة السادسة، وإنهيار السلطة المركزية ضمن لهم سلطة مطلقة على أراضيهم. إلا أن منتوحتب الثاني بعد توحيد البلاد قد شرع بقوة في تطبيق سياسة المركزية، وتدعيم سلطتة الملكية من خلال إنشاء مناصب حاكم مصر العليا وحاكم مصر السفلى، اللذين كان لهما سلطة على حكام الأقاليم المحلية.
+        كما أعتمد منتوحتب الثاني على قوة متنقلة من مسئولين البلاط الملكي الذين كان لهم مزيد من السيطرة على أفعال حكام الأقاليم. وبالتأكيد قد فقد حكام الأقاليم الذين دعموا الأسرة العاشرة سلطتهم لصالح الملك، مثل حاكم إقليم أسيوط. كما بدأ منتوحتب الثاني في نفس الوقت برنامج موسع لتقديس الذات مؤكداً على الطبيعة اللاهوتية للحاكم.",
+        english_content:"Regional governors held important powers throughout Egypt during the First Intermediate Period until the reign of Mentuhotep II. Their position became hereditary during the Sixth Dynasty, and the collapse of central authority granted them absolute authority over their lands. However, after the unification of the country, Mentuhotep II began vigorously implementing the policy of centralization and strengthening the authority of the monarchy by establishing the positions of the ruler of Upper Egypt and the ruler of Lower Egypt, who had authority over the rulers of the local regions.
+        Mentuhotep II also relied on a mobile force of royal court officials who had more control over the actions of provincial governors. Certainly, the provincial governors who supported the Tenth Dynasty lost their power to the king, such as the governor of the Assiut province. At the same time, Mentuhotep II also began an extensive program of self-sanctification, emphasizing the theological nature of the ruler.",
+        character_id: character_28.id,
+    )
+    character_29 = Character.create(
+        arabic_name: "منتوحتب الثالث",
+        english_name: "Mentuhotep III",
+        arabic_info: "منتحوتب الثالث كان فرعون مصري من الأسرة الحادية عشرة خلال المملكة الوسطى.",
+        english_info: "Mentuhotep III was an Egyptian pharaoh from the Eleventh Dynasty during the Middle Kingdom.",
+        date_of_birth: "",
+        date_of_death: "",
+        sub_era_id: sub_era_4.id,
+    )
+    character_29.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9c/Mentuhotep-OsirideStatue-CloseUp_MuseumOfFineArtsBoston.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_29.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9c/Mentuhotep-OsirideStatue-CloseUp_MuseumOfFineArtsBoston.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"النشأة",
+        english_title:"His upbringing",
+        arabic_content:"إشترك منتوحتب الثالث في الحروب والغزوات التي شنها والده على ملوك هيراكليوبوليس إذ نشاهده في منظر من مناظر معبد الدير البحرى. مرسوما خلف والده مباشرة بوصفه ابن الملك ويظهر في ملابسه الحربية ويحمل بلطة وقوس.",
+        english_content:"Mentuhotep III participated in the wars and invasions waged by his father against the kings of Heracleopolis, as we see him in a scene from the temple of Deir el-Bahari. He is depicted behind his father directly as the son of the king, wearing military clothes and carrying a mace and bow.",
+        character_id: character_29.id,
+    )
+    CharacterSection.create(
+        arabic_title:"أسماؤه",
+        english_title:"His names",
+        arabic_content:"على أثر وفاة والده تقلد الألقاب الفرعونية المعتادة مسميا نفسه خور - سعنخ تاوى -أف (الذي يجعل أرضيه تحييان وصاحب الإلهتين) و(سعنخ تاوى إف) واسم حور الذهبى: حتب السلام ملك الوجة القبلى والبحرى. سخنع كا رع بمعنى (الذي يجعل روح رع تعيش). ابن الشمس منو حتب وفي القرون التالية كان اسمه ذائع الصيت فنجده في نقوش الكرنك يسمى (الإله الطيب رب الأرضين وسيد القربان سعنخ كا رع) المبرئ. وقد ذكرت هذة التسمية بعد ذكر اسم نب حتب رع مباشرة وقد ظهر إسمه كذلك على لوحة (يتيزى)التي عثر عليها في مقبرته في سقارة.",
+        english_content:"Following the death of his father, he assumed the usual Pharaonic titles, calling himself Khor-Saankh-tawi-af (He who makes his lands come to life and the owner of the two goddesses) and (Saankh-tawi-if), and the name of Hor al-Dhahabi: Hetepe the peace, king of the tribal and sea region. Sekhenkare means (the one who makes Ra's soul live). The son of the sun, Menohotep, and in the following centuries his name was very famous. We find him in the Karnak inscriptions called (the good god, Lord of the Two Lands and Master of Sacrifice, Sankhkare), the Exonerator. This name was mentioned directly after the name of Nebhotepre, and his name also appeared on the stela (Yatizi) that was found in his tomb in Saqqara.",
+        character_id: character_29.id,
+    )
+    CharacterSection.create(
+        arabic_title:"سنوات حكمه",
+        english_title:"Years of his rule",
+        arabic_content:"بردية تورين تنص على أنه حكم إثنتا عشرة سنة وقد كانت أعوام سلام وهدوء إذ كان قد إنقضى على السنين الأولى المملوءة بالثورات والعصيان من حكم والده نب حتب رع جيل وخلفها عهد سكينة وإستقرار إستمتع به سعنخ كا رع",
+        english_content:"The Turin Papyrus states that he ruled for twelve years, and the years were peaceful and calm, as he had passed the first years filled with revolutions and rebellions from the rule of his father, Nebhotepre, and succeeded by an era of tranquility and stability enjoyed by Sankhkare.",
+        character_id: character_29.id,
+    )
+    CharacterSection.create(
+        arabic_title:"أعماله",
+        english_title:"His works",
+        arabic_content:"أقام معبد في الفنتين (أسوان) واقام بعض المبانى في أرمنت وفي الطود بنى جزئا كبيرا في معبدها وفي الكرنك عثر على جزء من تمثال صغير من المرمر له.",
+        english_content:"He built a temple in Elephantine (Aswan) and built some buildings in Armant and in Tod, he built a large part of his temple, and in Karnak, a small marble statue of him was found.",
+        character_id: character_29.id,
+    )
+    CharacterSection.create(
+        arabic_title:"اثاره",
+        english_title:"His artifacts",
+        arabic_content:"بقى لنا عدد محدود من الآثار الصغيرة التي تحمل أسمه ففى سقارة عثر له على تمثال محفوظ الآن في متحف اللوفر ويقال إن له كذلك خاتما من الذهب نقش عليه (ملك الوجة القبلى والوجة البحرى )سعنخ كا رع محبوب (منتو) رب طيبة وعثر على خرزة كرية الشكل لونها أزرق قاتم تحمل اسمه أما معبد الفرعون فكان يتألف من جدار رخيص ملتو بنى من اللبن .",
+        english_content:"We have a limited number of small artifacts bearing his name. In Saqqara, a statue was found for him, now preserved in the Louvre Museum, and it is said that he also had a gold ring engraved with (King of the tribal and sea region) Sankhkare, beloved (Mentu) Lord of Thebes, and a dark blue spherical bead bearing his name. As for the Pharaoh's temple, it consisted of a cheap wall made of mud bricks.",
+        character_id: character_29.id,
+    )
+    character_30 = Character.create(
+        arabic_name: "أمنمحات الأول",
+        english_name: "Amenemhat I",
+        arabic_info: "أمنمحات الأول (باللغة المصرية في الدولة الوسطى: إمن-م-حات) وأطلقت عليه الحضارة الهيلينية اسم أمنمس، هو أول ملوك الأسرة الثانية عشرة التي تُعتبر العصر الذهبي للدولة الوسطى بمصر. وحكم في الفترة من 1991 ق.م إلى 1962 ق.م (1939 ق.م إلى 1910 ق.م).
+        ربما كان أمنمحات الأول هو نفسه الوزير المدعو أمنمحات، الذي قاد حملة إلى وادي الحمامات تحت إمرة سلفه منتوحتب الرابع. وربما أطاح أمنمحات الأول بمنتوحتب الرابع من على راس السلطة في مصر. ولذلك يختلف العلماء فيما إذا كان أمنمحات الأول قد قام بقتل منتوحتب الرابع من عدمه، إلا أنه لا توجد أدلة مستقلة تدعم هذه القضية، وربما كانت هناك فترة حكم مشترك تفصل بين عهديهما.
+        بدأ به عهد الأسرة الثانية عشرة. قام بتنظيم الحكومة والحد من سلطة النبلاء وازدهرت مصر في عهده. وقد واجه مشاكل كثيرة في بداية حكمه واضطر إلى أن يُقنع الشعب باللين تارة وبالقوة تارة. وقضى أمنمحات الأول على غارات الليبيين والآسيويين. وحَكَمَ آخر عشر سنوات من حكمه بالاشتراك مع ابنه سنوسرت الأول.
+        لم يكن أمنمحات الأول من السلالة الملكية، ولذلك غالباً ما تُعتبر محاولات تأليف بعض الأعمال الأدبية (مثل نبوءة نفرتي، ووصايا أمنمحات)، والعودة في العمارة إلى طراز المجمعات الهرمية التي إشتهر بها حكام الأسرة السادسة هي محاولات لإضفاء الشرعية على حكمه. ولقد قام أمنمحات الأول بنقل العاصمة من طيبة إلى إيثت-تاوي، وتم دفنه في اللشت.
+        وطد أمنمحات الأول نفوذ حكمه على حكام الأقاليم عن طريق عزل أي حاكم لا يطيع أوامره، واستطاع حكم مصر هو وابنه سنوسرت الأول وحفيدة أمنمحات الثاني وابن حفيده سنوسرت الثاني، وكانوا من الملوك العظماء الذين ازدهرت في عهدهم البلاد المصرية وعمها الرخاء. فقد اهتم الملك سنوسرت الثاني بالزراعة وأقام السدود في منطقة الفيوم لحجز مياه الفيضان واستغلالها خلال أشهر الجفاف. كما عمل ملوك تلك الأسرة على تأمين مصر من هجمات الليبيين والأسيويين. وامتد نفوذهم إلى حدود وادي حلفا. إلا إنه قد حدثت مشكلة في عهد الملك أمنمحات الأول بخصوص القائد سنوحي الذي أصبحت أسطورة فيما بعد.",
+        english_info: "Amenemhat I (in Egyptian language in the Middle Kingdom: Amen-M-hat), and the Hellenic civilization called him Amenemes, was the first king of the Twelfth Dynasty, which is considered the golden age of the Middle Kingdom in Egypt. He ruled from 1991 BC to 1962 BC (1939 BC to 1910 BC).
+        Amenemhat I may have been the same vizier called Amenemhat, who led an expedition to Wadi Hammamet under the command of his predecessor, Mentuhotep IV. Amenemhat I may have overthrown Mentuhotep IV from the helm of power in Egypt. Therefore, scholars differ as to whether Amenemhat I killed Mentuhotep IV or not, but there is no independent evidence to support this issue, and perhaps there was a period of joint rule separating their reigns.
+        The Twelfth Dynasty began with it. He organized the government and limited the power of the nobility, and Egypt flourished during his reign. He faced many problems at the beginning of his rule and had to persuade the people sometimes with leniency and sometimes with force. Amenemhat I eliminated the raids of the Libyans and Asians. He ruled the last ten years of his rule jointly with his son Senusret I.
+        Amenemhat I was not of the royal line, and therefore attempts to compose some literary works (such as The Prophecy of Neferti, The Testaments of Amenemhat), and a return in architecture to the style of pyramidal complexes for which the rulers of the Sixth Dynasty were famous are often considered attempts to legitimize his rule. Amenemhat I moved the capital from Thebes to Itath-tawi, and was buried in Lisht.
+        Amenemhat I consolidated the influence of his rule over the regional rulers by removing any ruler who did not obey his orders. He was able to rule Egypt with his son, Senusret I, the granddaughter of Amenemhat II, and his great-grandson, Senusret II. They were among the great kings during whose reign the Egyptian country flourished and was filled with prosperity. King Senusret II was interested in agriculture and built dams in the Fayoum region to retain flood water and exploit it during the dry months. The kings of that dynasty also worked to secure Egypt from attacks by Libyans and Asians. Their influence extended to the borders of Wadi Halfa. However, a problem occurred during the reign of King Amenemhat I regarding the leader Sinuhe, who later became a legend.",
+        date_of_birth: "1991",
+        date_of_death: "1962",
+        sub_era_id: sub_era_4.id,
+    )
+    character_30.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/96/Funerary_relief_of_Amenemhet_I_from_El-Lisht_by_John_Campana.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_30.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/96/Funerary_relief_of_Amenemhet_I_from_El-Lisht_by_John_Campana.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"بداية العهد",
+        english_title:"The beginning of the era",
+        arabic_content:"تشير بعض الأدلة إلى أن بداية عهد أمنمحات الأول قد عانت من الفوضى السياسية، وذلك وفقاً لما أشارت إليه نقوش الحاكم المحلي نهري. كما كانت هناك بعض المعارك البحرية التي شارك فيها خنوم-حتب الأول رفيق أمنمحات الأول وساعده في تحقيق الإنتصار. وبعدها تم تنصيبه حاكماً محلياً هاماً على منطقة بني حسن، وأسس سلالة من الحكام المحليين هناك، فكان حفيده هو خنوم-حتب الثالث.
+        كما أيضاً قد تم ذكر الحملات العسكرية ضد الأسيويين والنوبيين في نقوش خنوم-حتب.",
+        english_content:"Some evidence suggests that the beginning of the reign of Amenemhat I was plagued by political chaos, as indicated by inscriptions of the local ruler Nohri. There were also some naval battles in which Khnum-hotep I, the companion of Amenemhat I, participated and helped him achieve victory. After that, he was installed as an important local ruler of the Beni Hassan region, and he established a dynasty of local rulers there. His grandson was Khnum-hotep III.
+        Military campaigns against the Asians and Nubians were also mentioned in the inscriptions of Khnum-hotep.",
+        character_id: character_30.id,
+    )
+    CharacterSection.create(
+        arabic_title:"الاسم",
+        english_title:"The name",
+        arabic_content:"إرتبط اسم أمنمحات الأول بواحدة من إثنين لا غير من 'السبايت' أو 'التعاليم' الأخلاقية المنسوبة إلى الحكام المصريين، وهي تعاليم معروفة تحت عنوان 'وصايا أمنمحات'، وذلك على الرغم من الإعتقاد حالياً وبشكل عام أن أحد الكتاب قد قام بتأليفها بتوصية من الملك.
+        إن اللقب الحوري لأمنمحات الأول هو 'وحم-مسو'، والذي يعني النهضة أو الإحياء، وذلك تلميحاً بعصر الدولة القديمة التي نماذجها وأيقوناتها الثقافية (مثل المعابد الهرمية والأفكار الفنية المتعلقة بالدولة القديمة) قد قد قام بمحاكاتها ملوك الأسرة الثانية عشر بعد نهاية الفترة الإنتقالية الأولى. كما تم الترويج لعبادة الملك خلال هذه الفترة التي شهدت عودة هادئة إلى حكومة أكثر مركزية من سابقتها.",
+        english_content:"The name of Amenemhat I is associated with only one of two 'sabayt' or moral 'teachings' attributed to Egyptian rulers, which are known under the title 'The Commandments of Amenemhat', although it is currently generally believed that one of the writers composed them on the recommendation of the king. .
+        The Hurrian title of Amenemhat I is 'Wahm-mesu', which means renaissance or revival, alluding to the Old Kingdom era, whose cultural models and icons (such as pyramidal temples and artistic ideas related to the Old Kingdom) were emulated by the kings of the Twelfth Dynasty after the end of the First Intermediate Period. . The cult of the king was also promoted during this period, which saw a quiet return to a more centralized government than its predecessor.",
+        character_id: character_30.id,
+    )
+    CharacterSection.create(
+        arabic_title:"الخلافة",
+        english_title:"His caliphate",
+        arabic_content:"إن الحكم الذي قام به أمنمحات الأول كان مركزياً بشكل كبير، وقد قام بتنظيم الحكومة وتقليص سلطة النبلاء. وقد أدى ذلك إلى ازدهار مصر في عهده. وقد واجه العديد من المشاكل في بداية حكمه واضطر إلى إقناع الشعب باللين تارة وبالقوة تارة. وقد قضى على غارات الليبيين والآسيويين. وقد حكم آخر عشر سنوات من حكمه بالاشتراك مع ابنه سنوسرت الأول.",
+        english_content:"The rule of Amenemhat I was largely centralized, and he organized the government and reduced the power of the nobility. This led to the flourishing of Egypt during his reign. He faced many problems at the beginning of his rule and had to persuade the people sometimes with leniency and sometimes with force. He eliminated the raids of the Libyans and Asians. He ruled the last ten years of his rule jointly with his son Senusret I.",
+        character_id: character_30.id,
+    )
+    CharacterSection.create(
+        arabic_title:"الإقتباسات الحديثة",
+        english_title:"Modern quotes",
+        arabic_content:"إن الكاتب نجيب محفوظ الحائز على جائزة نوبل في الأدب قد أدرج شخصية الملك أمنمحات الأول في إحدى رواياته المنشورة عام 1941 بعنوان 'عودة سنوهي'. وهذه القصة قد ظهرت في النسخة التي ترجمها إلى الإنجليزية ريموند ستوك عام 2003 من ضمن مجموعة نجيب محفوظ للقصص القصيرة التي عنوانها 'أصوات من العالم الآخر'. والقصة مبنية بشكل مباشر على 'قصة سنوهي'، على الرغم من إضافة تفاصيل مثلث الحب الرومانسي التي تضم أمنمحات الأول وسنوهي ولم تظهر في النسخة الأصلية. كما أن محفوظ قد أدرج أيضاً الملك أمنمحات الأول في روايته عن حكام مصر 'أمام العرش'. ونجد من خلال هذا العمل أن الكاتب الحاصل على جائزة نوبل جعل الآلهة المصرية القديمة تحاكم حكام البلاد بدايةً من الملك مينا وإنتهاءً بالرئيس أنور السادات.",
+        english_content:"The writer Naguib Mahfouz, winner of the Nobel Prize in Literature, included the character of King Amenemhat I in one of his novels published in 1941 entitled 'The Return of Sinuhe'. This story appeared in the version translated into English by Raymond Stock in 2003 from Naguib Mahfouz's collection of short stories entitled 'Voices from the Other World'. The story is based directly on 'The Story of Sinuhe', although details of a romantic love triangle involving Amenemhat I and Sinuhe were added that did not appear in the original version. Mahfouz also included King Amenemhat I in his novel about the rulers of Egypt, 'Before the Throne'. We find through this work that the Nobel Prize-winning writer made the ancient Egyptian gods judge the country’s rulers, starting with King Menes and ending with President Anwar Sadat.",
+        character_id: character_30.id,
+    )
+    CharacterSection.create(
+        arabic_title:"سياسته الخارجية",
+        english_title:"His foreign policy",
+        arabic_content:"هددت بلاد الجوار مصر في ذلك الوقت مما دعا الملك إلى توجيه حملة على النوبة جنوب البلاد ولكنه لم يحتفظ بمكاسبه على الأرض. كما توجد أدلة على إرساله الحملات على الليبيين غرب البلاد وإقامة ما أسموه حائط الأمير أو أسوار امنمحات المبجل وكانت على هيئة عدة حصون منفردة.",
+        english_content:"Neighboring countries threatened Egypt at that time, prompting the king to launch a campaign against Nubia in the south of the country, but he did not retain his gains on the ground. There is also evidence of his sending campaigns against the Libyans in the west of the country and establishing what he called the Prince's Wall or the revered Amenemhat's walls, which were in the form of several individual fortresses.",
+        character_id: character_30.id,
+    )
+    character_31 = Character.create(
+        arabic_name: "سنوسرت الأول",
+        english_name: "Senusret I",
+        arabic_info: "سنوسرت الأول (الدولة المصرية الوسطى: س-ن-وسرت وتعني الرجل ذو القوة) كما إن الاسم أيضاً في صيغته الإنجليزية يُنطق سيزوستريس الأول، وهو ثانى ملوك الأسرة الثانية عشر. تولى حكم مصر من عام 1971 إلى عام 1926 قبل الميلاد (1920 إلى 1875 قبل الميلاد)، وكان واحد من أقوى ملوك هذه الأسرة. اشترك في حكم مصر مع والده الملك أمنمحات الأول خلال الأعوام 1975 إلى 1965 قبل الميلاد. وانفرد بحكم مصر بعد وفاة والده وامتدت فترة حكمه إلى 43 سنة ازدهرت خلالها الحياة في مصر. وأشرك ابنه في الحكم خلال الثلاثة أعوام الاخيرة من حكمه، من 1932 إلى 1930 قبل الميلاد والذي أصبح امنمحات الثاني. وس-ن-وسرت كان معروف بلقبه التتويجي 'كا-خبر-رع'، والذي يعني (تجلي 'روح' رع).
+        لقد واصل سياسات والده التوسعية ذات الطابع الهجومي في النوبة، وذلك بالمبادرة بإرسال حملتين إلى هذه المنطقة، الأولى كانت في عامه العاشر والثانية كانت في عامه الثامن عشر من حكم مصر، وأقر حدود مصر الجنوبية الرسمية بالقرب من الشلال الثاني حيث وضع فيها حامية دفاعية وأقام عليها لوحة النصر. كما نظم حملة إلى واحات الصحراء الغربية. وأقر علاقات دبلوماسية مع بعض حكام المدن في سوريا والأراضي الكنعانية. كما أن له محاولات في ترسيخ مركزية الهيكل السياسي للبلاد عن طريق دعم القبائل البدوية الموالين له. وشهدت فترة حكمه استقراراً وتطوراً في العديد من المجالات. فكانت مستويات الأدب والصناعة في أوجّهما. كما تميزت هذه الفترة بازدهار الثروة المعدنية واستخراج الذهب وإنتشار المشغولات الذهبية الدقيقة بوفرة. وهذا بالإضافة إلى الجهد الكبير الذي تم بذله في تدبير الأحجار الكريمة والفيروز والنحاس اللازمة لعمل الحلى وما تتطلبها أعمال النحت. وكان من نتائج هذه الفترة أقامة هرمه ومعبده الجنائزي في اللشت بالقرب من الفيوم، وهي العاصمة الجديدة التي أقامتها الأسرة الثانية عشر بعد مغادرة طيبة، وتم العثور له فيها على العديد من التماثيل هناك. وتم ذكر شخصية الملك س-ن-وسرت الأول في قصة سنوهي عندما قالت أنه قد أسرع بالرجوع من حملته العسكرية في ليبيا إلى القصر الملكي في منف بعد سماعه واقعة إغتيال والده أمن-م-حات الأول.",
+        english_info: "Senusret I (Middle Egyptian State: S-N-USRET, meaning man with strength) and the name, in its English form, is also pronounced Sesostris I. He was the second king of the Twelfth Dynasty. He ruled Egypt from 1971 to 1926 BC (1920 to 1875 BC), and was one of the most powerful kings of this dynasty. He participated in ruling Egypt with his father, King Amenemhat I, during the years 1975 to 1965 BC. He became the sole ruler of Egypt after the death of his father, and his rule extended to 43 years, during which life flourished in Egypt. He included his son in power during the last three years of his rule, from 1932 to 1930 BC, who became Amenemhat II. S-N-Usret was known by his coronation title 'Ka-Kheper-Ra', which means (the manifestation of the 'soul' of Ra).
+        He continued his father's expansionist policies of an offensive nature in Nubia, by taking the initiative to send two campaigns to this region, the first was in his tenth year and the second was in his eighteenth year of rule of Egypt, and he established Egypt's official southern borders near the Second Cataract, where he placed a defensive garrison and established it. Victory painting. He also organized an expedition to the oases of Western Sahara. He established diplomatic relations with some city rulers in Syria and the Canaanite lands. He also attempts to consolidate the centrality of the country's political structure by supporting the Bedouin tribes loyal to him. His rule witnessed stability and development in many areas. The levels of literature and industry were at their peak. This period was also characterized by the prosperity of mineral wealth, the extraction of gold, and the spread of fine gold jewelry in abundance. This is in addition to the great effort that was made in procuring the precious stones, turquoise and copper needed to make the jewelry and what is required for sculpture work. One of the results of this period was the establishment of his pyramid and his funerary temple in Lisht near Fayoum, which is the new capital established by the Twelfth Dynasty after leaving Thebes, and many statues of him were found there. The character of King S-N-Usret I was mentioned in the story of Sinuhe when she said that he had hurried back from his military campaign in Libya to the royal palace in Memphis after hearing about the assassination of his father, Amen-Mhat I.",
+        date_of_birth: "1971",
+        date_of_death: "1926",
+        sub_era_id: sub_era_4.id,
+    )
+    character_31.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/2/2e/Statue_Senusret_I_Petrie.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_31.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/2/2e/Statue_Senusret_I_Petrie.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"العائلة",
+        english_title:"The family",
+        arabic_content:"إن علاقات الملك الأسرية معروفة جيداً. فالملك س-ن-وسرت الأول هو ابن الملك أمن-م-حات الأول. ووالدته كانت أميرة من الأميرات إسمها نفريتانن. وزوجته الرئيسية كان إسمها نفرو الثالثة، وكانت أخته في نفس الوقت، ووالدة خليفته الملك أمن-م-حات الثاتي. وإبنه المعروف هو الملك أمن-م-حات الثاني والأميرات إيتاكايت وسبات. أما هذه الأميرة الأخيرة فكانت على الأرجح بنت الملكة نفرو الثالثة حيث أنها قد ظهرت معها في إحدى النقوش.",
+        english_content:"The king's family relations are well known. King S-N-Usret I is the son of King Amen-Mhat I. His mother was a princess named Nefertanen. His main wife was named Neferu III, and she was his sister at the same time, and the mother of his successor, King Amenemhat II. His known son is King Amenemhat II and the princesses Itakite and Sabat. As for this last princess, she was most likely the daughter of Queen Neferu III, as she appeared with her in one of the inscriptions.",
+        character_id: character_31.id,
+    )
+    CharacterSection.create(
+        arabic_title:"البرنامج الإنشائي",
+        english_title:"The construction program",
+        arabic_content:"لقد أرسل س-ن-وسرت الأول العديد من حملات استخراج المعادن إلى سيناء ووادي الحمامات، وقام ببناء العديد من المزارات والمعابد في جميع أنحاء مصر والنوبة خلال فترة حكمه الطويلة. وأعاد بناء معبد 'رع-أتوم' في هليوبوليس، الذي كان مركزاً لعبادة الشمس. وأقام هناك مسلتين مصنوعتين من الجرانيت الأحمر بمناسبة الإحتفال بعيد يوبيل 'الحب سد' الموافق لعامه الثلاثيني على حكم مصر. ولا تزال إحدى هاتين المسلتين باقيةً في موقعها، وهي تُعتبر أقدم مسلة قائمة في مصر. ومكان هذه المسلة هو منطقة 'المسلة' بالمطرية بالقرب من حي عين شمس (هليوبوليس). وإرتفاعها هو 67 قدم، وتزن 120 طن أو 240,000 رطل.
+        لقد تم توثيق بناء س-ن-وسرت الأول لعدد من المعابد الكبرى في مصر القديمة، بما في ذلك معبد 'من' بقفط، ومعبد 'ساتت' بالفنتين، ومعبد الشهر في أرمنت، ومعبد الشهر في الطود حيث يوجد له نقش طويل محفوظ هناك.",
+        english_content:"S-N-Usret I sent numerous mining expeditions to Sinai and Wadi Hammamet, and built many shrines and temples throughout Egypt and Nubia during his long reign. He rebuilt the Temple of Ra-Atum in Heliopolis, which was a center for sun worship. He erected two obelisks there made of red granite on the occasion of the celebration of the Jubilee of 'Love Dam', corresponding to his thirtieth year of ruling Egypt. One of these two obelisks still remains in its location, and it is considered the oldest existing obelisk in Egypt. The location of this obelisk is the 'Obelisk' area in Matareya, near the Ain Shams neighborhood (Heliopolis). Its height is 67 feet, and it weighs 120 tons, or 240,000 pounds.
+        The construction of a number of major temples in ancient Egypt by S-N-Usret I has been documented, including the Temple of 'Min' in Qeft, the Temple of 'Satet' in Palestine, the Temple of Al-Shahr in Armant, and the Temple of Al-Shahr in Al-Tud, for which a long inscription is preserved there.",
+        character_id: character_31.id,
+    )
+    CharacterSection.create(
+        arabic_title:"البلاط الملكي",
+        english_title:"Royal court",
+        arabic_content:"إن بعض الأعضاء الرئيسين في بلاط الملك س-ن-وسرت الأول معروفين. فنجد أن الوزير إنتف-إقر قد تقلد هذا المنصب في بداية حكمه، وهذه الشخصية تم التعرف عليها من خلال العديد من النقوش ومن خلال قبرة المجاور لهرم أمن-م-حات الأول. ويبدوا أنه قد شغل هذا المنصب لفترة طويلة من الزمن وجاء من بعده وزير إسمه س-ن-وسرت. وبخصوص أمناء الخزانة فنعرف عنهم إثنين كانوا في عهد الملك: سوبك-حتب (في العام الثاني والعشرين) ومنتو-حتب. أما هذا الأخير فيوجد له مقبرة ضخمة بجوار هرم الملك، ويبدوا أنه كان المهندس المعماري الرئيسي لمعبد آمون بالكرنك. كما تم توثيق العديد من المدراء الساميين. فنجد من بينهم حور، وهي شخصية تم التعرف عليها من خلال العديد من اللوحات ومن خلال نقش موجود في وادي الهودي حيث من الواضح أنه كان قائداً لحملة الغرض منها هو جمع حجر الجمشت. وإحدى هذه اللوحات ترجع إلى العام التاسع من حكم الملك. وقد تقلد هذا المنصب من بعده أحد الشخصيات التي تدعى ناخر في حوالي العام الثاني عشر من حكم الملك. ولديه مقبرة في منطقة اللشت. وشخصية تدعى إنتف، وكان إبناً لإمرأة إسمها سات-آمون، وتم التعرف عليها مرة آخرى من خلال العديد من اللوحات، إحداهما ترجع إلى العام الرابع والعشرين والأخرى ترجع إلى العام الخامس والعشرين من حكم الملك س-ن-وسرت الأول. وشخصية أخرى إسمها إنتف كان إبناً لإمرأة تدعى سات-وسر، وعلى الأرجح أنه كان أيضاً مديراً سامياً في عهد الملك.",
+        english_content:"Some of the key members of the court of King S-N-usret I are known. We find that Vizier Intef-Iqr held this position at the beginning of his reign, and this character was identified through many inscriptions and through his tomb next to the pyramid of Amen-em-Hat I. It seems that he held this position for a long period of time, and after him came a minister named S-N-Usret. Regarding the treasurers, we know of two of them who were during the reign of the king: Sobek-hotep (in the twenty-second year) and Mentu-hotep. As for the latter, there is a huge tomb next to the king’s pyramid, and it seems that he was the main architect of the Temple of Amun in Karnak. Several high administrators have also been documented. Among them we find Hour, a character identified through many paintings and through an inscription found in Wadi el-Hudi, where it is clear that he was the leader of an expedition whose purpose was to collect amethyst stones. One of these paintings dates back to the ninth year of the king's rule. This position was held after him by a person called Nakher, around the twelfth year of the king’s rule. He has a cemetery in the Lasht area. And a character called Entef, who was the son of a woman named Sat-Amun, was identified again through several paintings, one dating back to the twenty-fourth year and the other dating back to the twenty-fifth year of the reign of King S-N-usret I. Another character named Entef was the son of a woman named Sat-user, and he was probably also a high administrator during the reign of the king.",
+        character_id: character_31.id,
+    )
+    CharacterSection.create(
+        arabic_title:"الخلافة الملكية",
+        english_title:"Royal caliphate",
+        arabic_content:"لقد تم تتويج س-ن-وسرت الأول شريكاً في الحكم مع والده أمن-م-حات الأول في العام العشرين من حكمه. وهو بدوره قد عين إبنه أمن-م-حات الثاني شريكاً له في نهاية حياته. فمسلة 'وب-واوت' تعود إلى العام الرابع والأربعين من حكم س-ن-وسرت الأول والعام الثاني من حكم أمن-م-حات الثاني، وبالتالي يكون قد عينه في وقت ما في عامه الثالث والأربعين من حكم مصر. ويُعتقد أن س-ن-وسرت الأول قد توفى خلال عامه السادس والأربعين من توليه العرش حيث أن قائمة تورين تنسب إليه عهداً يمتد إلى 45 عاماً.",
+        english_content:"S-N-Usret I was crowned co-ruler with his father, Amen-Mhat I, in the twentieth year of his reign. He, in turn, appointed his son Amenemhat II as his partner at the end of his life. The obelisk of 'Web-Wawt' dates back to the forty-fourth year of the reign of S-N-usret I and the second year of the reign of Amen-em-Hat II, and therefore he was appointed at some point in his forty-third year of rule in Egypt. It is believed that S-N-Usret I died during the forty-sixth year of his accession to the throne, as the List of Turin attributes to him a reign extending to 45 years.",
+        character_id: character_31.id,
+    )
+    character_32 = Character.create(
+        arabic_name: "سنوسرت الثاني",
+        english_name: "Senusret II",
+        arabic_info: "خع-خبر-رع س-ن-وسرت الثاني أو سيزوستريس الثاني (1897 ق.م. - 1878 ق.م.) كان رابع ملوك الأسرة الثانية عشر المصرية، الذي خلف أبيه الملك امنمحات الثانى واشترك معه في الحكم خلال سنواته الأخيرة. و من قام ببناء هرمه في اللاهون. و أكثر ما يتميز به س-ن-وسرت الثاني هو إهتمامه الكبير بمنطقة واحة الفيوم، فقد شرع في بناء منظومة ري ضخمة تبدأ من بحر يوسف و تنتهي في بحيرة موريس (اسم أمن-م-حات الثاني في الحضارة اليونانية)، و ذلك عن طريق تشييد قناطر في منطقة اللاهون و إضافة شبكة من القنوات لتصريف مياه الري. و كان الهدف من ذلك المشروع هو زيادة مساحة الأراضي الزراعية في تلك المنطقة. و قام س-ن-وسرت الثاني بالتأكيد على أهمية هذا المشروع من خلال نقل الجبانة الملكية من منطقة دهشور إلى منطقة اللاهون التي بنى على أرضها هرمه. و ظلت هذه المنطقة هي العاصمة السياسية للبلاد خلال الأسرة الثانية عشر والثالثة عشر المصرية. كما أسس الملك س-ن-وسرت الثاني أول مدينة معروفة للعمال المجاورة لمدينة اللاهون. و مدينة اللاهون كان يُطلق عليها في مصر القديمة اسم س-ن-وسرت-حتب.
+        إن س-ن-وسرت الثاني قد حافظ على علاقات جيدة مع العديد من حكام الأقاليم المصرية الذين كانوا على نفس مستوى ثراء الملك تقريباً، وذلك على عكس سياسية خليفته س-ن-وسرت الثالث. و توجد رسومات جدارية في قبر حاكم إقليمي يُدعى خنوم-حتب الثاني في منطقة بني حسن تشهد على أعماله التي أنجزها في عامه السادس.",
+        english_info: "Kha-Kheper-Ra S-N-Usret II or Sesostris II (1897 BC - 1878 BC) was the fourth king of the Twelfth Dynasty of Egypt. He succeeded his father, King Amenemhat II, and shared his rule during his final years. And who built his pyramid in Lahun. What is most distinctive about S-N-Usret II is his great interest in the Fayoum Oasis region. He began building a huge irrigation system starting from Bahr Yusuf and ending in Lake Maurice (the name of Amen-M-Hat II in Greek civilization). By constructing bridges in the Lahoun area and adding a network of canals to drain irrigation water. The goal of that project was to increase the area of agricultural land in that region. S-N-Wasret II emphasized the importance of this project by moving the royal cemetery from the Dahshur area to the Lahun area, on whose land he built his pyramid. This region remained the political capital of the country during the Twelfth and Thirteenth Dynasties of Egypt. King S-N-Usret II also founded the first known city for workers adjacent to the city of Lahun. The city of Lahun was called in ancient Egypt by the name S-N-Wesret-Hotep.
+        S-N-Wesret II maintained good relations with many Egyptian provincial governors who were almost at the same level of wealth as the king, in contrast to the politics of his successor S-N-Wesret III. There are wall drawings in the tomb of a regional ruler called Khnum-hotep II in the Beni Hassan region, attesting to the work he accomplished in his sixth year.",
+        date_of_birth: "1897",
+        date_of_death: "1878",
+        sub_era_id: sub_era_4.id,
+    )
+    character_32.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/6/65/Copenhagen_2018-01-14_%2839149415244%29.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_32.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/6/65/Copenhagen_2018-01-14_%2839149415244%29.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"توليه مسئولية الحكم",
+        english_title:"Assuming the responsibility of ruling",
+        arabic_content:"تُعد قضية الاشتراك في الحكم من القضايا الرئيسية التي حازت على إهتمام علماء الآثار بغرض فهم تاريخ الدولة الوسطى وخصوصاً ما يتعلق بالأسرة الثانية عشر. فعالم الآثار الفرنسي Claude Obsomer يرفض رفضاً تاماً إمكانية وجود حكم مشترك في الأسرة الثانية عشر. أما المؤلف Robert D. Delia، و عالم الآثار الألماني Karl Jansen-Winkeln فقد قاما بدراسة أعمال Obsomer و توصلوا إلى نتيجة تصب في صالح وجود فترة الحكم المشتركة. كما أن Jansen-Winkeln قد إستشهد بلوحة حجرية تم العثور عليها في منطقة كونوسو على أنها دليل لا يقبل الجدل يصب في صالح وجود فترة حكم مشتركة بين س-ن-وسرت الثاني وأمن-م-حات الثاني، وإثباتاً كبيراً على وجود فترات حكم مشتركة في الأسرة الثانية عشر. و عالم الآثار الأمريكي William J. Murnane قد نص على أن «تم التعرف على كل فترات الحكم المشتركة في ذلك العصر من خلال وثائق تحتوي على تأريخ مزدوج». و خَلُصً عالم الأثار الألماني Schneider إلى أن الوثائق المُكتشفة حديثاً والأدلة الأثرية تثبت بالفعل وجود فترات حكم مشتركة في هذا العصر.
+        تنسب بعض المصادر فترة الحكم المشتركة إلى عهد س-ن-وسرت الثاني حيث كان والده أمن-م-حات الثاني مشتركاً معه في الحكم. و عالم الآثار البريطاني Peter Clayton ينسب إليه على الأقل ثلاثة سنوات من حكم س-ن-وسرت الثاني المشترك. أما عالم الآثار الفرنسي Nicolas Grimal فيخصص له خمسة أعوام من الحكم المشترك قبل إعتلاءه عرش مصر منفرداً.",
+        english_content:"The issue of participation in governance is one of the main issues that has attracted the attention of archaeologists for the purpose of understanding the history of the Middle Kingdom, especially with regard to the Twelfth Dynasty. The French archaeologist Claude Obsomer completely rejects the possibility of joint rule in the Twelfth Dynasty. Author Robert D. Delia and German archaeologist Karl Jansen-Winkeln studied Obsomer's work and came to a conclusion in favor of the existence of a joint ruling period. Jansen-Winkeln also cited a stone plaque found in the Konusu region as indisputable evidence in favor of the existence of a joint ruling period between S-N-Usret II and Amen-M-Hat II, and significant proof of the existence of joint ruling periods in Twelfth Dynasty. The American archaeologist William J. Murnane has stated that 'all the common reigns of this era are recognized by documents containing double dating.' German archaeologist Schneider concluded that newly discovered documents and archaeological evidence indeed prove the existence of common ruling periods in this era.
+        Some sources attribute the period of joint rule to the reign of S-N-Usret II, where his father, Amen-Mhat II, shared the rule with him. British archaeologist Peter Clayton attributes to him at least three years of the joint rule of S-N-Usret II. As for the French archaeologist Nicolas Grimal, he allocates five years of joint rule before he ascends to the throne of Egypt alone.",
+        character_id: character_32.id,
+    )
+    CharacterSection.create(
+        arabic_title:"فترة حكمه",
+        english_title:"His rule",
+        arabic_content:"تُعد فترات حكم الملك س-ن-وسرت الثاني و الثالث من ضمن الإعتبارات الرئيسية التي تحدد التسلسل الزمني للأسرة الثانية عشر. و يُعتقد أن قائمة تورين قد خصصت 19 عاما لحكم الملك س-ن-وسرت الثاني و 30 عاماً للملك س-ن-وسرت الثالث. إلا أن هذه الرؤية التقليدية تم الطعن فيها عام 1972 عندما لاحظ عالم الآثار الأمريكي William Kelly Simpson أن آخر سنة تم تدوينها من سنوات حكم س-ن-وسرت الثاني كانت هي السنة السابعة، وبالمثل كانت السنة التاسعة عشر للملك س-ن-وسرت الثالث.
+        يقترح أستاذ علم المصريات بجامعة كوبنهاجن Kim Ryholt إمكانية أن هذه الأسماء في قائمة تورين قد حدث خطأ في ترتيبها، وقدم فترتين محتملتين للملك س-ن-وسرت الثاني بإضافة 10 سنوات على التسعة سنوات المذكورة أو ما يعني 19 عاماً. كما أن العديد من علماء الآثار (على سبيل المثال Thomas Schneider) يستشهدون بمقالة Mark C. Stone التي تم نشرها في Göttinger Miszellen عام 1997و التي تحدد أقصى سنة حكم قد تم توثيقها للملك س-ن-وسرت الثاني هي العام الثامن، وذلك بناء على اللوحة المعروضة في متحف القاهرة تحت رقم JE 59485.",
+        english_content:"The reigns of King S-N-usret II and III are among the main considerations that determine the chronology of the Twelfth Dynasty. It is believed that the Turin List allocated 19 years for the rule of King S-N-Wasret II and 30 years for King S-N-Wasret III. However, this traditional view was challenged in 1972 when the American archaeologist William Kelly Simpson noted that the last recorded year of the reign of S-N-Wasret II was the seventh year, and similarly it was the nineteenth year of King S-N-Wasret III.
+        Professor of Egyptology at the University of Copenhagen, Kim Ryholt, suggests the possibility that these names in the Turin list may have been arranged incorrectly, and presents two possible periods for King S-N-usret II by adding 10 years to the nine years mentioned, or 19 years. Many archaeologists (e.g. Thomas Schneider) cite Mark C. Stone's article published in Göttinger Miszellen in 1997, which places the maximum documented year of reign of King S-n-usret II as year 8, based on the stela. Displayed in the Cairo Museum under No. JE 59485.",
+        character_id: character_32.id,
+    )
+    CharacterSection.create(
+        arabic_title:"إهتمامه بالزراعة",
+        english_title:"His interest in agriculture",
+        arabic_content:"وقد اهتم سنوسرت الثاني كثيراً بمنطقة الفيوم. اهتم بالزراعة، وبنى القنوات ونظاماً كبيراً للري من بحر يوسف إلى ما سيصبح فيما بعد بحيرة قارون، وبني هناك قناطر لحجز وتخزين المياه خلال فترة الفيضان لاستغلالها بعد ذلك وأضاف شبكة صرف. وكان هدف مشروعه هو زيادة الرقعة المزروعة. واستغلال مياه فيضان النيل لمدة أطول. أهمية هذا المشروع تتضح من قرار سنوسرت الثاني بنقل المقبرة الملكية من دهشور إلى اللاهون حيث بنى هرمه. ولذلك أصبحت اللاهون العاصمة السياسية في مصر خلال الأسرتين الثانية عشر والثالثة عشر. وقد أسس الفرعون أول قرية عمال في مدينة كاهون القريبة، والتي بنت الدولة الحديثة على نمطها دير المدينة للصناع والفنانين.",
+        english_content:"Senusret II was very interested in the Fayoum region. He took an interest in agriculture, and built canals and a large irrigation system from Bahr Youssef to what would later become Lake Qarun. He built bridges there to retain and store water during the flood period to exploit it later, and added a drainage network. The goal of his project was to increase the cultivated area. And exploiting the Nile flood waters for a longer period. The importance of this project is clear from Senusret II's decision to move the royal cemetery from Dahshur to Lahun, where he built his pyramid. Therefore, Lahun became the political capital in Egypt during the Twelfth and Thirteenth Dynasties. The Pharaoh founded the first workers' village in the nearby city of Kahun, after which the modern state built Deir el-Medina for craftsmen and artists.",
+        character_id: character_32.id,
+    )
+    CharacterSection.create(
+        arabic_title:"علاقاته الخارجية",
+        english_title:"His foreign relations",
+        arabic_content:"وعلى العكس من خليفته، فقد حافظ سنوسرت الثاني على علاقات طيبة مع الحكام المحليين وزعماء القبائل البدوية المحيطة والذين وصلوا إلى درجة عالية من الثراء. وهناك شهادة على ذلك من العام السادس لحكمه على رسم جداري من مقبرة حاكم محلي في بني حسن.",
+        english_content:"In contrast to his successor, Senusret II maintained good relations with local rulers and leaders of the surrounding Bedouin tribes who had reached a high degree of wealth. There is evidence of this from the sixth year of his reign in a mural from the tomb of a local ruler in Beni Hassan.",
+        character_id: character_32.id,
+    )
+    CharacterSection.create(
+        arabic_title:"هرمه",
+        english_title:"His pyramid",
+        arabic_content:"هو أحد أهرامات مصر. بناه الملك سنوسرت الثاني من الطوب اللبن فوق ربوة عالية ارتفاعها 12 مترا على مشارف مدينة اللاهون (بمحافظة الفيوم)، والتي تبعد 22 كيلو مترا عن مدينة الفيوم. كان مكسوا بالحجر الجيري ويبلغ ارتفاعه 48 متراً وطول قاعدته 106 متر ويقع مدخله في الجانب الجنوبي عكس بقية الأهرامات المصرية. عثر بداخله على الصل الذهبي الذي كان يوضع فوق التاج الملكى. اكتشفت بجوار الهرم مصطبة مقبرة الأميرة سات حتحورات أيونت ومقبرة مهندس الهرم إنبى في الجنوب و8 مصاطب كانت مقابر لأفراد الأسرة المالكة، وفي منطقة الهرم توجد جبانة اللاهون ومدينة عمال اللاهون.",
+        english_content:"It is one of the pyramids of Egypt. King Senusret II built it from mud brick on a high mound 12 meters high on the outskirts of the city of Lahun (in the Fayoum Governorate), which is 22 kilometers from the city of Fayoum. It was covered with limestone and was 48 meters high and 106 meters long, with its entrance on the south side, unlike the rest of the Egyptian pyramids. Inside it was found the golden seal that was placed above the royal crown. Next to the pyramid, the burial platform of Princess Sat-Hathor-Iunet and the burial platform of the pyramid engineer Inbi in the south were discovered, as well as 8 platforms that were tombs for members of the royal family. In the area of the pyramid, there is the Lahun cemetery and the city of Lahun workers.",
+        character_id: character_32.id,
+    )
+    character_33 = Character.create(
+        arabic_name: "سوبك حتب الأول",
+        english_name: "Sobekhotep I",
+        arabic_info: "سخم رع خوتاوي سبك حوتب (بالإنجليزية: Sekhemre Khutawy Sobekhotep)، (بالإنجليزية: Sobekhotep I)، عاش في مصر منذ قرابة 3800 عام. يرجح أن يكون أول من تولى حكم مصر في بداية الأسرة الثالثة عشر من عصر الانتقال الثاني، 1786 - 1763 ق.م. التي شهدت غزو الهكسوس للبلاد قبل نحو 38 قرنا.",
+        english_info: "Sekhemre Khutawy Sobekhotep (in English: Sobekhotep I), lived in Egypt approximately 3,800 years ago. He is likely to have been the first to rule Egypt at the beginning of the Thirteenth Dynasty of the Second Intermediate Period, 1786 - 1763 BC. Which witnessed the Hyksos invasion of the country about 38 centuries ago.",
+        date_of_birth: "1808",
+        date_of_death: "1799",
+        sub_era_id: sub_era_5.id,
+    )
+    character_33.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/6/66/Sobekhotep_I.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_33.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/6/66/Sobekhotep_I.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"اكتشاف المقبرة",
+        english_title:"The discovery of the tomb",
+        arabic_content:"اكتشف قبر الملك سوبك حتب الأول، أثناء عمل بعثة جامعة بنسلفانيا بالولايات المتحدة بالتعاون مع وزارة الآثار في الجنوب من مدينة أبيدوس بمحافظة سوهاج. اتضح أن الخيوط الأولى لهذا الكشف بدأت تتضح حينما تم العثور على تابوت ضخم من الكوارتزيت يزن 60 طن في عام 2013 ، إلي أن تم العثور علي كسرات للوحة منقوشة تحمل اسم الملك وتصوره جالساً علي العرش.
+        كما تم العثور أيضا على كسرات لأواني كانوبية تخص الملك والتي كان يحفظ بداخلها الأعضاء الداخلية لجسد المتوفى، بالإضافة إلي عدد من العناصر المذهبة لمتاعه الجنائزي. وتسعى وزارة الأثار المصرية لاتمام الانتهاء من استكمال أعمال الحفائر بالموقع والكشف عن كافة العناصر المعمارية للمقبرة، كما تؤكد على ضرورة وضع خطة سريعة لترميمها وتأهيلها للافتتاح أمام السياحة المحلية والعالمية، في إطار مساعي وزارة الآثار لافتتاح مقاصد أثرية جديدة تعمل على تنشيط حركة السياحة الوافدة إلي مصر.
+        ويشير قطاع الآثار المصرية إلي أن المقبرة المكتشفة مصممة على الشكل الهرمي، كما أنها تتشابه مع إحدى الأهرامات المعروفة والتي تخص 'أمني كماو' أحد ملوك مصر في بدايات عصر الأسرة 13 والموجود بدهشور بالقرب من مدينة منف، كما أن المقبرة مشيدة من الداخل من كتل حجرية ضخمة مستخرجة من محاجر طره، أما غرفة الدفن فمبنية من جحر الكوارتزيت الأحمر الذي تم نقله من الجبل الأحمر بالقرب من القاهرة الي ابيدوس أوضح أيمن الضمراني الأثاري المرافق للبعثة: يعد إحدى الاكتشافات الهامة في الفترة الأخيرة، حيث لم يعثر لصاحب المقبرة على أي آثار تذكر إلا النذر القليل، من بينها الإشارة إلي اسمه علي أحدي الجدران الأثرية بأبيدوس وما ورد في بردية تورين بايطاليا يشير إلي أنه تولى حكم مصر لمده 4 سنوات ونصف ، والتي تعد أطول فترة حكم في ذلك العصر، مما يعكس أهمية الكشف عن مقبرته لما تحتويه من نقوش قد تساهم في التعرف على المزيد من التفاصيل الخاصة بحياته وفترة حكمه.
+        كما ان احدث الاكتشافات التي حققتها البعثة تتمثل في اكتشاف تابوت مهم يعود لزمن الاسرة 13 في ذراع أبو النجا مشيرا إلي ان اهمية التابوت تظهر في النقوش والمناظر التي تعلوه إضافة إلي ندرة الآثار التي تخص الاسرة 13. وان التابوت عليه نصوص مهمة تمثل تطورا لنصوص الاهرامات، وان المعهد الألماني قد قام بترميم التابوت باحدث النظم وتم وضعه في متحف الأقصر.
+        المقبرة المكتشفة مؤخراً مصممة على الشكل الهرمى، وتشبه إلى حد بعيد أحد الأهرامات التي تخص الماك 'أمنى كماو' أحد ملوك الأسرة الثالثة عشر والموجود بمنطقة دهشور بالقرب من مدينة منف، كما أنها مشيدة من الداخل من كتل حجرية ضخمة، أما غرفة الدفن فيها، مبنية من جحر الكوارتزيت الأحمر الذي تم نقله من الجبل الأحمر بالقرب من القاهرة إلى أبيدوس.",
+        english_content:"The tomb of King Sobekhotep I was discovered during the work of a mission from the University of Pennsylvania in the United States in cooperation with the Ministry of Antiquities in the south of the city of Abydos in Sohag Governorate. It turned out that the first clues to this revelation began to become clear when a huge quartzite coffin weighing 60 tons was found in 2013, until fragments of an engraved plaque bearing the king’s name and depicting him sitting on the throne were found.
+        Fragments of canopic vessels belonging to the king, in which the internal organs of the deceased’s body were kept, were also found, in addition to a number of gilded items for his funerary belongings. The Egyptian Ministry of Antiquities is seeking to complete the excavation work at the site and reveal all the architectural elements of the cemetery. It also stresses the necessity of developing a rapid plan to restore it and prepare it for opening to local and international tourism, within the framework of the Ministry of Antiquities’ efforts to open new archaeological destinations that work to stimulate the tourism movement coming to Egypt. .
+        The Egyptian Antiquities Sector indicates that the discovered tomb is designed in a pyramidal shape, and is similar to one of the well-known pyramids that belongs to 'Amni Kamau', one of the kings of Egypt in the early 13th Dynasty, located in Dahshur, near the city of Memphis. The tomb is also built from the inside of stone blocks. Huge quarries extracted from Tora quarries, while the burial chamber was built from red quartzite pits that were transported from the Red Mountain near Cairo to Abydos. Ayman Al-Damrani, the archaeologist accompanying the mission, explained: It is one of the important discoveries in the recent period, as the owner of the tomb did not find any significant traces except... The few signs, including the reference to his name on one of the archaeological walls in Abydos, and what was mentioned in the Turin Papyrus in Italy indicate that he ruled Egypt for a period of 4 and a half years, which is the longest period of rule in that era, which reflects the importance of uncovering his tomb because of the inscriptions it may contain. It contributes to learning more details about his life and period of rule.
+        The latest discoveries made by the mission are the discovery of an important coffin dating back to the 13th Dynasty in the arm of Abu al-Naga, indicating that the importance of the coffin appears in the inscriptions and scenes above it, in addition to the scarcity of antiquities related to the 13th Dynasty. The coffin contains important texts that represent an evolution of the pyramid texts. The German Institute restored the coffin using the latest systems and placed it in the Luxor Museum.
+        The recently discovered tomb is designed in a pyramidal shape, and is very similar to one of the pyramids that belonged to Al-Mak 'Amni Kamau', one of the kings of the Thirteenth Dynasty, located in the Dahshur region near the city of Memphis. It was also built from the inside of huge stone blocks, and the burial chamber in it was built From the red quartzite terrier that was transported from the Red Mountain near Cairo to Abydos.",
+        character_id: character_33.id,
+    )
+    character_34 = Character.create(
+        arabic_name: "نفر حتب الأول",
+        english_name: "Neferhotep I",
+        arabic_info: "نفر حتب الأول فرعون من الأسرة الثالثة عشر خلف نفر حتب الملك سوبك حتب الثالث على عرش البلاد وتخبرنا بردية تورين أن حكمه أمتد مدة 11 عاما، وهذا يجعله من أحد أطول الملوك حكما في هذه الأسرة.",
+        english_info: "Neferhotep I, a pharaoh from the Thirteenth Dynasty, succeeded Neferhotep III on the throne of the country, and the Turin Papyrus tells us that his rule lasted 11 years, making him one of the longest reigning kings in this dynasty.",
+        date_of_birth: "1705",
+        date_of_death: "1694",
+        sub_era_id: sub_era_5.id,
+    )
+    character_34.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a1/Neferhotep_I_-_Bologna_-_By_Stefano_Bolognini.JPG"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_34.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/a/a1/Neferhotep_I_-_Bologna_-_By_Stefano_Bolognini.JPG"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"عائلته",
+        english_title:"His family",
+        arabic_content:"ينحدر نفر حتب الأول من عائلة عسكرية من طيبة، والده يدعى حاعنخف واسم ووالدته كمي، وكان والده يحمل لقب أبا الإله، ولنفر حتب أخوين تولى كل منهما العرش فيما بعد وهما سوبك حتب الرابع ومن وازرع زوجة نفر حتب تدعى سنسنب أنجب منها عدد من الأبناء هم ساحتحور وهو أول أولاده وسوبك حتب وحاعنخف وحرحتب.",
+        english_content:"Neferhotep I comes from a military family from Thebes, his father is called Haankhaf and his mother's name is Kemi, and his father held the title of Father of God, and Neferhotep had two brothers, each of whom later ascended the throne, they are Sobekhotep IV and from his wife Senusenb, Neferhotep had a number of children, including Sahathor, his first son, Sobekhotep, Haankhaf, and Harhotep.",
+        character_id: character_34.id,
+    )
+    CharacterSection.create(
+        arabic_title:"آثاره",
+        english_title:"His effects",
+        arabic_content:"للملك نفر حتب آثارا هامة في كل أنحاء مصر وخارجها فقد عثر في بلدة ببلوص (جبيل الواقعة على شاطئ فينقية) قطعة حجر منقوش عليها رسم الملك نفر حتب ومعه أمير ببلوص والذي يدعى بنتن كما يذكر النقش وهو يقوم بتقديم فروض الطاعة والولاء للملك نفر حتب مما يشير إلى أن فينقية كانت خاضعة للملك نفر حتب.
+        ومن أهم الآثار التي وجدت للملك نفر حتب لوحة كبيرة عثر عليها في العرابة المدفونة (أبيدوس) ترجع إلى العام الثاني من حكمه أمر بنقشها إحياء لذكرى الإله أوزير ذكر فيها نفر حتب الأعمال التي قام بها للأحتفاء بالإله أوزير، وهذه اللوحة من الآثار القليلة التي توضح لنا الأجرءات التي تتخذ لصنع ونقش اللوحات الحجرية بناء على أوامر الملك.
+        وقد وجد عدد من النقوش على الصخور في أسوان وجزيرة سهل (بالقرب من أسوان) التي تحمل اسم الملك وأسماء أفراد عائلته وزوجته، ومن هذه النقوش تم التعرف على عائلته.
+        وقد عثر على محراب عليه صورة له في معبد الكرنك، كما عثر على رأس عمود ذكر عليه اسمه يوجد حاليا في متحف برلين، وعثر أيضا على عدد من الجعارين منقوش عليها اسمه وتوجد في متاحف اللوفر ومتحف تورين ومتحف شتوتغارت بألمانيا.",
+        english_content:"King Neferhotep has important monuments in all parts of Egypt and abroad. In the town of Beblos (Byblos, located on the coast of Phenicia), a piece of stone was found engraved with a drawing of King Neferhotep, and with him was the prince of Beblos, who is called Benten, as the inscription mentions. He was performing the duties of obedience and loyalty to King Neferhotep, which indicates Until Phoenicia was subject to King Neferhotep.
+        One of the most important antiquities found for King Neferhotep is a large plaque found in the buried Al-Araba (Abydos). It dates back to the second year of his reign. He ordered it to be engraved in memory of the god Osiris, in which Neferhotep mentioned the deeds he had undertaken to celebrate the god Osiris. This plaque is one of the few antiquities that explain to us The procedures taken to make and engrave stone tablets on the orders of the king.
+        A number of inscriptions were found on rocks in Aswan and Sahl Island (near Aswan) bearing the name of the king and the names of his family members and his wife, and from these inscriptions his family was identified.
+        A niche bearing a picture of him was found in the Karnak Temple, and the head of a column bearing his name was found, which is currently in the Berlin Museum. A number of scarabs with his name inscribed were also found in the Louvre Museum, the Turin Museum, and the Stuttgart Museum in Germany.",
+        character_id: character_34.id,
+    )
+    CharacterSection.create(
+        arabic_title:"نهاية حكمه",
+        english_title:"The end of his rule",
+        arabic_content:"نهاية حكم نفر حتب أو ظروف وفاته غير معروفة، وقد خلفه على العرش أخاه سوبك حتب الرابع الذي يعتقد أنه شارك أخاه في الحكم فقد عثر في الكرنك على قطعة حجر عليها نقش أسميهما معا.
+        ولكن يعتقد أيضا طبقا لما ذكر في بردية تورين التي وضعت بين اسم الملك نفر حتب وسوبك ختب الرابع اسم ساحتحور وهو نفس اسم أبن نفر حتب أنه شارك والده الحكم ولكنه توفي قبل والده ولكن لم يعثر له على أي آثار تؤيد هذا الأفتراض.",
+        english_content:"The end of Neferhotep's rule or the circumstances of his death are unknown. He was succeeded on the throne by his brother Sobekhotep IV, who is believed to have shared his brother's rule. A piece of stone was found in Karnak with both their names engraved on it.
+        However, it is also believed, according to what was mentioned in the Turin Papyrus, which placed between the name of King Neferhotep and Sobekhotep IV the name of Sahhor, which is the same name as the son of Neferhotep, that he shared the rule with his father, but he died before his father, but no traces of him have been found to support this assumption.",
+        character_id: character_34.id,
+    )
+    character_35 = Character.create(
+        arabic_name: "مونتومحات",
+        english_name: "Mentuhotep",
+        arabic_info: "مونتومحات ، (بالإنجليزية: Seankhenre Mentuhotepi) خدم ملوك النوبة، طهرقا وتانوت آمون، من أسرة مصرية خامسة وعشرين، (672–525 ق.م). وحمل لقب عمدة طيبة، والكاهن الرابع لآمون. وكان أيضا مسئولا عن المهام الكهنوتية، بالإضافة إلى النشاطات الإنشائية في طيبة. كما أشرف على الأعمال الخاصة بالملك طهرقا وتانوت أمون بمدينة هابو والكرنك.",
+        english_info: "Montumhat, (English: Seankhenre Mentuhutepi) served the kings of Nubia, Taharqa and Tanut-Amun, from the Twenty-fifth Dynasty of Egypt (672–525 BC). He held the title of Mayor of Thebes, and the fourth priest of Amun. He was also responsible for priestly duties, in addition to construction activities in Thebes. He also supervised the works of King Taharqa and Tanut Amun in Medinet Habu and Karnak.",
+        date_of_birth: "672",
+        date_of_death: "525",
+        sub_era_id: sub_era_5.id,
+    )
+    character_35.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/99/Sphinx_Seankhenre_by_Khruner.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_35.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/99/Sphinx_Seankhenre_by_Khruner.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"فترة حكمة",
+        english_title:"His reign",
+        arabic_content:"بعد تدمير طيبة من قبل الآشوريين، حكم مونتومحات جنوب مصر حتى هرموبوليس أو الأشمونين، في مصر الوسطى. ثم وصل إلى أعلى سلطة في طيبة، في فترة حكم إبسماتيك الأول، من أسرة مصرية سادسة وعشرين.",
+        english_content:"After the destruction of Thebes by the Assyrians, Montumhat ruled southern Egypt to Hermopolis or the Ashmunins, in Middle Egypt. Then he reached the highest authority in Thebes, during the reign of Ibsmatak I, of the Twenty-sixth Dynasty of Egypt.",
+        character_id: character_35.id,
+    )
+    CharacterSection.create(
+        arabic_title:"التمثال",
+        english_title:"The statue",
+        arabic_content:"يظهر تمثال منتو إم حات في وضع القرفصاء مع وجود بعض الاختلافات غير المعتادة. خلافا للتمثال شبه المستقل لأوزوريس الواقف على قاعدة بين ساقي منتو-إم-حات، فإنه يبدو عارياً. وهذا العري البادي يخالف الأسلوب الموروث بالنسبة لهذا النوع من التماثيل مما يجعله متفرداً.
+        وعلى يمين ويسار التمثال نحت شكلان للربتين إيزيس ونفتيس، يحيط بهما عمود من الكتابة على كل جانب. ويضع منتو-ام-حات شعراً مستعاراً مزدوجاً عريضاً وأملساً يغطي النصف العلوي من أذنيه. والرأس مائلة قليلاً لأعلى، في حين أن اللحية تنزل حتى الصدر.
+        والوجه المثالي للتمثال منحوت أفضل من المعتاد. والفم مستقيم بشفاة رفيعة، كما أن الأنف رفيعة ومعقوفة باعتدال. أما العينان فهي واسعة ولوزية ومائلة، يعلوها حواجب مستديرة. ويعد هذا التمثال مثالاً للروح الخلاقة لبعض الفنانين المصريين الذين -رغم التزامهم بالتقاليد القديمة- إلا أنهم كانوا قادرين على إبداع تقاليد مستحدثة. ارتفاعه 40 سم",
+        english_content:"The statue of Mentu-emhat is shown in a squatting position, with some unusual variations. Unlike the semi-independent statue of Osiris standing on a pedestal between Mentu-em-hat's legs, he appears naked. This apparent nudity contradicts the inherited style of this type of statue, which makes it unique.
+        To the right and left of the statue are carved figures of the goddesses Isis and Nephthys, surrounded by a column of writing on each side. Mentu-em-hat wears a wide, straight double wig that covers the upper half of his ears. The head is slightly tilted upward, while the beard descends to the chest.
+        The perfect face of the statue is sculpted better than usual. The mouth is straight with thin lips, and the nose is thin and moderately hooked. The eyes are wide, almond-shaped and slanted, topped with round eyebrows. This statue is an example of the creative spirit of some Egyptian artists who - despite their commitment to ancient traditions - were able to create new traditions. Its height is 40 cm",
+        character_id: character_35.id,
+    )
+    character_36 = Character.create(
+        arabic_name: "انتف السابع",
+        english_name: "Intef VII",
+        arabic_info: "الملك انتف السابع والاسم الملكى نب خبر رع أحد ملوك الأسرة السابعة عشر في عصر الانتقال الثاني، وكان حاكما في فترة أحتلال الهكسوس لمصر وكان يحكم من مدينة طيبة، وقد خلف أخاه الملك انتف السادس في الحكم، وهو ابن الملك سوبك ام ساف الأول.",
+        english_info: "King Intef VII, whose royal name is Nebkhaperre, was one of the kings of the Seventeenth Dynasty in the era of the Second Intermediate Transition. He was a ruler during the period of the Hyksos occupation of Egypt and ruled from the city of Thebes. He succeeded his brother, King Intef VI, in power. He is the son of King Sobek emsaf I.",
+        date_of_birth: "1560",
+        date_of_death: "1250",
+        sub_era_id: sub_era_5.id,
+    )
+    character_36.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/2/26/WoodenCoffinOfIntef-BritishMuseum-August21-08.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_36.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/2/26/WoodenCoffinOfIntef-BritishMuseum-August21-08.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"تعريفه",
+        english_title:"His definition",
+        arabic_content:"الملك انتف السابع والاسم الملكى نب خبر رع أحد ملوك الأسرة السابعة عشر في عصر الانتقال الثاني، وكان حاكما في فترة أحتلال الهكسوس لمصر وكان يحكم من مدينة طيبة، وقد خلف أخاه الملك انتف السادس في الحكم، وهو ابن الملك سوبك ام ساف الأول.
+        وقد قام الملك انتف السابع بإعادة بناء العديد من المعابد التي قد تهدمت مثل معبد قفط وبعض المبانى في العرابة.
+        وقد اكتشف مقبرته في جبانة ذراع أبو النجا في الطرف الشمالي من الجبانة، وجاء في بردية أبوت والموجودة حاليا في المتحف البريطاني في لندن، عن قبره انه نحت على شكل هرم صغير بطول 13 متر، وقد وجد أوجست ماريت مسلتين كانتا قائمتين أمام الهرم طول الأولى 3.50 متر والثانية 3.70 متر.",
+        english_content:"King Intef VII, whose royal name is Nebkhaperre, was one of the kings of the Seventeenth Dynasty in the era of the Second Intermediate Transition. He was a ruler during the period of the Hyksos occupation of Egypt and ruled from the city of Thebes. He succeeded his brother, King Intef VI, in power. He is the son of King Sobek emsaf I.
+        King Antef VII rebuilt many temples that had been destroyed, such as the Temple of Qeft and some buildings in Al-Araba.
+        His tomb was discovered in the cemetery of Dra` Abu al-Naga at the northern end of the cemetery. The Abbott Papyrus, which is currently in the British Museum in London, states that his tomb was carved in the shape of a small pyramid 13 meters long. Auguste Maret found two obelisks that were standing in front of the pyramid, the length of the first was 3.50 meters. One meter and the second is 3.70 metres.",
+        character_id: character_36.id,
+    )
+    CharacterSection.create(
+        arabic_title:"أكتشاف المقبرة",
+        english_title:"Discovering the tomb",
+        arabic_content:"لقد أعيد أكتشاف مقبرة الملك انتف السابع بواسطة بعثة المركز الألماني للآثار المصرية يشاركها عدد من العلماء المصريين والتي كانت تقوم بالتنقيب في منطقة ذراع أبو النجا تحت إدارة عالم الآثار د. دانيل بولتز حيث أستطاعت هذه البعثة العثور على بقايا هرم الملك انتف السابع في 29 مايو عام 2001م.
+        وقد أستدلت البعثة الأثرية على وجود هرم انتف السابع في منطقة ذراع أبو النجا عن طريق بردية أبوت لكن العديد من الصعاب المتمثلة في التحديد الدقيق لمكانه إضافة إلى كبر حجم الردم، جعل من مهمة البعثة في غاية الصعوبة.
+        وفي مقابلة هاتفية مع بولتز قال: نستطيع الآن أن نجزم بوجود اهرامات حقيقية استخدمت كمقابر لدفن ملوك الأسرة السابعة عشرة، حيث أن منطقة ذراع أبو النجا هي منطقة كانت مقدسة أثناء الأسرة الثالثة عشرة، لكن وجود هرم الملك نب خبر رع انتف يؤكد استمرار قدسيتها حتي نهاية عصر الأسرة السابعة عشرة.",
+        english_content:"The tomb of King Antef VII was rediscovered by a mission from the German Center for Egyptian Antiquities, with the participation of a number of Egyptian scientists, which was excavating in the Draa Abu al-Naga area under the direction of archaeologist Dr. Daniel Boltz, as this mission was able to find the remains of the pyramid of King Antef VII on May 29, 2001 AD.
+        The archaeological mission inferred the existence of the Seventh Pyramid of Intef in the Dra’ Abu al-Naga area through the Abbot Papyrus, but many difficulties represented in precisely determining its location, in addition to the large size of the backfill, made the mission’s mission extremely difficult.
+        In a telephone interview with Boltz, he said: We can now confirm the existence of real pyramids that were used as tombs to bury the kings of the Seventeenth Dynasty, as the area of Abu al-Naga’s arm is an area that was sacred during the Thirteenth Dynasty, but the presence of the pyramid of King Nebkheperre Entef confirms its continued sanctity until the end of the year. The Seventeenth Dynasty.",
+        character_id: character_36.id,
+    )
+    character_37 = Character.create(
+        arabic_name: "سقنن رع تاعا الثاني",
+        english_name: "Seqenenre Tao II",
+        arabic_info: "سقنن رع تاعا الثاني من أعظم ملوك مصر حيث انه أول من بدأ القتال الفعلى لطرد الهكسوس من مصر، والذي أنهاه ابنه أحمس الأول.
+        وهو ابن الملك سانخت ان رع تاعا الأول ويسمى أيضا سقنن رع تاعا الأول والملكة تتي شري وتواريخ حكمه غير مؤكده ولكن يعتقد انه تولى الحكم في 1560 ق.م أو 1558 ق.م",
+        english_info: "Seqenenra Taa II is one of the greatest kings of Egypt, as he was the first to start the actual fight to expel the Hyksos from Egypt, which was ended by his son Ahmose I.
+        He is the son of King Sankhenre Taa I, also called Seqenenre Taa I, and Queen Titi-Shre. The dates of his reign are uncertain, but it is believed that he assumed power in 1560 BC or 1558 BC.",
+        date_of_birth: "1560",
+        date_of_death: "1558",
+        sub_era_id: sub_era_5.id,
+    )
+    character_37.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/7/78/Linceul_iahmes_turin_6.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_37.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/7/78/Linceul_iahmes_turin_6.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"بداية حربه مع الهكسوس",
+        english_title:"The beginning of his war with the Hyksos",
+        arabic_content:"الملك سقننن رع تاعا الثاني هو أول ملك بدأ القتال مع الهكسوس وتوجد وثيقة هي ورقة سالييه جاءت في شكل قصة منسوبة إلى عصر سقنن رع تخبرنا كيف بدأ الخلاف بين ملك الهكسوس عاقنن رع أبوفيس والملك سقنن رع، حيث أرسل أبوفيس من أواريس الواقعة في شمال الدلتا رسالة إلى سقنن رع يخبره أن أصوات أفراس النهر في بحيرة طيبة تزعجه وتقض مضجعه بالرغم من انه بينه وبين طيبة 500 ميل، ويأمره بأن يجد أي وسيلة للقضاء عليها، فكانت هذه الرسالة بمثابة إعلان للحرب.",
+        english_content:"King Seqenenra Taa II is the first king to start fighting with the Hyksos, and there is a document, the Sallier Papyrus, which came in the form of a story attributed to the era of Seqenenra Taa, telling us how the dispute began between the Hyksos king Aqenenra Abuvis and King Seqenenra, where Abuvis sent from Avaris, located in the north of the Delta, a message to Seqenenra telling him that the sounds of the river horses in Lake Thebes disturb him and disturb his sleep, although he is 500 miles between him and Thebes, and orders him to find any means to eliminate it, so this message was a declaration of war.",
+        character_id: character_37.id,
+    )
+    CharacterSection.create(
+        arabic_title:"عائلته",
+        english_title:"His family",
+        arabic_content:"تزوج سقنن رع تاعا الثاني من الملكة إياح حتب وأنجب منها كامس أخر ملوك الأسرة السابعة عشر وأحمس الأول أول ملوك الأسرة الثامنة عشر.",
+        english_content:"Seqenenra Taa II married Queen Iahhotep and had from her Kamose, another king of the Seventeenth Dynasty, and Ahmose I, the first king of the Eighteenth Dynasty.",
+        character_id: character_37.id,
+    )
+    CharacterSection.create(
+        arabic_title:"وفاته",
+        english_title:"His death",
+        arabic_content:"هناك عدة نظريات لكيفية وفاة سقنن رع أكثرها شيوعا انه قتل في معركته مع الهكسوس وبعض النظريات ترى انه قتل بينما كان نائما، حيث انه كان راقدا على جنبه الأيمن حين تعرض للهجوم اما لأنه كان نائما أو لأنه كان قد اصيب بالفعل وسقط على جنبه الأيمن قبل أن تأتيه الضربة المميتة.للبيلبي
+        وقد تم تحنيط جثته بتعجل وباختصار ويعتقد ان السبب انه تم تحنيطه في مكان المعركة للحفاظ عليه من التعفن حتى ينقل إلى طيبة حيث تمت هناك محاولة ثانية لتحنيطه، وكانت مومياءه في المتحف المصري بميدان التحرير بالقاهرة حتى تم نقلها يوم السبت 3 أبريل عام 2021 إلى المتحف القومي للحضارة المصرية بالفسطاط.
+        تم العثور على مقبرته في خبيئة دراع أبو النجا عام 1881 م، وقد كشفت المومياء لاحقا في 9 يونيو عام 1886 بواسطة جاستون ماسبيرو
+        مات الملك سقنن رع وهو يحارب الهكسوس، كما توجد آثار ميتتة البشعة على جمجمته المليئة بالجروح والكسور نتيجة الضرب بالحراب والبلاطي، ووجدت أسنانه في وضع ضاغط بشدة على اللسان نتيجة الألم الشديد في اللحظات الأخيرة من عمر الملك.
+        وتملأ رأس الملك الكثير من الجروح الشديدة فيوجد طعنة خنجر خلف الأذن اليسرى للملك وصلت إلى عنقه، وتحطم صدره وأنفه بضربات بالمقامع. ويوجد أيضاً قطع نتج عن بلطة حرب مخترقاً العظم أعلى جبهة الملك.
+        كان الملك سقنن رع معتدل القامة حيث كان طوله يبلغ 170 سم، عظيم الرأس وكان مفتول العضلات، وشعره أسود كثيفا مجعدا، ولم يكن تجاوز الثلاثين من عمره عند وفاته إلا بقليل.",
+        english_content:"There are several theories about how Seqenenre died, the most common of which is that he was killed in his battle with the Hyksos, and some theories believe that he was killed while he was sleeping, as he was lying on his right side when he was attacked, either because he was sleeping or because he had already been injured and fell on his right side before he died. The fatal blow comes to the bilbi
+        His body was embalmed hastily and briefly, and it is believed that the reason was that he was embalmed at the battlefield to protect him from rotting until he was transported to Thebes, where a second attempt was made to embalm him. His mummy was in the Egyptian Museum in Tahrir Square in Cairo until it was transferred on Saturday, April 3, 2021 to the National Museum. of Egyptian civilization in Fustat.
+        His tomb was found in Daraa Abu al-Naga's cache in 1881 AD, and the mummy was later revealed on June 9, 1886 by Gaston Maspero.
+        King Seqenenre died while fighting the Hyksos, and there are hideous traces of his death on his skull, which is full of wounds and fractures as a result of being struck with spears and tiles, and his teeth were found in a position strongly pressing against the tongue as a result of severe pain in the last moments of the king’s life.
+        The king's head is filled with many severe wounds. There is a dagger stab behind the king's left ear that reached his neck, and his chest and nose were shattered by blows with hammers. There is also a cut resulting from a war ax penetrating the bone above the king's forehead.
+        King Seqenenre was of moderate stature, 170 cm tall, with a large head and muscular muscles, and thick, curly black hair. He was only a little over thirty years old when he died.",
+        character_id: character_37.id,
+    )
+    character_38 = Character.create(
+        arabic_name: "كامس",
+        english_name: "Kamose",
+        arabic_info: "كامس الفرعون الأخير من أسرة طيبة السابعة عشر. من المُمكن أن يكون ابن الفرعون سقنن رع والملكة إياح حتب وشقيق أحمس الأول، مؤسس الأسرة الثامنة عشر. سقط حُكمه في نهاية الفترة الانتقالية الثانية. تُعزي فترة حُكم كامس بثلاث سنوات، لكن يفضل العلماء إعطائه فترة حكم أطول وصلت إلى خمس سنوات.
+        حقبته مُهمة جدًا لما كان بها من مبادرات عسكرية ضد الهكسوس، الذين وصلوا ليحكموا مصر القديمة. كان والده سقنن رع قد بدأ بهذه المبادرات، لكن سرعان ما فقد حياته بأحد المعارك معهم. يُعتقد بأن والدته (كوصية) أكملت المعارك بعد وفاة كامس، وأكمل شقيقه أحمس الأول الغزو حتى استطاع طرد الهكسوس ووحد مصر.",
+        english_info: "Kamis, the last pharaoh of the 17th Theban Dynasty. He may have been the son of Pharaoh Seqenenre and Queen Iahhotep and brother of Ahmose I, founder of the Eighteenth Dynasty. His rule fell at the end of the second transitional period. Kamose's reign is attributed to three years, but scholars prefer to give him a longer reign of five years.
+        His era is very important because of its military initiatives against the Hyksos, who came to rule ancient Egypt. His father, Seqenenre, had begun these initiatives, but he soon lost his life in one of the battles with them. It is believed that his mother (as regent) completed the battles after the death of Kamose, and his brother Ahmose I completed the invasion until he was able to expel the Hyksos and unify Egypt.",
+        date_of_birth: "1555",
+        date_of_death: "1550",
+        sub_era_id: sub_era_5.id,
+    )
+    character_38.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8e/Sarcophage-Kamose.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_38.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/8/8e/Sarcophage-Kamose.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"إنجازاته",
+        english_title:"His achievements",
+        arabic_content:"قام كامس في العام الثالث لحكمه بالإبحار شمالا من طيبة في النيل وكان يقاتل تجمعات الهكسوس الصغيرة ويهدم تحصيناتهم في طريقه إلى الشمال اما مدن الهكسوس الكبرى التي كانت تقابله بمواجهة قوية كان يقوم بحصارها وقطعها عن باقى مملكة الهكسوس حتى وصل إلى أواريس وقد عثر في عام 1954م على لوحتبن أقيمتا في الكرنك لتمجيد انتصارات الملك كامس على أبوفيس ملك الهكسوس وتتحدث إحدى هاتين الوحتين عن انتصار كامس في أواريس عاصمة الهكسوس في الدلتا وتفاصيل الأستراتيجية التي أتبعها وعودته منتصرا إلى طيبة.",
+        english_content:"In the third year of his reign, Kamose sailed north from Thebes on the Nile and was fighting the small Hyksos groups and demolishing their fortifications on his way to the north. As for the major Hyksos cities that were facing him with strong confrontation, he was besieging them and cutting them off from the rest of the Hyksos kingdom until he reached Avaris. In 1954 AD, he found... Two stelae were erected in Karnak to glorify the victories of King Kamose over Apophis, the Hyksos king. One of these two stelae talks about Kamose's victory in Avaris, the capital of the Hyksos in the Delta, and the details of the strategy he followed and his victorious return to Thebes.",
+        character_id: character_38.id,
+    )
+    CharacterSection.create(
+        arabic_title:"وفاته",
+        english_title:"His death",
+        arabic_content:"توفى كامس في أثناء حربه مع الهكسوس عام 1540 ق.م على مشارف مدينة (امبوس) بعد أن كان داخلها منتصرا مظفرا جاءته ضربة الغدر من أحد جرحى الهكسوس فوافته المنية وآخر ما نطق به أن وصى أخوه احمس أن يبلغ الجدة العظيمة توتيشيري انه لحق أباه ومات ميتة سقنن رع.
+        ذكرت مقبرة كامس في بردية أبوت حيث يذكر انه تم نقل تابوت كامس من مقبرته ودفن في ذراع أبو النجا خوفا عليه من اللصوص في عصر رمسيس الرابع حيث اكتشفه مريت في ديسمبر عام 1857 م تحت كومة من التراب، وذكر مريت ان المومياء كانت في حالة سيئة جدا، وقد وجد مع المومياء خنجر من الذهب والفضة، ومرآه من البرونز، وبردية مجدولة على أعلى ذراع كامس، كما وجد أيضا جعران وبعض التعاويذ، وقد ظل الكفن في مصر بينما يوجد الخنجر في متحف بروكسل ببلجيكا، والمرآه في متحف اللوفر.",
+        english_content:"Kamose died during his war with the Hyksos in 1540 BC, on the outskirts of the city of Ambos. After he had been inside it victorious, he was struck by a treacherous blow from one of the wounded Hyksos, so he passed away. The last thing he said was that he instructed his brother Ahmose to inform his great-grandmother Tutishiri that he had followed his father and died. The death of Seqenenre.
+        The tomb of Kames was mentioned in the Abbot Papyrus, where it is mentioned that the coffin of Kames was transported from his tomb and buried in the arm of Abu al-Naga out of fear of thieves in the era of Ramesses IV. It was discovered by Merit in December 1857 AD under a pile of dirt. Meret mentioned that the mummy was in a very bad condition. A dagger of gold and silver, a bronze mirror, and a papyrus braided on Kams’ upper arm were found with the mummy. A scarab and some amulets were also found. The shroud remained in Egypt, while the dagger is in the Brussels Museum in Belgium, and the mirror is in the Louvre Museum.",
+        character_id: character_38.id,
+    )
+    # character_25 = Character.create(
+    #     arabic_name: "",
+    #     english_name: "",
+    #     arabic_info: "",
+    #     english_info: "",
+    #     date_of_birth: "",
+    #     date_of_death: "",
+    #     sub_era_id: sub_era_5.id,
+    # )
+    # character_25.thumb_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
+    # character_25.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
+    # CharacterSection.create(
+    #     arabic_title:"",
+    #     english_title:"",
+    #     arabic_content:"",
+    #     english_content:"",
+    #     character_id: character_25.id,
+    # )
+    # CharacterSection.create(
+    #     arabic_title:"",
+    #     english_title:"",
+    #     arabic_content:"",
+    #     english_content:"",
+    #     character_id: character_25.id,
+    # )
 
 
 #! Create Evetns
@@ -2216,6 +2923,112 @@ require 'open-uri'
         english_content:"The temple was found so badly damaged that any reconstruction was considered a major problem. The main temple originally consisted of a large mastaba-like solid structure with a mast on its top. This can be guessed from references in texts where the temple is depicted as a mastaba with a mast. The temple was surrounded by a wall, and two small chapels, or offering chapels, were built over its main entrance. Each musalla (prayer room) consisted of only one room. At a later stage, something resembling an obelisk was added to the main structure. An altar was added in front of the building. The temple was probably built in the fifth or sixth year of the reign of King Userkaf as mentioned on the Palermo Stone. Most likely, this obelisk was not built during the reign of Userkaf, but perhaps during the reign of one of his successors, King Neferirkare. The shape of the obelisk from the top can be deduced from the writing of the name of the temple in the texts of the Old Kingdom. Starting from the era of the last king in the Fifth Dynasty, names were always written on the obelisks. Moreover, there is confirmed archaeological evidence of the existence of this obelisk, as a corner piece of the upper edge of the obelisk made of granite was found. The remains of at least two statues made of jarwaq and decorated with carvings were also found.
         The Valley Temple was found and was also badly damaged. It was most likely an open court with columns and several chapels at the back. The number of these chapels is unknown. A stone head of a king, most likely Userkaf, was also found in the ruins of the temple. The stone temple was probably not built during the reign of Userkaf, but perhaps later under Nyuserre. Neither temple was decorated with any inscriptions or drawings, and they may have been damaged over time.",
         event_id: event_8.id,
+    )
+
+    event_9 = Event.create(
+        type: "War",
+        arabic_title: "غزو الهكسوس",
+        english_title: "Hyksos Invasion",
+        start_date: "1730",
+        end_date: "1570",
+        arabic_info:"احتلال الهكسوس لمصر منذ 3600 عاما، من الموضوعات المثيرة  ومادة دسمة للباحثين، لما تحمله من ألغاز كثيرة أبرزها عدم معرفة من أين جاء الهكسوس؟، كما لأنه هذا الاحتلال يعد الأول لمصر، والذى استمر لفترة طويلة لأكثر من 100 عام، ولكن قصص كفاح الشعب المصرى وملوكه المصريين القدماء وقفوا بكل شجاعة ضد هذا الاحتلال من أول الملك شقنن رع مرورًا  بـ كامس وحتى تم طرتهم على يد الملك أحمس الأول.",
+        english_info:"The Hyksos occupation of Egypt 3600 years ago is one of the exciting topics and rich material for researchers, because it contains many mysteries, the most prominent of which is not knowing where the Hyksos came from? And also because this occupation is the first of Egypt, which lasted for a long period of more than 100 years, but the stories of the struggle of the Egyptian people And the ancient Egyptian kings stood bravely against this occupation from the beginning of King Shekenenre through Kames until they were defeated by King Ahmose I.",
+        character_id: character_37.id,
+        sub_era: sub_era_5
+    )
+    event_9.cover_image.attach(io: URI.open("https://img.youm7.com/large/202007161146474647.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"احتلال الهكسوس",
+        english_title:"Hyksos Occupation",
+        arabic_content:"فاجأ الهكسوس المصريين وهجموا عليهم بأعداد كبيرة لم يستطع المصريون مقاومتها، فحرقوا المدن والمعابد ودخلوا إلى مصر واتخذوا عاصمة لهم فى شرق الدلتا أطلق عليها زوان، وانتشروا تدريجياً حتى سيطروا على شمال مصر، هكذا قال المؤرخ مانيتون، عن  احتلال الهكسوس مصر منذ 3600 عاما، والتى تعد من الموضوعات التى تشغل جميع الباحثين، وسبب قد يكون السبب لأنه أول احتلال لمصر، وظل لأكثر من 100 عام، أو قد يكون عدم معرفة من جاء الهكسوس من الأساس، وخلال التقرير التالى نستعرض المواقع التى تمت فيها معركة تحرير مصر.",
+        english_content:"The Hyksos surprised the Egyptians and attacked them in large numbers that the Egyptians could not resist. They burned the cities and temples and entered Egypt and took their capital in the eastern delta, which they called Zoan. They gradually spread until they took control of northern Egypt, as the historian Manetho said about the Hyksos’ occupation of Egypt 3,600 years ago, which It is one of the topics that preoccupies all researchers, and the reason may be because it is the first occupation of Egypt, and it continued for more than 100 years, or it may be the lack of knowledge of who the Hyksos came from in the first place, and during the next report we review the sites where the battle to liberate Egypt took place.",
+        event_id: event_9.id,
+    )
+    EventSection.create(
+        arabic_title:"الملك سقنن رع",
+        english_title:"King Seqenenre",
+        arabic_content:"الملك سقنن رع يطلق عليه العديد من الأسماء منها رع تاعو أو سقنن رع تاعا الثانى، وهو أحد ملوك الأسرة الـ 17، وهى من حكمت جنوب مصر من طيبة الأقصر حاليًا.
+        وأوضح الدكتور حسين عبد البصير، فى تصريحات خاصة لـ اليوم السابع، أنه فى بداية حكم الأسرة الـ 17، بقيادة الملك سقنن رع الثانى، قاومت احتلال الهكسوس، الذى كان يحتل  جزء كبير من الأرضى المصرية ولفترة زمنية تيلغ القرن من الزمان، حيث كان هناك سيطرة كاملة على شمال مصر، ويمتد نفوذهم إلى المنطقة الوسطى.
+        وأشار، إلى أن هناك قصة  على إحدى البرديات المصرية تبين بداية الصراع بين الهكسوس وحكام طيبة،  الذين أعلنوا تحالفهم مع جيرانهم من امراء مصر فى الشمال والجنوب، ودونوا أسماءهم على خراطيش تسبقها الألقاب نكاية فى الهكسوس، والتعبير عن قوتهم المصرية ضد الهكسوس.
+        ولفت حسين عبد البصير، أن القصة تحكى محاولة ملك الهكسوس أبو فيس الاشتباك مع الملك سقنن رع، فأرسل له خطابا يحمل بين طياته أسباب مضحكة تدعو للفكاهة، وتبين مدى رغبة ملك الهكسوس الاحتكاك بسقنن رع، وهو أنه يشكو فيه أصوات أفراس النهر التى تسبح فى البحيرة المقدسة بمعبد الإله آمون بمنطقة طيبة، وأنها تزعجه للغاية، ولا يستطيع النوم بسببها داخل عاصمته أفاريس التى تبعد مئات الكيلو مترات عن طيبة، ولكن سقنن رع رد عليه بذكاء يثبت فيه أنه يدعو للسلام وليس للحرب.
+        وقامت حرب تحرير مصر من احتلال الهكسوس، والتى استشهد فيها الملك سقنن رع وهو يدافع عن أرض مصر بكل شرف، وتوضح المومياء الخاصة بالملك والموجود بقاعة المومياوات بالمتحف المصرى  الإصابات التى لحقت به، والتى تبين أيضا سوء التحنيط لها نظرًا لسرعة أعمال التحنيط وسط المعركة.",
+        english_content:"King Seqenenre is called by many names, including Ra-Ta'u or Seqenenre-Ta'a II. He is one of the kings of the 17th dynasty, which ruled southern Egypt from Thebes, Luxor currently.
+        Dr. Hussein Abdel Basir explained, in exclusive statements to Youm7, that at the beginning of the rule of the 17th Dynasty, led by King Seqenenre II, it resisted the occupation of the Hyksos, who occupied a large part of Egyptian territory for a period of time exceeding a century, during which there was control. Completely over northern Egypt, and their influence extends to the central region.
+        He pointed out that there is a story on one of the Egyptian papyri that shows the beginning of the conflict between the Hyksos and the rulers of Thebes, who declared their alliance with their neighbors, the princes of Egypt in the north and south, and wrote their names on cartouches preceded by titles to spite the Hyksos, and to express their Egyptian power against the Hyksos.
+        Hussein Abdel Basir pointed out that the story tells of the attempt of the Hyksos king Abu Fais to clash with King Seqenenre, so he sent him a letter containing within it funny reasons for humor, and it shows the extent of the Hyksos king’s desire to interact with Sekenenre, which is that he complains about the sounds of the hippopotamuses swimming in the lake. The sanctuary in the temple of the god Amun in the Thebes region, and that it disturbs him greatly, and he cannot sleep because of it inside his capital, Avaris, which is hundreds of kilometers away from Thebes, but Seqenen Ra responded to him intelligently, proving that he was calling for peace and not war.
+        The war to liberate Egypt from the Hyksos occupation took place, in which King Seqenenre was martyred while defending the land of Egypt with all honor. The king’s mummy, which is located in the Hall of Mummies in the Egyptian Museum, shows the injuries he sustained, which also shows its poor mummification due to the speed of the mummification work in the middle of the battle.",
+        event_id: event_9.id,
+    )
+    EventSection.create(
+        arabic_title:"الملك كامس",
+        english_title:"King Kames",
+        arabic_content:"الملك كامس هو آخر ملوك الأسرة السابعة عشرة فى طيبة، وربما حكم ما بين ثلاثة إلى خمسة أعوام، وهو البطل الثانى من الملوك الأبطال أصحاب ملحمة تحرير مصر من الهكسوس، وجاء كفاح هذا الملك من خلال ثلاثة وثائق أكملت كل واحدة منها الأخرى مما أنتج لنا في النهاية قصة شبه كاملة عن ثانى أبطال حرب التحرير.
+        ويقول كتاب الفراعنة المحاربون.. دبلوماسيون وعسكريون للدكتور حسين عبد البصير، إن الوثيقة الأولى هى نص كتبه تلميذ مصرى قديم على لوح يعرف بلوح كارنارفون، والوثيقة الثانية مكتوبة على لوحة تم العثور عليها عام 1928 وتحكى أن كامس ضاق بعد وفاة والده وصعوده على العرش بالاحتلال الهكسوسى لأرض مصر الطاهرة، فطلب دعوة رجال بلاطه وقادة جيشه كى يشاورهم فى الأمر.
+        كامس شعر أن رجاله لا يميلون إلى الحرب وأنهم موافقون على الوضع الحالى، غير أن كامس رفض ذلك وصمم على قتال الأعداء، وكان على يقين من أن البلاد كلها سوف تهتف له.
+        وأشار الدكتور حسين عبد البصير، إلى أن الوثيقة الثالثة عبارة عن لوحة كاملة من الحجر الجيرى عثر عليها فى معابد الكرنك عام 1954 وتكمل أحداث الوثيقتين السابقتين، وتروى لنا قصة استمرار انتصارات كامس على الهكسوس وعن الرعب الذى أدخله جيش مصر العظيم إلى قلوبنا أعدائنا من الهكسوس المحتلين لأرضنا المباركة.",
+        english_content:"King Kamose is the last king of the Seventeenth Dynasty in Thebes. He may have ruled for between three and five years. He is the second hero of the heroic kings who carried out the epic of liberating Egypt from the Hyksos. The struggle of this king came through three documents, each of which complemented the other, which produced for us in The end is an almost complete story about the second hero of the liberation war.
+        The book The Warrior Pharaohs: Diplomats and Military Personnel, by Dr. Hussein Abdel Basir, says that the first document is a text written by an ancient Egyptian student on a tablet known as the Carnarvon Tablet, and the second document is written on a tablet that was found in 1928 and tells that Kames became fed up after the death of his father and his ascension to the throne due to the Hyksosian occupation. For the pure land of Egypt, so he asked to invite the men of his court and the leaders of his army to consult them about the matter.
+        Kames felt that his men were not inclined to war and that they agreed with the current situation, but Kames rejected this and was determined to fight the enemies, and he was sure that the whole country would cheer for him.
+        Dr. Hussein Abdel Basir pointed out that the third document is a complete limestone plaque found in the Karnak temples in 1954 and completes the events of the previous two documents, and tells us the story of the continuation of Kamose’s victories over the Hyksos and the terror that the great army of Egypt brought into our hearts, our enemies from the occupying Hyksos. For our blessed land.",
+        event_id: event_9.id,
+    )
+    EventSection.create(
+        arabic_title:"الملك أحمس الأول",
+        english_title:"King Ahmose I",
+        arabic_content:"الملك أحمس الأول محرر مصر من الهكسوس ومؤسس الأسرة الثامنة عشرة، عصر الإمبراطورية المصرية المترامية الأطراف فى الشرق الأدنى القديم، ولم يتم العثور على وثيقة ملكية من عهده تحكى لنا قصة طرده للهكسوس، غير أننا عرفنا قصة هذا النضال المجيد من خلال السيرة الذاتية لقائدين من القادة العسكريين لهذا الملك.
+        وأكد كتاب الفراعنة المحاربون.. دبلوماسيون وعسكريون للدكتور حسين عبد البصير، أن القائدان هما القائد البحرى أحمس ابن إبانا والقائد البرى أحمس بن نخبت أى المنحدر من مدينة الكاب فى أسوان، وسجلا على جدران مقبرتيهما فى الكاب ما قام به من أفعال بطولية فى الحملات الحربية تحت إمرة أحمس الأول الذى تمكن بعد سقنن رع تا عا الثانى وكامس من الاستيلاء على عاصمة الهكسوس أفاريس أواريس واقتفاء أثرهم شرقًا إلى جنوب فلسطين حيث تحصنوا فى حصن شاروهين المنيع فى غزة.",
+        english_content:"King Ahmose I, the liberator of Egypt from the Hyksos, and the founder of the Eighteenth Dynasty, the era of the sprawling Egyptian empire in the ancient Near East. No royal document from his reign has been found that tells us the story of his expulsion of the Hyksos, but we know the story of this glorious struggle through the biographies of two of the leaders. The military of this king.
+        The book The Warrior Pharaohs: Diplomats and Military Personnel, by Dr. Hussein Abdel Basir, confirmed that the two commanders were the naval commander Ahmose Ibn Ebana and the land commander Ahmose Ibn Nekhbat, meaning the one from the city of El-Kab in Aswan, and they recorded on the walls of their tombs in El-Kab the heroic deeds he performed in the war campaigns under The command of Ahmose I, who, after Seqenenre Taa II and Kamose, was able to seize the Hyksos capital of Avaris Avaris and trace them east to southern Palestine, where they fortified themselves in the impenetrable fortress of Sharuhin in Gaza.",
+        event_id: event_9.id,
+    )
+
+    event_10 = Event.create(
+        type: "War",
+        arabic_title: "بداية حرب الهكسوس",
+        english_title: "Beginning of the Hyksos War",
+        start_date: "1881",
+        end_date: "1881",
+        arabic_info:"الملك سقننن رع تاعا الثاني هو أول ملك بدأ القتال مع الهكسوس وتوجد وثيقة هي ورقة سالييه جاءت في شكل قصة منسوبة إلى عصر سقنن رع تخبرنا كيف بدأ الخلاف بين ملك الهكسوس عاقنن رع أبوفيس والملك سقنن رع، حيث أرسل أبوفيس من أواريس الواقعة في شمال الدلتا رسالة إلى سقنن رع يخبره أن أصوات أفراس النهر في بحيرة طيبة تزعجه وتقض مضجعه بالرغم من انه بينه وبين طيبة 500 ميل، ويأمره بأن يجد أي وسيلة للقضاء عليها، فكانت هذه الرسالة بمثابة إعلان للحرب.",
+        english_info:"King Seqenenre Taa II was the first king to start fighting with the Hyksos, and there is a document, the Salier paper, that came in the form of a story attributed to the era of Seqenenre Taa, telling us how the dispute began between the Hyksos king, Seqenenre Apophis, and King Seqenenre Apophis, where Apophis sent a message from Avaris, located in the north of the Delta. To Seqenenre, he tells him that the sounds of hippopotamuses in Lake Thebes are disturbing him and disturbing his sleep, even though there are 500 miles between him and Thebes, and orders him to find any way to eliminate them. This message was a declaration of war.",
+        character_id: character_37.id,
+        sub_era: sub_era_5
+    )
+    event_10.cover_image.attach(io: URI.open("https://img.youm7.com/large/20210218123709379.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"القائد",
+        english_title:"The Leader",
+        arabic_content:"تعـد موميـاء الملـك (سـقنن رع تاعـا الثانـي) واحـدة مـن الموميـاوات الملكيـة الأكثـر روعـة علـى الإطلاق، كان الملك (سـقنن رع) حاكماً لطيبـة – الأقصـر حاليـاً – خلال أواخـر عصـر الانتقال الثانـي، في حين كان (الهكسـوس) يحكمون شـمال مصـر لأكثـر مـن قـرن مضـى، وكانـوا يهـددون أراضي طيبـة ناحيـة الجنـوب.",
+        english_content:"The mummy of King Seqenenre Taa II is one of the most amazing royal mummies ever. King Sekenenre was the ruler of Thebes - now Luxor - during the late Second Intermediate Period, while the Hyksos ruled northern Egypt for more than a century It rang ago, They were threatening the lands of Thebes to the south.",
+        event_id: event_10.id,
+    )
+    EventSection.create(
+        arabic_title:"بداية الحرب",
+        english_title:"The Beginning of the War",
+        arabic_content:"تؤكـد المصـادر التاريخية قيـام الملك سـقنن رع تاعـا ببدايـة الحـرب ضـد هـؤلاء الغـزاة، والتـي اسـتمرت علـى يـد ولديـه (كامـوس) و(أحمـس الأول)، وقـد تـزوج الملـك مـن أختـه الزوجـة الرئيسـة (إيـاح حتـب)، وأنجـب ابنتيـن همـا (أحمـس نفرتاري) و (أحمـس نبيتـا)، بالإضافة إلى ولديـه كامـوس وأحمـس.",
+        english_content:"Historical sources confirm that King Seqenenre Ta began the war against these invaders, which continued at the hands of his two sons (Kamus) and (Ahmose I). The king married his sister, the chief wife (Iahhotep), and had two daughters, (Ahmose n Fratari and Ahmose Nebita), in addition to his two sons, Camus and Ahmose.",
+        event_id: event_10.id,
+    )
+    EventSection.create(
+        arabic_title:"وفاه القائد",
+        english_title:"The Leader's Death",
+        arabic_content:"توفي الملـك سـقنن رع تاعـا عـن عمـر يناهـز الأربعيـن عامـاً، وتظهـر جمجمتـه علامـات جـروح مروعـة؛ تـدل علـى موتـه شـهيداً؛ جـراء المعـارك ضـد الهكسـوس، ومـن المرجـح أن هـذا الحاكـم قـد تـم دفنه فـي الأصـل فـي (ذراع أبـو النجا) – الجانـب الشـمالي لجبانـة طيبـة – حيـث دفـن بهـا ملـوك الأسـرة السـابعة عشـرة، ثـم تـم نقـل جسـده فـي النهايـة إلـى خبيئـة (320TT )، حيـث عثـر عليـه هنـاك في عـام 1881م.",
+        english_content:"King Seqenenre Taa died at the age of forty, and his skull showed signs of horrific wounds. It indicates his death as a martyr. As a result of the battles against the Hyksos, it is likely that this ruler was originally buried in (Dara’ Abu al-Naga) - the northern side of the Theban cemetery - where the kings of the Seventeenth Dynasty were buried, and then his body was eventually moved To the hideout (320TT), where it was found There in 1881 AD.",
+        event_id: event_10.id,
+    )
+    EventSection.create(
+        arabic_title:"المعركه",
+        english_title:"The Battle",
+        arabic_content:"أما عن بداية حربه مع الهكسوس وبحسب المؤرخ مانيتون السمنودى وهو كاهن ومؤرخ يعود إلى القرن الثالث قبل الميلاد، قال هو أول ملك بدأ القتال مع الهكسوس أول احتلال لمصر فى التاريخ, والهكسوس هم شعوب بدوية آسيوية دخلت مصر من سيناء فى فترة ضعف مصرخلال نهاية حكم الدولة الوسطى تقريباً فى نهاية حكم الأسرة الرابعة عشرة. واستمر احتلال الهكسوس لمصر حوالى مائة عام، وكان حكام مصر فى الأسرة السابعة عشرة، تحت قيادة الملك سقنن رع تاعا الثانى، قد بدأوا مقاومة احتلال الهكسوس، خصوصًا أنه لم يبق من أرض مصر المستقلة سوى شريط ضيق فى صعيد مصر كان ينعم بنوع من الاستقلال الذاتى تحت سيطرة حكام مدينة طيبة العريقة، وكان يمتد من القوصية فى محافظة أسيوط «آخر حدود الهكسوس جنوبًا» وإلى منطقة إلفنتين فى أسوان، وتوجد وثيقة هى ورقة سالييه إحدى البرديات المصرية جاءت فى شكل قصة منسوبة إلى عصرالملك سقنن رع تخبرنا كيف بدأ الخلاف والصراع بين ملك الهكسوس أبوفيس والملك سقنن رع، حيث أرسل أبوفيس من مدينة أواريس الواقعة فى شمال الدلتا مقر حاكم الهكسوس رسالة إلى سقنن رع المقيم فى مدينة طيبة «الاقصر حاليا» يخبره أن أفراس النهر فى بحيرة طيبة تزعجه وتقض مضجعه بالرغم من انه بينه وبين طيبة 500 ميل، ويأمره بأن يجد أى وسيلة للقضاء عليها، فكانت هذه الرسالة الاستفزازية بمثابة إعلان للحرب.
+        حكم سقنن رع مصر لأقل من 11 عامًا ليخلفه ابنه الملك كامس، الذى تلاه شقيقه أحمس والذى كانت على يديه هزيمة الهكسوس والقضاء عليهم نهائيا وإعادة توحيد مصر.
+        ولقد تم العثور على مومياء الملك سقنن رع تاعا داخل تابوت ضخم من خشب الأرز فى خبيئة الدير البحرى، غرب الأقصر عام 1881م، وحديثا أجرى الدكتور زاهى حواس عالم الآثار، والدكتورة سحر سليم أستاذة الأشعة فحصاً بالأشعة المقطعية ثنائية وثلاثية الأبعاد لمومياء الملك.
+        وقدم الباحثان تفسيرا جديدًا لوفاة سقنن رع، استنادًا إلى النتائج والتى كشفت عن تعرضه لضربات فى الرأس والوجه وإصابته بجروح قاتلة،وأشارت النتائج أيضا إلى أن دراسة أسلحة الهكسوس الموجودة فى المتحف المصرى بالتحرير ومقارنتها بآثار الجروح فى وجه الملك سقنن رع، كشفت عن وجود تشابه كبير بين أسلحة الهكسوس وجروح الملك، وهو ما يكشف عن دوره البطولى فى مواجهة الهكسوس، وفى فبراير عام 2021، اهتم العالم بتصريح عالم المصريات زاهى حواس، الذى قال فيه إن سقنن رع هو أول ملك شهيد مصرى فى سبيل تحرير الوطن، وإنه قُتل على يد الهكسوس وعمره 40 عامًا.
+        .هكذا خلد موكب المومياوات الملكية اسم سقنن رع من جديد، ليضيف إلى سيرة الملك الشجاع قصة جديدة يسطرها التاريخ.",
+        english_content:"As for the beginning of his war with the Hyksos, according to the historian Manetho Al-Samnoudi, a priest and historian dating back to the third century BC, he said that he was the first king to start fighting with the Hyksos and the first occupation of Egypt in history. The Hyksos are Asian nomadic peoples who entered Egypt from the Sinai during a period of Egypt’s weakness during the end of state rule. Middle East, approximately at the end of the Fourteenth Dynasty. The Hyksos occupation of Egypt continued for about a hundred years, and the rulers of Egypt in the Seventeenth Dynasty, under the leadership of King Seqenenre Taa II, had begun to resist the Hyksos occupation, especially since nothing remained of the land of independent Egypt except a narrow strip in Upper Egypt that enjoyed a kind of autonomy. Under the control of the rulers of the ancient city of Thebes, it extended from Al-Qusiya in Assiut Governorate, “the last border of the Hyksos in the south,” to the Elephantine region in Aswan. There is a document, the Salier Paper, one of the Egyptian papyri, that came in the form of a story attributed to the era of King Seqenenre, telling us how the dispute and conflict began between a king. The Hyksos Apophis and King Seqenenra, where Apophis from the city of Avaris, located in the north of the Delta, the seat of the Hyksos ruler, sent a message to Seqenenre, who resides in the city of Thebes (currently Luxor), telling him that the hippos in Lake Thebes were disturbing him and disturbing him, even though there were 500 miles between him and Thebes. He orders him to find any way to eliminate her, so this provocative message was a declaration of war.
+        Seqenenra ruled Egypt for less than 11 years, to be succeeded by his son, King Kamose, who was followed by his brother Ahmose, who was responsible for defeating the Hyksos, completely eliminating them, and reunifying Egypt.
+        The mummy of King Seqenenre Taa was found inside a huge cedar wood coffin in the Deir el-Bahari cache, west of Luxor, in 1881 AD. Recently, Dr. Zahi Hawass, an archaeologist, and Dr. Sahar Selim, a professor of radiology, conducted a two- and three-dimensional CT scan of the king’s mummy.
+        The researchers presented a new explanation for the death of Seqenenre, based on the results, which revealed that he was subjected to blows to the head and face and suffered fatal injuries. The results also indicated that a study of the Hyksos weapons found in the Egyptian Museum in Tahrir and comparing them to the effects of wounds on the face of King Seqenenre revealed a great similarity. Between the Hyksos weapons and the king’s wounds, which reveals his heroic role in confronting the Hyksos, and in February 2021, the world paid attention to the statement of Egyptologist Zahi Hawass, in which he said that Seqenenre was the first Egyptian martyr king for the sake of liberating the homeland, and that he was killed by the Hyksos. He is 40 years old.
+        Thus, the procession of royal mummies immortalized the name of Seqenenre once again, adding to the biography of the brave king a new story recorded in history.",
+        event_id: event_10.id,
     )
 
     # event_2 = Event.create(
