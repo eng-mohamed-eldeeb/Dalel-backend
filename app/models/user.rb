@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :era_points
   has_many :sub_era_points
   has_many :character_points
+  has_many :event_points
   include Devise::JWT::RevocationStrategies::JTIMatcher
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable,

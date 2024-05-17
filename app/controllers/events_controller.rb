@@ -94,5 +94,20 @@ class EventsController < ApplicationController
         render json: events
       end
 
+      def add_points
+        event = Event.find(params[:id])
+        user = User.find(params[:user_id])
+        event.points = event.points + 1
+        event.save
+        if event.event_points.where(user: user).exists?
+            user_event = event.event_points.where(user: user).first
+            user_event.points = user_event.points + 1
+            user_event.save
+        else
+            user_event = EventPoint.create(user_id: user.id, event_id: event.id, points: 1)
+        end
+        user_event.set_tier(user)
+        render json: { points: user_event.points }
+      end
 
 end

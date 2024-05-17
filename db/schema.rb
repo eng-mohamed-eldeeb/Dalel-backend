@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
+ActiveRecord::Schema[7.0].define(version: 2024_05_17_074428) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -112,7 +112,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
     t.integer "points", default: 0
     t.text "english_info"
     t.bigint "sub_era_id", null: false
-    t.integer "tier"
+    t.integer "tier", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["sub_era_id"], name: "index_characters_on_sub_era_id"
@@ -133,9 +133,21 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
   create_table "eras", force: :cascade do |t|
     t.string "name"
     t.integer "tier"
-    t.float "point", default: 0.0
+    t.integer "point", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "event_points", force: :cascade do |t|
+    t.bigint "event_id", null: false
+    t.bigint "user_id", null: false
+    t.integer "points"
+    t.integer "tier"
+    t.boolean "seen"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_event_points_on_event_id"
+    t.index ["user_id"], name: "index_event_points_on_user_id"
   end
 
   create_table "event_recommendations", force: :cascade do |t|
@@ -171,7 +183,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
     t.text "english_info"
     t.bigint "sub_era_id"
     t.bigint "character_id"
-    t.integer "tier"
+    t.integer "points", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["character_id"], name: "index_events_on_character_id"
@@ -295,7 +307,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
     t.integer "points", default: 0
     t.text "english_info"
     t.bigint "era_id", null: false
-    t.integer "tier"
+    t.integer "tier", default: 0
     t.integer "point", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -334,6 +346,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_15_161347) do
   add_foreign_key "characters", "sub_eras"
   add_foreign_key "era_points", "eras"
   add_foreign_key "era_points", "users"
+  add_foreign_key "event_points", "events"
+  add_foreign_key "event_points", "users"
   add_foreign_key "event_recommendations", "characters"
   add_foreign_key "event_recommendations", "events"
   add_foreign_key "event_sections", "events"

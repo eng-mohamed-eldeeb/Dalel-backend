@@ -9,7 +9,7 @@ class CreateCharacters < ActiveRecord::Migration[7.0]
       t.integer :points, default: 0
       t.text :english_info
       t.references :sub_era, null: false, foreign_key: true
-      t.integer :tier
+      t.integer :tier, default: 0
 
       t.timestamps
     end

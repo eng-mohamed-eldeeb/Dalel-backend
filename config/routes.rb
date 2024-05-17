@@ -52,7 +52,8 @@ Rails.application.routes.draw do
   post 'eras/:id/points', to: 'eras#add_points'
   post 'sub_eras/:id/points', to: 'sub_eras#add_points'
   post 'characters/:id/points', to: 'characters#add_points'
-
+  post 'events/:id/points', to: 'events#add_points'
   # <<< getting the data
   get 'characters/dalil/get_four', to: 'characters#get_recommenderd_four'
+
 end
