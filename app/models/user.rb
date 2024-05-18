@@ -22,7 +22,7 @@ class User < ApplicationRecord
 
   def get_4_recommended_characters(era)
     sub_eras = era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(10)
-    characters = sub_eras.flat_map(&:characters)
+    characters = sub_eras.flat_map(&:characters).order(:points).reverse
     fav_era = era
 
     Era.find_each do |era_|
@@ -46,7 +46,7 @@ class User < ApplicationRecord
         end
       end
     end
-
+    characters.first(4)
     characters
 end
 
