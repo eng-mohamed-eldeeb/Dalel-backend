@@ -111,7 +111,7 @@ class CharactersController < ApplicationController
     def get_recommenderd_four
         user = User.find(params[:user_id])
         era = Era.find(params[:era_id])
-        recommended_characters = user.get_4_recommended_characters(era)
+        recommended_characters = user.get_4_recommended_characters(era).first(4)
         render json: recommended_characters
     end
 
