@@ -84,6 +84,9 @@ class CharactersController < ApplicationController
         character = Character.find(params[:id])
         character.points += 1
         last_event = character.events.last
+        if last_event
+            last_event.increment!(:points)
+        end
 
         if last_event && last_event.event_points
             user_event_point = last_event.event_points.where(user: User.find(params[:user_id])).first

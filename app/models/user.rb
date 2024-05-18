@@ -66,11 +66,6 @@ end
 
     return [] if events.empty?
 
-    if self.event_points.any?
-      unseen_events = self.event_points.where(seen: false).map(&:event)
-      events = events.select { |event| unseen_events.include?(event) }
-    end
-
     if self.era_points.where.not(era: era).exists? && fav_era == era
       events = events.sort_by(&:points).reverse.first(4)
     else
