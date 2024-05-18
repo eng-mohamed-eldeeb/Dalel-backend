@@ -1,6 +1,7 @@
 class Era < ApplicationRecord
-    has_many :sub_eras, dependent: :destroy
-    has_many :era_points, dependent: :destroy
+    has_many :sub_eras
+    has_many :era_points
+    has_many :products
 
     enum tier: {a: 3, b: 2,c: 1, d: 0}
 

@@ -209,7 +209,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_17_074428) do
     t.string "english_title"
     t.text "english_description"
     t.text "arabic_description"
-    t.integer "tier", default: 2
+    t.integer "points", default: 0
     t.integer "number_of_sales", default: 0
     t.bigint "era_id", null: false
     t.bigint "sub_era_id"

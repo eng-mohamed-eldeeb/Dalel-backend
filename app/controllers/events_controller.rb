@@ -99,6 +99,18 @@ class EventsController < ApplicationController
         user = User.find(params[:user_id])
 
         event.increment!(:points)
+        if event.character
+            event.character.increment!(:points)
+            event.character.set_tier(user)
+            event.character.save
+        end
+
+        if event.products
+            event.products.each do |product|
+                product.increment!(:points)
+                product.save
+            end
+        end
 
         user_event = event.character.character_points.find_or_initialize_by(user: user)
         user_event.increment!(:points)

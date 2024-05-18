@@ -88,6 +88,13 @@ class CharactersController < ApplicationController
             last_event.increment!(:points)
         end
 
+        if character.products.eny?
+            character.products.each do |product|
+                product.increment!(:points)
+                product.save
+            end
+        end
+
         if last_event && last_event.event_points
             user_event_point = last_event.event_points.where(user: User.find(params[:user_id])).first
 

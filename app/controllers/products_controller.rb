@@ -99,7 +99,12 @@ class ProductsController < ApplicationController
     end
   end
 
-  # get all top selling
+  def get_5_recommended_products
+    user = User.find(params[:user_id])
+    era = Era.find(params[:era_id])
+    recommended_products = user.get_4_recommended_products(era)
+    render json: {recommended_products: recommended_products}
+  end
 
   private
 

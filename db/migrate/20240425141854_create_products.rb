@@ -7,7 +7,7 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.string :english_title
       t.text :english_description
       t.text :arabic_description
-      t.integer :tier, default: 2
+      t.integer :points, default: 0
       t.integer :number_of_sales, default: 0
       t.references :era, null: false, foreign_key: true
       t.references :sub_era, null: true, foreign_key: true

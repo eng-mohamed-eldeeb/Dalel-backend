@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   # <<< getting the data
   get 'characters/dalil/get_four', to: 'characters#get_recommenderd_four'
   get 'events/dalil/get_four', to: 'events#get_4_recommended_events'
+  get 'products/dalil/get_four', to: 'products#get_5_recommended_products'
 
   post 'sub_era/:id/points', to: 'sub_eras#add_points'
   get 'characters/search', to: 'characters#search'

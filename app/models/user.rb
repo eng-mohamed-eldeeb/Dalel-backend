@@ -84,4 +84,34 @@ end
     events
   end
 
+  def get_4_recommended_products(era)
+    products = []
+    if self.event_points.exists?
+      top_event = self.event_points.sort_by(&:points).reverse.first(5)
+      if !top_event.flat_map(&:event).empty?
+        top_event.flat_map(&:event).each do |event|
+          if event.respond_to?(:products)
+            products += event.products.order(:points).first(2)
+          end
+        end
+      end
+    elsif self.character_points.exists?
+      top_character = self.character_points.sort_by(&:points).reverse.first(5)
+      if !top_character.flat_map(&:character).empty?
+        if top_character.flat_map(&:character).flat_map(&:products)
+          products += top_character.flat_map(&:character).flat_map(&:products).order(:points).first(2)
+        end
+      end
+    end
+    if era.products
+      if era.products.exists?
+        products += era.products.order(:points).first(2)
+      end
+    end
+    if products.empty?
+      products = era.products.order(:points).first(5)
+    end
+    products
+  end
+
 end
