@@ -49,8 +49,10 @@ require 'open-uri'
         era: ancientEra,
         arabic_name: "الدولة الحديثة (الأسرات من 18 إلى 20)",
         english_name: "New Kingdom (Dynasties 18-20)" ,
-        arabic_info:"بعد أن طرد أحمس الهكسوس رجع الى بلاده سنة 1571 ق . م حيث قضى على ثورات النوبيين جنوباً واتجه الى الإصلاح الداخلى فى البلاد واهتم بإنشاء جيش عامل منظم وسلحه بكل الأسلحة المعروفة فى ذلك الوقت وزوده بالعجلات الحربية، ويُعد رمسيس الثانى من أشهر ملوك هذه الدولة وتعتبر حروبه آخر المجهودات التى بذلها ملوك الدولة الحديثة فى سبيل المحافظة على الوحدة  وقد انتهت خصومته مع ملك الحيثيين بتوقيع معاهدة عدم اعتداء بين الطرفين بعد معركة قادش، وتُعد هذه المعاهدة أول معاهدة سلام فى التاريخ وأصبحت مصر قوة كبرى، وصارت بذلك إمبراطورية عظيمة مترامية الأطراف.",
-        english_info:"After Ahmose expelled the Hyksos, he returned to his country in 1571 BC. M, where he eliminated the revolts of the Nubians in the south and headed for internal reform in the country. He was concerned with creating an organized working army, arming it with all the weapons known at that time and supplying it with chariots. Ramesses II is considered one of the most famous kings of this country, and his wars are considered the last efforts made by the kings of the modern state in order to preserve Unity. His rivalry with the Hittite king ended with the signing of a non-aggression treaty between the two parties after the Battle of Kadesh. This treaty is considered the first peace treaty in history, and Egypt became a major power, thus becoming a great, sprawling empire."
+        arabic_info:"تُعرف المملكة المصرية الحديثة أو الدولة الحديثة، التي يشار إليها أيضًا باسم الإمبراطورية المصرية باسم عصر المجد الحربي، وهي الفترة في تاريخ مصر القديمة بين القرن السادس عشر قبل الميلاد والقرن الحادي عشر قبل الميلاد، وتغطي الثامنة عشرة، التاسعة عشرة، والأسرة العشرين في مصر. يضع التأريخ بالكربون المشع البداية الدقيقة للمملكة الحديثة بين 1570 قبل الميلاد و 1544 قبل الميلاد. اتبعت المملكة الحديثة الفترة الانتقالية الثانية وخلفتها الفترة الانتقالية الثالثة. كان هذا أكثر الأوقات ازدهارًا في مصر وشهد ذروة قوتها.
+        صاغ عالم المصريات الألماني كريستيان تشارلز جوسياس فون بنسن مفهوم المملكة المصرية الحديثة كواحد من ثلاثة عصور ذهبية، وكان تعريفه تطور بشكل ملحوظ خلال القرنين التاسع عشر والعشرين. يُعرف أيضًا الجزء الأخير من هذه الفترة، تحت حكم الأسرتين التاسعة عشرة والعشرين (1292-1077 قبل الميلاد)، باسم عصر الرعامسة. سميت على اسم أحد عشر ملك الذين أخذوا اسم رمسيس، على اسم رمسيس الأول، مؤسس الأسرة التاسعة عشرة. ربما كنتيجة لأجنبي حكم الهكسوس خلال الفترة الانتقالية الثانية، شهدت المملكة الحديثة محاولة مصر لإنشاء حاجز بين بلاد الشام ومصر، وخلال هذا الوقت حققت مصر أقصى امتداد إقليمي لها. وبالمثل، ردًا على الهجمات الناجحة جدًا في القرن السابع عشر قبل الميلاد خلال الفترة الانتقالية الثانية من قبل مملكة كوش شعر حكام المملكة الحديثة بأنهم مضطرون للتوسع جنوبًا في النوبة والاحتفاظ بأراضي واسعة في الشرق الأدنى. في الشمال، حاربت الجيوش المصرية جيوش الحيثيين للسيطرة على سوريا الحديثة.",
+        english_info:"The New Kingdom of Egypt or the New Kingdom, also referred to as the Egyptian Empire as the Age of Military Glory, was the period in the history of ancient Egypt between the sixteenth century BC and the eleventh century BC, covering the Eighteenth, Nineteenth, and Twentieth Dynasties of Egypt. Radiocarbon dating places the precise beginning of the New Kingdom between 1570 BC and 1544 BC. The New Kingdom followed the Second Intermediate Period and was succeeded by the Third Intermediate Period. This was Egypt's most prosperous time and witnessed the peak of its power.
+        The German Egyptologist Christian Charles Gosias von Bunsen formulated the concept of the Egyptian New Kingdom as one of three golden ages, and his definition evolved significantly during the nineteenth and twentieth centuries. The latter part of this period, under the Nineteenth and Twentieth Dynasties (1292-1077 BC), is also known as the Ramesside Era. It is named after the eleven kings who took the name Ramesses, after Ramesses I, the founder of the Nineteenth Dynasty. Perhaps as a result of foreign Hyksos rule during the Second Intermediate Period, the New Kingdom saw Egypt attempt to create a barrier between the Levant and Egypt, and it was during this time that Egypt achieved its greatest territorial extension. Likewise, in response to the very successful attacks in the 17th century BC during the Second Intermediate Period by the Kingdom of Kush the New Kingdom rulers felt compelled to expand south into Nubia and retain extensive territory in the Near East. In the north, Egyptian armies fought Hittite armies for control of modern-day Syria."
     )
     sub_era_7 = SubEra.create(
         era: ancientEra,
@@ -478,13 +480,38 @@ require 'open-uri'
         english_content:"The Abydos Dynasty (ca. 1640 to 1620 BC) was probably a short-lived local dynasty that ruled part of Upper Egypt during the Second Intermediate Period in ancient Egypt and was contemporary with the Fifteenth and Sixteenth Dynasties. The Abydos dynasty remained very small and ruled only Abydos or Thinis. Very little is known about the Abydos Dynasty as it was a short-lived dynasty. Although we have some king names related to the Abydos dynasty, the names appear in the Turin king list, but they do not appear in any other sources. The dynasty provisionally includes four rulers: Webb, Utimsaf, Pantjeni, Snaib, and Senbekai. The era of the Abydos dynasty ended when the Hyksos expanded their influence into Upper Egypt.",
         sub_era: sub_era_5,
     )
-    # Section.create(
-    #     arabic_title:"",
-    #     english_title:"",
-    #     arabic_content:"",
-    #     english_content:"",
-    #     sub_era: sub_era_5,
-    # )
+    # sub_era_6
+    Section.create(
+        arabic_title:"صعود المملكة الحديثة",
+        english_title:"Rise of the New Kingdom",
+        arabic_content:"تضمنت الأسرة الثامنة عشرة بعض أشهر ملوك مصر، ومنهم أحمس الأول وحتشبسوت وتحتمس الثالث وأمنحتب الثالث، اخناتون وتوت عنخ آمون. ركزت حتشبسوت على توسيع التجارة الخارجية في مصر، بما في ذلك إرسال بعثة تجارية إلى بلاد بونت، وجعلت المملكة مزدهرة.
+        يُنظر إلى أحمس الأول على أنه مؤسس الأسرة الثامنة عشرة. واصل حملات والده سقنن رع وكاموس ضد الهكسوس حتى قام بإعادة توحيد البلاد مرة أخرى. ثم يواصل أحمس حملته في بلاد الشام، موطن الهكسوس، لمنع أي غزو مستقبلي لمصر.
+        بدأت حملات أحمس لطرد الهكسوس من دلتا نهر النيل واستعادة الأراضي المصرية السابقة إلى الجنوب في حوالي عام حكمه العاشر. بعد أن دمر معقل الهكسوس في أفاريس في شرق الدلتا، قادهم أخيرًا إلى ما وراء الحدود الشرقية ثم حاصر شاروهين (تل الفارعة) في جنوب فلسطين؛ قد يكون المدى الكامل لغزواته أكبر بكثير. جاء اختراقه للشرق الأوسط في وقت لم تكن فيه قوة رئيسية راسخة في المنطقة. هذه الفجوة السياسية سهلت إنشاء إمبراطورية مصرية.
+        تمت مكافأة ضباط وجنود أحمس بالغنائم والأسرى، الذين أصبحوا شخصية عبيد. كان هذا بمثابة علامة على إنشاء طبقة عسكرية مؤثرة. مثل كاموس، شن أحمس حملته جنوبا حتى بوهين في النوبة شمال السودان. لإدارة الأراضي المستعادة، أنشأ وظيفة جديدة مشرفة على الأراضي الأجنبية الجنوبية، والتي احتلت المرتبة الثانية بعد الوزير. مُنح شاغل الوظيفة اللقب الشرفي ابن الملك في كوش، مما يشير إلى أنه كان مسؤولاً بشكل مباشر أمام الملك كنائب.
+        تمت صياغة بيروقراطية المملكة المصرية الحديثة المبكرة على غرار ما كانت عليه في المملكة المصرية الوسطى. كان الوزير هو المسؤول الرئيسي وأعلى قاضٍ في المملكة. بحلول منتصف القرن الخامس عشر قبل الميلاد، تم تقسيم المنصب إلى قسمين، وزير واحد لمصر العليا والآخر لمصر السفلى. خلال الأسرة المصرية الثامنة عشر، تلقى بعض البيروقراطيين الشباب تعليمهم في مدارس المعابد، مما عزز التكامل بين القطاعات المدنية والكهنوتية. في وقت مبكر من الأسرة، تم توريث العديد من المناصب الإدارية، لكن التعيين الملكي للمسؤولين الأكفاء، غالبًا ما يتم اختيارهم من ضباط الجيش الذين خدموا الملك في حملاته، أصبح لاحقًا هو القاعدة. وهكذا كان الاتجاه بعيدًا عن العائلات البيروقراطية ووراثة المنصب.",
+        english_content:"The Eighteenth Dynasty included some of Egypt's most famous kings, including Ahmose I, Hatshepsut, Thutmose III, Amenhotep III, Akhenaten, and Tutankhamun. Hatshepsut focused on expanding Egypt's foreign trade, including sending a trade mission to the Land of Punt, and made the kingdom prosperous.
+        Ahmose I is seen as the founder of the Eighteenth Dynasty. He continued the campaigns of his father Seqenenre and Kamos against the Hyksos until he reunified the country again. Ahmose then continues his campaign in the Levant, home of the Hyksos, to prevent any future invasion of Egypt.
+        Ahmose's campaigns to expel the Hyksos from the Nile River Delta and restore former Egyptian lands to the south began around the year of his tenth reign. After destroying the Hyksos stronghold of Avaris in the eastern delta, he finally drove them beyond the eastern border and then besieged Sharuhin (Tell el-Far'a) in southern Palestine; The full extent of his conquests may have been much greater. His breakthrough into the Middle East came at a time when no major power was entrenched in the region. This political gap facilitated the creation of an Egyptian empire.
+        Ahmose's officers and soldiers were rewarded with spoils and captives, who became personal slaves. This marked the creation of an influential military class. Like Kamus, Ahmose campaigned as far south as Buhin in Nubia, northern Sudan. To administer the restored territories, he created a new post of Superintendent of Southern Foreign Territories, which ranked second only to the Minister. The incumbent was given the honorific title Son of the King of Kush, indicating that he was directly accountable to the king as deputy.
+        The early New Kingdom Egyptian bureaucracy was modeled on that of the Middle Kingdom. The vizier was the chief official and highest judge of the kingdom. By the middle of the 15th century BC, the office was divided into two, one vizier for Upper Egypt and the other for Lower Egypt. During the Eighteenth Dynasty, some young bureaucrats were educated in temple schools, promoting integration between the civil and priestly sectors. Early in the dynasty, many administrative positions were inherited, but the royal appointment of competent officials, often chosen from army officers who had served the king on his campaigns, later became the norm. Thus the trend was away from bureaucratic families and inheritance of office.",
+        sub_era: sub_era_6,
+    )
+    Section.create(
+        arabic_title:"احمس",
+        english_title:"Ahmose",
+        arabic_content:"تبع أحمس أمنحتب الأول الذي دفع الحدود المصرية جنوبا إلى الشلال الثالث، بالقرب من عاصمة الالكرمة، بينما كان يجمع الجزية من ممتلكاته الآسيوية وربما قام بحملات في سوريا. ربما تكون مملكة ميتاني الناشئة في شمال سوريا، والتي ذُكرت لأول مرة على لوحة لأحد جنود أمنحتب وكانت تُعرف أيضًا باسم نهرين، قد هددت الفتوحات المصرية في الشمال.
+        كانت المملكة المصرية الحديثة فترة من التفاني المتزايد لإله المملكة آمون رع، الذي استفادت عبادة منه إلى حد كبير حيث تم إثراء مصر بغنائم الحرب. تم تحويل الثروات إلى خزائن الإله، وكدليل على تقوى الأبناء، قام الملك ببناء آثار مقدسة في الأقصر. في عهد أمنحتب الأول، تم التخلي عن الشكل الهرمي للمقبرة الملكية لصالح مقبرة منحوتة في الصخر، وباستثناء أخناتون، تم دفن جميع حكام المملكة الحديثة اللاحقين في مقابر مخفية في وادي الملوك الشهير في غرب طيبة. منفصلة عن المقابر، أقيمت المعابد الجنائزية الملكية على حافة الصحراء. ربما بسبب هذا الابتكار، أصبح أمنحتب الأول فيما بعد الإله الراعي للعمال الذين حفروا وزينوا المقابر الملكية.",
+        english_content:"Ahmose followed Amenhotep I who pushed the Egyptian border south to the Third Cataract, near the capital of Alkarma, while collecting tribute from his Asian possessions and perhaps campaigning in Syria. The emerging kingdom of Mitanni in northern Syria, first mentioned in a stela of one of Amenhotep's soldiers and also known as Two Rivers, may have threatened Egyptian conquests to the north.
+        The Egyptian New Kingdom was a period of increasing devotion to the god of the kingdom, Amun-Ra, whose cult benefited greatly as Egypt was enriched by the spoils of war. Riches were transferred to the god's treasuries, and as a sign of filial piety, the king built sacred monuments in Luxor. During the reign of Amenhotep I, the pyramidal form of the royal cemetery was abandoned in favor of a rock-cut tomb, and with the exception of Akhenaten, all subsequent New Kingdom rulers were buried in hidden tombs in the famous Valley of the Kings in western Thebes. Separate from the tombs, royal mortuary temples were erected on the edge of the desert. Perhaps because of this innovation, Amenhotep I later became the patron god of the workers who dug and decorated the royal tombs.",
+        sub_era: sub_era_6,
+    )
+    Section.create(
+        arabic_title:"تحتمس أمنحتب الثاني",
+        english_title:"Thutmose Amenhotep II",
+        arabic_content:"وتبع أمنحتب الثاني تحتمس الأول الذي قاد في عامه الثاني رحلة استكشافية عبر النهر في عمق النوبة، خارج حدود سلفه. كما يتضح من النقوش المنحوتة على طول الطريق، فقد اجتاز الشلال الرابع وأقام حدودًا جديدة في كرجس بالقرب من الشلال الخامس. تم إثبات المشروع من خلال السير الذاتية لاثنين من مصر العليا كانا من بين القوى التي قامت بالحملة. كان أحد أسباب التوغل العميق في النوبة هو رواسب الذهب الغنية في الأرض، والتي تم استغلالها بشكل مكثف خلال الأسرة المصرية الثامنة عشر. كان الدافع الآخر هو حقيقة أن مملكة كوش المعادية لمصر، متمركزة بالقرب من الشلال الثالث، كانت تهدد مصر بشكل خطير خلال الأسرة المصرية السابعة عشر ومتحالفة مع الهكسوس. بعد حرب النوبة توغل تحتمس في نهر الفرات في محيط كركميش في سوريا حيث واصل مطاردة الهكسوس. داخل مصر، قام تحتمس بتجديد الكرنك في طيبة. أقام جدارًا مغلقًا وأبراجين في الطرف الغربي، مع قاعة أعمدة صغيرة بينهما. تمت إضافة مسلتين أمام الصرح الخارجي. خلال هذه الحملة أعلن الأمراء السوريون الولاء لتحتمس. ومع ذلك، بعد عودته، توقفوا عن الجزية وبدأوا في التحصين ضد التوغلات المستقبلية.",
+        english_content:"Amenhotep II was followed by Thutmose I, who in his second year led an expedition across the river deep into Nubia, outside the borders of his predecessor. As is evident from the inscriptions carved along the way, he crossed the Fourth Cataract and established a new border at Kerges near the Fifth Cataract. The project is substantiated by the biographies of two Upper Egyptians who were among the forces that undertook the campaign. One of the reasons for the deep penetration into Nubia was the rich gold deposits in the land, which were intensively exploited during the 18th Dynasty. Another motivation was the fact that the anti-Egyptian Kingdom of Kush, centered near the Third Cataract, was seriously threatening Egypt during the 17th Dynasty and allied with the Hyksos. After the Nubia War, Thutmose penetrated the Euphrates River in the vicinity of Carchemish in Syria, where he continued to pursue the Hyksos. Inside Egypt, Thutmose renovated Karnak at Thebes. He erected an enclosed wall and two towers at the western end, with a small hypostyle hall between them. Two obelisks were added in front of the outer edifice. During this campaign, the Syrian princes declared loyalty to Tuthmosis. However, after his return, they stopped paying tribute and began to fortify against future incursions.",
+        sub_era: sub_era_6,
+    )
 
 
 #! Create Characters
@@ -3060,6 +3087,370 @@ require 'open-uri'
 
 
 #! Create Products
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+    product_1 = Product.create(
+        price: 130,
+        arabic_title: "كوب مصري قديم",
+        english_title: "Ancient Egyptian Mug",
+        arabic_description: "دليل على غسالة الصحون: لا
+        العلامة التجارية: لا
+        الخامة: سيراميك
+        النوع: أكواب
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
+        english_description: "Dishwasher proof : no
+        Brand : no
+        Material : Ceramic
+        Type : Mugs
+        Are batteries needed to power the product or is this product a battery : 0
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        era: ancientEra,
+        sub_era_id: sub_era_1.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
+    product_2 = Product.create(
+        price: 67,
+        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
+        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
+        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم
+        المواد: القماش
+        نوع الإغلاق: إبزيم",
+        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle
+        Material: cloth
+        Closure Type: Buckle",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        # character: character,
+        # event: event
+    )
+        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
     product_1 = Product.create(
         price: 130,
         arabic_title: "كوب مصري قديم",
