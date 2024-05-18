@@ -2,6 +2,10 @@ class ErasController < ApplicationController
 
   def add_points
     era = Era.find(params[:id])
+    era.update(point: 0) if era.point.nil?
+    era.update(point: era.point + 1)
+    era.set_tier
+    era.save
     user = User.find(params[:user_id])
     if EraPoint.where(user: user, era: era).empty?
       era_p = EraPoint.create(era: era, user: user, points: 1)

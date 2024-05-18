@@ -132,7 +132,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_17_074428) do
 
   create_table "eras", force: :cascade do |t|
     t.string "name"
-    t.integer "tier"
+    t.integer "tier", default: 0
     t.integer "point", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

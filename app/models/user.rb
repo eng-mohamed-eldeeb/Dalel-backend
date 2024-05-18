@@ -22,23 +22,71 @@ class User < ApplicationRecord
 
   def get_4_recommended_characters(era)
     sub_eras = era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(10)
-    a_tier_era = self.era_points.last.era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(10)
-
     characters = sub_eras.flat_map(&:characters)
-    a_tier_characters = a_tier_era.flat_map(&:characters)
+    fav_era = era
 
-    return [] if characters.empty?
+    Era.find_each do |era_|
+      user_era_point = era_.era_points.where(user: self).last
+      fav_era_user_point = fav_era.era_points.where(user: self).last
 
-    if self.character_points.any?
-      unseen_characters = self.character_points.where(seen: false).map(&:character)
-      characters = characters & unseen_characters
-      a_tier_characters = a_tier_characters & unseen_characters
+      if user_era_point && fav_era_user_point && user_era_point.tier > fav_era_user_point.tier
+        fav_era = era_
+      end
     end
 
-    characters = characters.sort_by(&:points).reverse.first(2)
-    a_tier_characters = a_tier_characters.sort_by(&:points).reverse.first(2)
+    if self.era_points.where.not(era: era).exists? && fav_era == era
+      characters = characters.sort_by(&:points).reverse.first(4)
+    else
+      if fav_era.era_points.where(user: self).exists?
+        two_more_characters = fav_era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(2).flat_map(&:characters)
+        if two_more_characters.empty?
+          characters = characters.sort_by(&:points).reverse.first(4)
+        else
+          characters = characters.sort_by(&:points).reverse.first(2) + two_more_characters
+        end
+      end
+    end
 
-    characters + a_tier_characters
+    characters
+end
+
+  def get_4_recommended_events(era)
+    sub_eras = era.sub_eras.includes(:events).sort_by(&:point).reverse.first(10)
+    events = sub_eras.flat_map(&:events)
+    fav_era = era
+
+    Era.find_each do |era_|
+      user_era_point = era_.era_points.where(user: self).last
+      fav_era_user_point = fav_era.era_points.where(user: self).last
+
+      if user_era_point && fav_era_user_point && user_era_point.tier > fav_era_user_point.tier
+        fav_era = era_
+      end
+    end
+
+    return [] if events.empty?
+
+    if self.event_points.any?
+      unseen_events = self.event_points.where(seen: false).map(&:event)
+      events = events.select { |event| unseen_events.include?(event) }
+    end
+
+    if self.era_points.where.not(era: era).exists? && fav_era == era
+      events = events.sort_by(&:points).reverse.first(4)
+    else
+      if fav_era.era_points.where(user: self).exists?
+        two_more_events = fav_era.sub_eras.includes(:events).sort_by(&:point).reverse.first(2).flat_map(&:events)
+        if two_more_events.empty?
+          events = events.sort_by(&:points).reverse.first(4)
+        else
+          events = events.sort_by(&:points).reverse.first(2) + two_more_events
+        end
+      else
+        events = events.sort_by(&:points).reverse.first(4)
+      end
+    end
+
+    events
   end
 
 end

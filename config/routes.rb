@@ -10,6 +10,15 @@ Rails.application.routes.draw do
     sessions: 'users/sessions', # Specify the custom controller for sessions
     passwords: 'users/passwords'  # Specify the custom controller for passwords
   }
+  # recomendation routes
+  # <<< setting the data
+  post 'eras/:id/points', to: 'eras#add_points'
+  post 'sub_eras/:id/points', to: 'sub_eras#add_points'
+  post 'characters/:id/points', to: 'characters#add_points'
+  post 'events/:id/points', to: 'events#add_points'
+  # <<< getting the data
+  get 'characters/dalil/get_four', to: 'characters#get_recommenderd_four'
+  get 'events/dalil/get_four', to: 'events#get_4_recommended_events'
 
   post 'sub_era/:id/points', to: 'sub_eras#add_points'
   get 'characters/search', to: 'characters#search'
@@ -47,13 +56,5 @@ Rails.application.routes.draw do
   delete 'cart/products/remove', to: 'cart#remove_product'
 
 
-  # recomendation routes
-  # <<< setting the data
-  post 'eras/:id/points', to: 'eras#add_points'
-  post 'sub_eras/:id/points', to: 'sub_eras#add_points'
-  post 'characters/:id/points', to: 'characters#add_points'
-  post 'events/:id/points', to: 'events#add_points'
-  # <<< getting the data
-  get 'characters/dalil/get_four', to: 'characters#get_recommenderd_four'
 
 end

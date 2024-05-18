@@ -97,17 +97,34 @@ class EventsController < ApplicationController
       def add_points
         event = Event.find(params[:id])
         user = User.find(params[:user_id])
-        event.points = event.points + 1
-        event.save
-        if event.event_points.where(user: user).exists?
-            user_event = event.event_points.where(user: user).first
-            user_event.points = user_event.points + 1
-            user_event.save
-        else
-            user_event = EventPoint.create(user_id: user.id, event_id: event.id, points: 1)
-        end
+
+        event.increment!(:points)
+
+        user_event = event.character.character_points.find_or_initialize_by(user: user)
+        user_event.increment!(:points)
         user_event.set_tier(user)
+        user_event.save
+
+        user_event = event.event_points.find_or_initialize_by(user: user)
+        user_event.increment!(:points)
+        user_event.set_tier(user)
+        user_event.save
+
         render json: { points: user_event.points }
       end
+
+      def get_4_recommended_events
+        era = Era.find(params[:era_id])
+        user = User.find(params[:user_id])
+        events = user.get_4_recommended_events(era)
+        events = events.map do |event|
+            {
+                id: event.id,
+                title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
+                cover_image: url_for(event.cover_image)
+            }
+        end
+        render json: events
+    end
 
 end

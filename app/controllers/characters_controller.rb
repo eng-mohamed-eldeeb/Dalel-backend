@@ -83,10 +83,23 @@ class CharactersController < ApplicationController
     def add_points
         character = Character.find(params[:id])
         character.points += 1
+        last_event = character.events.last
+
+        if last_event && last_event.event_points
+            user_event_point = last_event.event_points.where(user: User.find(params[:user_id])).first
+
+            if user_event_point
+                user_event_point.update(points: user_event_point.points + 1)
+            else
+                last_event.event_points.create(user: User.find(params[:user_id]), points: 1)
+            end
+        end
+
         character.save
         user = User.find(params[:user_id])
         if character.character_points.where(user: user).empty?
             character_point = CharacterPoint.create(character: character, user: user, points: 1, seen: true)
+            character_point.save
         else
             character_point = character.character_points.where(user: user).first
             character_point.update(points: character_point.points + 1)

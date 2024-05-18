@@ -2,6 +2,8 @@ class Era < ApplicationRecord
     has_many :sub_eras, dependent: :destroy
     has_many :era_points, dependent: :destroy
 
+    enum tier: {a: 3, b: 2,c: 1, d: 0}
+
     validates :name, presence: true
 
 
@@ -23,4 +25,12 @@ class Era < ApplicationRecord
         events = self.sub_eras.includes(:events).map(&:get_events_happed_on_this_day)
         events.flatten
     end
+
+    def set_tier
+        era = Era.all.order(:point).reverse
+        era.each_with_index do |era, index|
+            era.update(tier: index)
+        end
+    end
+
 end
