@@ -1,7 +1,10 @@
 require 'open-uri'
 #! Create a default admin user
     AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
-    user = User.create(email: "mo@mo.mo", password: "momomo", name: "Mohammed Saeed")
+    user = User.create(email: "saeed@gmail.com", password: "momomo", name: "Mohammed Saeed")
+    user_1 = User.create(email: "deeb@gmail.com", password: "momomo", name: "Mohammed Eldeeb")
+    user_2 = User.create(email: "yousef@gmail.com", password: "momomo", name: "Yousef Ghouneim")
+    user_3 = User.create(email: "khaled@gmail.com", password: "momomo", name: "Khaled Ramadan")
 
 #! Create eras
     ancientEra = Era.create(name: "Ancient Era")
@@ -60,6 +63,80 @@ require 'open-uri'
         english_name: "Late Period (Dynasties 21 to 30)" ,
         arabic_info:"كان هذا العصر فصل الختام في التاريخ الفرعوني حيث تعرضت مصر منذ حكم الأسرة 21 وحتى الأسرة 28 لاحتلال كل من الآشوريين عام 670 ق.م ، ثم الفرس حتى انتهى حكم الفراعنة مع الأسرة الــ 30 ودخول الإسكندر الأكبر مصر .",
         english_info:"This era was the closing chapter in Pharaonic history, as Egypt, from the rule of the 21st Dynasty until the 28th Dynasty, was subjected to occupation by the Assyrians in 670 BC, then the Persians, until the rule of the Pharaohs ended with the 30th Dynasty and the entry of Alexander the Great into Egypt."
+    )
+    sub_era_8 = SubEra.create(
+        era: greekEra,
+        arabic_name: "فتح الأسكندر الأكبر لمصر",
+        english_name: "Alexander the Great's conquest of Egypt" ,
+        arabic_info:"وصل الإسكندر إلى الفرما، بوابة مصر الشرقية، في خريف عام 332 ق.م، ولم يجد أي مقاومة من المصريين ولا من الحامية الفارسية عند الحدود ففتحها بسهولة، ثم عبر النيل ووصل إلى العاصمة منف، فاستقبله أهلها كمحرر منتصر، ثم أقام مهرجانًا ثقافيًا ترفيهيًا على النمط الإغريقي احتفالاً بهذا الفوز العظيم. بعد ذلك سار بقواته بحذاء الفرع الكانوبي للنيل، متجهًا إلى ساحل البحر المتوسط، وحط رحاله بالقرب من بحيرة مريوط، وراعه أهمية المكان المحصور بين البحيرة والبحر المتوسط، خاصة إن المكان قريب من نهر النيل الذي يمده بالمياه العذبة. لقد وجد في المكان جزيرة صغيرة قريبة من الشاطيء تُسمى «فاروس»، ومن ثم كلف أحد معاونيه ويدعى «ديموقراطيس» لكي يشرف على بناء مدينة في هذا ووصل الشاطيء بالجزيرة بطريق من الحجارة والرمل ، على أن تحمل المدينة الجديدة اسم القائد المقدوني، ألا وهي الإسكندرية؛ التي قُدّر لها أن تصبح عاصمة مصر لاحقًا خلال عهد البطالمة خلفاء الإسكندر.",
+        english_info:"Alexander arrived at Al-Farma, the eastern gate of Egypt, in the fall of 332 BC. He did not find any resistance from the Egyptians or from the Persian garrison at the border, so he opened it easily. Then he crossed the Nile and reached the capital, Memphis, and its people welcomed him as a victorious liberator. Then he held an entertaining cultural festival. In the Greek style, celebrating this great victory. After that, he marched with his forces along the canopic branch of the Nile, heading to the Mediterranean coast, and landed near Lake Mariout. He was taken into consideration the importance of the place sandwiched between the lake and the Mediterranean Sea, especially since the place was close to the Nile River, which supplies it with fresh water. He found in the place a small island close to the coast called “Pharos”, and then he assigned one of his assistants called “Democritus” to supervise the construction of a city in this place and connected the beach to the island by a road of stones and sand, with the new city bearing the name of the Macedonian leader, namely Alexandria. ; Which was destined to become the capital of Egypt later during the reign of the Ptolemies, successors of Alexander."
+    )
+    sub_era_9 = SubEra.create(
+        era: greekEra,
+        arabic_name: "مصر في عصر البطالمة",
+        english_name: "Egypt in the Ptolemaic era" ,
+        arabic_info:"البطالمة هم عائلة من أصل مقدوني نزحت إلى مصر بعد وفاة الإسكندر الأكبر سنة 323 ق.م، حيث تولى أحد قادة جيش الإسكندر الأكبر وهو «بطليموس» حكم مصر. أهتم بطليموس الأول ببناء مدينة الإسكندرية التي أسسها الأسكندر الأكبر قبل مغادرته مصر في حملة عسكرية إلى بلاد الفرس وأفغانستان والهند. وجعل بطليموس الأول الإسكندرية عاصمة لمصر. لا يعرف أين توجد مقبرة الإسكندر الأكبر حيث أصابته المنية في خارج مصر. وظلت أسرة بطليموس تحكم مصر حتى دخلها الرومان في عام 30 ق.م. وآخر البطالمة كانت الملكة كليوباترا وابنها بطليموس الخامس عشر (قيصرون).
+
+        وصل نفوذ الدولة البطلمية إلى فلسطين، قبرص وشرق ليبيا، وقد عرفت ازدهارا خلال عهود بطليموس الأول وبطليموس الثاني وبطليموس الثالث. كون البطالمة ذوي أصول إغريقية لم يمنعهم من التشبع بالتقاليد والعادات المصرية، فمعمارهم المصري ومعابدهم للآلهة المصرية وطريقة عيشهم مصرية وساعد ذلك تزاوجهم من المصريين. جميع ملوك البطالمة حملوا اسم بطليموس. واتخذوا من الإسكندرية عاصمة لهم وظلت كذلك حتى معركة أكتيوم البحرية عام 31 ق.م عندما انتصر اكتافيوس قادما من روما على أنطونيوس وكليوباترا لتصبح مصر ولاية رومانية منذ هذا التاريخ وحتى الفتح الإسلامي على يد عمرو بن العاص . تتكون أسرة البطالمة من 16 حاكما إذا أضفنا ابن كليوباترا السابعة وابنها بطليموس الخامس عشر (قيصرون) ابن يوليوس قيصر * 51 ق.م - 30 ق.م",
+        english_info:"The Ptolemies are a family of Macedonian origin that migrated to Egypt after the death of Alexander the Great in 323 BC, where one of the leaders of Alexander the Great’s army, “Ptolemy,” assumed the rule of Egypt. Ptolemy I was interested in building the city of Alexandria, which was founded by Alexander the Great before he left Egypt on a military campaign to Persia, Afghanistan, and India. Ptolemy I made Alexandria the capital of Egypt. It is not known where the tomb of Alexander the Great is located, as he died outside Egypt. The Ptolemy family continued to rule Egypt until the Romans entered it in 30 BC. The last of the Ptolemies was Queen Cleopatra and her son, Ptolemy XV (Caesaron).
+
+        The influence of the Ptolemaic state reached Palestine, Cyprus and eastern Libya, and it flourished during the reigns of Ptolemy I, Ptolemy II, and Ptolemy III. The fact that the Ptolemies were of Greek origins did not prevent them from imbibing Egyptian traditions and customs. Their architecture, their temples to the Egyptian gods, and their way of life were Egyptian, and this was helped by their intermarriage with Egyptians. All Ptolemaic kings bore the name Ptolemy. They made Alexandria their capital and it remained so until the naval battle of Actium in 31 BC, when Octavius, coming from Rome, defeated Antony and Cleopatra, making Egypt a Roman province from this date until the Islamic conquest at the hands of Amr ibn al-Aas. The Ptolemaic dynasty consists of 16 rulers if we add the son of Cleopatra VII and her son Ptolemy XV (Caesarion), son of Julius Caesar * 51 BC - 30 BC"
+    )
+    sub_era_10 = SubEra.create(
+        era: romanEra,
+        arabic_name: "الحكم الروماني لمصر",
+        english_name: "Roman rule of Egypt" ,
+        arabic_info:"أصبحت مصر (باللاتينية: Aegyptus، باليونانية العامية المختلطة: Αἴγυπτος، وتنطق: إيجبتوس) مقاطعة رومانية في 30 ق.م. بعد أن هَزَمّ أوكتافيوس (الإمبراطور الروماني المستقبلي باسم أغسطس) خصمه مارك أنطوني وأطاح بعرش الملكة الفرعونية كليوباترا وضم المملكة البطلمية إلى الإمبراطورية الرومانية. شملت المقاطعة معظم مناطق مصر الحديثة باستثناء شبه جزيرة سيناء، التي غزاها تراجان لاحقاً. كانت مقاطعة كريت وبرقة تحد إيجبتوس غرباً ويهودا (العربية البترائية لاحقاً) شرقاً.",
+        english_info:"Egypt (Latin: Aegyptus, mixed colloquial Greek: Αἴγυπτος, pronounced: Aegyptus) became a Roman province in 30 BC. After Octavius (the future Roman Emperor named Augustus) defeated his opponent Mark Antony, overthrew the throne of the Pharaonic Queen Cleopatra, and annexed the Ptolemaic Kingdom to the Roman Empire. The province included most of modern Egypt with the exception of the Sinai Peninsula, which Trajan later conquered. The province of Crete and Cyrenaica bordered Egypt to the west and Judea (later Arabia Petraea) to the east."
+    )
+    sub_era_11 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الفتح الإسلامي لمصر",
+        english_name: "Islamic conquest of Egypt" ,
+        arabic_info:"الفَتْحُ الإسْلَامِيُّ لِمِصْر ، وفي بعض المصادر ذات الصبغة القوميَّة خُصُوصًا يُعرفُ هذا الحدث باسم الفَتْحُ العَرَبِيُّ لِمِصْر، هو سِلسلةٌ من الحملات والمعارك العسكريَّة التي خاضها المُسلمون تحت راية دولة الخِلافة الراشدة ضدَّ الإمبراطوريَّة البيزنطيَّة بين عامي 640م و642م، وانتُزعت على إثرها ولاية مصر الروميَّة من يد الروم ودخلت في دولة الإسلام، بعد عِقدٍ من عودتها لِلإمبراطوريَّة البيزنطيَّة، إذ كان الفُرس الساسانيّون قد انتزعوها من الأخيرة لِفترةٍ وجيزة.",
+        english_info:"The Islamic conquest of Egypt, and in some sources of a nationalistic nature in particular, this event is known as the Arab conquest of Egypt, is a series of campaigns and military battles that Muslims fought under the banner of the Rightly Guided Caliphate against the Byzantine Empire between the years 640 AD and 642 AD, after which the state was seized Roman Egypt from the hands of the Romans It entered the Islamic state, a decade after its return to the Byzantine Empire, as the Sassanian Persians had wrested it from the latter for a short period."
+    )
+    sub_era_12 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الدوله الأمويه",
+        english_name: "Umayyad state" ,
+        arabic_info:"ٱلدَّوْلَةُ ٱلأُمَوِيَّةُ أو ٱلْخِلَافَةُ ٱلأُمَوِيَّةُ أو دَوْلَةُ بَنِي أُمَيَّة (41 - 132 هـ / 662 - 750 م) هي أكبر دولة وثاني خلافة في تاريخ الإسلام، وواحدةٌ من أكبر الدُّوَلِ الحاكِمة في التَّاريخ. كان بنو أُميَّة أُولى الأُسر الحجازية المُسلمة الحاكِمة؛ إذ حكموا من سنة 41هـ (662م) إلى 132 هـ (750م)، وكانت عاصمةُ الدَّولة في مدينة دمشق. بلغت الدَّولة الأُمويَّة ذروة اتساعها في عهد الخليفة العاشر هشام بن عبد الملك؛ إذ امتدت حُدودها من أطراف الصين شرقاً حتى جنوب فرنسا غرباً، وتمكنت من فتح إفريقية والمغرب والأندلُس وجنوب الغال والسند وما وراء النهر.",
+        english_info:"The Umayyad State, the Umayyad Caliphate, or the Umayyad State (41 - 132 AH / 662 - 750 AD) is the largest state and the second caliphate in the history of Islam, and one of the largest ruling states in history. The Banu Umayyads were the first ruling Muslim Hijazi families. They ruled from the year 41 AH (662 AD) to 132 AH (750 AD), and the capital of the state was in the city of Damascus. The Umayyad state reached the peak of its expansion during the reign of the tenth Caliph Hisham bin Abdul Malik. Its borders extended from the outskirts of China in the east to southern France in the west, and it was able to conquer Africa, Morocco, Andalusia, southern Gaul, Sindh, and Transoxiana."
+    )
+    sub_era_13 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الدوله العباسيه",
+        english_name: "Abbasid state" ,
+        arabic_info:"الدَّولَةُ العَبَّاسِيَّةُ أو الخِلافةُ العبَّاسيَّة أو دَوْلَةُ بَني العبَّاس هو الاسم الذي يُطلق على ثالث خلافة إسلامية في التاريخ، وثاني السلالات الحاكمة الإسلامية. استطاع العباسيون أن يزيحوا بني أمية من دربهم ويستفردوا بالخلافة عبر سلسلة من الثورات المسلحة التي أنطلقت من خراسان، وقد قضوا على تلك السلالة الحاكمة، وطاردوا أبناءها حتى قضوا على أغلبهم، ولم ينج منهم إلا من لجأ إلى الأندلس، وكان من ضمنهم عبد الرحمن بن معاوية بن هشام بن عبد الملك؛ فاستولى على شبه الجزيرة الأيبيرية، وبقيت في عقبه لسنة 1029م.",
+        english_info:"The Abbasid state, the Abbasid Caliphate, or the state of Bani Abbas is the name given to the third Islamic caliphate in history, and the second Islamic ruling dynasty. The Abbasids were able to dislodge the Umayyads from their path and gain monopoly over the caliphate through a series of armed revolutions that started from Khorasan. They eliminated that ruling dynasty and pursued its sons until they eliminated most of them. Only those who took refuge in Andalusia survived, and among them was Abd al-Rahman ibn Muawiyah. Bin Hisham bin Abdul Malik; He seized control of the Iberian Peninsula, and it remained in his possession until the year 1029 AD."
+    )
+    sub_era_14 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الدوله الفاطميه",
+        english_name: "Fatimid state" ,
+        arabic_info:"الدَّوْلَةُ الفَاطِمِيَّةُ أو الخِلَافَةُ الفَاطِمِيَّةُ أو الدَّوْلَةُ العُبَيْدِيَّةُ هي إحدى دُولِ الخِلافةُ الإسلاميَّة، والوحيدةُ بين دُولِ الخِلافةِ التي اتخذت من المذهب الشيعي الإسماعيلي مذهبًا رسميًّا لها. قامت هذه الدولة بعد أن نشط الدُعاة الإسماعيليّون في إذكاء الجذوة الحُسينيَّة ودعوة الناس إلى القتال باسم الإمام المهديّ المُنتظر، الذين تنبؤوا جميعًا بظُهوره في القريب العاجل، وذلك خلال العهد العبَّاسي فأصابوا بذلك نجاحًا في الأقاليم البعيدة عن مركز الحُكم خُصوصًا، بسبب مُطاردة العبَّاسيين لهم واضطهادهم في المشرق العربي، فانتقلوا إلى المغرب حيثُ تمكنوا من استقطاب الجماهير وسط قبيلة كتامة البربريَّة خصوصًا، وأعلنوا قيام الخِلافةِ بعد حين. شملت الدولة الفاطميَّة مناطق وأقاليم واسعة في شمال أفريقيا والشرق الأوسط، فامتدَّ نطاقها على طول الساحل المُتوسطيّ من بلاد المغرب إلى مصر، ثُمَّ توسَّع الخُلفاء الفاطميّون أكثر فضمّوا إلى مُمتلكاتهم جزيرة صقلية، والشَّام، والحجاز، فأصبحت دولتهم أكبر دولةٍ استقلَّت عن الدولة العبَّاسيَّة، والمُنافس الرئيسيّ لها على زعامة الأراضي المُقدَّسة وزعامة المُسلمين.",
+        english_info:"The Fatimid state, the Fatimid Caliphate, or the Ubaid state is one of the Islamic caliphate states, and the only one among the caliphate states that took the Ismaili Shiite sect as its official doctrine. This state was established after the Ismaili preachers were active in fanning the Husseini flame and calling on people to fight in the name of the Awaited Imam Mahdi, all of whom predicted his appearance in the near future, during the Abbasid era. They achieved success in the regions far from the center of government, especially because of the Abbasids’ persecution and persecution of them in The Arab Levant, so they moved to Morocco, where they were able to attract the masses among the Berber Kutama tribe in particular, and they announced the establishment of the Caliphate after a while. The Fatimid state included large areas and territories in North Africa and the Middle East, and its scope extended along the Mediterranean coast from the Maghreb to Egypt. Then the Fatimid caliphs expanded further, annexing to their possessions the island of Sicily, the Levant, and the Hijaz, so their state became the largest state independent of the Abbasid state, and the main competitor. She has the leadership of the Holy Lands and the leadership of Muslims."
+    )
+    sub_era_15 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الدوله الأيوبيه",
+        english_name: "Ayyubid state" ,
+        arabic_info:"الدولة الأيوبية هي دولة إسلامية نشأت في مصر، وامتدت لتشمل الشام والحجاز واليمن والنوبة وبعض أجزاء بلاد المغرب. يعد صلاح الدين يوسف بن أيوب مؤسس الدولة الأيوبية، كان ذلك بعد أن عُيِّن وزيرًا للخليفة الفاطمي العاضد لدين الله ونائبًا عن السلطان نور الدين محمود في مصر، فعمل على أن تكون كل السلطات تحت يده، وأصبح هو المتصرف في الأمور، وأعاد مصر إلى تبعية الدولة العباسية، فمنع الدعاء للخليفة الفاطمي ودعا للخليفة العباسي، وأغلق مراكز الشيعة الفاطمية، ونشر المذهب السني.",
+        english_info:"The Ayyubid state is an Islamic state that originated in Egypt, and extended to include the Levant, Hijaz, Yemen, Nubia, and some parts of the Maghreb. Saladin Yusuf bin Ayyub is considered the founder of the Ayyubid state. This was after he was appointed minister of the Fatimid Caliph Al-Adid li-Din Allah and representative of Sultan Nur al-Din Mahmud in Egypt. He worked to ensure that all powers were under his control, and he became the one in charge of affairs, and returned Egypt to state subordination. Abbasid, he banned supplication for the Fatimid Caliph and prayed for the Abbasid Caliph, closed the Fatimid Shiite centers, and spread the Sunni doctrine."
+    )
+    sub_era_16 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الدوله المملوكيه",
+        english_name: "Mamluk state" ,
+        arabic_info:"الدَّولَةُ المَملُوكِيَّةُ أوِ السَّلطَنَةُ المَملُوكِيَّةُ أو دَولَةُ المَمَالِيكِ أو سَلطَنَةُ المَمَالِيكِ هي إحدى الدُول الإسلاميَّة التي قامت في مصر خِلال أواخر العصر العبَّاسي الثالث، وامتدَّت حُدُودها لاحقًا لِتشمل الشَّام والحجاز، ودام مُلكُها مُنذُ سُقُوط الدولة الأيوبيَّة سنة 648 هـ المُوافقة لِسنة 1250 مـ، حتَّى بلغت الدولة العُثمانيَّة ذُروة قُوَّتها وضمَّ السُلطان سليم الأوَّل الديار الشَّاميَّة والمصريَّة إلى دولته بعد هزيمة المماليك في معركة الريدانيَّة سنة 923 هـ المُوافقة لِسنة 1517 مـ.",
+        english_info:"The Mamluk state, Mamluk sultanate, Mamluk state, or Mamluk sultanate is one of the Islamic states that established in Egypt during the late third Abbasid era. Its borders later extended to include the Levant and the Hijaz, and its rule lasted since the fall of the Ayyubid state The year 648 AH, corresponding to the year 1250 AD, until the Ottoman Empire reached The peak of its power was when Sultan Selim I annexed the Levant and Egypt to his state after defeating the Mamluks in the Battle of Raydaniya in the year 923 AH, corresponding to the year 1517 AD."
+    )
+    sub_era_17 = SubEra.create(
+        era: islamicEra,
+        arabic_name: "الدوله العثمانيه",
+        english_name: "Ottoman state" ,
+        arabic_info:"الدَّوْلَةُ العُثمَانِيَّة أو الدَّوْلَةُ العَلِيَّةُ العُثمَانِيَّة (بالتركية العثمانية: دَوْلَتِ عَلِيّهٔ عُثمَانِيّه؛ بالتركية الحديثة: Yüce Osmanlı Devleti)، أو الخِلَافَةُ العُثمَانِيَّة، هي دولة إسلامية أسسها عثمان الأول بن أرطغرل، واستمرت قائمة لأكثر من 600 سنة، وبالتحديد من 27 يوليو 1299م حتى 29 أكتوبر 1923م. نشأت الدولة العُثمانيَّة بدايةً كإمارة حُدود تُركمانيَّة تعمل في خدمة سلطنة سلاجقة الروم، وترد الغارات البيزنطيَّة عن ديار الإسلام، وبعد سُقُوط السلطنة سالفة الذِكر استقلَّت الإمارات التُركمانيَّة التابعة لها، بما فيها الإمارة العُثمانيَّة، التي قُدِّر لها أن تبتلع سائر الإمارات بِمُرور الوقت. عبر العُثمانيُّون إلى أوروبا الشرقيَّة لأوَّل مرَّة بعد سنة 1354م، وخلال السنوات اللاحقة تمكَّن العُثمانيُّون من فتح أغلب البلاد البلقانيَّة، فتحوَّلت إمارتهم الصغيرة إلى دولة كبيرة، وكانت أوَّل دولةٍ إسلاميَّة تتخذ لها موطئ قدم في البلقان، كما قُدِّر لِلعُثمانيين أن يفتتحوا القسطنطينية سنة 1453م، ويُسقطوا الإمبراطوريَّة البيزنطيَّة بعد أن عاشت أحد عشر قرنًا ونيِّفًا، وذلك تحت قيادة السُلطان محمد الفاتح.",
+        english_info:"The Ottoman Empire, or the Ottoman Empire, is an Islamic state founded by Osman I bin Ertugrul, and it continued for more than 100 years 600 years, specifically from July 27, 1299 AD until October 29 1923 AD. The Ottoman Empire initially emerged as a Turkmen border emirate working in the service of the Seljuk Sultanate of Rum, and repelling Byzantine raids from the lands of Islam. After the fall of the aforementioned Sultanate, the Turkmen emirates affiliated with it became independent, including the Ottoman Emirate, which was destined to swallow the rest of the emirates over time. The Ottomans crossed into Eastern Europe for the first time after the year 1354 AD, and during the following years the Ottomans were able to conquer most of the Balkan countries, so their small emirate turned into a large state, and it was the first Islamic country to take a foothold in the Balkans. The Ottomans were also destined to conquer Constantinople in the year 1453 AD, and overthrow The Byzantine Empire after living for more than eleven centuries, under the leadership of Sultan Mehmed the Conqueror."
     )
 
 #! Create subera's Sections
@@ -540,13 +617,53 @@ require 'open-uri'
         sub_era: sub_era_6,
     )
     # sub_era_7
-    # Section.create(
-    #     arabic_title:"",
-    #     english_title:"",
-    #     arabic_content:"",
-    #     english_content:"",
-    #     sub_era: sub_era_7,
-    # )
+    Section.create(
+        arabic_title:"الأسرة الحادية والعشرون",
+        english_title:"Twenty-first Dynasty",
+        arabic_content:"تتميز فترة الأسرة الحادية والعشرين بتفكك الملكية في البلاد. وخلال عهد رمسيس الحادي عشر، كانت الأسرة العشرين في مصر تفقد قبضتها على مدينة طيبة، التي أصبح كهنتها يزدادون نفوذًا. وبعد وفاة رمسيس الحادي عشر، حكم خليفته، سمندس الأول، من مدينة تانيس، لكن نفوذه اقتصر في الغالب فقط على مصر السفلى، التي كان يسيطر عليها. وفي غضون ذلك، حكم كبار كهنة آمون في طيبة وسط وصعيد مصر في كل شيء، إلا اسميًا. ومع ذلك، كان هذا التقسيم أقل أهمية مما يبدو، لأن الكهنة والفراعنة ينتمون إلى نفس العائلة.",
+        english_content:"The Twenty-First Dynasty period is characterized by the disintegration of the monarchy in the country. During the reign of Ramesses After the death of Ramesses Meanwhile, the high priests of Amun at Thebes ruled central and upper Egypt in all but nominal terms. However, this division was less important than it seems, because priests and pharaohs belonged to the same family.",
+        sub_era: sub_era_7,
+    )
+    Section.create(
+        arabic_title:"الأسرتان الثانية والعشرون والثالثة والعشرون",
+        english_title:"Twenty-second and Twenty-third Dynasties",
+        arabic_content:"جرى توحيد البلاد بقوة من قبل الأسرة الثانية والعشرين التي أسسها شيشنق الأول في عام 945 قبل الميلاد (أو 943 قبل الميلاد)، وينحدر شيشنق من المهاجرين المشواش، وتعود أصولهم إلى ليبيا القديمة. وبذلك عم الاستقرار البلاد لأكثر من قرن، ولكن بعد عهد أوسوركون الثاني، على وجه الخصوص، انقسمت البلاد فعليًا إلى دولتين، حيث سيطر شيشنق الثالث من الأسرة الثانية والعشرين على مصر السفلى بحلول عام 818 قبل الميلاد، بينما حكم تاكيلوت الثاني و ابنه أوسوركون (أوسوركون الثالث المستقبلي) مصر الوسطى والعليا. وفي طيبة اجتاحت المدينة حرب أهلية، حرضت قوات بيدوباست الأول، الذي نصب نفسه فرعونًا، ضد السلالة الحاكمة لتاكيلوت الثاني\أوسوركون بي. اصطدم الطرفان باستمرار ولم يُحل النزاع إلا في العام 39 من عهد شيشنق الثالث عندما هزم أوسوركون بي أعدائه بشكل نهائي. وشرع بتأسيس الأسرة المصرية الثالثة والعشرين في صعيد مصر من أسرة أوسوركون الثالث - تاكيلوت الثالث - رودامون، لكن هذه المملكة سرعان ما تفككت بعد وفاة رودامون، مع ظهور دول المدن المحلية تحت حكم ملوك مثل بفتجاويباست من هيراكليوبولس، ونيملوت من هرموبوليس، وإني في طيبة.",
+        english_content:"The country was firmly unified by the Twenty-Second Dynasty, which was founded by Sheshenq I in 945 BC (or 943 BC). Sheshenq is descended from Meshwesh immigrants, and their origins go back to ancient Libya. Thus stability prevailed over the country for more than a century, but after the reign of Osorkon II, in particular, the country effectively split into two states, with Sheshenq III of the Twenty-Second Dynasty controlling Lower Egypt by 818 BC, while Takelot II and his son Osorkon (Osorkon) ruled Future III) Middle and Upper Egypt. In Thebes, a civil war engulfed the city, pitting the forces of Pedobast I, the self-proclaimed pharaoh, against the ruling dynasty of Takelot II/Osorkon B. The two sides clashed constantly and the conflict was not resolved until the 39th year of Sheshenq III's reign when Osorkun Bey defeated his enemies once and for all. He proceeded to establish the Twenty-Third Egyptian Dynasty in Upper Egypt from the dynasty of Osorkon III - Takelot III - Rhudamon, but this kingdom quickly disintegrated after the death of Rhudamon, with the emergence of local city-states under the rule of kings such as Peftegaebast of Heracleopolis, Nemelot of Hermopolis, and Enni in Thebes.",
+        sub_era: sub_era_7,
+    )
+    Section.create(
+        arabic_title:"الأسرة الرابعة والعشرون",
+        english_title:"Twenty-fourth Dynasty",
+        arabic_content:"كان هذا الانقسام وما تبعه من عدم الاستقرار السياسي في صالح المملكة النوبية بشكل كامل. قبل حملة بعنخي التي استمرت 20 عامًا في مصر، كان الحاكم النوبي السابق – كاشتا - قد وسع بالفعل نفوذ مملكته إلى طيبة عندما أجبر شبنؤبت، المتعبدة الإلهية الخادمة لآمون وأخت تاكيلوت الثالث، على تبني ابنته أماني ريديس، لتكون هي الخليفة. ثم بعد 20 عامًا، نحو عام 732 قبل الميلاد، اتجه خليفته، بعنخي، شمالًا وهزم القوة المشتركة للعديد من الحكام المصريين الأصليين: بفتجاويباست، وأوسوركون الرابع من تانيس، ويوبوت الثاني من ليونتوبوليس، وتف ناخت من سايس.",
+        english_content:"This division and the subsequent political instability were entirely to the advantage of the Nubian Kingdom. Before Baankhi's 20-year campaign in Egypt, the previous Nubian ruler - Kashta - had already extended his kingdom's influence into Thebes when he forced Shepenupet, the divine servant-worshipper of Amun and sister of Takelot III, to adopt his daughter, Amani-Redes, as the successor. Then 20 years later, around 732 BC, his successor, Pankhe, turned north and defeated the combined force of several indigenous Egyptian rulers: Pfethegaebast, Osorkon IV of Tanis, Eubut II of Leontopolis, and Tephnakht of Sais.",
+        sub_era: sub_era_7,
+    )
+    Section.create(
+        arabic_title:"الأسرة الخامسة والعشرون",
+        english_title:"Twenty-fifth Dynasty",
+        arabic_content:"أسس بعنخي الأسرة الخامسة والعشرين وعين الحكام المهزومين حكام مقاطعات له. وخلفه في البداية أخوه شباكا ثم ابناه شبتكو وطهارقة. كانت إمبراطورية وادي النيل للأسرة الخامسة والعشرين التي جرى توحيدها كبيرة، مثلما كانت منذ الدولة الحديثة. وبدأ فراعنة الأسرة الحاكمة، ومن بينهم طهارقة، ببناء أو ترميم المعابد والآثار في جميع أنحاء وادي النيل، بما في ذلك ممفيس والكرنك وكوة وجبل البركل. انتهت الأسرة الخامسة والعشرون بتراجع حكامها إلى موطنهم الروحي في مدينة نبتة. وهناك (في الكرو ونوري) دفن جميع فراعنة الأسرة الخامسة والعشرين تحت الأهرامات الأولى التي شُيدت في وادي النيل عبر مئات السنين. أفضت السلالة النبتية عن مملكة كوش التي ازدهرت في نبتة ومروي حتى القرن الثاني الميلادي على الأقل.
+
+        كانت المكانة الدولية لمصر قد تراجعت بشكل كبير بحلول هذا الوقت. وكان الحلفاء الدوليون للبلاد قد سقطوا بقوة تحت نفوذ آشور، ومنذ نحو 700 قبل الميلاد أصبح السؤال هو متى ستقوم حرب بين الدولتين، كما أدرك آسرحدون أن غزو مصر السفلى كان ضروريًا لحماية مصالح الآشوريين في بلاد الشام.
+        
+        على الرغم من حجم مصر وثروتها، كان لدى آشور كمية أكبر من الأخشاب، بينما كانت مصر تعاني من نقص مزمن، ما سمح لآشور بإنتاج المزيد من الفحم اللازم لصهر الحديد، وبالتالي منح آشور قدرًا أكبر من الأسلحة الحديدية. وقد أصبح هذا التفاوت حرجًا خلال الغزوات الآشورية لمصر خلال الفترة 670-663 قبل الميلاد. ونتيجة لذلك، كان عهد الفرعون طهارقة، وعهد خليفته تنوت أماني، مليئين بالصراع المستمر مع الآشوريين. وفي عام 664 قبل الميلاد وجه الآشوريون ضربة قاتلة، إذ نهبوا طيبة وممفيس. وبعد هذه الأحداث، وبدءًا من عهد أتلانيرسا، لم يحكم أي حاكم كوشي مصر مرة أخرى.",
+        english_content:"Ankhi founded the Twenty-Fifth Dynasty and appointed defeated rulers as governors of his provinces. He was succeeded at first by his brother Shabaka, then by his two sons Shebatku and Taharqa. The Nile Valley Empire of the reunited Twenty-Fifth Dynasty was large, as it had been since the New Kingdom. The pharaohs of the dynasty, including Taharqa, began building or restoring temples and monuments throughout the Nile Valley, including Memphis, Karnak, Kuwa, and Jebel Barkal. The Twenty-Fifth Dynasty ended with its rulers retreating to their spiritual home in the city of Napata. There (in El-Kurru and Nuri) all the pharaohs of the Twenty-Fifth Dynasty were buried under the first pyramids that were built in the Nile Valley over hundreds of years. The Napatan dynasty gave rise to the Kingdom of Kush, which flourished in Napata and Meroë until at least the second century AD.
+
+        Egypt's international standing had declined significantly by this time. The country's international allies had fallen strongly under the influence of Assyria, and from about 700 BC the question became when a war would break out between the two countries, as Esarhaddon realized that the conquest of Lower Egypt was necessary to protect the interests of the Assyrians in the Levant.
+        
+        Despite Egypt's size and wealth, Assyria had a greater supply of timber, while Egypt was chronically in short supply, allowing Assyria to produce more charcoal for smelting iron, thus giving Assyria a greater capacity for iron weapons. This disparity became critical during the Assyrian invasions of Egypt during the period 670-663 BC. As a result, the reign of Pharaoh Taharqa, and that of his successor Tanu-Amani, were filled with constant conflict with the Assyrians. In 664 BC, the Assyrians dealt a fatal blow, sacking Thebes and Memphis. After these events, beginning with the reign of Atlanirsa, no Kushite ruler ruled Egypt again.",
+        sub_era: sub_era_7,
+    )
+    Section.create(
+        arabic_title:"نهاية الفترة الانتقالية الثالثة",
+        english_title:"End of the Third Intermediate Period",
+        arabic_content:"ظل صعيد مصر لفترة من الوقت تحت حكم طهارقة وتنوت أماني، بينما حكمت مصر السفلى من عام 664 قبل الميلاد من قبل الأسرة السادسة والعشرين الوليدة، التي أسسها الآشوريون. في عام 663 قبل الميلاد، شن تنوت أماني غزوًا واسع النطاق على مصر السفلى، حيث استولى على ممفيس في أبريل من ذلك العام، ما أسفر عن مقتل نخاو الأول من سايس في هذه العملية، إذ ظل نخاو مخلصًا لآشوربانيبال. بالكاد كان لدى تنوت أماني الوقت الكافي لاستسلام بعض ملوك الدلتا وطرد الآشوريين المتبقين حتى عاد جيش كبير بقيادة آشوربانيبال وابن نخاو بسماتيك الأول. هُزِمَ تنوت أماني شمال ممفيس ونُهبت طيبة تمامًا بعد فترة وجيزة. انسحب الملك الكوشي إلى النوبة بينما تضاءل النفوذ الآشوري في صعيد مصر. أضعفت طيبة بشكل دائم بسبب عملية النهب، واستسلمت بسلام لأسطول بسماتيك في 656 قبل الميلاد. ولتأكيد سلطته، وضع بسماتيك ابنته في موقع لتكون المتعبدة الإلهية المستقبلية لآمون، وبالتالي أيضًا قدم الطاعة لكهنوت آمون ووحد مصر بشكل فعال. لم يكن أتلانيرسا، خليفة تنوت أماني، في وضع يسمح له بمحاولة إعادة احتلال مصر، حيث آمن بسماتيك أيضًا الحدود الجنوبية في إلفنتين وربما أرسل حملة عسكرية إلى نبتة. وفي الوقت نفسه، تمكن بسماتيك من تحرير نفسه من التبعية الآشورية بينما ظل على علاقة طيبة مع آشوربانيبال، ربما بسبب التمرد المستمر في بابل. ومن خلال القيام بذلك، جلب مزيدًا من الاستقرار إلى البلاد خلال فترة حكمه التي استمرت 54 عامًا من مدينة سايس.
+
+        واصل أربعة ملوك متعاقبين من سايس حمل مصر إلى فترة أخرى من السلام والازدهار منذ عام 610 حتى عام 525 قبل الميلاد. ولسوء حظ هذه السلالة، كانت هناك قوة جديدة تنمو في الشرق الأدنى - الإمبراطورية الأخمينية في بلاد فارس. حكم الفرعون بسماتيك الثالث بعد والده أحمس الثاني لمدة 6 أشهر فقط قبل أن يواجه الإمبراطورية الفارسية في الفرما. كان الفرس قد احتلوا بابل بالفعل ولم تكن مصر بذات القوة. هُزم بسماتيك الثالث وهرب لفترة وجيزة إلى ممفيس، قبل أن يُسجن في نهاية المطاف، ثم أُعدم لاحقًا في شوشان، عاصمة الملك الفارسي قمبيز، الذي توج آنذاك باللقب الرسمي للفرعون.",
+        english_content:"Upper Egypt remained for a time under the rule of Taharqa and Tanut-Amani, while Lower Egypt was ruled from 664 BC by the nascent Twenty-Sixth Dynasty, founded by the Assyrians. In 663 BC, Tenut-Amani launched a large-scale invasion of Lower Egypt, capturing Memphis in April of that year, killing Necho I of Sais in the process, as Necho remained loyal to Ashurbanipal. Tanut-Amani barely had time for some of the Delta kings to surrender and expel the remaining Assyrians when a large army led by Ashurbanipal and Necho's son Psamtach I returned. Tanutamani was defeated north of Memphis and Thebes was completely sacked soon after. The Kushite king withdrew to Nubia while Assyrian influence in Upper Egypt diminished. Permanently weakened by plunder, Thebes surrendered peacefully to a Psammatic fleet in 656 BC. To assert his authority, Psamtik placed his daughter in a position to be the future divine worshiper of Amun, thus also offering obedience to the priesthood of Amun and effectively unifying Egypt. Atlanersa, Tenut-Amani's successor, was in no position to attempt to reconquer Egypt, as Psamtik also secured the southern border at Elephantine and may have sent a military expedition to Napata. At the same time, Psamtik managed to free himself from Assyrian subordination while remaining on good terms with Ashurbanipal, perhaps due to the ongoing rebellion in Babylon. In doing so, he brought greater stability to the country during his 54-year rule from Sais.
+
+        Four successive kings of Sais continued to carry Egypt into another period of peace and prosperity from 610 until 525 BC. Unfortunately for this dynasty, a new power was growing in the Near East - the Achaemenid Empire in Persia. Pharaoh Psamtik III ruled after his father Ahmose II for only 6 months before confronting the Persian Empire at Al-Farma. The Persians had already occupied Babylon and Egypt was not as powerful. Psamtik III was defeated and briefly fled to Memphis, before eventually being imprisoned and later executed in Shushan, the capital of the Persian king Cambyses, who was then crowned with the official title of pharaoh.",
+        sub_era: sub_era_7,
+    )
 
 
 #! Create Characters
@@ -1823,8 +1940,8 @@ require 'open-uri'
         date_of_death: "2055",
         sub_era_id: sub_era_3.id,
     )
-    character_24.thumb_image.attach(io: URI.open("https://www.albawabhnews.com/UploadCache/libfiles/155/4/600x338o/542.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-    character_24.cover_image.attach(io: URI.open("https://www.albawabhnews.com/UploadCache/libfiles/155/4/600x338o/542.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_24.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/4/4c/Abydos_KL_07-03_n42.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_24.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/4/4c/Abydos_KL_07-03_n42.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
     CharacterSection.create(
             arabic_title:"حكمه لمصر",
             english_title:"His reign over Egypt",
@@ -3085,31 +3202,279 @@ require 'open-uri'
         The Libyan border was also dangerous due to the organization of the nomadic Libyan population living in that region. In the eleventh year of his rule, the Libyan army was keen to settle in the fertile Egyptian lands, so they headed to Memphis, and near the city the battle took place, and the Pharaoh was victorious, and the numbers of prisoners were large, and they were presented like slaves to the temples. Once this eastern threat was suppressed, Ramses went towards Libya where there was a rebellion, perhaps motivated by the imposition of the prince who had been educated at the Egyptian court. The Libyan forces were defeated, and the Pharaoh took many prisoners.",
         character_id: character_49.id,
     )
-    # character_25 = Character.create(
-    #     arabic_name: "",
-    #     english_name: "",
-    #     arabic_info: "",
-    #     english_info: "",
-    #     date_of_birth: "",
-    #     date_of_death: "",
-    #     sub_era_id: sub_era_6.id,
-    # )
-    # character_25.thumb_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # character_25.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # CharacterSection.create(
-    #     arabic_title:"",
-    #     english_title:"",
-    #     arabic_content:"",
-    #     english_content:"",
-    #     character_id: character_25.id,
-    # )
-    # CharacterSection.create(
-    #     arabic_title:"",
-    #     english_title:"",
-    #     arabic_content:"",
-    #     english_content:"",
-    #     character_id: character_25.id,
-    # )
+    character_50 = Character.create(
+        arabic_name: "بسوسنس الأول",
+        english_name: "Psusennes I",
+        arabic_info: "بسوسنس الأول، (بالإنجليزية: Psusennes I)، (باسبا خع ننو). هو ثالث ملوك الأسرة الحادية والعشرون، 1039 ق.م. – 990 ق.م. وحكم مصر من تانيس في شرق الدلتا. وقام بحماية الحدود المصرية ضد أي هجوم أجنبي. وقد بنى بسوسنس معبدا لثالوث طيبة، في تانيس، وقصورا ملكية، بالإضافة إلى مقبرته الملكية الثرية. وكان ثالوث طيبة يتكون من الرب أمون وزوجته موط وابنهم خونسو.
+
+        وقد تعرف العالم على الفرعون بسوسنس بعد اكتشاف مقبرته من قبل الفرنسي البروفيسور بيير مونتيه في سنة 1940م والتي وجدت بكامل كنوزها ولم تتعرض للنهب ، ولحجم الفضة التي عثر عليها بمقبرته سمي بالفرعون الفضي، وكان هذا الاكتشاف سيشكل حدثا هاما مثل حدث اكتشاف مقبرة توت عنخ آمون لولا أن توقيت هذا الاكتشاف كان على أعتاب الحرب العالمية الثانية فلم ينل التغطية والاهتمام كما حدث عند اكتشاف مقبرة توت عنخ آمون.",
+        english_info: "Psusennes I (Psusennes I). He is the third king of the Twenty-first Dynasty, 1039 BC. – 990 BC. He ruled Egypt from Tanis in the eastern Delta. The Egyptian border protection against any foreign attack. Psusennes built a temple for the Theban Trinity in Tanis, and royal palaces, in addition to his rich royal tomb. The Theban triad consisted of the god Amun, his wife Mut, and their son Khonsu.
+
+        The world learned about the Pharaoh in Susens after the discovery of his tomb by the Frenchman, Professor Pierre Montet, in the year 1940 AD, which was found with all its treasures and had not been looted. Due to the size of the silver found in his tomb, he was called the Silver Pharaoh, and this discovery would have constituted an important event like the discovery of Tutankhamun’s tomb had it not been for it. The timing of this discovery was on the eve of World War II, so it did not receive the coverage and attention that happened when the discovery of Tutankhamun’s tomb.",
+        date_of_birth: "1039",
+        date_of_death: "1039",
+        sub_era_id: sub_era_7.id,
+    )
+    character_50.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c0/Golden_Mask_of_Psusennes_I.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_50.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c0/Golden_Mask_of_Psusennes_I.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"الصفات الجسدية",
+        english_title:"Physical characteristics",
+        arabic_content:"بعد فحص الهيكل العظمي لبسوسنس الأول تم معرفة صفاته الجسدية منها أن طوله كان 166 سم ، وأنه كان قوي البنية ، ورأسه ضخم على جسده القصير ، وعينه اليمنى أعلى من عينه اليسرى ، وأنه توفي عن عمر 80 عاماً عندما كان معدل الأعمار في عصره هو 35 عاماً ، وقد وجد بعموده الفقري كسر عند الفقرة السابعة العليا شفي منه خلال حياته ، كما تم معرفة أنه عند وفاته كان يعاني من مرض الروماتيزم في الأنسجة الرابطة للعمود الفقري ، وكان فمه محدب نتيجة فقده لأسنان كثيرة.",
+        english_content:"After examining the skeleton of Psusennes I, it was discovered that his physical characteristics were that his height was 166 cm, that he was of strong build, that his head was huge for his short body, that his right eye was higher than his left eye, and that he died at the age of 80 years, when the average life expectancy in his time was 35 years. A fracture at the upper seventh vertebra was found in his spine, which he recovered from during his lifetime. It was also learned that at the time of his death, he was suffering from rheumatism in the tissues connecting the spine, and his mouth was hunched as a result of the loss of many teeth.",
+        character_id: character_50.id,
+    )
+    CharacterSection.create(
+        arabic_title:"قلادة الجعران المجنح",
+        english_title:"Winged scarab necklace",
+        arabic_content:"قلادة في شكل الجعران المجنح، تخص الملك بسوسنس الأول، وقد حفر عليها التعويذة رقم ثلاثين من كتاب الموتى. والتي تدعو بألا يؤخذ قلب المتوفى من صاحبه، أو يعارضه أثناء المحاكمة في الحياة الأخرى. وقد عثر على أربع من هذه الدلايات على مومياء بسوسينس الأول.
+
+        وكان العنصر الأساسي في المجموعة، جعرانا كبيرا من حجر قاتم، مركب في إطار من ذهب، وله جناحان طويلان ضيقان، يغشيهما زجاج كثير الألوان. ويقوم الجعران على 'شن'، علامة القوة الكونية، مطعمة بيشب بني اللون. أما اسم بسوسينس، وهو باسباخع إن نيوت مري آمون، بمعنى النجم المتلألئ في المدينة، حبيب آمون، فمكتوب في خرطوش. وأما سلسلة القلادة وثقالتها، فمؤلفة من خرزات من ذهب، ويشب أخضر وبني، وفلسبار سماوي.",
+        english_content:"A pendant in the form of a winged scarab, belonging to King Psusnes I, on which was engraved the talisman number thirty from the Book of the Dead. Which calls for the heart of the deceased not to be taken from its owner, or to oppose him during the trial in the afterlife. Four of these pendants were found on the mummy of Psusenses I.
+
+        The main element in the collection was a large scarab made of dark stone, mounted in a gold frame, and had two long, narrow wings covered with many-colored glass. The scarab rests on 'Shen', a sign of cosmic power, inlaid with brown jasper. As for the name of Psusenses, which is Paspakha in Newt Meri Amun, meaning the shining star in the city, beloved of Amun, it is written in a cartouche. As for the necklace chain and its weight, it is composed of gold beads, green and brown jasper, and heavenly feldspar.",
+        character_id: character_50.id,
+    )
+    character_51 = Character.create(
+        arabic_name: "أمون إم اوبت",
+        english_name: "Amon Em Opet",
+        arabic_info: "أمون إم اوبت، (بالإنجليزية: Amenemope)، كان ابن بسوسنس الأول والملكة موت ندجمت. اسم الميلاد لأمون إم اوبت، أو الاسم الشخصي ترجمته هي 'أمون في عيد اوبت.' وقد شغل منصب حاكم مشارك أصغر في الأعوام الأخيرة من حكم والده، حسب الأدلة من قطع من أربطة مومياء. جميع النسخ الباقية من ملخص مانيتو الخاصة به تقول بأن أمون إم اوبت حكم 9 سنوات. كانت المقابر الملكية لكل من بسوسنس الأول وأمون إم اوبت كاملتين عندما اكتشفهما عالم المصريات الفرنسي بيير مونتيه في حفرياته في تانيس في عام 1940. كانت مليئة بكنوز ضخمة تشمل أقنعة جنازئية ذهبية، توابيت وأنواع أخرى عديدة من المجوهرات. فتح مونيه مقبرة أمون إم اوبت في أبريل 1940، وكان ذلك قبل شهر من الغزو الألماني لفرنسا والبلدان الواطئة في الحرب العالمية الثانية. ولذلك، توقف العمل حتى نهاية الحرب. استأنف مونتيه حفرياته في تانيس في عام 1946. ولاحقاً نشر اكتشافاته في عام 1958م. (توفي 992 ق.م.).",
+        english_info: "Amen-em-Opet (in English: Amenemope), was the son of Psusennes I and Queen Mut-Nedjemet. The birth name of Amun im Opet, or personal name, which translates to 'Amun in the feast of Opet.' He served as a junior co-ruler in the last years of his father's rule, according to evidence from fragments of mummy ligaments. All surviving copies of Manetho's summary say that Amun-im-Opet ruled for 9 years. The royal tombs of Psusennes I and Amen-im-Opet were complete when the French Egyptologist Pierre Montet discovered them in his excavations at Tanis in 1940. They were filled with huge treasures including golden funerary masks, sarcophagi and many other types of jewellery. Monet opened the tomb of Amon im Opet in April 1940, a month before the German invasion of France and the Low Countries in World War II. Therefore, work was halted until the end of the war. Montes resumed his excavations at Tanis in 1946. He later published his discoveries in 1958. (He died 992 BC).",
+        date_of_birth: "1946",
+        date_of_death: "1946",
+        sub_era_id: sub_era_7.id,
+    )
+    character_51.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9e/Mask_of_Amenemope1.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_51.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/9/9e/Mask_of_Amenemope1.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"حجرة الدفن",
+        english_title:"Burial chamber",
+        arabic_content:"أعلن عالم المصريات كنث كتشن أن هناك القليل من الآثار المعروفة عن أمون إم اوبت. مقبرته في تانيس كان طولها 20 قدماً وعرضها 12-15 قدماً، أي مجرد غرفة بالمقارنة بمقبرة پسوسنـِّس الأول 'في حين أن مشاريعه الأصلية الأخرى المعروفة هو مواصلة زخرفة مصلى إيزيس' عاشقة أهرامات الجيزة' وعمل إضافة على واحداً من معابد ممفيس. كان في خدمة أمون إم اوبت اثنان من كبار كهنة أمون في طيبة سمندس الثاني (لفترة وجيزة) ثم پن جيم الثاني، شقيق سمندس. لاحظ كتشن أنه 'في طيبة، كانت سلطته كملك محل نزاع منقوش عليها اسم أمون إم اوبت كفرعون واسم پن جم ككاهن أعلى.. بن-نست-طاوي، قبطان بارجة أمون في طيبة، كان في حيازته كتاب الموتى، والمؤرخ في السنة الخامسة من حكم الملك.' في مقدمة الطبعة الثالثة من الكتاب الذي يدور حول الفترة المتوسطة الثالثة في مصر، أشار كيتشن إلى أن بردية بروكلن 16.205  والتي ذكرت 'السنة 49 تتبعها السنة 4 يجب الآن أن تنسب إلى عهدي بسوسنس الأول وأمون إم اوبت، وليس إلى شوشنق الثالث وبيماي. بسبب اكتشاف ملك تانيسي جديد حكم على الأقل لمدة 10 سنوات بين سنة 39 من عهد شوشنق الثالث والسنة الأولى من عهد بامي. ونتيجة لذلك، فتجميع وثيقة هذه البردية يجب أن يرجع إلى السنة الرابعة من حكم أمون إم اوبت.
+
+        وهناك أربع متعلقات من مقبرة أمون إم اوبت الملكية تحفظ اسمه اللامع وتشمل قلادة والعديد من الأساور. قناعة الجنائزي موجود حالياً في المتحف المصري بالقاهرة، والتي تصور الملك شاباً على عكس بسوسنـس الأول، دُفن أمون إم اوبت بقدر أقل من البذخ حيث أن 'توابيته الخشبية كانت مغطاة بأوراق ذهبية بدلاً من الفضة الصلبة' بينما 'كان يرتدي قناع مطلي بالذهب بدلاً من الذهب الخالص.' لاحقاً أُعيد دفنه في مقبرة والده بسوسنس الأول في عهد سي أمون.",
+        english_content:"Egyptologist Kenneth Kitchin declared that there were few known ruins of Amun-me-opet. His tomb at Tanis was 20 feet long and 12-15 feet wide, i.e. a mere room compared to the tomb of Psusennes I. While his other well-known original projects were to continue the decoration of the chapel of Isis, “lover of the pyramids of Giza,” and to make an addition to one of the temples of Memphis. Two of Amun's high priests in Thebes, Smendus II (briefly) and then Ben-Cem II, Smendus's brother, served Amun-im-Opet. Kitchin notes that 'at Thebes, his authority as king was disputed, on which were inscribed the name of Amun-im-opet as pharaoh and the name of Ben-jem as high priest... Ben-nest-tawi, captain of the barge of Amun at Thebes, was in possession of the Book of the Dead, dated in the fifth year of his reign. the king.' In the introduction to the third edition of the book on the Third Intermediate Period in Egypt, Kitchen pointed out that the Brooklyn Papyrus 16.205 which stated 'Year 49 followed by Year 4' should now be attributed to the reigns of Psusennes I and Amun-im-Opet, and not to Shoshenq III and Pimae. Due to the discovery of a new Tanaisian king who ruled for at least 10 years between the year 39 of the reign of Shoshenq III and the first year of the Pami era. As a result, the compilation of this papyrus document must date back to the fourth year of the reign of Amun-im-Opet.
+
+        There are four items from the royal tomb of Amun-im-Opet that preserve his illustrious name, including a necklace and several bracelets. A funerary mask currently in the Egyptian Museum in Cairo, which depicts the king as a young man. Unlike Psusennes I, Amun imopet was buried with less lavishness as his 'wooden coffins were covered with gold leaf instead of solid silver' while 'he wore a gold-plated mask instead of gold' Sincere.' Later, he was reburied in his father's tomb in Susens I during the reign of Semun.",
+        character_id: character_51.id,
+    )
+    character_52 = Character.create(
+        arabic_name: "شيشنق الأول",
+        english_name: "Shoshenq I",
+        arabic_info: "عنخ خبري ستب إن رع شيشنق (حكم حوالي 943–922 قبل الميلاد) كان فرعونًا مصريًا قديمًا ومؤسس الأسرة الثانية والعشرين في مصر، وتعود اصوله لقبيلة المشواش. كان شيشنق هو القائد الأعلى للجيش المصري في عهد آخر ملوك الأسرة الحادية والعشرين، بسوسنس الثاني، الذي كانت ابنته ماعت كا رع زوجة الابن الأكبر لشيشنق، الملك المستقبلي أوسركون الأول.",
+        english_info: "Ankh Khepri Step Ra Sheshenq (ruled about 943–922 BC) was an ancient Egyptian pharaoh and founder of the Twenty-Second Dynasty in Egypt, and his origins go back to the Meshwash tribe. Sheshenq was the supreme commander of the Egyptian army during the reign of the last king of the Twenty-First Dynasty, Psusennes II, whose daughter Maatkare was the wife of Sheshenq's eldest son, the future King Osorkon I.",
+        date_of_birth: "943",
+        date_of_death: "922",
+        sub_era_id: sub_era_7.id,
+    )
+    character_52.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/05/Sheshonq_II_mask2004.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_52.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/05/Sheshonq_II_mask2004.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"توليه العرش",
+        english_title:"Accession to the throne",
+        arabic_content:"وتاريخ تولية 'شيشنق' الملك لا يمكن معرفته على وجه التأكيد ولًكنه لابد قد وقع بعد عام 945 ق.م. وقد كشفت لنا اللوحة التي دون عليها «حور باسن» تاريخ أحد عجول أبيس عن تاريخ أسرة «شيشنق» ورسوخ قدمها في مصر منذ زمن طويل وقد عرفنا منها ومن غيرها من النقوش ماكان لهذه الأسرة اللوبية من نفوذ في أنحاء البلاد ، وبخاصة من الوجهة الحربية والوجهة الدينية .
+
+        وتدل شواهد الأحوال على أنه قد تسلم مقاليد الحكم دون أية مقاومة ،- والظاهر أن طول مقام اللوبيين في مصر علّمهم كيف يستطيعون الاستيلاء على الملك دون أن يقاومهم الشعب المصري ، وذلك بالحرض الشديد على تقاليد المصريين السياسية والدينية الموروثة من أقدم عهود التاريخ. والصحيح أنه وإن كان أصله البعيد يرجع إلى ليبيا، لكن أسرته تمصًرت منذ أن استوطنت مصر من عدة أجيال سابقة وسكنوا إهناسيا المدينة، وصاروا من المواطنيين، وتقلد كثير منهم مناصب الدولة، وأظهروا فيها إخلاصآ لوطنهم مصر.",
+        english_content:"The date of Sheshenq becoming king cannot be known with certainty, but it must have occurred after 945 BC. The plaque on which Hor Basin recorded the history of one of the Apis calves revealed to us the history of the Sheshenq family and its long-established presence in Egypt. We learned from it and from other inscriptions the influence that this Lubiyya family had throughout the country, especially from a military and military standpoint. Religious.
+
+        Evidence of the circumstances indicates that he assumed the reins of power without any resistance - and it appears that the long standing of the lobbyists in Egypt taught them how they could seize the king without the Egyptian people resisting them, and that was by strongly inciting the Egyptians’ political and religious traditions inherited from the oldest eras of history. It is true that even though his distant origin goes back to Libya, his family became Egyptian since they settled in Egypt several generations ago. They inhabited the city of Ihnasia, and became citizens, and many of them held state positions, and showed there loyalty to their homeland, Egypt.",
+        character_id: character_52.id,
+    )
+    CharacterSection.create(
+        arabic_title:"نسبه",
+        english_title:"His lineage",
+        arabic_content:"يرجع نسب الملك شيشنق إلى أسرة من مدينة إهناسيا، وحسب لوحة حور باسن المحفوظة الآن بمتحف اللوفر والتي أقامها حور باسن وذكر فيها أجداده، فإن نسب جده الثامن الفرعون شيشنق هو: شيشنق بن نمرود بن شيشنق بن باثوت بن نبنشي بن ماواساتا بن بويو واوا.
+
+        وكان جده الأعلى (بويو واوا) مستقرأً في خليج سرت موطن المشواش الأصلي، ولذلك عرفت أسرته لدى المهتمين بالتاريخ المصري القديم باسم الأسرة الليبية، وكذلك ينتمي بويو واوا لقبيلة المشواش الليبية، أما ابنه ماواساتا فقد انتقل إلى العيش بمدينة إهناسيا وانخرط في صفوف الكهنة حتى صار كاهن معبد مدينة إهناسيا وقد خلفه ابنه نبنشي، الذي خلفه ابنه باثوت، الذي خلفه ابنه شيشنق، والذي ورث عن أجداده وظيفة الكاهن، وصار بعد ذلك الكاهن الأعظم وقائد حامية إهناسيا وقد تزوج من (محنتو سخت) ابنة زعيم قبيلة مي، وأنجب منها نمرود، الذي تزوج من الأميرة تنتس بح، والتي أنجب منها شيشنق، فأصبح فرعون مصر ومؤسس الأسرة الثانية والعشرين، بعد أن اندمج في المجتمع المصري وعاشت أسرته فيها لمدة خمسة أجيال، وبعد أن استقر جده الرابع ماواساتا بمدينة إهناسيا.
+        
+        علماً بأن نمرود بن شيشنق توفي في حياة والده، الذي قام بدفنه في مكان مقدس حسب اعتقاده، وهو مدينة أبيدوس ( التي تقع بمحافظة سوهاج الآن)، وقد نهب قبره، فقام والده شيشنق الكبير بتقديم شكوى للفرعون، الذي اهتم بالشكوى لمكانته المرموقة في مدينة إهناسيا. وبالنسبة لحفيده شيشنق، والذي ورث منصب جده الكاهن الأعظم ورئيس حامية إهناسيا ورئيس قوم مي (المشواش)، بالإضافة إلى ألقاب أخرى منها 'الرئيس الأعظم المشرف على الصعيد'.
+        
+        استطاع شيشنق أن يتولى حكم مصر ويحمل لقب الفرعون وأسس بذلك لحكم أسرته الأسرة الثانية والعشرين في عام 950 ق.م التي حكمت قرابة قرنين من الزمان. وقد عرفه الإغريق فسموه سوساكوس. خلال حكم الأسرة الحادية والعشرون الذي دام مائة وثلاثين عامًا تقريبًا عصفت خلالها الأحداث بمصر من الداخل والخارج وعم الفساد بالدولة وأنهكت الضرائب كاهل الشعب مما أدى إلى تفكك البلاد ولم يجد الفرعون بداً من محاولة حل المشاكل سلميا واضطر من خلالها إلى مهادنة مع بني إسرائيل أيضا التي كانت قوتها تتعاظم في فلسطين تحت حكم داود في هذه الفترة كان ظهور شيشنق وتزوج من ابنة الفرعون بسوسنس الثاني آخر ملوك هذه الأسرة وأعلن قيام الأسرة الثانية والعشرين، وكان ذلك حوالي عام 940 قبل الميلاد. فالمرجح انه نجح في تولي الحكم في مصر وديا وسلميا ليس كمحتل ،في عهده كتب في إحدى الصخور في وادي الملوك بمصر أقوى المعارك التي قادها منتصرا.
+        
+        بالنسبة لعمر الاسرة التي اسسها شيشنق فقد خص مانِتون الأسرة الثانية والعشرين بمئة وعشرين عاما فقط، ولكن التسلسل الزمني المقبول حاليا يجعل المدة تزيد على قرنين كاملين، من 950 ق.م إلى 730 ق.م.
+        
+        وقد تعرف العالم على الفرعون شيشنق بعد اكتشاف مقبرته من قبل الفرنسي البروفيسور مونيته في سنة 1940م والتي وجدت بكامل كنوزها ولم تتعرض للنهب ، وكان هذا الاكتشاف سيشكل حدثا هاما مثل حدث اكتشاف مقبرة توت عنخ آمون لولا أن توقيت هذا الاكتشاف كان على أعتاب الحرب العالمية الثانية فلم ينل التغطية والاهتمام كما حدث عند اكتشاف مقبرة توت عنخ آمون.",
+        english_content:"The lineage of King Sheshenq goes back to a family from the city of Ihnasia, and according to the Hor Basin plaque now preserved in the Louvre Museum, which was erected by Hor Basin and in which his ancestors were mentioned, the lineage of his eighth grandfather, Pharaoh Sheshenq, is: Sheshenq bin Nimrod bin Shishang bin Bathut bin Nabanshi bin Mawasata bin Buyo Wawa.
+
+        His great-grandfather (Buyo Wawa) was settled in the Gulf of Sirte, the original homeland of the Meshwash, and therefore his family was known to those interested in ancient Egyptian history as the Libyan family. Buyo Wawa also belonged to the Libyan Meshwash tribe. As for his son, Mawasata, he moved to live in the city of Ihnasia and joined the ranks of the priests until he became Priest of the temple of the city of Ihnasia. He was succeeded by his son Nabanshi, who was succeeded by his son Bathut, who was succeeded by his son Sheshenq, who inherited from his ancestors the position of priest, and after that he became the high priest and commander of the garrison of Ihnasia. He married (Mahantu Sekht), the daughter of the leader of the Mai tribe, and had a son with her, Nimrod. He married Princess Tentz Bah, from whom he had a son, Sheshenq. He became Pharaoh of Egypt and the founder of the Twenty-Second Dynasty, after he integrated into Egyptian society and his family lived there for five generations, and after his fourth grandfather, Mawasata, settled in the city of Ihnasia.
+        
+        Knowing that Nimrod ibn Shishang died during the lifetime of his father, who buried him in a sacred place, according to his belief, which is the city of Abydos (which is located in Sohag Governorate now), and his grave was looted, so his father, Shishang the Great, filed a complaint with the Pharaoh, who took interest in the complaint due to his prestigious position in the city of Ihnasia. . As for his grandson Sheshenq, who inherited his grandfather’s position as the Grand Priest, head of the Ihnasia garrison, and head of the people of Mai (Al-Mishwash), in addition to other titles, including the Grand Chief supervising Upper Egypt.
+        
+        Sheshenq was able to assume the rule of Egypt and hold the title of Pharaoh, and thus established the rule of his family, the Twenty-Second Dynasty, in the year 950 BC, which ruled for nearly two centuries. The Greeks knew him and called him Susakos. During the rule of the Twenty-first Dynasty, which lasted approximately one hundred and thirty years, during which events ravaged Egypt from within and without, corruption spread throughout the state, and taxes burdened the people, leading to the disintegration of the country. The Pharaoh found no alternative to trying to solve the problems peacefully and was forced to make a truce with the Children of Israel as well, which was Its power increased in Palestine under the rule of David. During this period, Sheshenq appeared and married the daughter of the Pharaoh, Susens II, the last king of this dynasty, and announced the establishment of the Twenty-Second Dynasty. This was around the year 940 BC. It is likely that he succeeded in assuming power in Egypt amicably and peacefully, not as an occupier. During his reign, he wrote on one of the rocks in the Valley of the Kings in Egypt the strongest battles that he led victoriously.
+        
+        Regarding the age of the dynasty founded by Sheshenq, Manetho assigned the Twenty-Second Dynasty to only one hundred and twenty years, but the currently accepted chronology makes the period exceed two full centuries, from 950 BC to 730 BC.
+        
+        The world learned about Pharaoh Sheshenq after the discovery of his tomb by the Frenchman Professor Monet in the year 1940 AD, which was found with all its treasures and was not looted. This discovery would have been an important event like the discovery of Tutankhamun’s tomb had it not been for the timing of this discovery on the eve of World War II. It receives coverage and attention, as happened when the tomb of Tutankhamun was discovered.",
+        character_id: character_52.id,
+    )
+    CharacterSection.create(
+        arabic_title:"أعماله",
+        english_title:"His works",
+        arabic_content:"أول عمل قام به هو تعيين ابنه أوبوت كاهنا أعظم في طيبة ليضمن السيطرة على هذا المركز الهام، وبعد ذلك بدأ بتنفيذ برنامج عمراني واسع ما تزال آثاره الخالدة حتى هذا اليوم، منها بوابة ضخمة تعرف الآن باسم بوابة شيشنق وكانت تدعى في عصره ببوابة النصر وهي جزء من امتداد الجدار الجنوبي لبهو الأعمدة الشهير وقد سجل على هذه البوابة كعادة الملوك المصريين أخبار انتصاراته في فلسطين وتاريخ كهنة آمون من أبناء أسرته.
+
+        وعلى جدار معبد الكرنك سجل شيشنق انتصاراته الساحقة على إسرائيل في فلسطين، وقد حفرت هذه الرسوم على الحائط الجنوبي من الخارج. وبهذه الفتوحات والغزوات يكون شيشنق قد وحد منطقة مصر والسودان وليبيا والشام في مملكة واحدة لأول مرة، ونقوشه تصور ما قدمته هذه الممالك من جزية بالتفصيل وبتحديد حسابي دقيق مما يؤكد أنها لم تكن مجرد دعايات سياسية طارئة كما يتضح أن شيشنق لم يضم الشام كلها فحسب وضم السودان.",
+        english_content:"His first act was to appoint his son, Ubot, as high priest in Thebes to ensure control over this important center. After that, he began implementing a vast urban program whose immortal effects remain to this day, including a huge gate now known as the Sheshenq Gate, which was called in his time the Victory Gate, which is part of From the extension of the southern wall of the famous Hypostyle Hall, on this gate was recorded, as is the custom of Egyptian kings, the news of his victories in Palestine and the history of the priests of Amun, members of his family.
+
+        On the wall of the Karnak Temple, Sheshenq recorded his crushing victories over Israel in Palestine, and these drawings were engraved on the southern wall from the outside. With these conquests and invasions, Sheshonq had united the region of Egypt, Sudan, Libya, and the Levant into one kingdom for the first time, and his inscriptions depict the tributes these kingdoms offered in detail and with precise mathematical definition, which confirms that they were not merely urgent political propaganda. It is also clear that Sheshenq did not only annex the entire Levant and included Sudan. .",
+        character_id: character_52.id,
+    )
+
+    character_53 = Character.create(
+        arabic_name: "بسماتيك الأول",
+        english_name: "Psusennes I",
+        arabic_info: "پسماتيك الأول Psamtik I أو كما يعرفه الإغريق Psammeticus ،كان أول فراعنة سايس الست، من الأسرة السادسة والعشرون. طرد الآشوريين من مصر ونقل بسماتيك الأول العاصمة إلى سايس في ذلك الوقت. قصة هيرودوت عن الدوديكارخي (حكم الإثنا عشر) وصعود بسماتيك الأول للحكم أغلب الظن أنها خيالية. من المعلوم من كتابات مسمارية أن عشرين أميراً معينين من قبل اسرحدون (ملك آشور) ومرسمين من قبل آشور بانيبال لحكم مصر. نخاو الأول، والد بسماتيك الأول، كان زعيم هؤلاء الأمراء. ويبدو أن هؤلاء الأمراء فشلوا في الحفاظ على مصر للآشوريين المكروهين من الشعب أمام هجمات النوبيين المحبوبين من الشعب، الآتين من مملكة كوش من الجنوب.",
+        english_info: "Psamtik I, or as the Greeks know him Psammeticus, was the first of the six Pharaohs of Sais, from the Twenty-Sixth Dynasty. The Assyrians were expelled from Egypt and Psamtik I moved the capital to Sais at that time. Herodotus's story of the Dodearche (Rule of the Twelve) and the rise to power of Psamtik I is most likely fictional. It is known from cuneiform writings that twenty princes were appointed by Esarhaddon (king of Assyria) and appointed by Ashurbanipal to rule Egypt. Necho I, father of Psamtik I, was the leader of these princes. It seems that these princes failed to preserve Egypt for the Assyrians, who were hated by the people, in the face of the attacks of the Nubians, who were beloved by the people, coming from the Kingdom of Kush from the south.",
+        date_of_birth: "600",
+        date_of_death: "610",
+        sub_era_id: sub_era_7.id,
+    )
+    character_53.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/7/71/Egypte_louvre_038.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_53.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/7/71/Egypte_louvre_038.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"تاريخه",
+        english_title:"His history",
+        arabic_content:"حسب المؤرخ الإغريقي هيرودوت، أن اللابيرنث (قصر التيه) الذي بناه سنوسرت الثالث من الأسرة الثانية عشر كان مقر الدوديكارخي، أي حكم الإثني عشر، والتي غالباً ما تكون تحريفاً للأمراء العشرين بعد وفاة والده. تمكن بسماتيك الأول من تحرير مصر من سيطرة الآشوريين، واستعاد رخاء مصر خلال فترة حكمه الطويلة التي امتدت 54 عامًا.
+
+        وحد بسماتيك الأول مصر في العام الثامن من حكمه عندما أرسل أسطولاً قوياً في مارس 656 ق.م. إلى طيبة وأجبر شبنؤبت الثانية زوجة آمون على اتخاذ ابنته نيتوكريس الأولي كوريثة لها. كما دوّن في مسلة التبني نجاحه في السيطرة على طيبة، وحطم آخر مظاهر سيطرة الأسرة النوبية على مصر العليا بقيادة تنوت اماني. نيتوكريس ابنة بسماتيك الأول بقيت في منصبها في طيبة لمدة 70 عاماً من 656 ق.م. حتى وفاتها في 585 ق.م. . بعد ذلك قام إبسماتيك الأول بالعديد من الحملات ضد هؤلاء الحكام الإقليميين الذين عارضوا توحيده لمصر. أحد انتصاراته على عصابات ليبية ذكرت في مسلة من العام 10-11 من عهده في واحة الداخلة.
+        
+        وقد كان بسماتيك الأول فرعونا عظيمًا لمصر حيث حررها من الآشوريين. ثم أسس علاقات وطيدة مع الإغريق وشجع العديد منهم على الاستقرار في مصر، وأنشأ مستوطنات لهم وشجعهم على الانخراط في الجيش المصري. كما نشطت التجارة بين مصر واليونان في ذلك العهد، وكانت سايس مركزا تجاريا هاما لمصر مع اليونان ودول البحر الأبيض المتوسط.
+        
+        ويروي هيرودوت قصة عن بسماتيك الأول في الباب الثاني من كتابه، 'التواريخ'. أثناء سفره إلى مصر، سمع هيرودوت أن پْسِمّاتيخوس (بسماتيك الأول) أراد أن يعرف أصل اللغات بإجراء تجربة بطفلين رضيعين. أعطى پسماتيك الطفلين لراعي وأمره برعايتهما على ألا يتحدث إليهما على الإطلاق، على أن يعود الراعي إلى الملك لدى سماعه أول الكلمات التي ينطقها الطفلان، ليرى بأي لغة تكون. الافتراض كان أن أول الكلمات المنطوقة ستكون باللغة الجذرية التي هي أم كل اللغات الأخرى. وعندما صاح أحد الطفلين بـِكوس وهو ماد لذراعيه استنتج الراعي أن الكلمة من اللغة الفريجية لأن الكلمة كانت تعني خبز بالفريجية. وبذلك استنتجوا أن الفريجيين هم أقدم من المصريين. صحة قصة هيرودوت، مثل الكثير من قصصه، مشكوك بها.",
+        english_content:"According to the Greek historian Herodotus, the Labyrinth (Palace of the Wanderings), built by Senusret III of the Twelfth Dynasty, was the seat of the Dodecarchae, meaning the rule of the Twelve, which is often a distortion of the Twentieth Princes after the death of his father. Psamtik I liberated Egypt from Assyrian control, and restored Egypt's prosperity during his long reign of 54 years.
+
+        Psamtik I unified Egypt in the eighth year of his reign when he sent a powerful fleet in March 656 BC. To Thebes, Shepenupet II forced Amun's wife to take his daughter Nitocris I as her heir. He also recorded in the Stele of Adoption his success in controlling Thebes, and destroyed the last manifestations of the Nubian family’s control over Upper Egypt under the leadership of Tanut Amani. Nitocris, daughter of Psamtik I, remained in office in Thebes for 70 years from 656 BC. Until her death in 585 BC. . Psamtik I subsequently undertook several campaigns against those regional rulers who opposed his unification of Egypt. One of his victories over Libyan gangs was mentioned in an obelisk from the year 10-11 of his reign in the Dakhla Oasis.
+        
+        Psamtik I was a great pharaoh of Egypt, liberating it from the Assyrians. Then he established close relations with the Greeks, encouraged many of them to settle in Egypt, established settlements for them, and encouraged them to join the Egyptian army. Trade between Egypt and Greece was also active during that era, and Sais was an important commercial center for Egypt with Greece and the countries of the Mediterranean.
+        
+        Herodotus tells a story about Psamtik I in the second chapter of his book, 'The Histories'. While traveling in Egypt, Herodotus heard that Psalmitechus (Psamtich I) wanted to know the origin of languages by conducting an experiment with two infants. Psamtik gave the two children to a shepherd and ordered him to take care of them without speaking to them at all, and that the shepherd would return to the king when he heard the first words the two children spoke, to see in what language they were. The assumption was that the first words spoken would be in the root language, which is the mother of all other languages. When one of the two children shouted “Bikos” while extending his arms, the shepherd concluded that the word was from the Phrygian language because the word meant bread in Phrygian. Thus, they concluded that the Phrygians were older than the Egyptians. The veracity of Herodotus' story, like many of his stories, is questionable.",
+        character_id: character_53.id,
+    )
+    CharacterSection.create(
+        arabic_title:"وفاة بسماتيك الأول",
+        english_title:"Death of Psamtik I",
+        arabic_content:"وجد ملك آشور آشور أوباليط الثاني محرجا في هجوم شنه عليه ملك بابل «نبوبولاسر» في عام 610 قبل الميلاد. فاستنجد ببسماتيك الأول فرعون مصر لمساعدته ضد بابل. استجاب له بسماتيك الأول ونزح بالجيش المصري إلى المحمية العسكرية المصرية في شرق الدلتا، وهي محمية تل الدفنة لكي يعد العدة للذهاب إلى آشور. ولكن بسماتيك الأول توفي في المحمية، ويعتقد أن جسمه قد حنط هناك .
+
+        وقد حدد يوم وفاة بسماتيك الأول عن طريق توافقه مع كسوف الشمس الذي حدث في 23 سبتمبر 610 قبل الميلاد. ومن المخطوطات أن الفرعون نخاو الثاني اعتلى عرش مصر في يوم 24 سبتمبر 610 قبل الميلاد. أي أن وفاة بسماتيك الأول قد جدثت قبل حدوث كسوف الشمس بأيام قليلة.
+        
+        كان كسوف الشمس كليا فوق إسبانيا وفرنسا، وظهر في مصر في هيئة كسوف جزئي في ذلك الوقت. وتصادف أن كسوف الشمس حدث في نفس الوقت الذي يتفق مع بدء عيد أمون-رع في طيبة، مما كان يعتبر من سوء الطالع. بعد وفاة بسماتيك الأول تولى إبنه نخاو الثاني عرش مصر.",
+        english_content:"The King of Assyria, Ashur-uballit II, found himself embarrassed in an attack launched against him by the King of Babylon, Nabopolassar, in the year 610 BC. So he sought help from Psamtik I, Pharaoh of Egypt, to help him against Babylon. Psamtik I responded to him and evacuated the Egyptian army to the Egyptian military reserve in the eastern Delta, the Tel Dafna Protectorate, in order to prepare to go to Assyria. But Psamtik I died in the reserve, and it is believed that his body was mummified there.
+
+        The day of Psamtik I's death was determined by its correspondence with the solar eclipse that occurred on September 23, 610 BC. Among the manuscripts is that Pharaoh Necho II ascended the throne of Egypt on September 24, 610 BC. That is, the death of Psamtik I occurred a few days before the solar eclipse occurred.
+        
+        The solar eclipse was total over Spain and France, and it appeared in Egypt as a partial eclipse at that time. It happened that the solar eclipse occurred at the same time as the beginning of the feast of Amun-Ra in Thebes, which was considered bad luck. After the death of Psamtik I, his son Necho II assumed the throne of Egypt.",
+        character_id: character_53.id,
+    )
+    CharacterSection.create(
+        arabic_title:"العثور على تمثال له",
+        english_title:"Finding a statue of him",
+        arabic_content:"في مارس 2017 عثر في حفرة في حي المطرية في مصر، التي كانت في القديم بالقرب من هليوبولس تمثال مكسور يبلغ ارتفاعه 8 متر وهو من الكوارزيت. واعتقد علماء الآثار في البدء أن التمثال لـ رمسيس الثاني، ولكن بتحري الكتابة الموجودة علي التمثال ظهر تعبير نبا مما يشير إلى بسماتيك الأول، فيكون بذلك هو أول فرعون يتخذ هذا الإسم النبتي.",
+        english_content:"In March 2017, a broken statue, 8 meters high, made of quartzite, was found in a pit in the Matareya neighborhood in Egypt, which was in ancient times near Heliopolis. Archaeologists initially believed that the statue was of Ramesses II, but upon investigation of the writing on the statue, the expression “Naba” appeared, which refers to Psamtik I, and thus he was the first pharaoh to adopt this Nabataean name.",
+        character_id: character_53.id,
+    )
+    character_54 = Character.create(
+        arabic_name: "نخاو الثاني",
+        english_name: "Necho II",
+        arabic_info: "نخاو الثاني أو نكاو أو نيكو ملك مصر من الأسرة السادسة والعشرين (610-595 قبل الميلاد)، التي حكمت من سايس. قام نخاو بعدد من مشاريع البناء في جميع أنحاء مملكته. في عهده، وفقًا للمؤرخ اليوناني هيرودوت، أرسل نخاو الثاني رحلة استكشافية من الفينيقيين، والتي أبحرت في غضون ثلاث سنوات من البحر الأحمر حول إفريقيا إلى مضيق جبل طارق وعادت إلى مصر. قد يكون ابنه، بسماتيك الثاني، على الخلافة قد أزال اسم نخاو من المعالم الأثرية.
+
+        لعب نخاو دورًا مهمًا في تاريخ الإمبراطورية الآشورية الحديثة، والإمبراطورية البابلية الحديثة ومملكة يهوذا. يُرجح أن نخاو الثاني هو الملك المصري المذكور في العديد من أسفار الكتاب المقدس. كان الهدف من الحملة الثانية من حملات نخاو هو الفتح الآسيوي، لاحتواء التقدم الغربي للإمبراطورية البابلية الحديثة، وقطع طريق التجارة عبر نهر الفرات. ومع ذلك، هُزم المصريون بهجوم البابليين غير المتوقع وطُردوا في النهاية من سوريا.
+        
+        لاحظ عالم المصريات دونالد بي. ريدفورد أن نخاو الثاني كان رجلًا عمليًا منذ البداية، ولديه خيال ربما يفوق خيال معاصريه، الذي كان من سوء حظه تعزيز الانطباع بأنه فاشل.",
+        english_info: "Necho II, Necho, or Neko, king of Egypt from the Twenty-Sixth Dynasty (610-595 BC), who ruled from Sais. Necho undertook a number of building projects throughout his kingdom. During his reign, according to the Greek historian Herodotus, Necho II sent an expedition of Phoenicians, which within three years sailed from the Red Sea around Africa to the Strait of Gibraltar and back to Egypt. His son, Psammetich II, in the succession may have removed Necho's name from monuments.
+
+        Necho played an important role in the history of the Neo-Assyrian Empire, the Neo-Babylonian Empire and the Kingdom of Judah. Necho II is likely the Egyptian king mentioned in several books of the Bible. The aim of Necho's second campaign was the Asian conquest, to contain the western advance of the Neo-Babylonian Empire and cut off the trade route across the Euphrates River. However, the Egyptians were defeated by the unexpected attack of the Babylonians and were eventually expelled from Syria.
+        
+        Egyptologist Donald B. Redford notes that Necho II was a practical man from the beginning, with an imagination perhaps superior to that of his contemporaries, who had the misfortune of fostering the impression that he was a failure.",
+        date_of_birth: "610",
+        date_of_death: "595",
+        sub_era_id: sub_era_7.id,
+    )
+    character_54.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/05/Necho-KnellingStatue_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_54.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/0/05/Necho-KnellingStatue_BrooklynMuseum.png"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"الحملات العسكرية",
+        english_title:"Military campaigns",
+        arabic_content:"كان نخاو الثاني ابن بسماتيك الأول من زوجته الملكية العظيمة ميهت إن ويسخت. سمته أو اسمه الملكي وهم إيب رع يعني «تنفيذ [القلب] (أي الرغبة) [من] رع.» [19] عند صعوده، واجه نخاو الفوضى التي أحدثتها غارات الكيميريون والسكيثيين، الذين لم يدمروا آسيا غرب الفرات فحسب، بل ساعدوا البابليين أيضًا في تحطيم الإمبراطورية الآشورية. تم تقليص هذه الإمبراطورية العظيمة الآن إلى القوات والمسؤولين والنبلاء الذين تجمعوا حول جنرال متمرس في حران، والذي أخذ اسم العرش آشور أوباليط الثاني. حاول نخاو مساعدة هذه البقية فور تتويجه، لكن القوة التي أرسلها كانت صغيرة جدًا، وأجبرت الجيوش المشتركة على التراجع غربًا عبر نهر الفرات.",
+        english_content:"Necho II was the son of Psamtik I and his great royal wife, Mehet-en-Weysakht. His name or royal name is Ib-Ra meaning “the execution [of the heart] (i.e., the desire) [of] Ra.” [19] Upon his ascension, Necho faced the chaos caused by the raids of the Cimmerians and Scythians, who not only devastated Asia west of the Euphrates but also helped the Babylonians smash the Assyrian Empire. This great empire was now reduced to the troops, officials and nobles gathered around an experienced general in Harran, who took the throne name Ashur-uballit II. Necho attempted to aid this remnant immediately after his coronation, but the force he sent was too small, and the combined armies were forced to retreat west across the Euphrates.",
+        character_id: character_54.id,
+    )
+    CharacterSection.create(
+        arabic_title:"نشاطه الحربي",
+        english_title:"His military activity",
+        arabic_content:"في عهد نخاو الثاني خسرت مصر حروبها في بلاد الشام في مواجهة البابليين وقد ثبت تاريخياً أن القوات المصرية التي أرسلها نخاو الثاني لقتال البابليين كان عددها قليل في العدة والعتاد ولكنه استطاع ان يردهم في معركة دارت على حدود رفح الحالية فيما يعرف بالحرب المصرية البابلية.",
+        english_content:"During the reign of Necho II, Egypt lost its wars in the Levant against the Babylonians. It has been historically proven that the Egyptian forces sent by Necho II to fight the Babylonians were small in number and equipment, but he was able to repel them in a battle that took place on the current borders of Rafah in what is known as the Egyptian-Babylonian War.",
+        character_id: character_54.id,
+    )
+    character_55 = Character.create(
+        arabic_name: "نختنبو الثاني",
+        english_name: "Nekhtharheb II",
+        arabic_info: "نختنبو الثاني ويُعرف أيضاً باسم نقطانب الثاني (الاسم باللغة المصرية نخت حورب أو نخت حر حب يعني «قويٌ هو حورس حبيت»)، حكم بين أعوام 360-342 قبل الميلاد كان الملك الثالث والأخير في الأسرة المصرية الثلاثين بالإضافة إلى كونه آخر حاكم لمصر القديمة من السكان الأصليين.
+
+        تحت حكم نختنبو الثاني، ازدهرت مصر. خلال فترة حكمه، طور الفنانون المصريون أسلوبًا فنيا ترك علامة مميزة على نقوش المملكة البطلمية. مثل سلفه غير المباشر نختنبو الأول، أظهر نختنبو الثاني حماسًا للعديد من طوائف الآلهة في الديانة المصرية القديمة، ويشهد على ذلك الاهتمام أكثر من مائة موقع بناء في مصر. وقد أجرى أعمال إنشاء وترميم أكثر من نختنبو الأول، ومن أهمها معبد إيزيس الضخم.
+        
+        لعدة سنوات، نجح نختنبو الثاني في صد محاولات الغزو من قبل الإمبراطورية الأخمينية. ومع ذلك، لعدة أسباب منها تعرضه للخيانة من قبل خادمه السابق منطور الرودسي، هُزم نختنبو الثاني في نهاية المطاف من قبل القوات الفارسية واليونانية في معركة بيلوسيوم (343 قبل الميلاد). احتل الفرس منف ثم استولوا على بقية مصر، وضموا البلاد إلى الإمبراطورية الأخمينية تحت قيادة أردشير الثالث. هرب نختنبو جنوبًا وحافظ على سلطته لبعض الوقت. مصيره اللاحق غير معروف.",
+        english_info: "Nectanebo II, also known as Nectaneb II (the name in Egyptian is Nakht-Horeb or Nakht-e-Har-hab, meaning “Strong is Horus-hebeit”), ruled between the years 360-342 BC. He was the third and last king of the Egyptian Thirty Dynasty, in addition to being the last ruler of ancient Egypt from the original people.
+
+        Under the rule of Nectanebo II, Egypt flourished. During his reign, Egyptian artists developed an artistic style that left a distinctive mark on the reliefs of the Ptolemaic Kingdom. Like his indirect predecessor Nectanebo I, Nectanebo II showed enthusiasm for many of the cults of gods in ancient Egyptian religion, an interest attested to by over a hundred building sites in Egypt. He carried out more construction and restoration work than Nectanebo I, the most important of which was the huge Temple of Isis.
+        
+        For several years, Nectanebo II successfully repelled invasion attempts by the Achaemenid Empire. However, for several reasons, including being betrayed by his former servant Mentor of Rhodes, Nectanebo II was eventually defeated by Persian and Greek forces at the Battle of Pelusium (343 BC). The Persians occupied Memphis and then took over the rest of Egypt, annexing the country to the Achaemenid Empire under the leadership of Ardashir III. Nectanebo fled south and maintained his power for some time. His subsequent fate is unknown.",
+        date_of_birth: "360",
+        date_of_death: "343",
+        sub_era_id: sub_era_7.id,
+    )
+    character_55.thumb_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c2/Head_of_Nectanebo_II-MBA_Lyon_H1701-IMG_0204.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    character_55.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c2/Head_of_Nectanebo_II-MBA_Lyon_H1701-IMG_0204.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    CharacterSection.create(
+        arabic_title:"التصوير",
+        english_title:"Photography",
+        arabic_content:"باستثناء تمثال الجرواق صغير الحجم في متحف المتروبوليتان للفنون، والذي يظهر فيه نختنبو الثاني واقفا أمام صورة حورس، لا توجد تصويرات أخرى مشروحة لنختنبو الثاني. ذراعه اليسرى مع السيف تمثل كلمة نخت، ويمثل الصقر حورس، في حين أن الهيروغليفي في اليد اليمنى يمثل كلمة حب (الاسم الكامل: نخت حر حب). تشمل تصويرات أخرى منسوبة إلى نختنبو رأس من الكوارتزيت في متحف جامعة بنسلفانيا للآثار والأنثروبولوجيا، رأس من البازلت في الإسكندرية، رأس جرانيتية حصل عليها متحف الفنون الجميلة في بوسطن ورأس آخر من الكوارتز ولكن متضرر.",
+        english_content:"With the exception of the small-scale Jarwaq statue in the Metropolitan Museum of Art, which shows Nectanebo II standing before an image of Horus, there are no other annotated depictions of Nectanebo II. His left arm with the sword represents the word Nakht, the falcon represents Horus, while the hieroglyph in the right hand represents the word Love (full name: Nakht Hurr Hob). Other depictions attributed to Nectanebo include a quartzite head in the University of Pennsylvania Museum of Archeology and Anthropology, a basalt head in Alexandria, a granite head acquired by the Museum of Fine Arts in Boston, and another quartz head, but damaged.",
+        character_id: character_55.id,
+    )
+    CharacterSection.create(
+        arabic_title:"الصعود إلى السلطة",
+        english_title:"Rise to power",
+        arabic_content:"في عام 525 قبل الميلاد، احتلت الإمبراطورية الأخمينية مصر. بسبب الصراعات الداخلية من أجل عرش الإمبراطورية الفارسية، تمكنت مصر من استعادة استقلالها عام 404 قبل الميلاد. في عام 389 قبل الميلاد، تفاوض الملك هاكور على معاهدة مع أثينا ولمدة ثلاث سنوات (من 385 إلى 383 قبل الميلاد) تمكن من الصمود في وجه العدوان الفارسي. ومع ذلك، بعد اختتام سلام أنتاليداس في عام 387 قبل الميلاد بين الأخمينيين والبوليسات اليونانية، أصبحت مصر وقبرص العوائق الوحيدة أمام الهيمنة الفارسية في البحر الأبيض المتوسط.
+
+        في بداية عام 360 قبل الميلاد، بدأ سلف نختنبو، وهو تيوس، الاستعدادات للحرب ضد المعتدين. في العام نفسه، انطلق الجيش المصري، وسافر على طول الساحل برا وبحرا. رافق نختنبو الثاني عمه تيوس في تلك الحملة وكان مسؤولاً عن الماشيموي.
+        
+        في محاولة لجمع الأموال للحرب بسرعة، فرض تيوس ضرائب على المصريين واستولى على ممتلكات المعبد. استاء المصريون، ولا سيما الكهنة، من هذه الإجراءات لكنهم دعموا نختنبو الثاني. طلب تيوس من القائد العسكري الاسبرطي أجيسيلاوس الثاني والجنرال الأثيني شابرياس دعمه. لكن أجيسيلاوس قال إنه تم إرساله لمساعدة مصر وليس لشن حرب عليها. وكذلك عاد شابرياس إلى بلاده مع المرتزقة. قرر تيوس الفرار إلى الأخمينيين، حيث توفي في النهاية وفاة طبيعية.
+        
+        حارب نختنبو شخصا آخر غير معروف الاسم من مدينة مندس على العرش، والذي كان قد بدأ ثورة وأعلن نفسه فرعونًا. ربما كان هذا الشخص أحد أحفاد نفريتس الأول، والذي كانت قد حكمت عائلته المدينة من قبل. أرسل قائد الثورة رسلًا إلى أجيسيلاوس في محاولة لإقناعه بأن يكون إلى جانبه. ظل أجيسيلاوس مخلصًا لنختنبو. في إحدى البلدات في دلتا النيل، حاصرت قوات نختنبو وأجيسيلوس قائد الثورة، الذي كسب الكثير من المتعاطفين. على الرغم من التفوق العددي للعدو، فقد انتصر نختنبو وأجيسيلوس وتم إخماد الثورة في خريف 360 قبل الميلاد  اعترافًا بفضل أجيسيلوس، أرسل له نختنبو 220 طالنط من الذهب.",
+        english_content:"In 525 BC, the Achaemenid Empire occupied Egypt. Due to internal struggles for the throne of the Persian Empire, Egypt was able to regain its independence in 404 BC. In 389 BC, King Hakor negotiated a treaty with Athens and for three years (from 385 to 383 BC) he managed to withstand Persian aggression. However, after the conclusion of the Peace of Antalidas in 387 BC between the Achaemenids and the Greek Poles, Egypt and Cyprus became the only obstacles to Persian hegemony in the Mediterranean.
+
+        At the beginning of 360 BC, Nectanebo's predecessor, Teos, began preparations for war against the aggressors. In the same year, the Egyptian army set out, traveling along the coast by land and sea. Nectanebo II accompanied his uncle Teos on that campaign and was in charge of the Machimwe.
+        
+        In an attempt to quickly raise money for the war, Teos imposed taxes on the Egyptians and seized temple property. The Egyptians, especially the priests, resented these measures but supported Nectanebo II. Teos asked the Spartan military commander Agesilaus II and the Athenian general Chabrias to support him. But Agesilaus said that he was sent to help Egypt, not to wage war against it. Chabrias also returned to his country with the mercenaries. Teos decided to flee to the Achaemenids, where he eventually died a natural death.
+        
+        Nectanebo fought another unidentified person from the city of Mendes for the throne, who had started a revolt and declared himself pharaoh. This person was probably a descendant of Nephretes I, whose family had previously ruled the city. The leader of the revolt sent messengers to Agesilaus in an attempt to persuade him to be on his side. Agesilaus remained loyal to Nectanebo. In a town in the Nile Delta, the forces of Nectanebo and Agesilaus surrounded the leader of the revolt, who had gained many sympathizers. Despite the enemy's numerical superiority, Nectanebo and Agesilaus were victorious and the revolt was put down in the fall of 360 BC. In recognition of Agesilaus's thanks, Nectanebo sent him 220 talents of gold.",
+        character_id: character_55.id,
+    )
+    CharacterSection.create(
+        arabic_title:"الحكم",
+        english_title:"Ruling",
+        arabic_content:"لعب الدين دورًا مهمًا في السياسة الداخلية لنختنبو. بدأ عهده من خلال الإشراف على جنازة ثور آبيس في منف. كما أضاف نختنبو زخارف إلى المعابد الشرقية والغربية لأبيس. من بين المنشآت البارزة التي أقيمت في عهد نخت أنبو الثاني معبد خنوم في إلفنتين ومعبد آمون في سختام (سيوة). كما كرس ناوس من الديوريت لأنحور (تم العثور على جزء منه في معابد سمنود). كان نختنبو الثاني مسؤولاً عن زيادة شعبية عبادة بوخيس. صدر تحت حكم نخت أنبو الثاني مرسوم يحظر أنشطة المحاجر فيما يسمى «الجبال الغامضة» في أبيدوس.
+
+        كانت الشؤون الخارجية في عهد نخت أنبو الثاني مرتبطة بالمحاولات الأخمينية المتكررة لإعادة احتلال مصر. قبل صعود نختنبو الثاني إلى العرش، حاول الفرس استعادة مصر عدة مرات في 385 و383 و373 قبل الميلاد. استفاد نختنبو من السلام القصير لبناء جيش جديد وتوظيف المرتزقة اليونانيين، وكانت تلك ممارسة شائعة في ذلك الوقت. في عام 358 قبل الميلاد، استطاع نختنبو صد محاولة غزو أخمينية بقيادة الأمير أردشير الثالث. في حوالي 351 قبل الميلاد، شرعت الإمبراطورية الأخمينية في محاولة جديدة لاستعادة مصر. بعد عام من القتال، تمكن نختنبو وحلفاؤه، ديوفانتس الأثيني ولاميوس الاسبرطي، من هزيمة الأخمينيين مجددا. بعد أن حقق نصرًا مدويًا، حاز نختنبو الثاني على لقب «نختنبو الصقر الإلهي»، وتم عمل طوائف باسمه. في عام 345/44 قبل الميلاد، دعم نخت أنبو التمرد الفينيقي ضد الإمبراطورية الأخمينية، بقيادة ملك صيدا، تينيس، وأرسل مساعدات عسكرية تمثلت في 4000 مرتزق يوناني بقيادة منطور الرودسي. ومع ذلك، بعد أن سمع منطور عن اقتراب قوى أردشير الثالث، تواصل مع الفرس وتخلى عن ولائه لنختنبو.
+        
+        
+        تابوت نختنبو الثاني، والذي لم يستخدمه لأنه فر إلى الجنوب. المتحف البريطاني
+        في نهاية عام 344 قبل الميلاد، وصل سفراء أردشير الثالث إلى اليونان، مطالبين بمشاركة اليونانيين في حملة ضد مصر. تعاملت أثينا وإسبرطة مع السفراء بلطف، لكنهما امتنعتا عن القبول بتحالف ضد مصر. ومع ذلك، قررت مدن أخرى دعم الفرس: أرسلت طيبة 1000 هوبليت وأرسلت أرغوس 3000.
+        
+        في شتاء 343 قبل الميلاد، انطلقت جيوش أردشير إلى مصر. تألف الجيش المصري، بقيادة نختنبو، من 60.000 مصري و20.000 ليبو والعديد من المرتزقة اليونانيين. بالإضافة إلى ذلك، كان لدى نختنبو عددًا من القوارب تهدف إلى منع العدو من دخول أفواه النيل. كانت نقاط الضعف على طول حدود البحر الأبيض المتوسط والحدود الشرقية محمية بالمعاقل والتحصينات والمخيمات. على الجانب الآخر، تم تعزيز القوات الفارسية من قبل منطور ورجاله، المطلعين جيدًا على الحدود الشرقية لمصر والدلتا، وكذلك 6000 أيوني.
+        
+        هزم نختنبو الثاني في نهاية المطاف، وفي صيف 342 قبل الميلاد، دخل أردشير منف وقام بتعيين ساتراب. فر نختنبو إلى صعيد مصر وأخيرًا إلى النوبة، حيث مُنح حق اللجوء، وحافظ على قدر من السلطة هناك لبعض الوقت. بمساعدة خباش، قام نختنبو بمحاولة أخيرة غير ناجحة لاستعادة العرش.",
+        english_content:"Religion played an important role in Nectanebo's domestic politics. He began his reign by supervising the funeral of the Apis bull in Memphis. Nectanebo also added decorations to the eastern and western temples of Apis. Notable structures erected during the reign of Nectanebo II include the Temple of Khnum at Elephantine and the Temple of Amun at Sekhtam (Siwa). He also dedicated a diorite naos to Anhur (part of it was found in the Samanoud temples). Nectanebo II was responsible for increasing the popularity of the cult of Bochis. Under Nectanebo II, a decree was issued prohibiting quarrying activities in the so-called “Mysterious Mountains” of Abydos.
+
+        Foreign affairs during the reign of Nectanebo II were connected with repeated Achaemenid attempts to reconquer Egypt. Before Nectanebo II ascended to the throne, the Persians attempted to reclaim Egypt several times in 385, 383, and 373 BC. Nectanebo took advantage of the short peace to build a new army and hire Greek mercenaries, a common practice at the time. In 358 BC, Nectanebo was able to repel an Achaemenid invasion attempt led by Prince Ardashir III. In about 351 BC, the Achaemenid Empire embarked on a new attempt to reclaim Egypt. After a year of fighting, Nectanebo and his allies, Diophantus of Athens and Lammius of Sparta, were able to defeat the Achaemenids again. After achieving a resounding victory, Nectanebo II was given the title “Nectanebo the Divine Falcon,” and cults were created in his name. In 345/44 BC, Nectanebo supported the Phoenician rebellion against the Achaemenid Empire, led by the King of Sidon, Tenes, and sent military aid in the form of 4,000 Greek mercenaries led by Mentor of Rhodes. However, after Mentor heard of the approaching forces of Ardashir III, he reached out to the Persians and renounced his allegiance to Nectanebo.
+        
+        
+        The sarcophagus of Nectanebo II, which he did not use because he fled to the south. The British Museum
+        At the end of 344 BC, ambassadors of Ardashir III arrived in Greece, demanding Greek participation in a campaign against Egypt. Athens and Sparta treated the ambassadors kindly, but refrained from accepting an alliance against Egypt. However, other cities decided to support the Persians: Thebes sent 1,000 hoplites and Argos sent 3,000.
+        
+        In the winter of 343 BC, Ardashir's armies set out for Egypt. The Egyptian army, commanded by Nectanebo, consisted of 60,000 Egyptians, 20,000 Libo, and numerous Greek mercenaries. In addition, Nectanebo had a number of boats intended to prevent the enemy from entering the mouths of the Nile. Weak points along the Mediterranean and eastern frontiers were protected by redoubts, fortifications and camps. On the other side, the Persian forces were reinforced by Mentor and his men, well acquainted with Egypt's eastern borders and the delta, as well as 6,000 Ionians.
+        
+        Nectanebo II was eventually defeated, and in the summer of 342 BC, Ardashir entered Memphis and appointed him a satrap. Nectanebo fled to Upper Egypt and finally to Nubia, where he was granted asylum, and maintained a measure of power there for some time. With the help of Khabash, Nectanebo made a final, unsuccessful attempt to regain the throne.",
+        character_id: character_55.id,
+    )
 
 
 #! Create Evetns
@@ -4080,33 +4445,125 @@ require 'open-uri'
         english_content:"The Battle of the Delta was a naval battle between the Egyptian army and a people called the Sea Peoples. It took place around the year 1178 or 1175 BC when Ramses III, the Pharaoh of Egypt at the time, resisted a major naval invasion launched by the Sea Peoples against Egypt. The battle took place somewhere near the eastern coast of the Nile Delta, and on the Egyptian-Syrian border, but the exact location is unknown. This battle is considered the first naval battle in history, and its events were recorded on the walls of the funerary temple of Ramesses III in Medinet Habu (near Luxor today).",
         event_id: event_16.id,
     )
-    # event_2 = Event.create(
-    #     type: "",
-    #     arabic_title: "",
-    #     english_title: "",
-    #     start_date: "",
-    #     end_date: "",
-    #     arabic_info:"",
-    #     english_info:"",
-    #     character_id: character_12.id,
-    #     sub_era: sub_era_3
-    # )
-    # event_2.cover_image.attach(io: URI.open(""), filename: 'image.jpg', content_type: 'image/jpg')
-    # EventSection.create(
-    #     arabic_title:"",
-    #     english_title:"",
-    #     arabic_content:"",
-    #     english_content:"",
-    #     event_id: event_2.id,
-    # )
-    # EventSection.create(
-    #     arabic_title:"",
-    #     english_title:"",
-    #     arabic_content:"",
-    #     english_content:"",
-    #     event_id: event_2.id,
-    # )
+    event_17 = Event.create(
+        type: "PeaceTreaty",
+        arabic_title: "بناء مدينه منف",
+        english_title: "Building of the city of Menf",
+        start_date: "",
+        end_date: "",
+        arabic_info:"منف (أو من نفر) ((بالإنجليزية: مَمفيس) (بالقبطية: ⲙⲉⲙϥⲓ); (باليونانية: Μέμφις)) كانت مدينة مصرية قديمة والعاصمة القديمة لـ إنب-حج، أول مقاطعات مصر السفلى التي كانت تُعرف باسم mḥw (الشمال). تقع أطلالها بالقرب من مدينة ميت رهينة الحديثة، على بعد 20 كم (12 ميل) جنوب الجيزة في القاهرة الكبرى، مصر.",
+        english_info:"Memphis (or Menf) ((English: Memphis) (Coptic: ⲙⲉⲙϥⲓ); (Greek: Μέμφις)) was an ancient Egyptian city and the ancient capital of Inb-Hedj, the first nome of Lower Egypt that was known as mḥw (the north). Its ruins are located near the modern city of Mit Rahina, 20 km (12 mi) south of Giza in Greater Cairo, Egypt.",
+        character_id: character_1.id,
+        sub_era: sub_era_1,
+    )
+    event_17.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/cf/Memphis200401.JPG"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"منف",
+        english_title:"Menf",
+        arabic_content:"وفقًا للأساطير التي رواها في أوائل القرن الثالث قبل الميلاد مانيتون، وهو كاهن ومؤرخ عاش في المملكة البطلمية خلال الفترة الهلنستية في مصر القديمة، فإن المدينة تأسست على يد الملك مينا. كانت عاصمة مصر القديمة، خلال المملكة المصرية القديمة وظلت مدينة مهمة في جميع أنحاء التاريخ المصري القديم. احتلت موقعًا إستراتيجيًا عند مصب دلتا النيل، وكانت موطنًا للنشاط الصاخب. تميز ميناؤها الرئيسي، بيرو نفر، بكثافة عالية من الورش والمصانع والمستودعات التي كانت توزع المواد الغذائية والبضائع في جميع أنحاء المملكة القديمة. خلال عصرها الذهبي، ازدهرت منف كمركز إقليمي للتجارة والدين.
 
+        يُعتقد أن منف تمتعت بحماية الإله بتاح، شفيع الحرفيين. كان المعبد العظيم، «حت كا بتاح» (بمعنى «قصر كا بتاح»، أحد أبرز المباني في المدينة. يُعتقد أن اسم هذا المعبد، المكتوب باليونانية باسم «Aἴγυπτoς (إيجيبتوس)» من قبل مانيتون، هو الأصل الاشتقاقي للاسم الإنجليزي الحديث «إيجيبت».
+        
+        يرتبط تاريخ منف ارتباطًا وثيقًا بتاريخ البلاد نفسها. يُعتقد أن انهياره في نهاية المطاف كان بسبب فقدان أهميته الاقتصادية في أواخر العصور القديمة، بعد صعود مدينة الإسكندرية. تضائلت أهمية منف الدينية بعد التخلي عن الدين القديم في أعقاب مرسوم تسالونيكي في 380 بعد الميلاد الذي فرض تبني نيقية المسيحية في جميع أنحاء الإمبراطورية الرومانية فقط.
+        
+        اليوم، تقدم أطلال العاصمة السابقة أدلة مجزأة على ماضيها. إلى جانب مجمع الأهرام في الجيزة، وقد تم الحفاظ عليها على أنها موقع تراث عالمي منذ عام 1979. الموقع مفتوح للجمهور باعتباره متحفًا في الهواء الطلق.",
+        english_content:"According to legends told in the early 3rd century BC by Manetho, a priest and historian who lived in the Ptolemaic Kingdom during the Hellenistic period of ancient Egypt, the city was founded by King Menes. It was the capital of ancient Egypt, during the Old Egyptian Kingdom and remained an important city throughout ancient Egyptian history. It occupied a strategic location at the mouth of the Nile Delta, and was home to bustling activity. Its main port, Peru Nefer, was characterized by a high density of workshops, factories, and warehouses that distributed food and goods throughout the Old Kingdom. During its golden age, Memphis flourished as a regional center for trade and religion.
+
+        It is believed that Memphis enjoyed the protection of the god Ptah, the patron saint of craftsmen. The great temple, “Hatkaptah” (meaning “Palace of Kaptah”), was one of the most prominent buildings in the city. The name of this temple, written in Greek as “Aἴγυπτoς (Aegyptus)” by Manetho, is thought to be the etymological origin of the modern English name “Aἴγυπτoς (Aegyptus)” by Manetho. ».
+        
+        The history of Memphis is closely linked to the history of the country itself. It is believed that its eventual collapse was due to the loss of its economic importance in late antiquity, after the rise of the city of Alexandria. The religious importance of Memphis diminished after the abandonment of the ancient religion following the Edict of Thessalonica in 380 AD which imposed the adoption of Nicene Christianity throughout the Roman Empire only.
+        
+        Today, the ruins of the former capital offer fragmentary evidence of its past. Along with the pyramid complex in Giza, it has been preserved as a World Heritage Site since 1979. The site is open to the public as an open-air museum.",
+        event_id: event_17.id,
+    )
+    EventSection.create(
+        arabic_title:"أسماء المواقع الجغرافية",
+        english_title:"Geographical Locations Names",
+        arabic_content:"كان لمنف عدة أسماء خلال تاريخها الذي يقارب أربعة آلاف عام. كان اسمها المصري القديم إنب-حج (تُرجم باسم «الجدران البيضاء» ).
+
+        بسبب حجمها، وكانت المدينة تُعرف أيضًا بأسماء أخرى مختلفة، مثل أسماء الأحياء التي كانت تتمتع بشهرة كبيرة في وقت أو آخر. على سبيل المثال، وفقًا لنص الفترة الانتقالية الأولى،  كان يُعرف باسم جد سوت («الأماكن الأبدية»)، وهو اسم هرم تيتي.
+        
+        في وقت ما، تمت الإشارة إلى المدينة باسم عنخ تاوي (بمعنى «حياة الأرضين»)، مما يؤكد الموقع الإستراتيجي للمدينة بين مصر العليا ومصر السفلى. يبدو أن هذا الاسم يعود إلى المملكة المصرية الوسطى (حوالي 2055 - 1640 قبل الميلاد)، وكثيراً ما يوجد في النصوص المصرية القديمة. يؤكد بعض العلماء أن هذا الاسم كان لمنطقة تحتوي على شجرة مقدسة تقع في الحي الغربي من المدينة الذي يقع بين معبد بتاح الكبير والمقابر في سقارة.
+        
+        في بداية المملكة المصرية الحديثة (حوالي 1550 قبل الميلاد)، أصبحت المدينة تُعرف باسم منفر (تعني «دائمة وجميلة»)، والتي أصبحت ممفي (ⲙⲉⲙ ϥ ⲓ) باللغة القبطية. الاسم «ممفيس» (φιςμφις) هو التعديل اليوناني للاسم الذي أطلقوه على هرم بيبي الأول الواقع غرب المدينة.
+        
+        أثناء محاولته رسم التاريخ المصري القديم والعناصر الدينية في تقاليد المصريين القدماء، أوضح الشاعر اليوناني هسيود في «ثيوغونيا» اسم المدينة بالقول إن منف كانت ابنة إله النهر اليوناني نيلوس وزوجة إبافوس (ابن زيوس وآيو)، اللذين أسسا المدينة وأطلق عليها اسم زوجته.
+        
+        في الكتاب المقدس، تُدعى منف «موف» أو «نوف».",
+        english_content:"Memphis had several names during its history of nearly four thousand years. Its ancient Egyptian name was Eneb-Haj (translated as “white walls”).
+
+        Because of its size, the city was also known by various other names, such as the names of neighborhoods that were very popular at one time or another. For example, according to the First Intermediate Period text, it was known as Djed Sut (“Eternal Places”), the name of the Pyramid of Teti.
+        
+        At one point, the city was referred to as Ankh-Tawi (meaning \"Life of the Two Lands\"), emphasizing the city's strategic location between Upper and Lower Egypt. This name appears to date back to the Middle Kingdom of Egypt (ca. 2055 - 1640 BC), and is often found in ancient Egyptian texts. Some scholars confirm that this name was for an area containing a sacred tree located in the western district of the city, which is located between the Great Temple of Ptah and the tombs at Saqqara.
+        
+        At the beginning of the New Kingdom of Egypt (ca. 1550 BC), the city became known as Menfer (meaning \"permanent and beautiful\"), which became Memphi (ⲙⲉⲙ ϥ ⲓ) in Coptic. The name “Memphis” (φιςμφις) is the Greek modification of the name they gave to the pyramid of Pepi I, located to the west of the city.
+        
+        While trying to draw ancient Egyptian history and religious elements into the traditions of the ancient Egyptians, the Greek poet Hesiod in “Theogonia” explained the name of the city by saying that Memphis was the daughter of the Greek river god Nilus and the wife of Epaphos (son of Zeus and Io), who founded the city and named it after his wife.
+        
+        In the Bible, Memphis is called \"Mov\" or \"Noph\".",
+        event_id: event_17.id,
+    )
+    EventSection.create(
+        arabic_title:"السمات",
+        english_title:"Features",
+        arabic_content:"الموقع
+        تقع مدينة منف على بعد 20 كم (12 ميل) جنوب القاهرة، على الضفة الغربية لنهر النيل. مدن وبلدات ميت رهينة الحديثة، دهشور، أبو صير، أبو غراب، زاوية العريان، جنوب القاهرة، كلها تقع داخل الحدود الإدارية التاريخية لمنف (29°50′58.8″N 31°15′15.4″E). كانت المدينة أيضًا المكان الذي رسم الحدود بين مصر العليا ومصر السفلى. (المقاطعة الثانية والعشرون من مصر العليا والأولى من مصر السفلى).
+        السكان
+        اليوم، بصمة المدينة القديمة غير مأهولة. أقرب مستوطنة حديثة هي بلدة ميت رهينة. تختلف تقديرات الحجم التاريخي للسكان اختلافًا كبيرًا بين المصادر. وفقًا لـ ترتيوس تشاندلر، كان عدد سكان ممفيس حوالي 30000 نسمة وكانت إلى حد بعيد أكبر مستوطنة في جميع أنحاء العالم منذ وقت تأسيسها حتى 2250 قبل الميلاد تقريبًا ومن 1557 إلى 1400 قبل الميلاد. يعتبر K. A. بارد أكثر حذرًا ويقدر عدد سكان المدينة بحوالي 6000 نسمة خلال المملكة المصرية القديمة.",
+        english_content:"the site
+        The city of Memphis is located 20 km (12 mi) south of Cairo, on the west bank of the Nile River. The modern cities and towns of Mit Rahina, Dahshur, Abu Sir, Abu Ghorab, Zawyet el-Erian, south of Cairo, all lie within the historic administrative boundaries of Memphis (29°50′58.8″N 31°15′15.4″E). The city was also the place that marked the border between Upper and Lower Egypt. (The twenty-second province of Upper Egypt and the first of Lower Egypt).
+        Population
+        Today, the ancient city footprint is uninhabited. The nearest modern settlement is the town of Mit Rahina. Estimates of historical population size vary widely between sources. According to Tertius Chandler, Memphis had a population of about 30,000 and was by far the largest settlement worldwide from the time of its founding until approximately 2250 BC and from 1557 to 1400 BC. K. A. Bard is more cautious and estimates the city's population at around 6,000 during the Old Kingdom.",
+        event_id: event_17.id,
+    )
+    EventSection.create(
+        arabic_title:"التاريخ",
+        english_title:"History",
+        arabic_content:"خلال المملكة المصرية القديمة، أصبحت منف عاصمة لمصر القديمة لأكثر من ثماني مرات متتالية. بلغت المدينة ذروة هيبتها في عهد الأسرة المصرية السادسة كمركز لعبادة بتاح إله الخلق والأعمال الفنية. المرمر أبو الهول الذي يحرس معبد بتاح بمثابة نصب تذكاري لقوة المدينة وهيبتها السابقين. شكل ثالوث منف، المكون من الإله الخالق بتاح، وزوجته سخمت، وابنهما نفرتيم، المحور الرئيسي للعبادة في المدينة.
+
+        تراجعت مكانة منف بعد الأسرة المصرية الثامنة عشر مع صعود طيبة والمملكة المصرية الحديثة، لكنها أعيد إحياؤها في عهد الفرس، قبل أن تتراجع بقوة في المرتبة الثانية بعد تأسيس الإسكندرية تحت حكم الإمبراطورية الرومانية، ظلت الإسكندرية أهم مدينة مصرية. وظلت منف ثاني مدن مصر حتى إنشاء الفسطاط عام 641 م بعد الفتح الإسلامي لمصر. بعد ذلك تم التخلي عنها إلى حد كبير وأصبحت مصدرًا للحجر للمستوطنات المحيطة. كانت لا تزال مجموعة من الأطلال المهيبة في القرن الثاني عشر، لكنها سرعان ما أصبحت أكثر بقليل من مساحة من الأنقاض المنخفضة والحجارة المتناثرة.",
+        english_content:"During the Old Kingdom of Egypt, Memphis became the capital of ancient Egypt more than eight consecutive times. The city reached the peak of its prestige during the Sixth Dynasty of Egypt as a center for the worship of Ptah, the god of creation and works of art. The alabaster Sphinx guarding the Temple of Ptah serves as a monument to the city's former power and prestige. The Triad of Memphis, consisting of the creator god Ptah, his wife Sekhmet, and their son Nefertim, formed the main focus of worship in the city.
+
+        The status of Memphis declined after the Eighteenth Dynasty with the rise of Thebes and the New Egyptian Kingdom, but it was revived during the Persian era, before it fell strongly into second place after the founding of Alexandria under the rule of the Roman Empire. Alexandria remained the most important Egyptian city. Memphis remained the second city in Egypt until the establishment of Fustat in 641 AD after the Islamic conquest of Egypt. After that it was largely abandoned and became a source of stone for the surrounding settlements. It was still a collection of imposing ruins in the 12th century, but it soon became little more than an expanse of low-lying ruins and scattered stones.",
+        event_id: event_17.id,
+    )
+    event_18 = Event.create(
+        type: "War",
+        arabic_title: "إعاده توحيد البلاد",
+        english_title: "Reunification of the country",
+        start_date: "2055",
+        end_date: "1650",
+        arabic_info:"المملكة المصرية الوسطى (المعروفة أيضًا باسم فترة إعادة التوحيد) هي الفترة في تاريخ مصر القديمة التي تلت فترة الانقسام السياسي المعروفة باسم الفترة الانتقالية الأولى. استمرت المملكة الوسطى من حوالي 2050 إلى 1710 قبل الميلاد، وتمتد من إعادة توحيد مصر في عهد منتوحتب الثاني من الأسرة الحادية عشر حتى نهاية الأسرة الثانية عشر. حكم ملوك الأسرة الحادية عشر من طيبة بينما حكم ملوك الأسرة الثانية عشرة من اللشت.",
+        english_info:"The Middle Kingdom of Egypt (also known as the Reunification Period) was the period in the history of ancient Egypt that followed the period of political division known as the First Intermediate Period. The Middle Kingdom lasted from about 2050 to 1710 BC, extending from the reunification of Egypt under Mentuhotep II of the Eleventh Dynasty until the end of the Twelfth Dynasty. The kings of the Eleventh Dynasty ruled from Thebes while the kings of the Twelfth Dynasty ruled from Lisht.",
+        character_id: character_28.id,
+        sub_era: sub_era_4,
+    )
+    event_18.cover_image.attach(io: URI.open("https://upload.wikimedia.org/wikipedia/commons/c/c8/MentuhotepII.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+    EventSection.create(
+        arabic_title:"َضعف البلاد",
+        english_title:"Country Weakness",
+        arabic_content:"بعد انهيار المملكة القديمة، دخلت مصر فترة من ضعف السلطة الملكية واللامركزية تسمى الفترة الانتقالية الأولى. في نهاية هذه الفترة، قاتلت أسرتان متنافستان، عرفتا في علم المصريات باسم العاشرة والحادية عشر، للسيطرة على البلاد بأكملها. حكمت الأسرة الطيبية الحادية عشرة جنوب مصر فقط من الشلال الأول إلى المقاطعة العاشرة من صعيد مصر. بينما في الشمال، حُكِمت مصر السفلى من قبل الأسرة العاشرة المنافسة من إهناسيا. تمكن منتوحتب الثاني من إنهاء الحرب، بعد أن اعتلى عرش طيبة عام 2055 قبل الميلاد. خلال السنة الرابعة عشرة من حكمه، استغل حدوث ثورة في أحد المقاطعات الشمالية لشن هجوم على إهناسيا، ولم يواجه سوى مقاومة قليلة. بعد إسقاط آخر حكام الأسرة العاشرة، بدأ منتوحتب في تعزيز سلطته على كل مصر، وهي العملية التي لم تنته سوى في العام التاسع والثلاثين من حكمه. لهذا السبب، يعتبر منتوحتب الثاني مؤسس الدولة الوسطى.",
+        english_content:"After the collapse of the Old Kingdom, Egypt entered a period of weak royal authority and decentralization called the First Intermediate Period. At the end of this period, two rival families, known in Egyptology as the Tenth and the Eleventh, fought for control of the entire country. The Eleventh Theban Dynasty ruled southern Egypt only from the First Cataract to the Tenth Province of Upper Egypt. While in the north, Lower Egypt was ruled by the rival Tenth Dynasty of Ehnasia. Mentuhotep II was able to end the war, after he ascended the throne of Thebes in 2055 BC. During the fourteenth year of his reign, he took advantage of a revolt in a northern province to launch an attack on Ihnasia, meeting little resistance. After overthrowing the last ruler of the Tenth Dynasty, Mentuhotep began to consolidate his power over all of Egypt, a process that did not end until the thirty-ninth year of his reign. For this reason, Mentuhotep II is considered the founder of the Middle Kingdom.",
+        event_id: event_18.id,
+    )
+    EventSection.create(
+        arabic_title:"القيادة",
+        english_title:"Leadership",
+        arabic_content:"قاد منتوحتب الثاني حملات صغيرة جنوبًا حتى الشلال الثاني في النوبة، والتي كانت قد نالت استقلالها خلال الفترة الانتقالية الأولى. كما أعاد الهيمنة المصرية على منطقة سيناء، التي فقدتها مصر منذ نهاية المملكة القديمة. لتعزيز سلطته، أعاد ممارسة عبادة الحاكم، مصورًا نفسه كإله أثناء حكمه، مرتديًا أغطية رأس آمون ومين. توفي بعد حكم دام 51 عامًا، وسلم العرش لابنه منتوحتب الثالث.",
+        english_content:"Mentuhotep II led small campaigns south as far as the Second Cataract in Nubia, which had gained its independence during the First Intermediate Period. It also restored Egyptian hegemony over the Sinai region, which Egypt had lost since the end of the Old Kingdom. To consolidate his power, he reinstated the practice of ruler worship, portraying himself as a god during his rule, wearing the headdresses of Amun and Min. He died after a reign of 51 years, and handed the throne to his son Mentuhotep III.",
+        event_id: event_18.id,
+    )
+    EventSection.create(
+        arabic_title:"حكم البلاد",
+        english_title:"Ruling the country",
+        arabic_content:"حكم منتوحتب الثالث لمدة اثني عشر عامًا فقط، واصل خلالها تعزيز الحكم الطيبي في جميع أنحاء مصر، وبناء سلسلة من الحصون في منطقة شرق الدلتا لتأمين مصر ضد التهديدات من آسيا. كما أرسل أول بعثة إلى بلاد بونت في عهد الدولة الوسطى، عن طريق السفن التي شيدت في وادي الحمامات، على البحر الأحمر. خلف منتوحتب الثالث منتوحتب الرابع، الذي تم حذف اسمه بشكل ملحوظ من جميع قوائم الملوك المصريين القدماء. تدعي برديات تورينو أنه بعد منتوحتب الثالث كان هناك «سبع سنوات بدون ملوك». على الرغم من هذا الغياب، فإن هناك أدلة على حكمه في عدد قليل من النقوش في وادي الحمامات والتي تسجل حملات على ساحل البحر الأحمر ومحاجر الحجر لعمل الآثار الملكية. كان قائد هذه البعثة وزيره أمنمحات، الذي يُعتقد على نطاق واسع أنه الملك المستقبلي أمنمحات الأول، أول ملوك الأسرة الثانية عشرة.
+
+        دفع غياب منتوحتب الرابع من قوائم الملوك إلى نشوء نظرية مفادها أن أمنمحات الأول اغتصب عرشه. في حين أنه لا توجد روايات معاصرة عن هذا الصراع، قد تشير بعض الأدلة الظرفية إلى وجود حرب أهلية في نهاية الأسرة الحادية عشرة. تشير النقوش التي تركها نهري، وهو حاتي عا هيرموبوليس، إلى أنه تعرض للهجوم في مكان يسمى Shedyet-sha من قبل قوات الملك الحاكم، لكن قواته انتصرت. يدعي خنوم حتب الأول، وهو مسؤول في عهد أمنمحات الأول، أنه شارك في قافلة من عشرين سفينة تم إرسالها لتهدئة صعيد مصر. اقترح دونالد ريدفورد أن هذه الأحداث يجب أن تفسر كدليل على حرب بين اثنين من المتصارعين على العرش. ما هو مؤكد أنه، على الرغم من وصوله إلى السلطة، لم يكن أمنمحات الأول من أصل ملكي.",
+        english_content:"Mentuhotep III ruled for only twelve years, during which he continued to consolidate Theban rule throughout Egypt, building a series of fortresses in the eastern Delta region to secure Egypt against threats from Asia. He also sent the first mission to the country of Punt during the era of the Middle Kingdom, via ships built in Wadi Hammamet, on the Red Sea. Mentuhotep III was succeeded by Mentuhotep IV, whose name was noticeably omitted from all lists of ancient Egyptian kings. The Turin Papyri claim that after Mentuhotep III there were \"seven years without kings\". Despite this absence, there is evidence of his rule in a few inscriptions in Wadi Hammamet that record expeditions to the Red Sea coast and stone quarries to make royal monuments. The leader of this expedition was his vizier, Amenemhat, who is widely believed to be the future king Amenemhat I, the first king of the Twelfth Dynasty.
+
+        The absence of Mentuhotep IV from the king lists gave rise to the theory that Amenemhat I usurped his throne. While there are no contemporary accounts of this conflict, some circumstantial evidence may indicate that there was a civil war at the end of the Eleventh Dynasty. The inscriptions left by Nahri, a hater of Hermopolis, indicate that he was attacked at a place called Shedyet-sha by the forces of the ruling king, but his forces were victorious. Khnumhotep I, an official during the reign of Amenemhat I, claims to have participated in a convoy of twenty ships sent to pacify Upper Egypt. Donald Redford has suggested that these events should be interpreted as evidence of a war between two contenders for the throne. What is certain is that, despite his rise to power, Amenemhat I was not of royal origin.",
+        event_id: event_18.id,
+    )
 
 #! Create Products
     product_1 = Product.create(
@@ -4128,8 +4585,8 @@ require 'open-uri'
         era: ancientEra,
         sub_era_id: sub_era_1.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_17,
+        event: event_6,
     )
         product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
         product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
@@ -4154,374 +4611,220 @@ require 'open-uri'
         era: ancientEra,
         sub_era_id: sub_era_2.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_17,
+        event: event_6,
     )
         product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
         product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
         product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
-        النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")
+    
+    product_3 = Product.create(
+        price: 194,
+        arabic_title: "تمثال فرعوني لأبي الهول، 12 سم - ذهبي",
+        english_title: "Pharaonic Statue Sphinx, 12cm - Gold",
+        arabic_description: "Brand: Other
+        Home Decor Category: Statues and Models
+        Seamless functionality
+        Packed with features",
+        english_description: "العلامة التجارية: اخرى
+        فئة ديكور المنزل: تماثيل ونماذج
+        وظائف سلسة
+        مليئة بالميزات",
+        era: ancientEra,
+        sub_era_id: sub_era_2.id,
+        catigory:"antiques",
+        character: character_17,
+        event: event_6,
+    )
+        product_3.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61CJ7LY7mIL._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_3.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61CJ7LY7mIL._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_3.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61CJ7LY7mIL._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_3, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_3, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_3, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_3, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_3, stars: 4,comment:"This is a good product")   
+    product_4 = Product.create(
+        price: 115,
+        arabic_title: "تمثال توت نفرتيتي الذهبي الفرعوني (18 سم، ذهبي)",
+        english_title: "Golden TuT Nefertiti Pharaonic Statue (18cm, Gold)",
+        arabic_description: "فئة ديكور المنزل: تماثيل ونماذج
+        العلامة التجارية: جولدن توت
+        الحجم: 18 سم
+        اللون: ذهبي",
+        english_description: "Home Decor Category: Statues and Models
+        Brand: GoldenTuT
+        Size: 18cm
+        Color: gold",
         era: ancientEra,
         sub_era_id: sub_era_1.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_10,
+        # event: event_6,
     )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
+        product_4.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61fOsHm2K9L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_4.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61fOsHm2K9L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_4.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61fOsHm2K9L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_4, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_4, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_4, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_4, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_4, stars: 4,comment:"This is a good product")
+
+    product_5 = Product.create(
+        price: 245,
+        arabic_title: "مج الملك توت عنخ آمون الفرعوني المصري هدية تذكارية مصرية",
+        english_title: "matcher King Tutankhamun Pharaonic Egyptian mug Egypt Souvenir gift",
+        arabic_description: "هدية رائعة من مصر
+        هدية عظيمة لمحبي المدنية المصرية القديمة
+        احصل على قطعة مصرية في يدك
+        تذكر الحضارة المصرية القديمة
+        هدية ملهمة من مصر",
+        english_description: "Wonderfull Gift from Egypt
+        Great gift for the ancient Egyptian Civil lovers
+        Have An Egyptian Piece in Your Hand
+        Remember the Ancient Egyptian Civil
+        Inspired Gift from Egypt",
         era: ancientEra,
-        sub_era_id: sub_era_2.id,
+        sub_era_id: sub_era_6.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_45,
+        # event: event_6,
     )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
+        product_5.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61cROvfgpML._AC_SL1000_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_5.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61ZeJf-vFPL._AC_SL1000_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_5.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61NYeWFfZYL._AC_SL1047_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_5, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_5, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_5, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_5, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_5, stars: 4,comment:"This is a good product")
+
+    product_6 = Product.create(
+        price: 200,
+        arabic_title: "مج بورسلين فرعوني مصمم برسومات فرعونية، متعدد الالوان",
+        english_title: "Porcelain Pharaonic Mug Designed with Pharaonic Drawings, Multi Color",
+        arabic_description: "النوع: أكواب
+        المادة: بورسلين
+        اللون: متعدد الألوان
+        دليل على غسالة الصحون: لا
+        مقاوم للميكروويف: لا
+        دليل على غسالة الصحون: لا شيء
+        العلامة التجارية: اخرى
+        المادة: بورسلين
         النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: لا شيء
+        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : باطل",
+        english_description: "Type: Mugs
+        Material: Porcelain
+        Color: Multi-Color
+        Dishwasher proof: No
+        Microwave Proof: No
+        Dishwasher proof: null
+        Brand: Other
+        Material: Porcelain
+        Type: Mugs
+        Are batteries needed to power the product or is this product a battery : null
+        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : null",
         era: ancientEra,
-        sub_era_id: sub_era_1.id,
+        sub_era_id: sub_era_6.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_45,
+        # event: event_6,
     )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
-        era: ancientEra,
-        sub_era_id: sub_era_2.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
-        النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
-        era: ancientEra,
-        sub_era_id: sub_era_1.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
+        product_6.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61sDcAQSq5L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_6.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61sDcAQSq5L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_6.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61sDcAQSq5L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_6, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_6, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_6, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_6, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_6, stars: 4,comment:"This is a good product")   
+    product_7 = Product.create(
+        price: 465,
+        arabic_title: "تمثال نصفي مصري قديم للملك خفرع وعلى رأسه صقر من الحجر الصلب الثقيل صنع في مصر. خفرع هو باني ثاني أكبر الهرم في الجيزة.",
+        english_title: "ancient Egyptian bust of King Khafre with a Falcon on his head heavy solid stone made in Egypt. Khafre is the builder of the second-largest pyramid in Giza.",
+        arabic_description: "تمثال نصفي مصري قديم للملك خفرع والصقر على رأسه من الحجر الصلب صنع في مصر. الارتفاع 13.5 سم العمق 6.5 سم العرض 12 سم الوزن 1140 جرام. ويصور التمثال الملك خفرع باني الهرم الثاني الكبير بالجيزة. وقد تم العثور عليه في معبد الوادي بمجمعه الهرمي. يجلس الملك بشكل مهيب على العرش بكل ثقة رجل بنى جبلًا. تم تزيين الجانبين من عرشه باللون البني الدلالي. رمز وحدة مصر العليا والسفلى، مما يدل على حكمه على نصفي البلاد. جاثمة على ظهر العرش. وخلف رأس الملك، يفرد الإله حورس على هيئة الصقر جناحيه حول رأس الملك في لفتة حماية. المملكة القديمة. الأسرة الرابعة، عهد خفرع (2558-2535 ق.م). كان الملك خفرع ابن خوفو وهنوتسن من الأسرة الرابعة، وبالتالي الأخ غير الشقيق لسلفه جدف رع. كان متزوجًا من أخته غير الشقيقة خامرنبتي الأولى، وأنجب منها ولدًا، ميكيرينوس، وابنة، خامرنبتي الثانية. كان متزوجًا أيضًا من مرس عنخ الثالث، ابنة كواب وحتب حرس الثاني، وأنجب منها أربعة أبناء على الأقل: نبيماخت، ونيوسر رع، وخنتركا، ودواين رع، وابنة واحدة هي شبسستكاو.",
+        english_description: "Ancient Egyptian Bust of king Khafre with Falcon on his head solid stone made in Egypt. Height 13.5 cm depth 6.5 cm width 12 cm weight 1140 grams. The statue depicts King Khafre the builder of the second large pyramid at Giza. It’s was found in the valley temple of his pyramid complex. The King is majestically seated on the throne with all confidence of a man who built a mountain. The tow sides of his throne are decorated with the semantic- tawny. Symbol of the unity of upper and Lower Egypt, signifying his rule over the two halves of the country. Perched on the back of the throne. Behind the King’s head, the god Horus in the form of a Falcon spreads his wings around the king’s head in a gesture of protection. Old Kingdom. 4th Dynasty, reign of Khafre ( c. 2558-2535 Bc) . King Khafre was the son of kheops and Henutsen of the 4th dynasty, and thus the half-brother of his predecessor, Djedefre. He was married to his half-sister Khamernebti I, with whom he had a son, Mykerinos, and a daughter, khamernebeti II. He was also married to Meresankh III , a daughter of Kawab and Hetepheres II , with whom he had at least four sons: Nebemakhet, Niuserre , Khenterka and Duaenre, and one daughter, Shepsestkau.",
         era: ancientEra,
         sub_era_id: sub_era_2.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_17,
+        event: event_6,
     )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
-        النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
-        era: ancientEra,
-        sub_era_id: sub_era_1.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
+        product_7.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/812yqddkUxL._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_7.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71752YKiA7L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_7.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71VlLAabAPL._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_7, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_7, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_7, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_7, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_7, stars: 4,comment:"This is a good product")   
+
+    product_8 = Product.create(
+        price: 148,
+        arabic_title: "تمثال فرعوني مصري 3 أهرامات، هدايا تذكارية مصرية، هدية مستوحاة من مصر. (أزرق، 6 سم)",
+        english_title: "matcher pharaonic Egyptian 3 Pyramids Statue Egyptian souvenirs gifts Inspired Gift from Egypt. (Blue, 6 CM)",
+        arabic_description: "انقل نفسك إلى عالم مصر القديمة المهيب من خلال منحوتتنا الفرعونية الرائعة. صُنعت هذه القطعة المذهلة بعناية فائقة بالتفاصيل، وهي تجسد عظمة وغموض الثقافة الفرعونية. مستوحاة من تماثيل الفراعنة الرائعة التي كانت تزين المعابد والمقابر على طول نهر النيل، تعرض منحوتاتنا الجمال الخالد وقوة الفن المصري.",
+        english_description: "Transport yourself to the majestic world of ancient Egypt with our exquisite Pharaonic sculpture. Crafted with meticulous attention to detail, this stunning piece captures the grandeur and mystique of Pharaonic culture. Inspired by the magnificent statues of pharaohs that once adorned the temples and tombs along the Nile, our sculpture showcases the timeless beauty and power of Egyptian artistry.",
         era: ancientEra,
         sub_era_id: sub_era_2.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_17,
+        event: event_5,
     )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
-        النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
+        product_8.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/41KugY7fuRL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_8.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/419f-Q3rg5L._AC_SL1000_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_8.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/419f-Q3rg5L._AC_SL1000_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_8, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_8, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_8, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_8, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_8, stars: 4,comment:"This is a good product")   
+    product_9 = Product.create(
+        price: 73,
+        arabic_title: "سلسلة مفاتيح توت عنخ آمون المصرية الفرعونية غير الناضجة هدايا تذكارية مصرية-هدية مستوحاة من مصر",
+        english_title: "immature pharaonic Egyptian Tutankhamun keychain Egyptian souvenirs gifts - Inspired Gift from Egypt",
+        arabic_description: "Decorate your keys with our fashion keychain , Make you smarter and bright with our keychains , keychain valid as valuable gift for different occasions like Valentine's Day , Mother's Day , Christmas , birthday , Wedding and Anniversaries and also for your loved persons",
+        english_description: "زيّن مفاتيحك بميدالية المفاتيح العصرية الخاصة بنا، واجعلك أكثر ذكاءً وإشراقًا مع سلاسل المفاتيح الخاصة بنا، سلسلة المفاتيح صالحة كهدية قيمة لمناسبات مختلفة مثل عيد الحب، وعيد الأم، وعيد الميلاد، وأعياد الميلاد، وحفلات الزفاف واحتفالات الذكرى السنوية وأيضًا لأحبائك",
         era: ancientEra,
-        sub_era_id: sub_era_1.id,
+        sub_era_id: sub_era_5.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        # character: character_17,
+        # event: event_6,
     )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
+        product_9.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61kJbTtrUHL._AC_SX679_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_9.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61kJbTtrUHL._AC_SX679_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_9.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61kJbTtrUHL._AC_SX679_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_9, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_9, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_9, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_9, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_9, stars: 4,comment:"This is a good product")   
+    product_10 = Product.create(
+        price: 76,
+        arabic_title: "ميدالية مفاتيح على شكل هرم مصري فرعوني بفصوص عشوائية هدية تذكارية لعيد الحب متطورة وعصرية",
+        english_title: "Pharaonic Egyptian pyramid keychain with random lobes Souvenir Valentine gift sophisticated and fashionable",
+        arabic_description: "سلسلة مفاتيح صالحة كهدية قيمة وحامل مفاتيح منظم أنيق وعصري
+        النمط: كلاسيكي
+        نوع الإغلاق: هوك وحلقة
+        شكل السلعة: هرمي",
+        english_description: "keychain valid as a valuable gift sophisticated and fashionable organizer key holder
+        Style: Classic
+        Closure Type: Hook & Loop
+        Item shape: Pyramid",
         era: ancientEra,
         sub_era_id: sub_era_2.id,
         catigory:"antiques",
-        # character: character,
-        # event: event
+        character: character_18,
+        event: event_6,
     )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
-        النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
-        era: ancientEra,
-        sub_era_id: sub_era_1.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
-        era: ancientEra,
-        sub_era_id: sub_era_2.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
-    product_1 = Product.create(
-        price: 130,
-        arabic_title: "كوب مصري قديم",
-        english_title: "Ancient Egyptian Mug",
-        arabic_description: "دليل على غسالة الصحون: لا
-        العلامة التجارية: لا
-        الخامة: سيراميك
-        النوع: أكواب
-        هل هناك حاجة إلى بطاريات لتشغيل المنتج أم أن هذا المنتج عبارة عن بطارية: 0
-        هل هذا منتج خطير أو مادة أو مادة أو نفايات خطرة تخضع لأنظمة النقل و/أو التخزين و/أو التخلص منها؟ : لا",
-        english_description: "Dishwasher proof : no
-        Brand : no
-        Material : Ceramic
-        Type : Mugs
-        Are batteries needed to power the product or is this product a battery : 0
-        Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : no",
-        era: ancientEra,
-        sub_era_id: sub_era_1.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_1.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_1.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61W27GMpK0L._AC_SL1500_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 3,comment:"This is a good product")   
-    product_2 = Product.create(
-        price: 67,
-        arabic_title: "محفظة قماش مصرية فرعونية - شكل متنوع صنع في مصر",
-        english_title: "Cloth Pharaonic Egyptian wallet - a diverse shape made in Egypt",
-        arabic_description: "محفظة قماش مصرية فرعونية هدية عيد الحب تذكارية راقية عصرية - متنوعة الشكل
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم
-        المواد: القماش
-        نوع الإغلاق: إبزيم",
-        english_description: "cloth Pharaonic egyption wallet Souvenir valentine gift sophisticated fashionable - diverse shape
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle
-        Material: cloth
-        Closure Type: Buckle",
-        era: ancientEra,
-        sub_era_id: sub_era_2.id,
-        catigory:"antiques",
-        # character: character,
-        # event: event
-    )
-        product_2.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/712GbTFUVuL._AC_SL1012_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/61UWDFL0kgL._AC_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-        product_2.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/71Ua3I9wURL._AC_SL1026_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
-            Review.create(user:user, product:product_1, stars: 5,comment:"I love this product")   
+        product_10.main_image.attach(io: URI.open("https://m.media-amazon.com/images/I/51a0QXdnC0L._AC_SX679_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_10.secondary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/51cuhkWE4EL._AC_SX679_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+        product_10.thirdary_image.attach(io: URI.open("https://m.media-amazon.com/images/I/51a0QXdnC0L._AC_SX679_.jpg"), filename: 'image.jpg', content_type: 'image/jpg')
+            Review.create(user:user, product:product_10, stars: 3,comment:"This is a good product")   
+            Review.create(user:user_1, product:product_10, stars: 5,comment:"I love this product")   
+            Review.create(user:user_2, product:product_10, stars: 2,comment:"Bad Material")   
+            Review.create(user:user_3, product:product_10, stars: 1,comment:"I hate this product")   
+            Review.create(user:user, product:product_10, stars: 4,comment:"This is a good product")
