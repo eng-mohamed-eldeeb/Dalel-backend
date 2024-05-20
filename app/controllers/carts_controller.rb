@@ -78,7 +78,7 @@ class CartsController < ApplicationController
   def remove_product
     user = User.find(params[:user_id])
     product = Product.find(params[:product_id])
-    shopping_cart = user.shopping_cart.last
+    shopping_cart = user.shopping_carts.last
     if shopping_cart.nil?
       render json: { errorMessage: "User does not have a shopping cart" }, status: 400
     end
