@@ -40,6 +40,10 @@ class CartsController < ApplicationController
   def get_cart_details
     user = User.find(params[:user_id])
     shopping_cart = user.shopping_carts.last
+    if shopping_cart.nil?
+      render json: { products: [] }
+      return
+    end
 
     if shopping_cart.nil?
       render json: { errorMessage: "User does not have a shopping cart" }, status: 400
