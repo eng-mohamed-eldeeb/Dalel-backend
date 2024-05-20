@@ -2,7 +2,7 @@ class EventsController < ApplicationController
     # soon will be lemited based on the user data
     def index
         era = Era.find(params[:era_id])
-        events = era.sub_eras.map(&:events).flatten
+        events = era.get_4_random_events
         events = events.map do |event|
             {
                 id: event.id,
@@ -11,7 +11,6 @@ class EventsController < ApplicationController
                 cover_image: url_for(event.cover_image),
             }
         end
-        event = events.first(5)
         render json: events
     end
 
