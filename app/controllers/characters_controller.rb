@@ -92,7 +92,7 @@ class CharactersController < ApplicationController
             last_event.increment!(:points)
         end
 
-        if character.products.eny?
+        if character.products.any?
             character.products.each do |product|
                 product.increment!(:points)
                 product.save

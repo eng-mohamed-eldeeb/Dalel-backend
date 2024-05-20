@@ -4,7 +4,6 @@ class Product < ApplicationRecord
   belongs_to :event, optional: true
   belongs_to :character, optional: true
   has_many :reviews
-  has_many :product
   has_many :shopping_cart_items, dependent: :destroy
 
   validates :arabic_title, presence: true

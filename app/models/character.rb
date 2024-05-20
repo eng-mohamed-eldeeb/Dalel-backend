@@ -4,6 +4,7 @@ class Character < ApplicationRecord
     has_many :events
     has_many :saveds
     has_many :character_points
+    has_many :products
 
     has_one_attached :thumb_image
     has_one_attached :cover_image

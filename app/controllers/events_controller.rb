@@ -73,7 +73,6 @@ class EventsController < ApplicationController
         event.increment!(:points)
         if event.character
             event.character.increment!(:points)
-            event.character.set_tier(user)
             event.character.save
         end
 
@@ -94,7 +93,7 @@ class EventsController < ApplicationController
         user_event.set_tier(user)
         user_event.save
 
-        render json: { points: user_event.points }
+        render json: { message: 'success' }
       end
 
       def get_4_recommended_events
