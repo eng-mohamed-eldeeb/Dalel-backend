@@ -11,6 +11,7 @@ class EventsController < ApplicationController
                 cover_image: url_for(event.cover_image),
             }
         end
+        event = events.first(5)
         render json: events
     end
 
