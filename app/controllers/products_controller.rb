@@ -124,6 +124,30 @@ class ProductsController < ApplicationController
     render json: {recommended_products: recommended_products}
   end
 
+  def search
+    begin
+      search_params = params.require(:search).permit(:arabic_title, :english_title)
+      products = Product.where('arabic_title LIKE :search OR english_title LIKE :search', search: "%#{search_params.values.first}%").all
+      products = products.map do |product|
+        {
+          id: product.id,
+          title: I18n.locale.to_s == 'ar' ? product.arabic_title : product.english_title,
+          era_id: product.era_id,
+          price: product.price,
+          catigory: product.catigory,
+          main_image: url_for(product.main_image),
+          reviews: {
+          number_of_reviews: product.reviews.count || 0,
+          average_stars: product.reviews.average(:stars) || 0,
+        }
+      }
+      end
+      render json: {products: products}
+    rescue => e
+      render json: {error: e.message}, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def get_reviews(product)
