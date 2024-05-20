@@ -31,6 +31,9 @@ class ProductsController < ApplicationController
   end
 
   def show
+    user = User.find(params[:user_id])
+    saved = user.saveds.find_by(product_id: params[:id])
+    saved = saved ? true : false
     product = Product.find(params[:id])
     reviews = get_reviews(product)
     render json: {
@@ -39,6 +42,7 @@ class ProductsController < ApplicationController
         title: I18n.locale.to_s == 'ar' ? product.arabic_title : product.english_title,
         description: I18n.locale.to_s == 'ar' ? product.arabic_description : product.english_description,
         era_id: product.era.name,
+        saved: saved,
         price: product.price,
         catigory: product.catigory,
         main_image: url_for(product.main_image),
@@ -103,6 +107,20 @@ class ProductsController < ApplicationController
     user = User.find(params[:user_id])
     era = Era.find(params[:era_id])
     recommended_products = user.get_4_recommended_products(era)
+    recommended_products = recommended_products.map do |product|
+      {
+        id: product.id,
+        title: I18n.locale.to_s == 'ar' ? product.arabic_title : product.english_title,
+        era_id: product.era_id,
+        price: product.price,
+        catigory: product.catigory,
+        main_image: url_for(product.main_image),
+        reviews: {
+          number_of_reviews: product.reviews.count || 0,
+          average_stars: product.reviews.average(:stars) || 0,
+        }
+      }
+    end
     render json: {recommended_products: recommended_products}
   end
 

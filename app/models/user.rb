@@ -23,7 +23,6 @@ class User < ApplicationRecord
   def get_4_recommended_characters(era)
     sub_eras = era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(10)
     characters = sub_eras.flat_map(&:characters)
-    characters = characters.sort_by(&:points).reverse
     fav_era = era
 
     Era.find_each do |era_|
@@ -35,20 +34,25 @@ class User < ApplicationRecord
       end
     end
 
+    fav_era_has_points = fav_era.era_points.where(user: self).exists?
+
     if self.era_points.where.not(era: era).exists? && fav_era == era
-      characters = characters.sort_by(&:points).reverse.first(4)
+      characters = characters.first(4)
     else
-      if fav_era.era_points.where(user: self).exists?
+      if fav_era_has_points
         two_more_characters = fav_era.sub_eras.includes(:characters).sort_by(&:point).reverse.first(2).flat_map(&:characters)
         if two_more_characters.empty?
-          characters = characters.sort_by(&:points).reverse.first(4)
+          characters = characters.first(4)
         else
-          characters = characters.sort_by(&:points).reverse.first(2) + two_more_characters
+          characters = characters.first(2) + two_more_characters
         end
       end
     end
+
+    characters = characters.sort_by(&:points).reverse
+
     characters
-end
+  end
 
   def get_4_recommended_events(era)
     sub_eras = era.sub_eras.includes(:events).sort_by(&:point).reverse.first(10)

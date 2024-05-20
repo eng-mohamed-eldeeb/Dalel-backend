@@ -47,13 +47,16 @@ class EventsController < ApplicationController
 
     def show
         event = Event.includes(:event_sections).find(params[:id])
-
+        user = User.find(params[:user_id])
+        saved = user.saveds.find_by(event_id: event.id)
+        saved = saved ? true : false
         event = {
             id: event.id,
             title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
             info: I18n.locale.to_s == 'ar' ? event.arabic_info : event.english_info,
             start_date: event.start_date,
             end_date: event.end_date,
+            saved: saved,
             sections: event.event_sections.map do |section|
                 {
                     id: section.id,

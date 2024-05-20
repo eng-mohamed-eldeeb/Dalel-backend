@@ -18,6 +18,9 @@ class CharactersController < ApplicationController
 
 
     def show
+        user = User.find(params[:user_id])
+        saved = user.saveds.find_by(character_id: params[:id])
+        saved = saved ? true : false
         character = Character.includes(:character_sections).find(params[:id])
         character_events = character.events
         character_events = character_events.map do |event|
@@ -36,6 +39,7 @@ class CharactersController < ApplicationController
             thumb_image: url_for(character.thumb_image),
             cover_image: url_for(character.cover_image),
             character_events: character_events,
+            saved: saved,
             sections: character.character_sections.map do |section|
                 {
                     id: section.id,
@@ -122,6 +126,13 @@ class CharactersController < ApplicationController
         user = User.find(params[:user_id])
         era = Era.find(params[:era_id])
         recommended_characters = user.get_4_recommended_characters(era).first(4)
+        recommended_characters = recommended_characters.map do |character|
+            {
+                id: character.id,
+                name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
+                thumb_image: url_for(character.thumb_image),
+            }
+        end
         render json: recommended_characters
     end
 
