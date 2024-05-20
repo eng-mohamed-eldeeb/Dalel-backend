@@ -7,7 +7,7 @@ class ReviewsController < ApplicationController
         render json: {message: "Review created successfully", review:}, head: :created
       end
     rescue => e
-      render json: {errorMessage: e.message}, head: :internal_server_error
+      render json: {ErrorMessage: e.message}, head: :internal_server_error
     end
   end
 

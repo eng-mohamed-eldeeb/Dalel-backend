@@ -40,7 +40,7 @@ class SavedController < ApplicationController
       saved.destroy
       render json: { message: 'Saved item successfully removed.' }, status: :ok
     else
-      render json: { errorMessage: 'Saved item not found.' }, status: :not_found
+      render json: { ErrorMessage: 'Saved item not found.' }, status: :not_found
     end
   end
   private

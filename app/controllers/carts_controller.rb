@@ -5,7 +5,7 @@ class CartsController < ApplicationController
     product_id = params[:product_id]
 
     if user.shopping_carts.length > 0
-      render json: { errorMessages: ["User already has a shopping cart"] }, status: 400
+      render json: { ErrorMessages: "User already has a shopping cart" }, status: 400
       return
     end
 
@@ -21,7 +21,7 @@ class CartsController < ApplicationController
     shopping_cart = user.shopping_carts.last
 
     if shopping_cart.nil?
-      render json: { errorMessage: "User does not have a shopping cart" }, status: 400
+      render json: { ErrorMessage: "User does not have a shopping cart" }, status: 400
       return
     end
 
@@ -46,7 +46,7 @@ class CartsController < ApplicationController
     end
 
     if shopping_cart.nil?
-      render json: { errorMessage: "User does not have a shopping cart" }, status: 400
+      render json: { ErrorMessage: "User does not have a shopping cart" }, status: 400
     end
 
     cart_items = shopping_cart.shopping_cart_items
@@ -66,7 +66,7 @@ class CartsController < ApplicationController
   def update_quantity
     user = User.find(params[:user_id])
     if !user.shopping_carts
-      render json: { errorMessages: ["User does not have a shopping cart"] }, status: 400
+      render json: { ErrorMessages: ["User does not have a shopping cart"] }, status: 400
       return
     end
     cart_item = ShoppingCartItem.find(params[:id])
@@ -80,7 +80,7 @@ class CartsController < ApplicationController
     product = Product.find(params[:product_id])
     shopping_cart = user.shopping_carts.last
     if shopping_cart.nil?
-      render json: { errorMessage: "User does not have a shopping cart" }, status: 400
+      render json: { ErrorMessage: "User does not have a shopping cart" }, status: 400
     end
     cart_item = ShoppingCartItem.find_by(shopping_cart: shopping_cart, product: product)
     cart_item.destroy
@@ -94,7 +94,7 @@ class CartsController < ApplicationController
     product = Product.find(params[:product_id])
     shopping_cart = user.shopping_carts.last
     if shopping_cart.nil?
-      render json: { errorMessage: "User does not have a shopping cart" }, status: 400
+      render json: { ErrorMessage: "User does not have a shopping cart" }, status: 400
     end
     cart_item = ShoppingCartItem.find_by(shopping_cart: shopping_cart, product: product)
     if params[:inc_or_dec] == "increment"
@@ -104,7 +104,7 @@ class CartsController < ApplicationController
       cart_item.update(quantity: cart_item.quantity - 1)
       render json: {message: "success"}
     else
-      render json: { errorMessage: "Invalid action" }, status: 400
+      render json: { ErrorMessage: "Invalid action" }, status: 400
     end
   end
 
