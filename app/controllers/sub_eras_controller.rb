@@ -10,6 +10,7 @@ class SubErasController < ApplicationController
     end
     render json: {sub_eras: sub_eras}
   end
+
   def show
     sub_era = SubEra.find(params[:id])
     eight_characters = sub_era.get_characters
