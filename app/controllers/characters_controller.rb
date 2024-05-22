@@ -27,7 +27,7 @@ class CharactersController < ApplicationController
             {
                 id: event.id,
                 title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
-                cover_image: event.over_image)
+                cover_image: event.over_image
             }
         end
         character = {
