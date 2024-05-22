@@ -41,7 +41,7 @@ class CartsController < ApplicationController
     user = User.find(params[:user_id])
     shopping_cart = user.shopping_carts.last
     if shopping_cart.nil?
-      render json: { products: [] }
+      render json: []
       return
     end
 
