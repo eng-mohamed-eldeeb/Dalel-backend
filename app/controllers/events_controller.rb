@@ -8,7 +8,7 @@ class EventsController < ApplicationController
                 id: event.id,
                 sub_era: I18n.locale.to_s == 'ar' ? event.sub_era.arabic_name : event.sub_era.english_name,
                 title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
-                cover_image: url_for(event.cover_image),
+                cover_image: event.cover_image,
             }
         end
         render json: events
@@ -45,7 +45,7 @@ class EventsController < ApplicationController
                 id: event.id,
                 sub_era: I18n.locale.to_s == 'ar' ? event.sub_era.arabic_name : event.sub_era.english_name,
                 title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
-                cover_image: url_for(event.cover_image),
+                cover_image: event.cover_image,
             }
         end
         render json: events
@@ -60,7 +60,7 @@ class EventsController < ApplicationController
             id: event.id,
             sub_era: I18n.locale.to_s == 'ar' ? event.sub_era.arabic_name : event.sub_era.english_name,
             name: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
-            cover_image: url_for(event.cover_image),
+            cover_image: event.cover_image,
           }
         end
         render json: events
@@ -104,7 +104,7 @@ class EventsController < ApplicationController
             {
                 id: event.id,
                 title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
-                cover_image: url_for(event.cover_image)
+                cover_image: event.cover_image
             }
         end
         render json: events

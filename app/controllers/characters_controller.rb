@@ -10,7 +10,7 @@ class CharactersController < ApplicationController
                 name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
                 date_of_birth: character.date_of_birth,
                 date_of_death: character.date_of_death,
-                thumb_image: url_for(character.thumb_image),
+                thumb_image: character.thumb_image,
             }
         end
         render json: characters
@@ -27,7 +27,7 @@ class CharactersController < ApplicationController
             {
                 id: event.id,
                 title: I18n.locale.to_s == 'ar' ? event.arabic_title : event.english_title,
-                cover_image: url_for(event.cover_image)
+                cover_image: event.over_image)
             }
         end
         character = {
@@ -36,8 +36,8 @@ class CharactersController < ApplicationController
             date_of_birth: character.date_of_birth,
             date_of_death: character.date_of_death,
             info: I18n.locale.to_s == 'ar' ? character.arabic_info : character.english_info,
-            thumb_image: url_for(character.thumb_image),
-            cover_image: url_for(character.cover_image),
+            thumb_image: character.thumb_image,
+            cover_image: character.cover_image,
             character_events: character_events,
             saved: saved,
             sections: character.character_sections.map do |section|
@@ -63,7 +63,7 @@ class CharactersController < ApplicationController
             name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
             date_of_birth: character.date_of_birth,
             date_of_death: character.date_of_death,
-            thumb_image: url_for(character.thumb_image),
+            thumb_image: character.thumb_image,
           }
         end
         render json: characters
@@ -78,7 +78,7 @@ class CharactersController < ApplicationController
                 name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
                 date_of_birth: character.date_of_birth,
                 date_of_death: character.date_of_death,
-                thumb_image: url_for(character.thumb_image),
+                thumb_image: character.thumb_image,
             }
         end
         render json: characters
@@ -130,7 +130,7 @@ class CharactersController < ApplicationController
             {
                 id: character.id,
                 name: I18n.locale.to_s == 'ar' ? character.arabic_name : character.english_name,
-                thumb_image: url_for(character.thumb_image),
+                thumb_image: character.thumb_image,
             }
         end
         render json: recommended_characters

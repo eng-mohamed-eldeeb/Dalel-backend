@@ -2,7 +2,7 @@ ActiveAdmin.register Character do
     permit_params :arabic_name, :english_name, :sub_era_id, :date_of_birth, :date_of_death, :arabic_info, :english_info, :thumb_image, :cover_image, character_sections_attributes: %i[id arabic_title english_title arabic_content english_content _destroy]
     menu priority: 4
     filter :name
-    
+
     index do
         selectable_column
         id_column
@@ -13,9 +13,7 @@ ActiveAdmin.register Character do
         column :date_of_death
         column :arabic_info
         column :english_info
-        column :thumb_image do |character|
-            image_tag url_for(character.thumb_image), width: 100
-        end
+        column :thumb_image
         column :sections do |character|
         if character.character_sections
             character.character_sections.each do |section|
@@ -28,7 +26,7 @@ ActiveAdmin.register Character do
         end
         actions
     end
-    
+
     form do |f|
         f.inputs do
         f.input :sub_era_id, as: :select, collection: SubEra.all.map {|sub_era| [sub_era.arabic_name, sub_era.id]}
@@ -38,8 +36,8 @@ ActiveAdmin.register Character do
         f.input :date_of_death, as: :string, input_html: { value: f.object.date_of_death.try(:strftime, "%Y-%m-%d") }
         f.input :arabic_info
         f.input :english_info
-        f.input :thumb_image, as: :file, input_html: { accept: 'image/*' }
-        f.input :cover_image, as: :file, input_html: { accept: 'image/*' }
+        f.input :thumb_image
+        f.input :cover_image
         f.inputs 'Sections' do
             f.has_many :character_sections, heading: 'sections', allow_destroy: true do |c|
             c.input :arabic_title
@@ -51,7 +49,7 @@ ActiveAdmin.register Character do
         end
         f.actions
     end
-    
+
     show do
         attributes_table do
         row :id
@@ -62,9 +60,7 @@ ActiveAdmin.register Character do
         row :sub_era_id
         row :arabic_info
         row :english_info
-        row :thumb_image do |character|
-            image_tag url_for(character.thumb_image), width: 100
-        end
+        row :thumb_image
         row :SubEra do |character|
             character.sub_era.arabic_name
         end

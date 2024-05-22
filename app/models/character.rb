@@ -6,9 +6,6 @@ class Character < ApplicationRecord
     has_many :character_points
     has_many :products
 
-    has_one_attached :thumb_image
-    has_one_attached :cover_image
-
 
     accepts_nested_attributes_for :character_sections, allow_destroy: true
 

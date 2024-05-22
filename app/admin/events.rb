@@ -28,9 +28,7 @@ ActiveAdmin.register Event do
         column :end_date
         column :arabic_info
         column :english_info
-        column :cover_image do |event|
-            image_tag url_for(event.cover_image), width: 100
-        end
+        column :cover_image
         column :sections do |event|
             if event.event_sections
                 event.event_sections.each do |section|
@@ -40,7 +38,7 @@ ActiveAdmin.register Event do
         end
         actions
     end
-   
+
     form do |f|
         f.inputs do
             f.input :type, as: :select, collection: ['PeaceTreaty', 'War']
@@ -52,7 +50,7 @@ ActiveAdmin.register Event do
             f.input :english_info
             f.input :sub_era_id, as: :select, collection: SubEra.all.map { |se| [se.arabic_name, se.id] }
             f.input :character_id, as: :select, collection: Character.all.map { |c| [c.arabic_name, c.id] }
-            f.input :cover_image, as: :file, input_html: { accept: 'image/*' }
+            f.input :cover_image
             f.inputs 'Sections' do
                 f.has_many :event_sections, heading: 'sections', allow_destroy: true do |c|
                     c.input :arabic_title
@@ -75,9 +73,7 @@ ActiveAdmin.register Event do
             row :end_date
             row :arabic_info
             row :english_info
-            row :cover_image do |event|
-                image_tag url_for(event.cover_image), width: 100
-            end
+            row :cover_image
             row :sections do |event|
                 if event.event_sections
                     event.event_sections.each do |section|

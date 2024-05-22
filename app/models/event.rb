@@ -6,7 +6,6 @@ class Event < ApplicationRecord
     has_many :event_sections, dependent: :destroy
     has_many :saveds
     has_many :event_points
-    has_one_attached :cover_image
     has_many :products
     accepts_nested_attributes_for :event_sections, allow_destroy: true
 
