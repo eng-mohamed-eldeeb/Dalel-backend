@@ -95,7 +95,7 @@ class User < ApplicationRecord
       if !top_event.flat_map(&:event).empty?
         top_event.flat_map(&:event).each do |event|
           if event.respond_to?(:products)
-            products += event.products.order(:points).first(2)
+            products += event.products.order(:points).first(4)
           end
         end
       end
@@ -103,13 +103,13 @@ class User < ApplicationRecord
       top_character = self.character_points.sort_by(&:points).reverse.first(5)
       if !top_character.flat_map(&:character).empty?
         if top_character.flat_map(&:character).flat_map(&:products)
-          products += top_character.flat_map(&:character).flat_map(&:products).order(:points).first(2)
+          products += top_character.flat_map(&:character).flat_map(&:products).order(:points).first(4)
         end
       end
     end
     if era.products
       if era.products.exists?
-        products += era.products.order(:points).first(2)
+        products += era.products.order(:points).first(4)
       end
     end
     if products.empty?
