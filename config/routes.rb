@@ -55,7 +55,7 @@ Rails.application.routes.draw do
   delete '/cart/remove_product', to: 'carts#remove_product'
   put 'cart/update_quantity', to: 'carts#update_quantity'
   get 'cart', to: 'carts#cart_details'
-  delete 'cart/products/remove', to: 'cart#remove_product'
+  delete 'cart/products/remove', to: 'carts#remove_product'
 
 
 
