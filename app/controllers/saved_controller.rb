@@ -15,13 +15,13 @@ class SavedController < ApplicationController
   def index
     saveds = Saved.where(user_id: params[:user_id])
     products = saveds.where.not(product_id: nil).map do |saved|
-      saved.product.as_json.merge({ main_image_url: url_for(saved.product.main_image) }) if saved.product.main_image.attached?
+      saved.product.as_json.merge({ main_image_url: saved.product.main_image }) if saved.product.main_image.attached?
     end
     characters = saveds.where.not(character_id: nil).map do |saved|
-      saved.character.as_json.merge({ thumb_image_url: url_for(saved.character.thumb_image) }) if saved.character.thumb_image.attached?
+      saved.character.as_json.merge({ thumb_image_url: saved.character.thumb_image }) if saved.character.thumb_image.attached?
     end
     events = saveds.where.not(event_id: nil).map do |saved|
-      saved.event.as_json.merge({ cover_image_url: url_for(saved.event.cover_image) }) if saved.event.cover_image.attached?
+      saved.event.as_json.merge({ cover_image_url: saved.event.cover_image }) if saved.event.cover_image.attached?
     end
 
     render json: { products: products.compact, characters: characters.compact, events: events.compact }
