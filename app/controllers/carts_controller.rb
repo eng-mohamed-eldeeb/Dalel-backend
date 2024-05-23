@@ -108,4 +108,14 @@ class CartsController < ApplicationController
     end
   end
 
+  def destroy
+    user = User.find(params[:user_id])
+    shopping_cart = user.shopping_carts.last
+    if shopping_cart.nil?
+      render json: { ErrorMessage: "User does not have a shopping cart" }, status: 400
+    end
+    shopping_cart.destroy
+    render json: {message: "success"}
+  end
+
 end
