@@ -2,6 +2,7 @@ ActiveAdmin.register Character do
     permit_params :arabic_name, :english_name, :sub_era_id, :date_of_birth, :date_of_death, :arabic_info, :english_info, :thumb_image, :cover_image, character_sections_attributes: %i[id arabic_title english_title arabic_content english_content _destroy]
     menu priority: 4
     filter :name
+    filter :sub_era, as: :select, collection: SubEra.all.map {|sub_era| [sub_era.arabic_name, sub_era.id]}
 
     index do
         selectable_column
@@ -13,7 +14,7 @@ ActiveAdmin.register Character do
         column :date_of_death
         column :arabic_info
         column :english_info
-        column :thumb_image
+        column :thumb_image, width: 50
         column :sections do |character|
         if character.character_sections
             character.character_sections.each do |section|
