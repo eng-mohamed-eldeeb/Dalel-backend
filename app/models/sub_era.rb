@@ -7,8 +7,9 @@ class SubEra < ApplicationRecord
   has_many :characters
   has_many :events
   has_many :sub_era_points
+  has_many :products
   belongs_to :era
-  
+
 
 
 
