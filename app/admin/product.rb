@@ -44,9 +44,9 @@ ActiveAdmin.register Product do
       f.input :event, as: :select, collection: Event.all.map { |event| [event.arabic_title, event.id] }
       f.input :tier
       f.input :catigory, as: :select, collection: Product.catigories.keys
-      f.input :main_image, as: :file, input_html: { accept: 'image/*' } if f.object.main_image.attached?
-      f.input :secondary_image, as: :file, input_html: { accept: 'image/*' } if f.object.secondary_image.attached?
-      f.input :thirdary_image, as: :file, input_html: { accept: 'image/*' } if f.object.thirdary_image.attached?
+      f.input :main_image, as: :file, input_html: { accept: 'image/*' }
+      f.input :secondary_image, as: :file, input_html: { accept: 'image/*' }
+      f.input :thirdary_image, as: :file, input_html: { accept: 'image/*' }
     end
     f.actions
   end
