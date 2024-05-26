@@ -89,33 +89,36 @@ class User < ApplicationRecord
   end
 
   def get_4_recommended_products(era)
-    products = []
-    if self.event_points.exists?
-      top_event = self.event_points.sort_by(&:points).reverse.first(5)
-      if !top_event.flat_map(&:event).empty?
-        top_event.flat_map(&:event).each do |event|
-          if event.respond_to?(:products)
-            products += event.products.order(:points).first(4)
-          end
+    sub_eras = era.sub_eras.includes(:products).sort_by(&:point).reverse.first(10)
+    products = sub_eras.flat_map(&:products)
+    fav_era = era
+
+    Era.find_each do |era_|
+      user_era_point = era_.era_points.where(user: self).last
+      fav_era_user_point = fav_era.era_points.where(user: self).last
+
+      if user_era_point && fav_era_user_point && user_era_point.tier > fav_era_user_point.tier
+        fav_era = era_
+      end
+    end
+
+    return [] if products.empty?
+
+    if self.era_points.where.not(era: era).exists? && fav_era == era
+      products = products.sort_by(&:points).reverse.first(4)
+    else
+      if fav_era.era_points.where(user: self).exists?
+        two_more_products = fav_era.sub_eras.includes(:products).sort_by(&:point).reverse.first(2).flat_map(&:products)
+        if two_more_products.empty?
+          products = products.sort_by(&:points).reverse.first(4)
+        else
+          products = products.sort_by(&:points).reverse.first(2) + two_more_products
         end
-      end
-    elsif self.character_points.exists?
-      top_character = self.character_points.sort_by(&:points).reverse.first(5)
-      if !top_character.flat_map(&:character).empty?
-        if top_character.flat_map(&:character).flat_map(&:products)
-          products += top_character.flat_map(&:character).flat_map(&:products).order(:points).first(4)
-        end
+      else
+        products = products.sort_by(&:points).reverse.first(4)
       end
     end
-    if era.products
-      if era.products.exists?
-        products += era.products.order(:points).first(4)
-      end
-    end
-    if products.empty?
-      products = era.products.order(:points).first(5)
-    end
+
     products
   end
-
 end
