@@ -18,7 +18,7 @@ class SavedController < ApplicationController
       {
         id: saved.product.id,
         title: I18n.locale.to_s == 'ar' ? saved.product.arabic_title : saved.product.english_title,
-        main_image: url_for(saved.product.main_image),
+        main_image_url: url_for(saved.product.main_image),
         price: saved.product.price,
         catigory: saved.product.catigory,
       }
@@ -27,14 +27,14 @@ class SavedController < ApplicationController
       {
         id: saved.character.id,
         name: I18n.locale.to_s == 'ar' ? saved.character.arabic_name : saved.character.english_name,
-        thumb_image: url_for(saved.character.thumb_image),
+        thumb_image_url: url_for(saved.character.thumb_image),
       }
     end
     events = saveds.where.not(event_id: nil).map do |saved|
       {
         id: saved.event.id,
         title: I18n.locale.to_s == 'ar' ? saved.event.arabic_title : saved.event.english_title,
-        cover_image: url_for(saved.event.cover_image),
+        cover_image_url: url_for(saved.event.cover_image),
       }
     end
 
