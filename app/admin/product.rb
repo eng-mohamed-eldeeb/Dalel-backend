@@ -44,9 +44,9 @@ ActiveAdmin.register Product do
       f.input :event, as: :select, collection: Event.all.map { |event| [event.arabic_title, event.id] }
       f.input :tier
       f.input :catigory, as: :select, collection: Product.catigories.keys
-      f.input :main_image, as: :file, input_html: { accept: 'image/*' }
-      f.input :secondary_image, as: :file, input_html: { accept: 'image/*' }
-      f.input :thirdary_image, as: :file, input_html: { accept: 'image/*' }
+      f.input :main_image, as: :file, input_html: { accept: 'image/*' } if f.object.main_image.attached?
+      f.input :secondary_image, as: :file, input_html: { accept: 'image/*' } if f.object.secondary_image.attached?
+      f.input :thirdary_image, as: :file, input_html: { accept: 'image/*' } if f.object.thirdary_image.attached?
     end
     f.actions
   end
@@ -66,13 +66,13 @@ ActiveAdmin.register Product do
       row :tier
       row :type
       row :main_image do |product|
-        image_tag url_for(product.main_image), width: 100
+        image_tag url_for(product.main_image), width: 100 if product.main_image.attached?
       end
       row :secondary_image do |product|
-        image_tag url_for(product.secondary_image), width: 100
+        image_tag url_for(product.secondary_image), width: 100 if product.secondary_image.attached?
       end
       row :thirdary_image do |product|
-        image_tag url_for(product.thirdary_image), width: 100
+        image_tag url_for(product.thirdary_image), width: 100 if product.thirdary_image.attached?
       end
     end
   end
