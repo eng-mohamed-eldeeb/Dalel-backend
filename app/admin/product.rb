@@ -26,7 +26,7 @@ ActiveAdmin.register Product do
     column :tier
     column :type
     column :main_image do |product|
-      image_tag url_for(product.main_image), width: 100
+      image_tag url_for(product.main_image), width: 100 if product.main_image.attached?
     end
     actions
   end
